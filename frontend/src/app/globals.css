@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base ─────────────────────────────────────────────────────────────── */
+html, body {
+  height: 100%;
+  background-color: #070D14;
+  color: #e2e8f0;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+::selection {
+  background: rgba(0, 229, 255, 0.2);
+  color: #00E5FF;
+}
+
+/* ─── Custom Scrollbars ─────────────────────────────────────────────────── */
+::-webkit-scrollbar        { width: 6px; height: 6px; }
+::-webkit-scrollbar-track  { background: #070D14; }
+::-webkit-scrollbar-thumb  { background: #1A2B42; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #253D5E; }
+
+/* ─── Glow Effects ──────────────────────────────────────────────────────── */
+.glow-cyan-card  { box-shadow: 0 0 0 1px rgba(0,229,255,0.25), 0 4px 20px rgba(0,229,255,0.05); }
+.glow-red-card   { box-shadow: 0 0 0 1px rgba(255,77,77,0.25),  0 4px 20px rgba(255,77,77,0.05); }
+.glow-amber-card { box-shadow: 0 0 0 1px rgba(245,158,11,0.25), 0 4px 20px rgba(245,158,11,0.05); }
+.glow-purple-card{ box-shadow: 0 0 0 1px rgba(168,85,247,0.25), 0 4px 20px rgba(168,85,247,0.05); }
+
+.glow-cyan-btn   { box-shadow: 0 4px 18px 0 rgba(0,229,255,0.35); }
+.glow-cyan-btn:hover { box-shadow: 0 4px 25px 0 rgba(0,229,255,0.55); }
+
+/* ─── Action Queue Left Borders ─────────────────────────────────────────── */
+.action-card-cyan   { border-left: 3px solid #00E5FF; }
+.action-card-amber  { border-left: 3px solid #F59E0B; }
+.action-card-red    { border-left: 3px solid #FF4D4D; }
+.action-card-purple { border-left: 3px solid #A855F7; }
+
+/* ─── Graph Canvas Dot Grid ─────────────────────────────────────────────── */
+.canvas-bg-grid {
+  background-size: 32px 32px;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+}
+
+/* ─── Collapsible Rail ──────────────────────────────────────────────────── */
+.side-rail-expanded  { width: 240px; transition: width 300ms ease; }
+.side-rail-collapsed { width: 56px;  transition: width 300ms ease; }
+
+/* ─── Graph Node Animations ─────────────────────────────────────────────── */
+.graph-node {
+  transition: transform 0.2s cubic-bezier(0.4,0,0.2,1), filter 0.2s ease, opacity 0.25s ease;
+  cursor: pointer;
+}
+.graph-node:hover { transform: scale(1.1); }
+
+.glow-cyan   { filter: drop-shadow(0 0 10px rgba(0,229,255,0.7)); }
+.glow-red    { filter: drop-shadow(0 0 14px rgba(239,68,68,0.75)); }
+.glow-amber  { filter: drop-shadow(0 0 12px rgba(245,158,11,0.75)); }
+.glow-purple { filter: drop-shadow(0 0 14px rgba(168,85,247,0.8)); }
+.dimmed      { opacity: 0.12 !important; pointer-events: none; }
+
+/* ─── Toast animations ──────────────────────────────────────────────────── */
+@keyframes toastIn {
+  from { transform: translateY(8px); opacity: 0; }
+  to   { transform: translateY(0);   opacity: 1; }
+}
+@keyframes toastOut {
+  from { transform: translateY(0);   opacity: 1; }
+  to   { transform: translateY(8px); opacity: 0; }
+}
+.toast-in  { animation: toastIn  0.2s ease forwards; }
+.toast-out { animation: toastOut 0.2s ease forwards; }
+
+/* ─── Spider Canvas Animation ───────────────────────────────────────────── */
+@keyframes spiderPulse {
+  0%, 100% { opacity: 0.35; }
+  50%       { opacity: 0.6; }
+}
+.spider-canvas { animation: spiderPulse 4s ease-in-out infinite; }
+
+/* ─── Active Nav Glow Bar ───────────────────────────────────────────────── */
+.active-nav-glow {
+  box-shadow: inset 3px 0 0 #00E5FF, inset 0 0 12px rgba(0,229,255,0.08);
+}
+
+/* ─── Dropzone states ───────────────────────────────────────────────────── */
+.dropzone-active {
+  border-color: rgba(0,229,255,0.6) !important;
+  background: rgba(0,229,255,0.04);
+}
+
+/* ─── Progress bar ──────────────────────────────────────────────────────── */
+.progress-bar-track {
+  background: #070D14;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.progress-bar-fill {
+  background: #00E5FF;
+  height: 6px;
+  border-radius: 999px;
+  transition: width 300ms ease;
+}
+
+/* ─── Backdrop blur modal ───────────────────────────────────────────────── */
+.modal-backdrop {
+  background-color: rgba(4,8,14,0.85);
+  backdrop-filter: blur(6px);
+}

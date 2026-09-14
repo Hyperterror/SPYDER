@@ -1,0 +1,87 @@
+# ─── Stitch design files (HTML mockups, not source code) ─────────────────────
+stitch_desktop_grid_size_analysis (1)/
+stitch_desktop_grid_size_analysis*/
+
+# ─── Graphify knowledge graph output ─────────────────────────────────────────
+graphify-out/
+
+# ─── Local file storage (MinIO fallback for dev) ─────────────────────────────
+local_storage/
+
+# ─── Planning / scratch docs ─────────────────────────────────────────────────
+implementation_plan.md
+"Untitled document.md"
+Untitled document.md
+
+# ─── Environment secrets ──────────────────────────────────────────────────────
+.env
+.env.local
+backend/.env.local
+frontend/.env.local
+# Keep .env.example — it's the template for others
+
+# ─── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.log
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+backend/venv/
+backend/.venv/
+
+# SQLite local database
+*.db
+*.sqlite
+*.sqlite3
+backend/spyder_local.db
+
+# ─── Node / Next.js ──────────────────────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+.next/
+frontend/.next/
+out/
+frontend/out/
+.turbo/
+*.tsbuildinfo
+next-env.d.ts
+frontend/next-env.d.ts
+
+# ─── Build artifacts ─────────────────────────────────────────────────────────
+frontend/.next/
+frontend/out/
+
+# ─── OS / Editor ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+*.iml
+
+# ─── Docker volumes / data ────────────────────────────────────────────────────
+postgres_data/
+neo4j_data/
+neo4j_logs/
+minio_data/

@@ -1,0 +1,27 @@
+sender,receiver,timestamp,amount,currency,transaction_id,transaction_type
+rahulsharma@ybl,nehaverma@okaxis,2026-08-01 10:15:33,25000,INR,UPI20260801101533ABC,UPI
+rahulsharma@ybl,skylinetraders@icici,2026-08-01 11:30:22,150000,INR,UPI20260801113022DEF,UPI
+nehaverma@okaxis,rajeshgupta@okhdfc,2026-08-01 14:45:10,75000,INR,UPI20260801144510GHI,UPI
+skylinetraders@icici,dubaiaccount@hbl,2026-08-02 09:20:18,500000,INR,UPI20260802092018JKL,RTGS
+rahulsharma@ybl,amitkapoor@paytm,2026-08-02 11:05:44,35000,INR,UPI20260802110544MNO,UPI
+amitkapoor@paytm,rahulsharma@ybl,2026-08-02 13:40:30,12000,INR,UPI20260802134030PQR,UPI
+rajeshgupta@okhdfc,skylinetraders@icici,2026-08-02 16:15:55,200000,INR,UPI20260802161555STU,NEFT
+rahulsharma@ybl,skylinetraders@icici,2026-08-03 08:30:22,180000,INR,UPI20260803083022VWX,UPI
+nehaverma@okaxis,amitkapoor@paytm,2026-08-03 10:45:18,45000,INR,UPI20260803104518YZA,UPI
+skylinetraders@icici,offshoreventures@bcd,2026-08-03 13:00:40,750000,INR,UPI20260803130040BCD,RTGS
+rahulsharma@ybl,nehaverma@okaxis,2026-08-03 15:20:33,30000,INR,UPI20260803152033EFG,UPI
+amitkapoor@paytm,skylinetraders@icici,2026-08-03 17:35:12,95000,INR,UPI20260803173512HIJ,UPI
+rajeshgupta@okhdfc,rahulsharma@ybl,2026-08-04 09:10:28,60000,INR,UPI20260804091028KLM,UPI
+skylinetraders@icici,rahulsharma@ybl,2026-08-04 11:25:44,120000,INR,UPI20260804112544NOP,NEFT
+rahulsharma@ybl,rajeshgupta@okhdfc,2026-08-04 13:50:15,85000,INR,UPI20260804135015QRS,UPI
+nehaverma@okaxis,skylinetraders@icici,2026-08-04 16:05:30,275000,INR,UPI20260804160530TUV,RTGS
+amitkapoor@paytm,nehaverma@okaxis,2026-08-04 18:20:22,20000,INR,UPI20260804182022WXY,UPI
+rahulsharma@ybl,skylinetraders@icici,2026-08-05 08:45:18,320000,INR,UPI20260805084518ZAB,RTGS
+skylinetraders@icici,dubaiaccount@hbl,2026-08-05 10:30:40,1000000,INR,UPI20260805103040CDE,SWIFT
+rajeshgupta@okhdfc,amitkapoor@paytm,2026-08-05 12:15:55,55000,INR,UPI20260805121555FGH,UPI
+rahulsharma@ybl,nehaverma@okaxis,2026-08-05 14:40:22,40000,INR,UPI20260805144022IJK,UPI
+nehaverma@okaxis,offshoreventures@bcd,2026-08-05 16:55:10,450000,INR,UPI20260805165510LMN,RTGS
+amitkapoor@paytm,rahulsharma@ybl,2026-08-06 09:05:33,18000,INR,UPI20260806090533OPQ,UPI
+rajeshgupta@okhdfc,skylinetraders@icici,2026-08-06 11:20:45,165000,INR,UPI20260806112045RST,NEFT
+rahulsharma@ybl,amitkapoor@paytm,2026-08-06 14:35:18,28000,INR,UPI20260806143518UVW,UPI
+skylinetraders@icici,rajeshgupta@okhdfc,2026-08-06 16:50:30,90000,INR,UPI20260806165030XYZ,UPI
