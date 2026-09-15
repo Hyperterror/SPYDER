@@ -1,0 +1,11 @@
+case_id,case_type,reported_date,incident_date,origin_location,destination_location,status,agency,priority
+CASE_001,Human Trafficking (Interstate Labor/Commercial Sex Exploitation),2025-01-27 12:30:00,2025-01-19 09:30:00,Murshidabad,Jaipur,Under Investigation,Anti-Human Trafficking Unit (AHTU),Critical
+CASE_002,Human Trafficking (Sham Placement Agency & Domestic Involuntary Servitude),2025-02-17 11:30:00,2025-02-12 09:30:00,Ranchi,Panipat,Pending Trial,Special Task Force (STF),Urgent
+CASE_003,Human Trafficking (Interstate Labor/Commercial Sex Exploitation),2025-03-24 14:30:00,2025-03-11 09:30:00,Murshidabad,Jaipur,Reopened,Metro Central Police Division,Critical
+CASE_004,Isolated Abduction & Local Exploitation,2025-04-23 11:30:00,2025-04-14 09:30:00,Agra,Nagpur,Pending Trial,Metro Central Police Division,High
+CASE_005,Human Trafficking (Sham Placement Agency & Domestic Involuntary Servitude),2025-05-26 13:30:00,2025-05-12 09:30:00,Ranchi,Panipat,Reopened,Metro Central Police Division,High
+CASE_006,Isolated Abduction & Local Exploitation,2025-06-13 14:30:00,2025-06-09 09:30:00,Agra,Nagpur,Pending Trial,Anti-Human Trafficking Unit (AHTU),Urgent
+CASE_007,Human Trafficking (Interstate Labor/Commercial Sex Exploitation),2025-07-07 13:30:00,2025-06-29 09:30:00,Murshidabad,Jaipur,Under Investigation,Special Task Force (STF),Critical
+CASE_008,Human Trafficking (Sham Placement Agency & Domestic Involuntary Servitude),2025-08-17 11:30:00,2025-08-03 09:30:00,Ranchi,Panipat,Pending Trial,State Crime Investigation Department (CID),Urgent
+CASE_009,Human Trafficking (Interstate Labor/Commercial Sex Exploitation),2025-09-02 15:30:00,2025-08-30 09:30:00,Murshidabad,Jaipur,Chargesheet Filed,State Crime Investigation Department (CID),Critical
+CASE_010,Isolated Abduction & Local Exploitation,2025-10-07 11:30:00,2025-09-24 09:30:00,Agra,Nagpur,Pending Trial,Metro Central Police Division,Critical

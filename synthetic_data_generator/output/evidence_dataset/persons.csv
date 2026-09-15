@@ -1,0 +1,101 @@
+person_id,name,alias,age_group,role,phone_id,device_id,address,occupation,case_id
+CASE_001_PER_01,Aaarav Gupta,Vicky,18-25,Person of Interest,PH_001,DEV_001,"358, Civil Lines, Murshidabad",Agency Proprietor,CASE_001
+CASE_001_PER_02,Kaabir Sharma,Sethji,26-35,Accused (Named in FIR),PH_003,DEV_003,"320, Station Road, Jaipur",NGO Volunteer,CASE_001
+CASE_001_PER_03,S. Verma,Ustad,36-50,Person of Interest,PH_007,DEV_007,"445, Railway Colony, Kolkata",Placement Agent,CASE_001
+CASE_001_PER_04,Gopal,,36-50,Suspect,PH_008,DEV_008,"52, Civil Lines, Delhi NCR",Mobile Repair Shop Owner,CASE_001
+CASE_001_PER_05,Raamesh Chand,Ramu,18-25,Person of Interest,PH_010,DEV_010,"355, Industrial Area Phase 1, Siliguri",Small Business Owner,CASE_001
+CASE_001_PER_06,Manoj,,18-25,Suspect,PH_012,DEV_012,"124, Railway Colony, Jaipur",Tea Stall Owner,CASE_001
+CASE_001_PER_07,A. Thakur,Vicky,18-25,Suspect,PH_017,DEV_017,"264, Gandhi Nagar, Jaipur",Labor Contractor,CASE_001
+CASE_001_PER_08,KamalPoddar,Sethji,26-35,Suspect,PH_031,DEV_031,"48, Station Road, Murshidabad",Tour Operator,CASE_001
+CASE_001_PER_09,Paankaj Kumar,Captain,26-35,Contact Under Scrutiny,PH_033,DEV_033,"121, Civil Lines, Delhi NCR",Driver,CASE_001
+CASE_001_PER_10,U. Saha,Doctor,50+,Acquaintance,PH_034,DEV_034,"193, Near Bus Terminus, Delhi NCR",Factory Supervisor,CASE_001
+CASE_002_PER_01,Vikramaditya,Vicky,50+,Person of Interest,PH_018,DEV_018,"207, New Basti, Chandigarh",Agency Proprietor,CASE_002
+CASE_002_PER_02,Gopal,Doctor,36-50,Accused (Named in FIR),PH_020,DEV_020,"396, Industrial Area Phase 1, Panipat",Labor Contractor,CASE_002
+CASE_002_PER_03,A. Khatun,Tiger,18-25,Accused (Named in FIR),PH_024,DEV_024,"288, Civil Lines, Patna",Cloth Merchant,CASE_002
+CASE_002_PER_04,UshaKumar,,26-35,Suspect,PH_028,DEV_028,"404, Subhash Chowk, Panipat",Driver,CASE_002
+CASE_002_PER_05,Deepak Gupta,Netaji,26-35,Accused (Named in FIR),PH_029,DEV_029,"120, Civil Lines, Chandigarh",Auto Driver,CASE_002
+CASE_002_PER_06,TarunSoren,Mama,18-25,Person of Interest,PH_047,DEV_047,"16, Transport Nagar, Ranchi",Tour Operator,CASE_002
+CASE_002_PER_07,Ashok Gupta,Tiger,36-50,Suspect,PH_049,DEV_049,"137, Railway Colony, Ranchi",Small Business Owner,CASE_002
+CASE_002_PER_08,SunilK.,Vermaji,36-50,Witness / Associate,PH_050,DEV_050,"16, Civil Lines, Panipat",Bus Ticket Clerk,CASE_002
+CASE_003_PER_01,Aarav,Vicky,18-25,Suspect,PH_001,DEV_001,"358, Civil Lines, Murshidabad",Agency Proprietor,CASE_003
+CASE_003_PER_02,Maamta Sharma,,36-50,Suspect,PH_005,DEV_005,"369, Near Bus Terminus, Siliguri",Security Guard,CASE_003
+CASE_003_PER_03,S. Verma,,36-50,Suspect,PH_007,DEV_007,"445, Railway Colony, Kolkata",Placement Agent,CASE_003
+CASE_003_PER_04,SubhashKumar,,18-25,Suspect,PH_009,DEV_009,"52, Bazaar Road, Kolkata",Unemployed,CASE_003
+CASE_003_PER_05,Raamesh Chand,Ramu,18-25,Accused (Named in FIR),PH_010,DEV_010,"355, Industrial Area Phase 1, Siliguri",Small Business Owner,CASE_003
+CASE_003_PER_06,PankajPrasad,,26-35,Accused (Named in FIR),PH_014,DEV_014,"379, Railway Colony, Jaipur",Driver,CASE_003
+CASE_003_PER_07,Harish,Vicky,36-50,Person of Interest,PH_016,DEV_016,"393, Civil Lines, Siliguri",NGO Volunteer,CASE_003
+CASE_003_PER_08,Kabir Murmu,Pradhan,36-50,Accused (Named in FIR),PH_035,DEV_035,"43, Near Bus Terminus, Murshidabad",Labor Contractor,CASE_003
+CASE_003_PER_09,GeetaPoddar,Guru,26-35,Suspect,PH_037,DEV_037,"154, Transport Nagar, Siliguri",Tour Operator,CASE_003
+CASE_003_PER_10,Gopal Yadav,Master,26-35,Acquaintance,PH_038,DEV_038,"59, Bazaar Road, Murshidabad",NGO Volunteer,CASE_003
+CASE_003_PER_11,K. Tiwari,Shooter,36-50,Suspect,PH_083,DEV_083,"256, Station Road, Delhi NCR",Auto Driver,CASE_003
+CASE_003_PER_12,Kaavita Mahato,,36-50,Acquaintance,PH_089,DEV_UNVERIFIED,"370, Industrial Area Phase 1, Delhi NCR",Small Business Owner,CASE_003
+CASE_003_PER_13,Anil,Doctor,36-50,Acquaintance,PH_091,DEV_UNVERIFIED,"412, Station Road, Jaipur",NGO Volunteer,CASE_003
+CASE_004_PER_01,S. Saha,,18-25,Suspect,PH_059,DEV_059,"148, Subhash Chowk, Kanpur",Agency Proprietor,CASE_004
+CASE_004_PER_02,Kabir,Kaka,26-35,Person of Interest,PH_061,DEV_061,"168, Bazaar Road, Gwalior",Travel Agent,CASE_004
+CASE_004_PER_03,Ameet Patel,,50+,Accused (Named in FIR),PH_063,DEV_063,"191, Civil Lines, Gwalior",Cloth Merchant,CASE_004
+CASE_004_PER_04,Sunil,Captain,50+,Contact Under Scrutiny,PH_064,DEV_064,"67, New Basti, Agra",Mobile Repair Shop Owner,CASE_004
+CASE_004_PER_05,Ramesh,Ramu Kaka,26-35,Witness / Associate,PH_065,DEV_065,"209, New Basti, Agra",Tea Stall Owner,CASE_004
+CASE_004_PER_06,S. Sharma,Master,18-25,Witness / Associate,PH_066,DEV_066,"198, Near Bus Terminus, Kanpur",Cloth Merchant,CASE_004
+CASE_004_PER_07,Mamta,,50+,Suspect,PH_093,DEV_UNVERIFIED,"408, Transport Nagar, Nagpur",NGO Volunteer,CASE_004
+CASE_004_PER_08,Shobha,,50+,Informant / Caller,PH_096,DEV_UNVERIFIED,"342, Transport Nagar, Bhopal",Travel Agent,CASE_004
+CASE_005_PER_01,Vikraamaditya Rao,Vicky,50+,Person of Interest,PH_018,DEV_018,"207, New Basti, Chandigarh",Agency Proprietor,CASE_005
+CASE_005_PER_02,GopalSharma,Doctor,36-50,Accused (Named in FIR),PH_020,DEV_020,"396, Industrial Area Phase 1, Panipat",Labor Contractor,CASE_005
+CASE_005_PER_03,Deepaak Biswas,Agent,18-25,Accused (Named in FIR),PH_022,DEV_022,"268, Subhash Chowk, Gurugram",Auto Driver,CASE_005
+CASE_005_PER_04,Suneel Thakur,,26-35,Person of Interest,PH_026,DEV_026,"134, Station Road, Gurugram",Tour Operator,CASE_005
+CASE_005_PER_05,Usha,,26-35,Suspect,PH_028,DEV_028,"404, Subhash Chowk, Panipat",Driver,CASE_005
+CASE_005_PER_06,Taarun Soren,Sonu,26-35,Person of Interest,PH_030,DEV_030,"73, Bazaar Road, Chandigarh",Tour Operator,CASE_005
+CASE_005_PER_07,R. Gupta,,36-50,Accused (Named in FIR),PH_051,DEV_051,"91, Industrial Area Phase 1, Panipat",Hotel Manager,CASE_005
+CASE_005_PER_08,V. Murmu,Captain,18-25,Contact Under Scrutiny,PH_053,DEV_053,"262, Industrial Area Phase 1, Panipat",Tour Operator,CASE_005
+CASE_005_PER_09,Saanjay Verma,Vicky,50+,Witness / Associate,PH_054,DEV_054,"94, Transport Nagar, Gurugram",Travel Agent,CASE_005
+CASE_005_PER_10,G. Khatun,,50+,Accused (Named in FIR),PH_084,DEV_084,"124, Industrial Area Phase 1, Chandigarh",Driver,CASE_005
+CASE_006_PER_01,Vikram Rathore,Vicky,50+,Accused (Named in FIR),PH_067,DEV_067,"271, Industrial Area Phase 1, Gwalior",Auto Driver,CASE_006
+CASE_006_PER_02,Subhaash Mishra,Raju,26-35,Accused (Named in FIR),PH_069,DEV_069,"352, Near Bus Terminus, Bhopal",Auto Driver,CASE_006
+CASE_006_PER_03,AaravMishra,Guru,50+,Accused (Named in FIR),PH_071,DEV_071,"322, Railway Colony, Nagpur",Factory Supervisor,CASE_006
+CASE_006_PER_04,Vikram Choudhury,Agent,36-50,Suspect,PH_072,DEV_072,"349, Gandhi Nagar, Kanpur",Cloth Merchant,CASE_006
+CASE_006_PER_05,Babita,Raju,26-35,Witness / Associate,PH_073,DEV_073,"24, Station Road, Kanpur",Driver,CASE_006
+CASE_006_PER_06,MohitBiswas,Pradhan,50+,Informant / Caller,PH_074,DEV_074,"111, Near Bus Terminus, Nagpur",Unemployed,CASE_006
+CASE_006_PER_07,P. Sharma,,36-50,Witness / Associate,PH_092,DEV_UNVERIFIED,"66, Near Bus Terminus, Bhopal",Factory Supervisor,CASE_006
+CASE_007_PER_01,AaravGupta,Vicky,18-25,Person of Interest,PH_001,DEV_001,"358, Civil Lines, Murshidabad",Agency Proprietor,CASE_007
+CASE_007_PER_02,KabirSharma,Sethji,26-35,Person of Interest,PH_003,DEV_003,"320, Station Road, Jaipur",NGO Volunteer,CASE_007
+CASE_007_PER_03,MamtaSharma,,36-50,Person of Interest,PH_005,DEV_005,"369, Near Bus Terminus, Siliguri",Security Guard,CASE_007
+CASE_007_PER_04,SunilVerma,Ustad,36-50,Person of Interest,PH_007,DEV_007,"445, Railway Colony, Kolkata",Placement Agent,CASE_007
+CASE_007_PER_05,M. Ghosh,Captain,18-25,Person of Interest,PH_012,DEV_012,"124, Railway Colony, Jaipur",Tea Stall Owner,CASE_007
+CASE_007_PER_06,Pankaj Prasad,,26-35,Accused (Named in FIR),PH_014,DEV_014,"379, Railway Colony, Jaipur",Driver,CASE_007
+CASE_007_PER_07,A. Thakur,Vicky,18-25,Suspect,PH_017,DEV_017,"264, Gandhi Nagar, Jaipur",Labor Contractor,CASE_007
+CASE_007_PER_08,V. Prasad,,50+,Accused (Named in FIR),PH_039,DEV_039,"206, Station Road, Siliguri",Security Guard,CASE_007
+CASE_007_PER_09,DineshMishra,Agent,26-35,Suspect,PH_041,DEV_041,"350, Transport Nagar, Jaipur",Hotel Manager,CASE_007
+CASE_007_PER_10,K. Mahato,,18-25,Witness / Associate,PH_042,DEV_042,"394, Railway Colony, Murshidabad",Placement Agent,CASE_007
+CASE_007_PER_11,Maanoj Mishra,Tiger,36-50,Informant / Caller,PH_097,DEV_UNVERIFIED,"295, Civil Lines, Delhi NCR",NGO Volunteer,CASE_007
+CASE_008_PER_01,Vikramaditya,Vicky,50+,Suspect,PH_018,DEV_018,"207, New Basti, Chandigarh",Agency Proprietor,CASE_008
+CASE_008_PER_02,Deepak Biswas,Agent,18-25,Accused (Named in FIR),PH_022,DEV_022,"268, Subhash Chowk, Gurugram",Auto Driver,CASE_008
+CASE_008_PER_03,AshokKhatun,Tiger,18-25,Person of Interest,PH_024,DEV_024,"288, Civil Lines, Patna",Cloth Merchant,CASE_008
+CASE_008_PER_04,Sunil,,26-35,Accused (Named in FIR),PH_026,DEV_026,"134, Station Road, Gurugram",Tour Operator,CASE_008
+CASE_008_PER_05,Deepaak Gupta,Netaji,26-35,Suspect,PH_029,DEV_029,"120, Civil Lines, Chandigarh",Auto Driver,CASE_008
+CASE_008_PER_06,Taarun Soren,Sonu,26-35,Contact Under Scrutiny,PH_030,DEV_030,"73, Bazaar Road, Chandigarh",Tour Operator,CASE_008
+CASE_008_PER_07,Rekhaa Poddar,Tiger,50+,Person of Interest,PH_055,DEV_055,"294, Subhash Chowk, Panipat",Property Broker,CASE_008
+CASE_008_PER_08,Neelam,,18-25,Contact Under Scrutiny,PH_057,DEV_057,"361, Bazaar Road, Patna",Mobile Repair Shop Owner,CASE_008
+CASE_008_PER_09,Santosh,,50+,Informant / Caller,PH_058,DEV_058,"95, Subhash Chowk, Patna",Travel Agent,CASE_008
+CASE_009_PER_01,Aarav,Vicky,18-25,Accused (Named in FIR),PH_001,DEV_001,"358, Civil Lines, Murshidabad",Agency Proprietor,CASE_009
+CASE_009_PER_02,Kabir,,26-35,Suspect,PH_003,DEV_003,"320, Station Road, Jaipur",NGO Volunteer,CASE_009
+CASE_009_PER_03,G. Yadav,,36-50,Accused (Named in FIR),PH_008,DEV_008,"52, Civil Lines, Delhi NCR",Mobile Repair Shop Owner,CASE_009
+CASE_009_PER_04,Subhash,Sethji,18-25,Person of Interest,PH_009,DEV_009,"52, Bazaar Road, Kolkata",Unemployed,CASE_009
+CASE_009_PER_05,Raamesh Chand,Ramu,18-25,Suspect,PH_010,DEV_010,"355, Industrial Area Phase 1, Siliguri",Small Business Owner,CASE_009
+CASE_009_PER_06,H. Biswas,Vicky,36-50,Suspect,PH_016,DEV_016,"393, Civil Lines, Siliguri",NGO Volunteer,CASE_009
+CASE_009_PER_07,AshokChoudhury,Sonu,18-25,Person of Interest,PH_043,DEV_043,"447, Subhash Chowk, Murshidabad",Tour Operator,CASE_009
+CASE_009_PER_08,Manoj,Shooter,18-25,Suspect,PH_045,DEV_045,"308, New Basti, Siliguri",Tour Operator,CASE_009
+CASE_009_PER_09,Kamal,Captain,26-35,Witness / Associate,PH_046,DEV_046,"354, Railway Colony, Siliguri",Security Guard,CASE_009
+CASE_009_PER_10,A. Ghosh,,18-25,Contact Under Scrutiny,PH_085,DEV_085,"330, Civil Lines, Siliguri",Unemployed,CASE_009
+CASE_009_PER_11,Ameet Gupta,,50+,Suspect,PH_087,DEV_UNVERIFIED,"141, Gandhi Nagar, Delhi NCR",Travel Agent,CASE_009
+CASE_009_PER_12,Geeta,,36-50,Suspect,PH_095,DEV_UNVERIFIED,"155, New Basti, Kolkata",Travel Agent,CASE_009
+CASE_010_PER_01,Poojaa Yadav,,50+,Suspect,PH_075,DEV_075,"102, Civil Lines, Kanpur",Agency Proprietor,CASE_010
+CASE_010_PER_02,Babita Yadav,Kaka,36-50,Person of Interest,PH_077,DEV_077,"298, New Basti, Nagpur",Factory Supervisor,CASE_010
+CASE_010_PER_03,Mahesh,Master,50+,Accused (Named in FIR),PH_079,DEV_079,"93, Transport Nagar, Bhopal",Security Guard,CASE_010
+CASE_010_PER_04,HarishGupta,,36-50,Suspect,PH_080,DEV_080,"260, Bazaar Road, Nagpur",Factory Supervisor,CASE_010
+CASE_010_PER_05,Sumaan Das,Mama,26-35,Informant / Caller,PH_081,DEV_081,"53, Subhash Chowk, Nagpur",Tea Stall Owner,CASE_010
+CASE_010_PER_06,R. Tiwari,Guru,50+,Witness / Associate,PH_082,DEV_082,"181, Civil Lines, Bhopal",NGO Volunteer,CASE_010
+CASE_010_PER_07,Shobha,,50+,Suspect,PH_086,DEV_UNVERIFIED,"37, Industrial Area Phase 1, Kanpur",Cloth Merchant,CASE_010
+CASE_010_PER_08,R. Das,Pradhan,26-35,Acquaintance,PH_088,DEV_UNVERIFIED,"398, Station Road, Agra",Hotel Manager,CASE_010
+CASE_010_PER_09,D. Mishra,Bhaiya,50+,Suspect,PH_090,DEV_UNVERIFIED,"306, Near Bus Terminus, Gwalior",Hotel Manager,CASE_010
+CASE_010_PER_10,ManojKumar,,50+,Suspect,PH_094,DEV_UNVERIFIED,"396, Transport Nagar, Kanpur",Cloth Merchant,CASE_010
+CASE_010_PER_11,Dinesh,Sethji,36-50,Contact Under Scrutiny,PH_098,DEV_UNVERIFIED,"381, Bazaar Road, Agra",Labor Contractor,CASE_010
+CASE_010_PER_12,Geeta,Shooter,18-25,Person of Interest,PH_099,DEV_UNVERIFIED,"317, Industrial Area Phase 1, Nagpur",Hotel Manager,CASE_010

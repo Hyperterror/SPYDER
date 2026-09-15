@@ -1,0 +1,1058 @@
+node_id,node_type,label,case_count,case_ids,raw_degree,degree_centrality,betweenness_centrality,pagerank,analytical_tags,priority_status,is_provisional_resolved
+CASE_007,CASE,CASE_007: Human Trafficking (Interstate Labor/Commercial Sex Exploitation),1,CASE_007,45,0.042614,0.053406,0.013335,high-connectivity entity; high-betweenness conduit,ROUTINE,False
+CASE_001,CASE,CASE_001: Human Trafficking (Interstate Labor/Commercial Sex Exploitation),1,CASE_001,38,0.035985,0.044131,0.010979,high-connectivity entity; high-betweenness conduit,ROUTINE,False
+CASE_010,CASE,CASE_010: Isolated Abduction & Local Exploitation,1,CASE_010,37,0.035038,0.039608,0.010169,high-connectivity entity; high-betweenness conduit,ROUTINE,False
+CASE_003,CASE,CASE_003: Human Trafficking (Interstate Labor/Commercial Sex Exploitation),1,CASE_003,36,0.034091,0.036522,0.009555,high-connectivity entity; high-betweenness conduit,ROUTINE,False
+CASE_005,CASE,CASE_005: Human Trafficking (Sham Placement Agency & Domestic Involuntary Servitude),1,CASE_005,33,0.03125,0.036346,0.009181,high-connectivity entity; high-betweenness conduit,ROUTINE,False
+CASE_002,CASE,CASE_002: Human Trafficking (Sham Placement Agency & Domestic Involuntary Servitude),1,CASE_002,30,0.028409,0.034775,0.008889,high-connectivity entity; high-betweenness conduit,ROUTINE,False
+CASE_008,CASE,CASE_008: Human Trafficking (Sham Placement Agency & Domestic Involuntary Servitude),1,CASE_008,30,0.028409,0.033278,0.008682,high-connectivity entity; high-betweenness conduit,ROUTINE,False
+CASE_009,CASE,CASE_009: Human Trafficking (Interstate Labor/Commercial Sex Exploitation),1,CASE_009,29,0.027462,0.027098,0.007272,high-connectivity entity; high-betweenness conduit,ROUTINE,False
+CASE_004,CASE,CASE_004: Isolated Abduction & Local Exploitation,1,CASE_004,26,0.024621,0.028619,0.00722,high-connectivity entity; high-betweenness conduit,ROUTINE,False
+LOC_Delhi_NCR,LOCATION,Location Delhi NCR,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,46,0.043561,0.017751,0.006019,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+LOC_Gwalior,LOCATION,Location Gwalior,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,44,0.041667,0.019314,0.006,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_006,CASE,CASE_006: Isolated Abduction & Local Exploitation,1,CASE_006,21,0.019886,0.022765,0.005731,high-connectivity entity; high-betweenness conduit,ROUTINE,False
+LOC_Kanpur,LOCATION,Location Kanpur,9,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_009; CASE_010,44,0.041667,0.013471,0.00573,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+LOC_Panipat,LOCATION,Location Panipat,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,42,0.039773,0.011689,0.005439,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+LOC_New_Delhi,LOCATION,Location New Delhi,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,40,0.037879,0.017325,0.005425,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+LOC_Gurugram,LOCATION,Location Gurugram,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,39,0.036932,0.011293,0.005195,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+LOC_Kolkata,LOCATION,Location Kolkata,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,39,0.036932,0.015415,0.005122,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+LOC_Patna,LOCATION,Location Patna,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,36,0.034091,0.00819,0.004623,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+LOC_Anand_Vihar_(Delhi),LOCATION,Location Anand Vihar (Delhi),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,34,0.032197,0.006086,0.004364,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919417275149,PHONE,Phone +919417275149,3,CASE_002; CASE_005; CASE_008,22,0.020833,0.000331,0.002962,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919446540265,PHONE,Phone +919446540265,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,26,0.024621,0.021653,0.002915,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_004_PER_01,PERSON,S. Saha (CASE_004_PER_01),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,22,0.020833,0.014847,0.002833,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_006_PER_04,PERSON,Vikram Choudhury (CASE_006_PER_04),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,19,0.017992,0.010925,0.002701,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+VEH_030,VEHICLE,Vehicle WB-92-DL-2438 (VEH_030),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,20,0.018939,0.005108,0.002688,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_005_PER_01,PERSON,Vikraamaditya Rao (CASE_005_PER_01),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,21,0.019886,0.016053,0.00266,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_006_PER_01,PERSON,Vikram Rathore (CASE_006_PER_01),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,18,0.017045,0.010816,0.002584,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_006_PER_05,PERSON,Babita (CASE_006_PER_05),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,17,0.016098,0.011601,0.002562,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_001_PER_06,PERSON,Manoj (CASE_001_PER_06),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,18,0.017045,0.003934,0.002518,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_005_PER_02,PERSON,GopalSharma (CASE_005_PER_02),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,16,0.015152,0.020375,0.002491,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
++918842323627,PHONE,Phone +918842323627,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,15,0.014205,0.006365,0.002458,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_001_PER_04,PERSON,Gopal (CASE_001_PER_04),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,18,0.017045,0.008514,0.002432,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919449172995,PHONE,Phone +919449172995,3,CASE_002; CASE_005; CASE_008,17,0.016098,0.001732,0.002399,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918858557203,PHONE,Phone +918858557203,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,17,0.016098,0.021884,0.002392,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_005_PER_08,PERSON,V. Murmu (CASE_005_PER_08),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,16,0.015152,0.007936,0.002352,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_004_PER_07,PERSON,Mamta (CASE_004_PER_07),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,18,0.017045,0.003875,0.002331,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_007_PER_06,PERSON,Pankaj Prasad (CASE_007_PER_06),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,16,0.015152,0.008869,0.002313,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919822257687,PHONE,Phone +919822257687,4,CASE_001; CASE_003; CASE_007; CASE_009,18,0.017045,0.00262,0.002255,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_004_PER_04,PERSON,Sunil (CASE_004_PER_04),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,16,0.015152,0.011591,0.00225,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_007_PER_01,PERSON,AaravGupta (CASE_007_PER_01),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,17,0.016098,0.037215,0.002249,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_007_PER_07,PERSON,A. Thakur (CASE_007_PER_07),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,15,0.014205,0.015354,0.002227,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+VEH_017,VEHICLE,Vehicle BR-84-CA-5476 (VEH_017),9,CASE_001; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,19,0.017992,0.03123,0.002214,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_004_PER_05,PERSON,Ramesh (CASE_004_PER_05),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,16,0.015152,0.006339,0.002209,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919934359060,PHONE,Phone +919934359060,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,18,0.017045,0.009356,0.002207,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919896934122,PHONE,Phone +919896934122,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,16,0.015152,0.006563,0.002206,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_007_PER_09,PERSON,DineshMishra (CASE_007_PER_09),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,16,0.015152,0.014503,0.002197,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_010_PER_09,PERSON,D. Mishra (CASE_010_PER_09),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,17,0.016098,0.009174,0.002186,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_002_PER_03,PERSON,A. Khatun (CASE_002_PER_03),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,14,0.013258,0.010638,0.002142,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+ACC_BAN_1645_005,BANK_ACCOUNT,Account ACC_BAN_1645_005,4,CASE_001; CASE_003; CASE_007; CASE_009,21,0.019886,6.4e-05,0.002142,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_001_PER_02,PERSON,Kaabir Sharma (CASE_001_PER_02),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,14,0.013258,0.006303,0.002126,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_004_PER_06,PERSON,S. Sharma (CASE_004_PER_06),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,14,0.013258,0.007713,0.002124,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_040,VEHICLE,Vehicle HR-83-AX-3526 (VEH_040),9,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009,16,0.015152,0.005519,0.002118,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_BAN_1976_003,BANK_ACCOUNT,Account ACC_BAN_1976_003,4,CASE_001; CASE_003; CASE_007; CASE_009,20,0.018939,0.000211,0.002084,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918834166826,PHONE,Phone +918834166826,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,14,0.013258,0.008065,0.002066,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_002_PER_01,PERSON,Vikramaditya (CASE_002_PER_01),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,15,0.014205,0.016967,0.002062,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
++919999943797,PHONE,Phone +919999943797,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,16,0.015152,0.017387,0.002055,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
++919420796722,PHONE,Phone +919420796722,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,20,0.018939,0.014569,0.002055,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_002_PER_02,PERSON,Gopal (CASE_002_PER_02),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,14,0.013258,0.004337,0.002053,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919789991301,PHONE,Phone +919789991301,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,19,0.017992,0.039893,0.002038,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_003_PER_08,PERSON,Kabir Murmu (CASE_003_PER_08),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,13,0.012311,0.006512,0.002016,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_005_PER_06,PERSON,Taarun Soren (CASE_005_PER_06),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,15,0.014205,0.008997,0.002015,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_010_PER_06,PERSON,R. Tiwari (CASE_010_PER_06),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,13,0.012311,0.006156,0.002014,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_027,VEHICLE,Vehicle UP-41-CA-5089 (VEH_027),8,CASE_001; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,15,0.014205,0.003219,0.002005,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919983715012,PHONE,Phone +919983715012,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,16,0.015152,0.028807,0.001996,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_008_PER_03,PERSON,AshokKhatun (CASE_008_PER_03),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,13,0.012311,0.004458,0.001989,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_008_PER_07,PERSON,Rekhaa Poddar (CASE_008_PER_07),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,13,0.012311,0.006266,0.001968,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919453261270,PHONE,Phone +919453261270,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,16,0.015152,0.001463,0.001955,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_010,VEHICLE,Vehicle BR-65-TR-1333 (VEH_010),8,CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,14,0.013258,0.001149,0.001955,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_006_PER_07,PERSON,P. Sharma (CASE_006_PER_07),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,14,0.013258,0.003362,0.00193,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_001_PER_03,PERSON,S. Verma (CASE_001_PER_03),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,13,0.012311,0.00511,0.001929,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_009_PER_01,PERSON,Aarav (CASE_009_PER_01),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,15,0.014205,0.007085,0.001923,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_006_PER_06,PERSON,MohitBiswas (CASE_006_PER_06),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,12,0.011364,0.010145,0.001918,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
++919964807553,PHONE,Phone +919964807553,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,15,0.014205,0.003227,0.001909,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_010_PER_10,PERSON,ManojKumar (CASE_010_PER_10),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,14,0.013258,0.001646,0.001905,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_003_PER_02,PERSON,Maamta Sharma (CASE_003_PER_02),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,13,0.012311,0.003134,0.001894,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919469533928,PHONE,Phone +919469533928,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,15,0.014205,0.018459,0.00189,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
++919724754064,PHONE,Phone +919724754064,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,15,0.014205,0.002143,0.001877,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919422246348,PHONE,Phone +919422246348,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,15,0.014205,0.006724,0.001863,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_008_PER_06,PERSON,Taarun Soren (CASE_008_PER_06),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,13,0.012311,0.017569,0.001862,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+VEH_003,VEHICLE,Vehicle BR-61-AX-8685 (VEH_003),8,CASE_001; CASE_002; CASE_003; CASE_004; CASE_006; CASE_007; CASE_008; CASE_009,13,0.012311,0.001305,0.00186,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_009_PER_09,PERSON,Kamal (CASE_009_PER_09),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,12,0.011364,0.007304,0.001858,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_028,VEHICLE,Vehicle HR-50-TR-2929 (VEH_028),7,CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_009; CASE_010,14,0.013258,0.008889,0.001857,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_003_PER_01,PERSON,Aarav (CASE_003_PER_01),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,14,0.013258,0.016003,0.001849,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+ACC_CAN_4246_004,BANK_ACCOUNT,Account ACC_CAN_4246_004,9,CASE_001; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,20,0.018939,0.000718,0.001849,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919761632653,PHONE,Phone +919761632653,3,CASE_004; CASE_006; CASE_010,12,0.011364,7.6e-05,0.001848,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_001_PER_07,PERSON,A. Thakur (CASE_001_PER_07),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,12,0.011364,0.002437,0.001835,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_009_PER_10,PERSON,A. Ghosh (CASE_009_PER_10),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,14,0.013258,0.00917,0.001834,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_002_PER_04,PERSON,UshaKumar (CASE_002_PER_04),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,12,0.011364,0.003068,0.001822,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_010_PER_01,PERSON,Poojaa Yadav (CASE_010_PER_01),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,15,0.014205,0.021471,0.001822,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_002_PER_07,PERSON,Ashok Gupta (CASE_002_PER_07),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,12,0.011364,0.01501,0.001807,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_010_PER_02,PERSON,Babita Yadav (CASE_010_PER_02),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,10,0.00947,0.007933,0.001807,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_034,VEHICLE,Vehicle DL-40-DL-8842 (VEH_034),8,CASE_001; CASE_002; CASE_004; CASE_005; CASE_007; CASE_008; CASE_009; CASE_010,16,0.015152,0.032281,0.001803,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_005_PER_07,PERSON,R. Gupta (CASE_005_PER_07),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,12,0.011364,0.004611,0.001802,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918864759583,PHONE,Phone +918864759583,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,13,0.012311,0.011054,0.001794,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_009_PER_07,PERSON,AshokChoudhury (CASE_009_PER_07),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,11,0.010417,0.010111,0.001792,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
++919416927215,PHONE,Phone +919416927215,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,14,0.013258,0.003896,0.001781,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_024,VEHICLE,Vehicle BR-96-AX-1510 (VEH_024),9,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009,13,0.012311,0.015113,0.001778,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_002_PER_08,PERSON,SunilK. (CASE_002_PER_08),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,11,0.010417,0.006532,0.001775,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_008_PER_02,PERSON,Deepak Biswas (CASE_008_PER_02),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,11,0.010417,0.011033,0.001773,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
++919987342561,PHONE,Phone +919987342561,4,CASE_001; CASE_003; CASE_007; CASE_009,12,0.011364,0.003263,0.001771,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919496347724,PHONE,Phone +919496347724,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,15,0.014205,0.005231,0.001752,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_HDF_5375_013,BANK_ACCOUNT,Account ACC_HDF_5375_013,4,CASE_001; CASE_003; CASE_007; CASE_009,17,0.016098,7.2e-05,0.001733,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919968802946,PHONE,Phone +919968802946,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,12,0.011364,0.003186,0.001714,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_009_PER_04,PERSON,Subhash (CASE_009_PER_04),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,11,0.010417,0.009226,0.001711,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_001_PER_09,PERSON,Paankaj Kumar (CASE_001_PER_09),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,11,0.010417,0.018042,0.001708,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+ACC_SBI_7657_007,BANK_ACCOUNT,Account ACC_SBI_7657_007,4,CASE_001; CASE_003; CASE_007; CASE_009,17,0.016098,1e-05,0.0017,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_003_PER_07,PERSON,Harish (CASE_003_PER_07),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,10,0.00947,0.00879,0.001684,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_005_PER_05,PERSON,Usha (CASE_005_PER_05),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,11,0.010417,0.004623,0.00168,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918889680504,PHONE,Phone +918889680504,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,12,0.011364,0.016751,0.001677,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_007_PER_03,PERSON,MamtaSharma (CASE_007_PER_03),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,11,0.010417,0.003891,0.001676,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919794982908,PHONE,Phone +919794982908,4,CASE_001; CASE_003; CASE_007; CASE_009,12,0.011364,0.002873,0.001666,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919432329103,PHONE,Phone +919432329103,3,CASE_002; CASE_005; CASE_008,11,0.010417,0.003787,0.001666,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919474759996,PHONE,Phone +919474759996,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,12,0.011364,0.009849,0.001663,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_AXI_4804_009,BANK_ACCOUNT,Account ACC_AXI_4804_009,9,CASE_001; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,18,0.017045,0.000707,0.001663,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_010_PER_08,PERSON,R. Das (CASE_010_PER_08),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,11,0.010417,0.003373,0.001651,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_011,VEHICLE,Vehicle UP-48-CA-1266 (VEH_011),6,CASE_001; CASE_002; CASE_005; CASE_006; CASE_009; CASE_010,11,0.010417,0.001436,0.00165,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_AXI_1027_001,BANK_ACCOUNT,Account ACC_AXI_1027_001,4,CASE_001; CASE_003; CASE_007; CASE_009,16,0.015152,0.000119,0.001648,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919433574011,PHONE,Phone +919433574011,3,CASE_002; CASE_005; CASE_008,11,0.010417,0.001711,0.001633,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919911086890,PHONE,Phone +919911086890,3,CASE_004; CASE_006; CASE_010,10,0.00947,6.4e-05,0.001633,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919422960658,PHONE,Phone +919422960658,3,CASE_004; CASE_006; CASE_010,10,0.00947,0.004636,0.00163,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919773149551,PHONE,Phone +919773149551,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,15,0.014205,0.012178,0.001628,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+VEH_001,VEHICLE,Vehicle JH-31-DL-2337 (VEH_001),7,CASE_002; CASE_003; CASE_004; CASE_005; CASE_007; CASE_009; CASE_010,11,0.010417,0.00121,0.001625,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_008_PER_04,PERSON,Sunil (CASE_008_PER_04),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,10,0.00947,0.003093,0.001618,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_009_PER_03,PERSON,G. Yadav (CASE_009_PER_03),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,11,0.010417,0.002262,0.001614,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_026,VEHICLE,Vehicle JH-48-DL-2259 (VEH_026),7,CASE_001; CASE_002; CASE_003; CASE_005; CASE_008; CASE_009; CASE_010,12,0.011364,0.003831,0.001613,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_007_PER_08,PERSON,V. Prasad (CASE_007_PER_08),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,10,0.00947,0.004159,0.001599,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_001_PER_05,PERSON,Raamesh Chand (CASE_001_PER_05),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,11,0.010417,0.004506,0.001596,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_SBI_9475_073,BANK_ACCOUNT,Account ACC_SBI_9475_073,1,CASE_010,7,0.006629,6.3e-05,0.001588,local case participant,ROUTINE,False
++919754265498,PHONE,Phone +919754265498,4,CASE_001; CASE_003; CASE_007; CASE_009,13,0.012311,6.9e-05,0.00158,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++917260393104,PHONE,Phone +917260393104,4,CASE_001; CASE_003; CASE_007; CASE_009,12,0.011364,0.0,0.00158,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_004,VEHICLE,Vehicle JH-28-AX-9991 (VEH_004),7,CASE_001; CASE_002; CASE_003; CASE_006; CASE_007; CASE_008; CASE_009,11,0.010417,0.001474,0.001578,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_037,VEHICLE,Vehicle BR-08-AB-9488 (VEH_037),6,CASE_001; CASE_002; CASE_005; CASE_007; CASE_008; CASE_009,11,0.010417,0.000713,0.00157,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_008_PER_05,PERSON,Deepaak Gupta (CASE_008_PER_05),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,10,0.00947,0.004469,0.001565,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_004_PER_08,PERSON,Shobha (CASE_004_PER_08),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,11,0.010417,0.000596,0.001564,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918589151743,PHONE,Phone +918589151743,3,CASE_004; CASE_006; CASE_010,11,0.010417,0.000631,0.00156,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919448605268,PHONE,Phone +919448605268,3,CASE_004; CASE_006; CASE_010,10,0.00947,4.4e-05,0.001554,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918888802305,PHONE,Phone +918888802305,4,CASE_001; CASE_003; CASE_007; CASE_009,11,0.010417,2.7e-05,0.001544,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_035,VEHICLE,Vehicle DL-17-CA-2215 (VEH_035),6,CASE_002; CASE_003; CASE_004; CASE_005; CASE_008; CASE_010,12,0.011364,0.007411,0.001543,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_CAN_6051_006,BANK_ACCOUNT,Account ACC_CAN_6051_006,4,CASE_001; CASE_003; CASE_007; CASE_009,16,0.015152,1.5e-05,0.001537,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_001_PER_10,PERSON,U. Saha (CASE_001_PER_10),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,9,0.008523,0.0159,0.001533,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_005_PER_09,PERSON,Saanjay Verma (CASE_005_PER_09),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,9,0.008523,0.004439,0.001531,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_003_PER_04,PERSON,SubhashKumar (CASE_003_PER_04),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,10,0.00947,0.002748,0.00153,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918514159837,PHONE,Phone +918514159837,4,CASE_001; CASE_003; CASE_007; CASE_009,13,0.012311,3.4e-05,0.00153,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_003_PER_05,PERSON,Raamesh Chand (CASE_003_PER_05),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,10,0.00947,0.007562,0.001522,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918545353058,PHONE,Phone +918545353058,3,CASE_004; CASE_006; CASE_010,9,0.008523,0.001354,0.001518,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_009_PER_08,PERSON,Manoj (CASE_009_PER_08),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,10,0.00947,0.007578,0.001512,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918830739712,PHONE,Phone +918830739712,2,CASE_004; CASE_010,9,0.008523,0.003179,0.001509,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_039,VEHICLE,Vehicle WB-82-TR-5496 (VEH_039),8,CASE_002; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,13,0.012311,0.019873,0.001509,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_008_PER_01,PERSON,Vikramaditya (CASE_008_PER_01),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,11,0.010417,0.019581,0.001498,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+VEH_008,VEHICLE,Vehicle DL-79-CA-4941 (VEH_008),7,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007,11,0.010417,0.009681,0.001498,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919828760553,PHONE,Phone +919828760553,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,10,0.00947,0.009309,0.001496,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919448683937,PHONE,Phone +919448683937,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,11,0.010417,0.006347,0.001495,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918082672055,PHONE,Phone +918082672055,3,CASE_004; CASE_006; CASE_010,10,0.00947,0.003102,0.001488,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_005_PER_04,PERSON,Suneel Thakur (CASE_005_PER_04),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,9,0.008523,0.003927,0.001485,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_009_PER_05,PERSON,Raamesh Chand (CASE_009_PER_05),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,10,0.00947,0.015732,0.001477,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_007_PER_05,PERSON,M. Ghosh (CASE_007_PER_05),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,8,0.007576,0.007002,0.001474,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++917099929175,PHONE,Phone +917099929175,3,CASE_004; CASE_006; CASE_010,9,0.008523,1.2e-05,0.001473,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++917231831387,PHONE,Phone +917231831387,4,CASE_001; CASE_003; CASE_007; CASE_009,11,0.010417,4e-06,0.00147,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919854762841,PHONE,Phone +919854762841,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,10,0.00947,0.007076,0.001467,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_005,VEHICLE,Vehicle BR-37-AX-5934 (VEH_005),6,CASE_003; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,10,0.00947,0.000324,0.001463,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919798145654,PHONE,Phone +919798145654,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,10,0.00947,0.012397,0.001462,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_010_PER_04,PERSON,HarishGupta (CASE_010_PER_04),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,9,0.008523,0.00441,0.001461,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919781291936,PHONE,Phone +919781291936,3,CASE_004; CASE_006; CASE_010,7,0.006629,0.003211,0.00146,cross-case bridge,cross-case priority review,False
+VEH_029,VEHICLE,Vehicle HR-37-DL-4279 (VEH_029),6,CASE_004; CASE_005; CASE_006; CASE_007; CASE_009; CASE_010,11,0.010417,0.007937,0.001459,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919751708177,PHONE,Phone +919751708177,3,CASE_002; CASE_005; CASE_008,10,0.00947,2.7e-05,0.001452,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++917284303190,PHONE,Phone +917284303190,3,CASE_004; CASE_006; CASE_010,9,0.008523,0.001906,0.001452,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_SBI_1654_018,BANK_ACCOUNT,Account ACC_SBI_1654_018,3,CASE_002; CASE_005; CASE_008,16,0.015152,0.000132,0.001448,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_036,VEHICLE,Vehicle WB-71-TR-3981 (VEH_036),6,CASE_001; CASE_003; CASE_004; CASE_008; CASE_009; CASE_010,11,0.010417,0.003004,0.001445,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_PAY_9466_008,BANK_ACCOUNT,Account ACC_PAY_9466_008,4,CASE_001; CASE_003; CASE_007; CASE_009,15,0.014205,1.5e-05,0.001442,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918039962391,PHONE,Phone +918039962391,3,CASE_004; CASE_006; CASE_010,9,0.008523,0.003606,0.001439,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918839711402,PHONE,Phone +918839711402,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,10,0.00947,0.00721,0.001434,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_031,VEHICLE,Vehicle HR-70-CA-5914 (VEH_031),6,CASE_001; CASE_002; CASE_003; CASE_005; CASE_006; CASE_007,11,0.010417,0.008036,0.001434,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918515988382,PHONE,Phone +918515988382,2,CASE_004; CASE_010,9,0.008523,0.003328,0.001433,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_002_PER_05,PERSON,Deepak Gupta (CASE_002_PER_05),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,8,0.007576,0.00653,0.001431,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++917086884584,PHONE,Phone +917086884584,3,CASE_002; CASE_005; CASE_008,10,0.00947,0.001305,0.00143,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_005_PER_03,PERSON,Deepaak Biswas (CASE_005_PER_03),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,8,0.007576,0.006069,0.001424,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_007,VEHICLE,Vehicle DL-81-TR-4963 (VEH_007),6,CASE_001; CASE_003; CASE_004; CASE_006; CASE_007; CASE_010,10,0.00947,0.000538,0.001418,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++917290753812,PHONE,Phone +917290753812,4,CASE_001; CASE_003; CASE_007; CASE_009,11,0.010417,0.000269,0.001417,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_CAN_8256_028,BANK_ACCOUNT,Account ACC_CAN_8256_028,3,CASE_002; CASE_005; CASE_008,16,0.015152,1.2e-05,0.001413,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_AXI_8568_080,BANK_ACCOUNT,Account ACC_AXI_8568_080,1,CASE_010,6,0.005682,0.000289,0.001408,local case participant,ROUTINE,False
++919492631441,PHONE,Phone +919492631441,2,CASE_006; CASE_010,7,0.006629,0.003245,0.001407,cross-case bridge,cross-case priority review,False
+CASE_007_PER_11,PERSON,Maanoj Mishra (CASE_007_PER_11),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,8,0.007576,0.006657,0.001405,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_004_PER_02,PERSON,Kabir (CASE_004_PER_02),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,6,0.005682,0.013791,0.001403,cross-case bridge; high-betweenness conduit,cross-case priority review,False
++918837542226,PHONE,Phone +918837542226,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,9,0.008523,0.004067,0.001403,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919720598952,PHONE,Phone +919720598952,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,8,0.007576,0.013624,0.0014,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
++919769934576,PHONE,Phone +919769934576,4,CASE_001; CASE_003; CASE_007; CASE_009,9,0.008523,0.002831,0.001396,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++917061956500,PHONE,Phone +917061956500,3,CASE_004; CASE_006; CASE_010,9,0.008523,0.003157,0.001393,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++917231139813,PHONE,Phone +917231139813,3,CASE_004; CASE_006; CASE_010,8,0.007576,2e-06,0.001391,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918022232184,PHONE,Phone +918022232184,4,CASE_001; CASE_003; CASE_007; CASE_009,11,0.010417,0.002064,0.001389,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_PAY_6349_076,BANK_ACCOUNT,Account ACC_PAY_6349_076,9,CASE_001; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,7,0.006629,0.000883,0.001389,cross-case bridge,cross-case priority review,False
++919763339667,PHONE,Phone +919763339667,3,CASE_004; CASE_006; CASE_010,8,0.007576,0.001487,0.001386,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918876669607,PHONE,Phone +918876669607,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,10,0.00947,0.004715,0.001375,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918017993466,PHONE,Phone +918017993466,4,CASE_001; CASE_003; CASE_007; CASE_009,10,0.00947,0.003807,0.001364,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918889212676,PHONE,Phone +918889212676,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,10,0.00947,0.010228,0.001358,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_006_PER_03,PERSON,AaravMishra (CASE_006_PER_03),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,9,0.008523,0.007187,0.001353,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_032,VEHICLE,Vehicle WB-16-AX-3275 (VEH_032),5,CASE_004; CASE_005; CASE_007; CASE_009; CASE_010,11,0.010417,0.011837,0.001349,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_001_PER_08,PERSON,KamalPoddar (CASE_001_PER_08),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,7,0.006629,0.004158,0.001344,cross-case bridge,cross-case priority review,False
++918576180344,PHONE,Phone +918576180344,3,CASE_004; CASE_006; CASE_010,8,0.007576,3.2e-05,0.001341,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_018,VEHICLE,Vehicle UP-96-DL-7334 (VEH_018),6,CASE_001; CASE_004; CASE_005; CASE_006; CASE_009; CASE_010,10,0.00947,0.004102,0.001337,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_003_PER_11,PERSON,K. Tiwari (CASE_003_PER_11),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,8,0.007576,0.023571,0.001336,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
++919813874790,PHONE,Phone +919813874790,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,11,0.010417,0.008685,0.001335,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918587585294,PHONE,Phone +918587585294,4,CASE_001; CASE_003; CASE_007; CASE_009,11,0.010417,0.000265,0.00132,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_AXI_5103_019,BANK_ACCOUNT,Account ACC_AXI_5103_019,3,CASE_002; CASE_005; CASE_008,15,0.014205,5.3e-05,0.00132,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_010_PER_03,PERSON,Mahesh (CASE_010_PER_03),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,9,0.008523,0.012719,0.001317,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
++911800112233,PHONE,Phone +911800112233,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,48,0.045455,0.183577,0.001315,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
++919858082464,PHONE,Phone +919858082464,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,11,0.010417,0.009547,0.001313,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_PAY_9448_025,BANK_ACCOUNT,Account ACC_PAY_9448_025,3,CASE_002; CASE_005; CASE_008,15,0.014205,4.3e-05,0.001311,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918595800828,PHONE,Phone +918595800828,3,CASE_004; CASE_006; CASE_010,7,0.006629,0.000864,0.00131,cross-case bridge,cross-case priority review,False
+VEH_013,VEHICLE,Vehicle JH-83-AX-8612 (VEH_013),7,CASE_001; CASE_002; CASE_004; CASE_005; CASE_007; CASE_009; CASE_010,9,0.008523,0.00143,0.001309,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_SBI_4983_023,BANK_ACCOUNT,Account ACC_SBI_4983_023,3,CASE_002; CASE_005; CASE_008,15,0.014205,1e-05,0.001306,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919973481797,PHONE,Phone +919973481797,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,11,0.010417,0.010925,0.0013,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_007_PER_10,PERSON,K. Mahato (CASE_007_PER_10),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,8,0.007576,0.005484,0.001298,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++911123010000,PHONE,Phone +911123010000,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,47,0.044508,0.189293,0.001298,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
++918033381086,PHONE,Phone +918033381086,1,CASE_004,6,0.005682,0.003252,0.001298,local case participant,ROUTINE,False
+CASE_007_PER_04,PERSON,SunilVerma (CASE_007_PER_04),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,8,0.007576,0.002321,0.001297,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919967805802,PHONE,Phone +919967805802,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,9,0.008523,0.008998,0.001294,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919982017516,PHONE,Phone +919982017516,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,10,0.00947,0.005708,0.001287,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918049529438,PHONE,Phone +918049529438,3,CASE_002; CASE_005; CASE_008,10,0.00947,0.005267,0.001285,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919822243983,PHONE,Phone +919822243983,2,CASE_001; CASE_007,11,0.010417,0.002653,0.001282,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_BAN_0439_068,BANK_ACCOUNT,Account ACC_BAN_0439_068,1,CASE_006,7,0.006629,0.000249,0.001271,local case participant,ROUTINE,False
+ACC_AXI_0727_027,BANK_ACCOUNT,Account ACC_AXI_0727_027,3,CASE_002; CASE_005; CASE_008,14,0.013258,6e-06,0.001269,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++917291512791,PHONE,Phone +917291512791,3,CASE_002; CASE_005; CASE_008,8,0.007576,5.6e-05,0.001265,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_003_PER_10,PERSON,Gopal Yadav (CASE_003_PER_10),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,7,0.006629,0.006091,0.001262,cross-case bridge,cross-case priority review,False
++919816172803,PHONE,Phone +919816172803,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,9,0.008523,0.00798,0.001262,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919495618110,PHONE,Phone +919495618110,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,7,0.006629,0.009692,0.001261,cross-case bridge,cross-case priority review,False
++918536770773,PHONE,Phone +918536770773,4,CASE_001; CASE_003; CASE_007; CASE_009,9,0.008523,5e-06,0.001258,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918534814337,PHONE,Phone +918534814337,4,CASE_001; CASE_003; CASE_007; CASE_009,10,0.00947,0.001496,0.001258,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_CAN_1696_066,BANK_ACCOUNT,Account ACC_CAN_1696_066,1,CASE_006,7,0.006629,0.00017,0.001258,local case participant,ROUTINE,False
+ACC_PNB_4867_024,BANK_ACCOUNT,Account ACC_PNB_4867_024,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,15,0.014205,0.001368,0.001257,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_002_PER_06,PERSON,TarunSoren (CASE_002_PER_06),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,5,0.004735,0.007868,0.001254,cross-case bridge,cross-case priority review,False
+ACC_BAN_2432_020,BANK_ACCOUNT,Account ACC_BAN_2432_020,3,CASE_002; CASE_005; CASE_008,14,0.013258,2e-05,0.001254,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918557621071,PHONE,Phone +918557621071,3,CASE_002; CASE_005; CASE_008,9,0.008523,0.0,0.001253,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_022,VEHICLE,Vehicle UP-45-DL-1693 (VEH_022),7,CASE_001; CASE_002; CASE_005; CASE_006; CASE_008; CASE_009; CASE_010,9,0.008523,0.002611,0.001246,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_SBI_7630_021,BANK_ACCOUNT,Account ACC_SBI_7630_021,3,CASE_002; CASE_005; CASE_008,14,0.013258,3.9e-05,0.001246,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_PAY_3502_012,BANK_ACCOUNT,Account ACC_PAY_3502_012,4,CASE_001; CASE_003; CASE_007; CASE_009,12,0.011364,3.6e-05,0.00124,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_ICI_8039_015,BANK_ACCOUNT,Account ACC_ICI_8039_015,9,CASE_001; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,13,0.012311,0.000412,0.001229,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_003_PER_03,PERSON,S. Verma (CASE_003_PER_03),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,8,0.007576,0.003444,0.001226,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919991644298,PHONE,Phone +919991644298,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,9,0.008523,0.01551,0.001223,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
+CASE_001_PER_01,PERSON,Aaarav Gupta (CASE_001_PER_01),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,9,0.008523,0.012292,0.001221,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
++919490180577,PHONE,Phone +919490180577,1,CASE_006,7,0.006629,0.0016,0.001219,local case participant,ROUTINE,False
++919441690501,PHONE,Phone +919441690501,3,CASE_004; CASE_006; CASE_010,7,0.006629,0.002865,0.001213,cross-case bridge,cross-case priority review,False
+CASE_007_PER_02,PERSON,KabirSharma (CASE_007_PER_02),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,7,0.006629,0.001597,0.001212,cross-case bridge,cross-case priority review,False
++917045596211,PHONE,Phone +917045596211,3,CASE_004; CASE_006; CASE_010,8,0.007576,0.001571,0.001212,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_004_PER_03,PERSON,Ameet Patel (CASE_004_PER_03),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,7,0.006629,0.003744,0.001208,cross-case bridge,cross-case priority review,False
+ACC_HDF_2316_010,BANK_ACCOUNT,Account ACC_HDF_2316_010,4,CASE_001; CASE_003; CASE_007; CASE_009,12,0.011364,4.7e-05,0.0012,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919463904155,PHONE,Phone +919463904155,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,9,0.008523,0.005624,0.001195,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_014,VEHICLE,Vehicle DL-92-DL-1605 (VEH_014),6,CASE_002; CASE_003; CASE_006; CASE_008; CASE_009; CASE_010,10,0.00947,0.011618,0.001195,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
++917052777459,PHONE,Phone +917052777459,4,CASE_001; CASE_003; CASE_007; CASE_009,9,0.008523,0.0,0.001194,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919725228493,PHONE,Phone +919725228493,3,CASE_002; CASE_005; CASE_008,8,0.007576,7.3e-05,0.001193,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_003_PER_09,PERSON,GeetaPoddar (CASE_003_PER_09),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,6,0.005682,0.005004,0.001191,cross-case bridge,cross-case priority review,False
++919470887034,PHONE,Phone +919470887034,3,CASE_004; CASE_006; CASE_010,9,0.008523,0.000172,0.001191,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918810154493,PHONE,Phone +918810154493,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,10,0.00947,0.002465,0.001189,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918898292612,PHONE,Phone +918898292612,3,CASE_002; CASE_005; CASE_008,7,0.006629,0.0014,0.001185,cross-case bridge,cross-case priority review,False
++919422304198,PHONE,Phone +919422304198,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,9,0.008523,0.003652,0.00118,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_010_PER_05,PERSON,Sumaan Das (CASE_010_PER_05),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,6,0.005682,0.005444,0.001177,cross-case bridge,cross-case priority review,False
++917013454186,PHONE,Phone +917013454186,4,CASE_001; CASE_003; CASE_007; CASE_009,9,0.008523,0.002663,0.001177,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918568816911,PHONE,Phone +918568816911,3,CASE_004; CASE_006; CASE_010,8,0.007576,3.2e-05,0.001175,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919895060193,PHONE,Phone +919895060193,3,CASE_002; CASE_005; CASE_008,8,0.007576,2.4e-05,0.001172,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918061196706,PHONE,Phone +918061196706,4,CASE_001; CASE_003; CASE_007; CASE_009,9,0.008523,0.00354,0.001169,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918020997276,PHONE,Phone +918020997276,3,CASE_001; CASE_003; CASE_009,8,0.007576,0.000105,0.001168,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_PAY_4303_030,BANK_ACCOUNT,Account ACC_PAY_4303_030,3,CASE_002; CASE_005; CASE_008,13,0.012311,6e-06,0.001166,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918033562830,PHONE,Phone +918033562830,4,CASE_001; CASE_003; CASE_007; CASE_009,9,0.008523,0.002985,0.001165,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_CAN_8043_026,BANK_ACCOUNT,Account ACC_CAN_8043_026,3,CASE_002; CASE_005; CASE_008,13,0.012311,1.1e-05,0.001164,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_CAN_1453_070,BANK_ACCOUNT,Account ACC_CAN_1453_070,1,CASE_010,5,0.004735,0.000146,0.001163,local case participant,ROUTINE,False
+ACC_PAY_5816_058,BANK_ACCOUNT,Account ACC_PAY_5816_058,1,CASE_004,7,0.006629,9.7e-05,0.001162,local case participant,ROUTINE,False
+CASE_005_PER_10,PERSON,G. Khatun (CASE_005_PER_10),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,7,0.006629,0.005512,0.001161,cross-case bridge,cross-case priority review,False
+CASE_006_PER_02,PERSON,Subhaash Mishra (CASE_006_PER_02),1,CASE_006,5,0.004735,0.003352,0.001158,local case participant,ROUTINE,False
+ACC_BAN_5666_087,BANK_ACCOUNT,Account ACC_BAN_5666_087,1,CASE_004,7,0.006629,4e-06,0.001158,local case participant,ROUTINE,False
+CASE_003_PER_13,PERSON,Anil (CASE_003_PER_13),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,7,0.006629,0.002327,0.001157,cross-case bridge,cross-case priority review,False
++919969166287,PHONE,Phone +919969166287,1,CASE_010,6,0.005682,0.001617,0.001157,local case participant,ROUTINE,False
+VEH_023,VEHICLE,Vehicle JH-82-AB-2229 (VEH_023),5,CASE_003; CASE_004; CASE_006; CASE_009; CASE_010,8,0.007576,0.000146,0.001153,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919765133300,PHONE,Phone +919765133300,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,7,0.006629,0.004984,0.001152,cross-case bridge,cross-case priority review,False
++919851949529,PHONE,Phone +919851949529,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,7,0.006629,0.011746,0.001142,cross-case bridge; high-betweenness conduit,cross-case priority review,False
++917067392300,PHONE,Phone +917067392300,4,CASE_001; CASE_003; CASE_007; CASE_009,8,0.007576,0.000218,0.00113,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_012,VEHICLE,Vehicle RJ-85-AB-6447 (VEH_012),6,CASE_001; CASE_003; CASE_004; CASE_007; CASE_009; CASE_010,8,0.007576,0.0006,0.001129,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919852213778,PHONE,Phone +919852213778,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,10,0.00947,0.001808,0.001128,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_025,VEHICLE,Vehicle DL-31-CA-6933 (VEH_025),5,CASE_001; CASE_003; CASE_004; CASE_007; CASE_010,8,0.007576,0.00109,0.001126,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++917055172462,PHONE,Phone +917055172462,3,CASE_004; CASE_006; CASE_010,6,0.005682,0.000886,0.001119,cross-case bridge,cross-case priority review,False
++917227514010,PHONE,Phone +917227514010,4,CASE_001; CASE_003; CASE_007; CASE_009,8,0.007576,0.0012,0.001115,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++917057201978,PHONE,Phone +917057201978,3,CASE_002; CASE_005; CASE_008,8,0.007576,0.0,0.001115,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_CAN_5043_014,BANK_ACCOUNT,Account ACC_CAN_5043_014,4,CASE_001; CASE_003; CASE_007; CASE_009,11,0.010417,4e-06,0.001114,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919746912022,PHONE,Phone +919746912022,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,7,0.006629,0.010879,0.001113,cross-case bridge; high-betweenness conduit,cross-case priority review,False
++919794712997,PHONE,Phone +919794712997,1,CASE_005,6,0.005682,0.001307,0.00111,local case participant,ROUTINE,False
++918525503345,PHONE,Phone +918525503345,4,CASE_001; CASE_003; CASE_007; CASE_009,8,0.007576,0.000505,0.001109,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++917294658420,PHONE,Phone +917294658420,4,CASE_001; CASE_003; CASE_007; CASE_009,9,0.008523,0.000364,0.001105,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919833386929,PHONE,Phone +919833386929,1,CASE_002,7,0.006629,0.001228,0.001103,local case participant,ROUTINE,False
+ACC_PAY_4895_011,BANK_ACCOUNT,Account ACC_PAY_4895_011,4,CASE_001; CASE_003; CASE_007; CASE_009,11,0.010417,2.6e-05,0.001099,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918532325567,PHONE,Phone +918532325567,3,CASE_004; CASE_006; CASE_010,8,0.007576,0.001801,0.001095,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918575645462,PHONE,Phone +918575645462,4,CASE_001; CASE_003; CASE_007; CASE_009,8,0.007576,0.000297,0.001095,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_SBI_9508_002,BANK_ACCOUNT,Account ACC_SBI_9508_002,4,CASE_001; CASE_003; CASE_007; CASE_009,11,0.010417,6e-06,0.001095,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919847962005,PHONE,Phone +919847962005,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,9,0.008523,0.016879,0.001082,cross-case bridge; high-connectivity entity; high-betweenness conduit,high-priority investigative lead,False
++917061338023,PHONE,Phone +917061338023,4,CASE_001; CASE_003; CASE_007; CASE_009,8,0.007576,0.0,0.00108,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++917212674689,PHONE,Phone +917212674689,4,CASE_001; CASE_003; CASE_007; CASE_009,7,0.006629,0.0,0.001078,cross-case bridge,cross-case priority review,False
++918829208935,PHONE,Phone +918829208935,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,6,0.005682,0.006637,0.001074,cross-case bridge,cross-case priority review,False
++918037588517,PHONE,Phone +918037588517,3,CASE_002; CASE_005; CASE_008,7,0.006629,0.00366,0.001072,cross-case bridge,cross-case priority review,False
++918069945655,PHONE,Phone +918069945655,3,CASE_004; CASE_006; CASE_010,7,0.006629,2e-06,0.001072,cross-case bridge,cross-case priority review,False
++919477853916,PHONE,Phone +919477853916,1,CASE_010,6,0.005682,0.001652,0.001071,local case participant,ROUTINE,False
++917276065552,PHONE,Phone +917276065552,4,CASE_001; CASE_003; CASE_007; CASE_009,8,0.007576,1.9e-05,0.00107,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918814925405,PHONE,Phone +918814925405,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,8,0.007576,0.0,0.001068,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_016,VEHICLE,Vehicle UP-33-AB-4131 (VEH_016),5,CASE_003; CASE_006; CASE_007; CASE_009; CASE_010,8,0.007576,0.002446,0.001064,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918523613510,PHONE,Phone +918523613510,4,CASE_001; CASE_003; CASE_007; CASE_009,8,0.007576,0.002248,0.001063,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_033,VEHICLE,Vehicle HR-74-CA-8657 (VEH_033),5,CASE_001; CASE_004; CASE_005; CASE_007; CASE_009,8,0.007576,0.002604,0.001061,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++917021503440,PHONE,Phone +917021503440,1,CASE_010,6,0.005682,0.000708,0.00106,local case participant,ROUTINE,False
++918839735904,PHONE,Phone +918839735904,4,CASE_001; CASE_003; CASE_007; CASE_009,7,0.006629,0.001679,0.001059,cross-case bridge,cross-case priority review,False
+CASE_010_PER_12,PERSON,Geeta (CASE_010_PER_12),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,6,0.005682,0.007775,0.001057,cross-case bridge,cross-case priority review,False
++918838874646,PHONE,Phone +918838874646,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,7,0.006629,0.008375,0.001057,cross-case bridge,cross-case priority review,False
++919970867592,PHONE,Phone +919970867592,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,8,0.007576,0.004128,0.001056,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919994127561,PHONE,Phone +919994127561,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,8,0.007576,0.001568,0.001051,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919865137801,PHONE,Phone +919865137801,1,CASE_004,5,0.004735,0.001279,0.00105,local case participant,ROUTINE,False
++919470606674,PHONE,Phone +919470606674,1,CASE_009,7,0.006629,0.00102,0.001049,local case participant,ROUTINE,False
++917043266810,PHONE,Phone +917043266810,3,CASE_002; CASE_005; CASE_008,7,0.006629,0.0,0.001038,cross-case bridge,cross-case priority review,False
++918586166246,PHONE,Phone +918586166246,3,CASE_002; CASE_005; CASE_008,8,0.007576,2.9e-05,0.001033,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_AXI_6065_032,BANK_ACCOUNT,Account ACC_AXI_6065_032,9,CASE_001; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,11,0.010417,0.000209,0.001033,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+VEH_021,VEHICLE,Vehicle RJ-38-CA-8305 (VEH_021),6,CASE_003; CASE_004; CASE_006; CASE_007; CASE_008; CASE_010,7,0.006629,0.000251,0.001032,cross-case bridge,cross-case priority review,False
++918588653825,PHONE,Phone +918588653825,3,CASE_004; CASE_006; CASE_010,6,0.005682,0.001724,0.001031,cross-case bridge,cross-case priority review,False
++917246045780,PHONE,Phone +917246045780,2,CASE_006; CASE_010,6,0.005682,0.000278,0.001027,cross-case bridge,cross-case priority review,False
++918088381665,PHONE,Phone +918088381665,3,CASE_002; CASE_005; CASE_008,8,0.007576,0.000295,0.001025,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918850151803,PHONE,Phone +918850151803,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,7,0.006629,0.002789,0.001023,cross-case bridge,cross-case priority review,False
++917260785855,PHONE,Phone +917260785855,3,CASE_002; CASE_005; CASE_008,7,0.006629,0.002712,0.001022,cross-case bridge,cross-case priority review,False
++919765026398,PHONE,Phone +919765026398,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,8,0.007576,0.002502,0.00102,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919847388792,PHONE,Phone +919847388792,1,CASE_010,6,0.005682,0.001477,0.001019,local case participant,ROUTINE,False
+VEH_006,VEHICLE,Vehicle RJ-80-DL-2029 (VEH_006),5,CASE_001; CASE_003; CASE_005; CASE_009; CASE_010,7,0.006629,0.002745,0.001016,cross-case bridge,cross-case priority review,False
+ACC_CAN_1735_055,BANK_ACCOUNT,Account ACC_CAN_1735_055,1,CASE_004,6,0.005682,9.6e-05,0.001016,local case participant,ROUTINE,False
++918035042738,PHONE,Phone +918035042738,2,CASE_004; CASE_010,5,0.004735,3.8e-05,0.001015,cross-case bridge,cross-case priority review,False
+VEH_009,VEHICLE,Vehicle RJ-11-TR-6908 (VEH_009),5,CASE_002; CASE_004; CASE_005; CASE_006; CASE_010,7,0.006629,0.001208,0.001015,cross-case bridge,cross-case priority review,False
++919444269370,PHONE,Phone +919444269370,1,CASE_004,6,0.005682,3.1e-05,0.001014,local case participant,ROUTINE,False
++919971315464,PHONE,Phone +919971315464,2,CASE_006; CASE_010,6,0.005682,3e-05,0.001013,cross-case bridge,cross-case priority review,False
+ACC_HDF_4353_054,BANK_ACCOUNT,Account ACC_HDF_4353_054,1,CASE_004,6,0.005682,0.0001,0.00101,local case participant,ROUTINE,False
+ACC_PAY_8472_053,BANK_ACCOUNT,Account ACC_PAY_8472_053,1,CASE_004,6,0.005682,3e-06,0.001008,local case participant,ROUTINE,False
+CASE_009_PER_06,PERSON,H. Biswas (CASE_009_PER_06),9,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_009; CASE_010,5,0.004735,0.001015,0.001007,cross-case bridge,cross-case priority review,False
++919447028180,PHONE,Phone +919447028180,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,7,0.006629,0.00376,0.001005,cross-case bridge,cross-case priority review,False
++917213933043,PHONE,Phone +917213933043,4,CASE_001; CASE_003; CASE_007; CASE_009,8,0.007576,0.005435,0.001005,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_PAY_6659_075,BANK_ACCOUNT,Account ACC_PAY_6659_075,1,CASE_010,4,0.003788,0.000105,0.001003,local case participant,ROUTINE,False
+VEH_002,VEHICLE,Vehicle DL-92-CA-3392 (VEH_002),4,CASE_002; CASE_004; CASE_005; CASE_010,7,0.006629,0.001261,0.001,cross-case bridge,cross-case priority review,False
++918033818260,PHONE,Phone +918033818260,4,CASE_001; CASE_003; CASE_007; CASE_009,7,0.006629,3.9e-05,0.000994,cross-case bridge,cross-case priority review,False
+CASE_003_PER_06,PERSON,PankajPrasad (CASE_003_PER_06),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,5,0.004735,0.000421,0.000993,cross-case bridge,cross-case priority review,False
++917264932613,PHONE,Phone +917264932613,3,CASE_002; CASE_005; CASE_008,8,0.007576,0.001578,0.000993,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_HDF_7327_069,BANK_ACCOUNT,Account ACC_HDF_7327_069,9,CASE_001; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,5,0.004735,0.000394,0.000992,cross-case bridge,cross-case priority review,False
+VEH_019,VEHICLE,Vehicle UP-48-TR-5369 (VEH_019),6,CASE_001; CASE_004; CASE_005; CASE_006; CASE_007; CASE_010,7,0.006629,0.000759,0.000983,cross-case bridge,cross-case priority review,False
++918092427773,PHONE,Phone +918092427773,4,CASE_001; CASE_003; CASE_007; CASE_009,7,0.006629,0.000881,0.000982,cross-case bridge,cross-case priority review,False
++918528419506,PHONE,Phone +918528419506,4,CASE_001; CASE_003; CASE_007; CASE_009,7,0.006629,1e-06,0.000978,cross-case bridge,cross-case priority review,False
+CASE_003_PER_12,PERSON,Kaavita Mahato (CASE_003_PER_12),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,6,0.005682,0.000277,0.000975,cross-case bridge,cross-case priority review,False
++917295851936,PHONE,Phone +917295851936,3,CASE_002; CASE_005; CASE_008,6,0.005682,2.8e-05,0.000971,cross-case bridge,cross-case priority review,False
++919455754284,PHONE,Phone +919455754284,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,7,0.006629,0.010673,0.00097,cross-case bridge; high-betweenness conduit,cross-case priority review,False
++917231424479,PHONE,Phone +917231424479,3,CASE_002; CASE_005; CASE_008,7,0.006629,0.000479,0.000965,cross-case bridge,cross-case priority review,False
++917254448673,PHONE,Phone +917254448673,3,CASE_002; CASE_005; CASE_008,7,0.006629,5e-06,0.000964,cross-case bridge,cross-case priority review,False
+DEV_048,DEVICE,Device DEV_048 (IMEI 862090740112114),1,CASE_002,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+IMEI_862090740112114,DEVICE,IMEI 862090740112114,1,CASE_002,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+DEV_011,DEVICE,Device DEV_011 (IMEI 861133379272909),3,CASE_001; CASE_003; CASE_009,1,0.000947,0.0,0.000963,cross-case bridge,cross-case priority review,False
+IMEI_861133379272909,DEVICE,IMEI 861133379272909,3,CASE_001; CASE_003; CASE_009,1,0.000947,0.0,0.000963,cross-case bridge,cross-case priority review,False
+DEV_062,DEVICE,Device DEV_062 (IMEI 862642938349259),1,CASE_004,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+IMEI_862642938349259,DEVICE,IMEI 862642938349259,1,CASE_004,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+DEV_068,DEVICE,Device DEV_068 (IMEI 862781501410921),1,CASE_006,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+IMEI_862781501410921,DEVICE,IMEI 862781501410921,1,CASE_006,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+DEV_044,DEVICE,Device DEV_044 (IMEI 869918903659884),1,CASE_009,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+IMEI_869918903659884,DEVICE,IMEI 869918903659884,1,CASE_009,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+DEV_021,DEVICE,Device DEV_021 (IMEI 866716456299746),1,CASE_002,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+IMEI_866716456299746,DEVICE,IMEI 866716456299746,1,CASE_002,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+DEV_036,DEVICE,Device DEV_036 (IMEI 863655647595154),1,CASE_003,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+IMEI_863655647595154,DEVICE,IMEI 863655647595154,1,CASE_003,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+DEV_078,DEVICE,Device DEV_078 (IMEI 865959696973005),1,CASE_010,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+IMEI_865959696973005,DEVICE,IMEI 865959696973005,1,CASE_010,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+DEV_006,DEVICE,Device DEV_006 (IMEI 864789334397741),2,CASE_003; CASE_007,1,0.000947,0.0,0.000963,cross-case bridge,cross-case priority review,False
+IMEI_864789334397741,DEVICE,IMEI 864789334397741,2,CASE_003; CASE_007,1,0.000947,0.0,0.000963,cross-case bridge,cross-case priority review,False
+DEV_056,DEVICE,Device DEV_056 (IMEI 867801846846666),1,CASE_008,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+IMEI_867801846846666,DEVICE,IMEI 867801846846666,1,CASE_008,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+DEV_032,DEVICE,Device DEV_032 (IMEI 865501754699346),1,CASE_001,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+IMEI_865501754699346,DEVICE,IMEI 865501754699346,1,CASE_001,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+DEV_004,DEVICE,Device DEV_004 (IMEI 868458906230905),3,CASE_001; CASE_007; CASE_009,1,0.000947,0.0,0.000963,cross-case bridge,cross-case priority review,False
+IMEI_868458906230905,DEVICE,IMEI 868458906230905,3,CASE_001; CASE_007; CASE_009,1,0.000947,0.0,0.000963,cross-case bridge,cross-case priority review,False
+DEV_025,DEVICE,Device DEV_025 (IMEI 868046275548368),2,CASE_002; CASE_008,1,0.000947,0.0,0.000963,cross-case bridge,cross-case priority review,False
+IMEI_868046275548368,DEVICE,IMEI 868046275548368,2,CASE_002; CASE_008,1,0.000947,0.0,0.000963,cross-case bridge,cross-case priority review,False
+DEV_013,DEVICE,Device DEV_013 (IMEI 861133659315030),2,CASE_001; CASE_007,1,0.000947,0.0,0.000963,cross-case bridge,cross-case priority review,False
+IMEI_861133659315030,DEVICE,IMEI 861133659315030,2,CASE_001; CASE_007,1,0.000947,0.0,0.000963,cross-case bridge,cross-case priority review,False
+DEV_023,DEVICE,Device DEV_023 (IMEI 867369091913673),2,CASE_005; CASE_008,1,0.000947,0.0,0.000963,cross-case bridge,cross-case priority review,False
+IMEI_867369091913673,DEVICE,IMEI 867369091913673,2,CASE_005; CASE_008,1,0.000947,0.0,0.000963,cross-case bridge,cross-case priority review,False
+DEV_076,DEVICE,Device DEV_076 (IMEI 869254001020158),1,CASE_010,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+IMEI_869254001020158,DEVICE,IMEI 869254001020158,1,CASE_010,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+DEV_002,DEVICE,Device DEV_002 (IMEI 863766627149238),2,CASE_003; CASE_009,1,0.000947,0.0,0.000963,cross-case bridge,cross-case priority review,False
+IMEI_863766627149238,DEVICE,IMEI 863766627149238,2,CASE_003; CASE_009,1,0.000947,0.0,0.000963,cross-case bridge,cross-case priority review,False
+DEV_052,DEVICE,Device DEV_052 (IMEI 865977514637273),1,CASE_005,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+IMEI_865977514637273,DEVICE,IMEI 865977514637273,1,CASE_005,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+DEV_040,DEVICE,Device DEV_040 (IMEI 862303554086025),1,CASE_007,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+IMEI_862303554086025,DEVICE,IMEI 862303554086025,1,CASE_007,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+DEV_060,DEVICE,Device DEV_060 (IMEI 866446382396720),1,CASE_004,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+IMEI_866446382396720,DEVICE,IMEI 866446382396720,1,CASE_004,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+DEV_019,DEVICE,Device DEV_019 (IMEI 868347143463689),1,CASE_005,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+IMEI_868347143463689,DEVICE,IMEI 868347143463689,1,CASE_005,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+DEV_070,DEVICE,Device DEV_070 (IMEI 863915864704616),1,CASE_006,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+IMEI_863915864704616,DEVICE,IMEI 863915864704616,1,CASE_006,1,0.000947,0.0,0.000963,local case participant,ROUTINE,False
+DEV_015,DEVICE,Device DEV_015 (IMEI 867687818928252),2,CASE_003; CASE_007,1,0.000947,0.0,0.000963,cross-case bridge,cross-case priority review,False
+IMEI_867687818928252,DEVICE,IMEI 867687818928252,2,CASE_003; CASE_007,1,0.000947,0.0,0.000963,cross-case bridge,cross-case priority review,False
+DEV_027,DEVICE,Device DEV_027 (IMEI 866973207748790),2,CASE_005; CASE_008,1,0.000947,0.0,0.000963,cross-case bridge,cross-case priority review,False
+IMEI_866973207748790,DEVICE,IMEI 866973207748790,2,CASE_005; CASE_008,1,0.000947,0.0,0.000963,cross-case bridge,cross-case priority review,False
++918053299069,PHONE,Phone +918053299069,3,CASE_004; CASE_006; CASE_010,6,0.005682,0.004711,0.00096,cross-case bridge,cross-case priority review,False
++917016462242,PHONE,Phone +917016462242,3,CASE_004; CASE_006; CASE_010,6,0.005682,0.003124,0.00096,cross-case bridge,cross-case priority review,False
++919459470729,PHONE,Phone +919459470729,1,CASE_004,5,0.004735,1.3e-05,0.000955,local case participant,ROUTINE,False
+ACC_ICI_8670_061,BANK_ACCOUNT,Account ACC_ICI_8670_061,1,CASE_006,5,0.004735,3e-06,0.000951,local case participant,ROUTINE,False
++919841514326,PHONE,Phone +919841514326,1,CASE_004,5,0.004735,0.001652,0.000948,local case participant,ROUTINE,False
+ACC_CAN_3372_086,BANK_ACCOUNT,Account ACC_CAN_3372_086,1,CASE_006,5,0.004735,2e-06,0.000948,local case participant,ROUTINE,False
+ACC_HDF_2236_074,BANK_ACCOUNT,Account ACC_HDF_2236_074,1,CASE_010,4,0.003788,4e-06,0.000947,local case participant,ROUTINE,False
++918536799898,PHONE,Phone +918536799898,3,CASE_001; CASE_003; CASE_009,7,0.006629,2.8e-05,0.000943,cross-case bridge,cross-case priority review,False
+CASE_009_PER_11,PERSON,Ameet Gupta (CASE_009_PER_11),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,6,0.005682,0.00048,0.00094,cross-case bridge,cross-case priority review,False
++918519893106,PHONE,Phone +918519893106,4,CASE_001; CASE_003; CASE_007; CASE_009,6,0.005682,0.0,0.00094,cross-case bridge,cross-case priority review,False
++919744489940,PHONE,Phone +919744489940,1,CASE_009,5,0.004735,0.0016,0.000937,local case participant,ROUTINE,False
+CASE_008_PER_08,PERSON,Neelam (CASE_008_PER_08),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,4,0.003788,0.003464,0.000934,cross-case bridge,cross-case priority review,False
++918814818295,PHONE,Phone +918814818295,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,8,0.007576,0.004198,0.000934,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918877349752,PHONE,Phone +918877349752,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,6,0.005682,0.007528,0.000934,cross-case bridge,cross-case priority review,False
+ACC_PNB_8903_041,BANK_ACCOUNT,Account ACC_PNB_8903_041,4,CASE_001; CASE_003; CASE_007; CASE_009,9,0.008523,2e-05,0.000934,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_PNB_5352_067,BANK_ACCOUNT,Account ACC_PNB_5352_067,1,CASE_006,5,0.004735,0.000116,0.000933,local case participant,ROUTINE,False
+ACC_ICI_2762_065,BANK_ACCOUNT,Account ACC_ICI_2762_065,1,CASE_006,5,0.004735,9.1e-05,0.000932,local case participant,ROUTINE,False
+CASE_010_PER_07,PERSON,Shobha (CASE_010_PER_07),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,6,0.005682,0.001276,0.00093,cross-case bridge,cross-case priority review,False
+ACC_SBI_5846_062,BANK_ACCOUNT,Account ACC_SBI_5846_062,1,CASE_006,5,0.004735,1e-06,0.00093,local case participant,ROUTINE,False
++919925558733,PHONE,Phone +919925558733,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,8,0.007576,0.003025,0.000926,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918510091737,PHONE,Phone +918510091737,4,CASE_001; CASE_003; CASE_007; CASE_009,7,0.006629,2.2e-05,0.000924,cross-case bridge,cross-case priority review,False
++917220066654,PHONE,Phone +917220066654,4,CASE_001; CASE_003; CASE_007; CASE_009,7,0.006629,4e-06,0.000924,cross-case bridge,cross-case priority review,False
++917041943272,PHONE,Phone +917041943272,3,CASE_002; CASE_005; CASE_008,6,0.005682,1.6e-05,0.000921,cross-case bridge,cross-case priority review,False
+ACC_PNB_4148_050,BANK_ACCOUNT,Account ACC_PNB_4148_050,3,CASE_002; CASE_005; CASE_008,10,0.00947,1e-06,0.000921,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+ACC_CAN_0365_022,BANK_ACCOUNT,Account ACC_CAN_0365_022,3,CASE_002; CASE_005; CASE_008,10,0.00947,2.6e-05,0.000919,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++917295387542,PHONE,Phone +917295387542,2,CASE_004; CASE_006,6,0.005682,4e-06,0.000918,cross-case bridge,cross-case priority review,False
++918581059199,PHONE,Phone +918581059199,3,CASE_002; CASE_005; CASE_008,6,0.005682,9e-06,0.000917,cross-case bridge,cross-case priority review,False
++917057040785,PHONE,Phone +917057040785,3,CASE_004; CASE_006; CASE_010,6,0.005682,3.9e-05,0.000909,cross-case bridge,cross-case priority review,False
+ACC_ICI_0939_029,BANK_ACCOUNT,Account ACC_ICI_0939_029,3,CASE_002; CASE_005; CASE_008,10,0.00947,1.8e-05,0.000909,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919841837210,PHONE,Phone +919841837210,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,6,0.005682,0.007269,0.000908,cross-case bridge,cross-case priority review,False
++918069020960,PHONE,Phone +918069020960,3,CASE_004; CASE_006; CASE_010,6,0.005682,2.8e-05,0.000908,cross-case bridge,cross-case priority review,False
++919435583290,PHONE,Phone +919435583290,4,CASE_001; CASE_003; CASE_007; CASE_009,7,0.006629,3.3e-05,0.000906,cross-case bridge,cross-case priority review,False
++919893154172,PHONE,Phone +919893154172,1,CASE_004,5,0.004735,4e-06,0.000906,local case participant,ROUTINE,False
+CASE_008_PER_09,PERSON,Santosh (CASE_008_PER_09),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,4,0.003788,0.003464,0.000903,cross-case bridge,cross-case priority review,False
+ACC_PNB_6553_090,BANK_ACCOUNT,Account ACC_PNB_6553_090,9,CASE_001; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,6,0.005682,0.000745,0.000898,cross-case bridge,cross-case priority review,False
++918062127652,PHONE,Phone +918062127652,4,CASE_001; CASE_003; CASE_007; CASE_009,8,0.007576,0.00185,0.000893,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++917017538738,PHONE,Phone +917017538738,4,CASE_001; CASE_003; CASE_007; CASE_009,7,0.006629,0.001191,0.00089,cross-case bridge,cross-case priority review,False
+ACC_PAY_1637_078,BANK_ACCOUNT,Account ACC_PAY_1637_078,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,10,0.00947,0.00071,0.000889,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919414968688,PHONE,Phone +919414968688,4,CASE_001; CASE_003; CASE_007; CASE_009,7,0.006629,1e-05,0.000872,cross-case bridge,cross-case priority review,False
++918556175477,PHONE,Phone +918556175477,4,CASE_001; CASE_003; CASE_007; CASE_009,7,0.006629,0.0,0.00087,cross-case bridge,cross-case priority review,False
+ACC_BAN_6131_057,BANK_ACCOUNT,Account ACC_BAN_6131_057,1,CASE_004,5,0.004735,7.5e-05,0.00087,local case participant,ROUTINE,False
++919869287967,PHONE,Phone +919869287967,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,7,0.006629,0.004632,0.000868,cross-case bridge,cross-case priority review,False
+ACC_BAN_0265_060,BANK_ACCOUNT,Account ACC_BAN_0265_060,1,CASE_004,5,0.004735,2e-06,0.000866,local case participant,ROUTINE,False
+ACC_ICI_4671_056,BANK_ACCOUNT,Account ACC_ICI_4671_056,1,CASE_004,5,0.004735,9.9e-05,0.000865,local case participant,ROUTINE,False
++918858178682,PHONE,Phone +918858178682,1,CASE_006,5,0.004735,0.000918,0.000864,local case participant,ROUTINE,False
+ACC_AXI_7379_047,BANK_ACCOUNT,Account ACC_AXI_7379_047,3,CASE_002; CASE_005; CASE_008,9,0.008523,4e-06,0.000864,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++919873013961,PHONE,Phone +919873013961,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,7,0.006629,0.002788,0.000853,cross-case bridge,cross-case priority review,False
++919746677730,PHONE,Phone +919746677730,1,CASE_008,4,0.003788,0.001605,0.000848,local case participant,ROUTINE,False
++917062734442,PHONE,Phone +917062734442,2,CASE_005; CASE_008,5,0.004735,0.0,0.000846,cross-case bridge,cross-case priority review,False
++918531086112,PHONE,Phone +918531086112,3,CASE_002; CASE_005; CASE_008,5,0.004735,0.0,0.000845,cross-case bridge,cross-case priority review,False
++918034134478,PHONE,Phone +918034134478,4,CASE_001; CASE_003; CASE_007; CASE_009,6,0.005682,0.000294,0.000845,cross-case bridge,cross-case priority review,False
++917029825571,PHONE,Phone +917029825571,3,CASE_004; CASE_006; CASE_010,5,0.004735,0.000462,0.000843,cross-case bridge,cross-case priority review,False
++918024500158,PHONE,Phone +918024500158,2,CASE_004; CASE_006,6,0.005682,0.000197,0.000839,cross-case bridge,cross-case priority review,False
+ACC_PAY_0687_045,BANK_ACCOUNT,Account ACC_PAY_0687_045,3,CASE_002; CASE_005; CASE_008,9,0.008523,1.8e-05,0.000838,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++918024055958,PHONE,Phone +918024055958,4,CASE_001; CASE_003; CASE_007; CASE_009,6,0.005682,0.0,0.000837,cross-case bridge,cross-case priority review,False
++918058155056,PHONE,Phone +918058155056,3,CASE_002; CASE_005; CASE_008,6,0.005682,0.00027,0.000837,cross-case bridge,cross-case priority review,False
++918597729428,PHONE,Phone +918597729428,3,CASE_002; CASE_005; CASE_008,5,0.004735,0.0,0.000837,cross-case bridge,cross-case priority review,False
+ACC_ICI_5398_044,BANK_ACCOUNT,Account ACC_ICI_5398_044,3,CASE_002; CASE_005; CASE_008,9,0.008523,1.8e-05,0.000837,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
++917049581964,PHONE,Phone +917049581964,4,CASE_001; CASE_003; CASE_007; CASE_009,6,0.005682,0.0,0.000833,cross-case bridge,cross-case priority review,False
+VEH_015,VEHICLE,Vehicle WB-06-CA-6080 (VEH_015),5,CASE_004; CASE_006; CASE_008; CASE_009; CASE_010,6,0.005682,0.003654,0.00083,cross-case bridge,cross-case priority review,False
++919960237832,PHONE,Phone +919960237832,3,CASE_001; CASE_003; CASE_007,5,0.004735,0.004825,0.000823,cross-case bridge,cross-case priority review,False
+ACC_AXI_6444_035,BANK_ACCOUNT,Account ACC_AXI_6444_035,4,CASE_001; CASE_003; CASE_007; CASE_009,8,0.007576,1e-06,0.000819,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+CASE_009_PER_02,PERSON,Kabir (CASE_009_PER_02),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,4,0.003788,0.000639,0.000817,cross-case bridge,cross-case priority review,False
++917039448924,PHONE,Phone +917039448924,3,CASE_002; CASE_005; CASE_008,6,0.005682,4e-06,0.000812,cross-case bridge,cross-case priority review,False
++917047550897,PHONE,Phone +917047550897,4,CASE_001; CASE_003; CASE_007; CASE_009,7,0.006629,0.000473,0.000811,cross-case bridge,cross-case priority review,False
+ACC_BAN_9491_088,BANK_ACCOUNT,Account ACC_BAN_9491_088,1,CASE_010,3,0.002841,6.3e-05,0.000808,local case participant,ROUTINE,False
++919887566910,PHONE,Phone +919887566910,1,CASE_003,4,0.003788,0.0016,0.000806,local case participant,ROUTINE,False
++917243492807,PHONE,Phone +917243492807,2,CASE_006; CASE_010,5,0.004735,3e-06,0.0008,cross-case bridge,cross-case priority review,False
++919766500369,PHONE,Phone +919766500369,1,CASE_006,5,0.004735,3e-06,0.000796,local case participant,ROUTINE,False
+ACC_PNB_7588_063,BANK_ACCOUNT,Account ACC_PNB_7588_063,9,CASE_001; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,5,0.004735,0.001221,0.000795,cross-case bridge,cross-case priority review,False
++917049533757,PHONE,Phone +917049533757,4,CASE_001; CASE_003; CASE_007; CASE_009,6,0.005682,4e-06,0.000791,cross-case bridge,cross-case priority review,False
++919897874085,PHONE,Phone +919897874085,1,CASE_009,4,0.003788,0.0016,0.000783,local case participant,ROUTINE,False
++919869096899,PHONE,Phone +919869096899,1,CASE_009,6,0.005682,4e-06,0.000782,local case participant,ROUTINE,False
++918063347164,PHONE,Phone +918063347164,4,CASE_001; CASE_003; CASE_007; CASE_009,6,0.005682,0.000336,0.000781,cross-case bridge,cross-case priority review,False
++917034438599,PHONE,Phone +917034438599,3,CASE_002; CASE_005; CASE_008,5,0.004735,0.0,0.000779,cross-case bridge,cross-case priority review,False
++919453188224,PHONE,Phone +919453188224,1,CASE_003,5,0.004735,0.0,0.000778,local case participant,ROUTINE,False
++919795445405,PHONE,Phone +919795445405,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,5,0.004735,0.000239,0.000774,cross-case bridge,cross-case priority review,False
++918049916439,PHONE,Phone +918049916439,3,CASE_002; CASE_005; CASE_008,5,0.004735,0.0,0.000771,cross-case bridge,cross-case priority review,False
+CASE_009_PER_12,PERSON,Geeta (CASE_009_PER_12),10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,5,0.004735,0.000922,0.000769,cross-case bridge,cross-case priority review,False
++919786745380,PHONE,Phone +919786745380,4,CASE_001; CASE_003; CASE_007; CASE_009,5,0.004735,0.0,0.000765,cross-case bridge,cross-case priority review,False
+ACC_ICI_5061_040,BANK_ACCOUNT,Account ACC_ICI_5061_040,4,CASE_001; CASE_003; CASE_007; CASE_009,7,0.006629,2.3e-05,0.000764,cross-case bridge,cross-case priority review,False
++917285579195,PHONE,Phone +917285579195,4,CASE_001; CASE_003; CASE_007; CASE_009,6,0.005682,0.0,0.000759,cross-case bridge,cross-case priority review,False
++918581875527,PHONE,Phone +918581875527,3,CASE_004; CASE_006; CASE_010,5,0.004735,0.001849,0.000757,cross-case bridge,cross-case priority review,False
+ACC_PNB_0848_093,BANK_ACCOUNT,Account ACC_PNB_0848_093,1,CASE_010,3,0.002841,7.4e-05,0.000757,local case participant,ROUTINE,False
+ACC_PAY_6362_059,BANK_ACCOUNT,Account ACC_PAY_6362_059,9,CASE_001; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,5,0.004735,0.000469,0.00075,cross-case bridge,cross-case priority review,False
+ACC_ICI_7508_072,BANK_ACCOUNT,Account ACC_ICI_7508_072,1,CASE_010,3,0.002841,7.1e-05,0.00075,local case participant,ROUTINE,False
+VEH_020,VEHICLE,Vehicle HR-24-TR-5813 (VEH_020),4,CASE_001; CASE_004; CASE_006; CASE_009,5,0.004735,0.001611,0.000743,cross-case bridge,cross-case priority review,False
++919849375156,PHONE,Phone +919849375156,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,5,0.004735,0.001124,0.000741,cross-case bridge,cross-case priority review,False
++918518184472,PHONE,Phone +918518184472,4,CASE_001; CASE_003; CASE_007; CASE_009,6,0.005682,0.000122,0.000739,cross-case bridge,cross-case priority review,False
+ACC_PNB_6635_081,BANK_ACCOUNT,Account ACC_PNB_6635_081,4,CASE_001; CASE_003; CASE_007; CASE_009,6,0.005682,1e-06,0.000738,cross-case bridge,cross-case priority review,False
+ACC_CAN_2444_071,BANK_ACCOUNT,Account ACC_CAN_2444_071,1,CASE_010,3,0.002841,1e-06,0.000738,local case participant,ROUTINE,False
++918557141449,PHONE,Phone +918557141449,2,CASE_006; CASE_010,5,0.004735,9.5e-05,0.000737,cross-case bridge,cross-case priority review,False
++919485291541,PHONE,Phone +919485291541,1,CASE_004,2,0.001894,0.0016,0.000736,local case participant,ROUTINE,False
++918074382155,PHONE,Phone +918074382155,4,CASE_001; CASE_003; CASE_007; CASE_009,6,0.005682,0.001531,0.000735,cross-case bridge,cross-case priority review,False
+PROV_RES_ENT_001,PERSON,Provisional Resolved Entity (PROV_RES_ENT_001),4,CASE_001; CASE_003; CASE_007; CASE_009,4,0.003788,0.0,0.000729,cross-case bridge,cross-case priority review,True
++919722130508,PHONE,Phone +919722130508,1,CASE_005,5,0.004735,0.004292,0.000724,local case participant,ROUTINE,False
++917055358959,PHONE,Phone +917055358959,3,CASE_001; CASE_003; CASE_007,6,0.005682,0.001822,0.000724,cross-case bridge,cross-case priority review,False
++919791478884,PHONE,Phone +919791478884,3,CASE_004; CASE_006; CASE_010,4,0.003788,1e-05,0.000723,cross-case bridge,cross-case priority review,False
++919450559278,PHONE,Phone +919450559278,1,CASE_010,4,0.003788,1.8e-05,0.000721,local case participant,ROUTINE,False
+DEV_001,DEVICE,Device DEV_001 (IMEI 862492914413340),4,CASE_001; CASE_003; CASE_007; CASE_009,5,0.004735,0.002935,0.000721,cross-case bridge,cross-case priority review,False
+DEV_003,DEVICE,Device DEV_003 (IMEI 865784943957733),3,CASE_001; CASE_007; CASE_009,4,0.003788,0.002376,0.00072,cross-case bridge,cross-case priority review,False
++917289526622,PHONE,Phone +917289526622,3,CASE_002; CASE_005; CASE_008,5,0.004735,0.0,0.000716,cross-case bridge,cross-case priority review,False
+DEV_061,DEVICE,Device DEV_061 (IMEI 866780131175358),1,CASE_004,2,0.001894,0.0016,0.000715,local case participant,ROUTINE,False
++919856991504,PHONE,Phone +919856991504,1,CASE_004,5,0.004735,6.2e-05,0.000714,local case participant,ROUTINE,False
++917224887509,PHONE,Phone +917224887509,1,CASE_004,4,0.003788,4.4e-05,0.000713,local case participant,ROUTINE,False
+DEV_069,DEVICE,Device DEV_069 (IMEI 863711742363297),1,CASE_006,2,0.001894,0.0016,0.000711,local case participant,ROUTINE,False
++918052885071,PHONE,Phone +918052885071,3,CASE_002; CASE_005; CASE_008,4,0.003788,1.3e-05,0.000706,cross-case bridge,cross-case priority review,False
++919983076970,PHONE,Phone +919983076970,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,5,0.004735,0.004847,0.0007,cross-case bridge,cross-case priority review,False
++917232928708,PHONE,Phone +917232928708,3,CASE_001; CASE_003; CASE_009,4,0.003788,0.0,0.0007,cross-case bridge,cross-case priority review,False
++919782398083,PHONE,Phone +919782398083,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,4,0.003788,0.003733,0.000693,cross-case bridge,cross-case priority review,False
++919849609054,PHONE,Phone +919849609054,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,4,0.003788,0.011778,0.000688,cross-case bridge; high-betweenness conduit,cross-case priority review,False
+DEV_007,DEVICE,Device DEV_007 (IMEI 867069277631718),3,CASE_001; CASE_003; CASE_007,4,0.003788,0.002054,0.000683,cross-case bridge,cross-case priority review,False
+ACC_CAN_9462_033,BANK_ACCOUNT,Account ACC_CAN_9462_033,9,CASE_001; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,7,0.006629,0.000197,0.000683,cross-case bridge,cross-case priority review,False
++918898227303,PHONE,Phone +918898227303,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,4,0.003788,0.006257,0.000682,cross-case bridge,cross-case priority review,False
++918818050510,PHONE,Phone +918818050510,1,CASE_004,3,0.002841,4e-06,0.000678,local case participant,ROUTINE,False
+DEV_081,DEVICE,Device DEV_081 (IMEI 863194089051315),1,CASE_010,2,0.001894,0.0016,0.000677,local case participant,ROUTINE,False
++919955461591,PHONE,Phone +919955461591,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,5,0.004735,0.005733,0.000676,cross-case bridge,cross-case priority review,False
+CASE_010_PER_11,PERSON,Dinesh (CASE_010_PER_11),1,CASE_010,3,0.002841,0.002618,0.000675,local case participant,ROUTINE,False
+DEV_010,DEVICE,Device DEV_010 (IMEI 867950204204415),7,CASE_001; CASE_002; CASE_003; CASE_004; CASE_006; CASE_009; CASE_010,4,0.003788,0.0016,0.000675,cross-case bridge,cross-case priority review,False
++919894216001,PHONE,Phone +919894216001,1,CASE_010,4,0.003788,4.9e-05,0.000672,local case participant,ROUTINE,False
+DEV_012,DEVICE,Device DEV_012 (IMEI 866090633693692),2,CASE_001; CASE_007,3,0.002841,0.001873,0.000665,cross-case bridge,cross-case priority review,False
+DEV_009,DEVICE,Device DEV_009 (IMEI 866427409007382),2,CASE_003; CASE_009,3,0.002841,0.0016,0.000665,cross-case bridge,cross-case priority review,False
+DEV_077,DEVICE,Device DEV_077 (IMEI 868752349138696),1,CASE_010,2,0.001894,0.0016,0.000658,local case participant,ROUTINE,False
+DEV_038,DEVICE,Device DEV_038 (IMEI 866328471225477),1,CASE_003,2,0.001894,0.0016,0.000658,local case participant,ROUTINE,False
+PROV_RES_ENT_002,PERSON,Provisional Resolved Entity (PROV_RES_ENT_002),3,CASE_001; CASE_007; CASE_009,3,0.002841,0.0,0.000656,cross-case bridge,cross-case priority review,True
++918861140376,PHONE,Phone +918861140376,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,5,0.004735,0.006364,0.00065,cross-case bridge,cross-case priority review,False
+DEV_063,DEVICE,Device DEV_063 (IMEI 868450352878027),1,CASE_004,2,0.001894,0.0016,0.00065,local case participant,ROUTINE,False
++917076596831,PHONE,Phone +917076596831,3,CASE_002; CASE_005; CASE_008,4,0.003788,8.3e-05,0.000649,cross-case bridge,cross-case priority review,False
+DEV_017,DEVICE,Device DEV_017 (IMEI 862268536488751),2,CASE_001; CASE_007,3,0.002841,0.001913,0.000649,cross-case bridge,cross-case priority review,False
+DEV_020,DEVICE,Device DEV_020 (IMEI 868125845409944),2,CASE_002; CASE_005,3,0.002841,0.002178,0.000647,cross-case bridge,cross-case priority review,False
+DEV_034,DEVICE,Device DEV_034 (IMEI 869162560078873),1,CASE_001,2,0.001894,0.0016,0.000647,local case participant,ROUTINE,False
+DEV_005,DEVICE,Device DEV_005 (IMEI 868776498177357),2,CASE_003; CASE_007,3,0.002841,0.001729,0.000645,cross-case bridge,cross-case priority review,False
+ACC_BAN_0839_038,BANK_ACCOUNT,Account ACC_BAN_0839_038,4,CASE_001; CASE_003; CASE_007; CASE_009,6,0.005682,1e-06,0.000644,cross-case bridge,cross-case priority review,False
+DEV_058,DEVICE,Device DEV_058 (IMEI 866456110934764),1,CASE_008,2,0.001894,0.0016,0.000643,local case participant,ROUTINE,False
+SOC_069,SOCIAL_ACCOUNT,LinkedIn: @raju_680,1,CASE_006,3,0.002841,0.001552,0.000643,local case participant,ROUTINE,False
++917052799022,PHONE,Phone +917052799022,4,CASE_001; CASE_003; CASE_007; CASE_009,5,0.004735,7.5e-05,0.000642,cross-case bridge,cross-case priority review,False
+ACC_SBI_IRCTC_099,BANK_ACCOUNT,Account ACC_SBI_IRCTC_099,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,21,0.019886,0.006348,0.000641,cross-case bridge; high-connectivity entity,high-priority investigative lead,False
+DEV_008,DEVICE,Device DEV_008 (IMEI 865982638331307),2,CASE_001; CASE_009,3,0.002841,0.0016,0.000639,cross-case bridge,cross-case priority review,False
+DEV_080,DEVICE,Device DEV_080 (IMEI 862807899024580),1,CASE_010,2,0.001894,0.0016,0.000639,local case participant,ROUTINE,False
+DEV_045,DEVICE,Device DEV_045 (IMEI 861725402267158),1,CASE_009,2,0.001894,0.0016,0.000638,local case participant,ROUTINE,False
+DEV_049,DEVICE,Device DEV_049 (IMEI 862484831679063),1,CASE_002,2,0.001894,0.0016,0.000635,local case participant,ROUTINE,False
++919910819505,PHONE,Phone +919910819505,1,CASE_003,4,0.003788,0.002251,0.000633,local case participant,ROUTINE,False
++918843638559,PHONE,Phone +918843638559,2,CASE_004; CASE_010,4,0.003788,1.6e-05,0.000633,cross-case bridge,cross-case priority review,False
+DEV_029,DEVICE,Device DEV_029 (IMEI 863008469406471),2,CASE_002; CASE_008,3,0.002841,0.0016,0.000631,cross-case bridge,cross-case priority review,False
++919993652460,PHONE,Phone +919993652460,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,5,0.004735,0.009256,0.000628,cross-case bridge,cross-case priority review,False
+DEV_014,DEVICE,Device DEV_014 (IMEI 868575235744064),2,CASE_003; CASE_007,3,0.002841,0.001788,0.000628,cross-case bridge,cross-case priority review,False
+DEV_055,DEVICE,Device DEV_055 (IMEI 862663568354585),1,CASE_008,2,0.001894,0.0016,0.000627,local case participant,ROUTINE,False
+DEV_066,DEVICE,Device DEV_066 (IMEI 869554570502206),1,CASE_004,2,0.001894,0.0016,0.000627,local case participant,ROUTINE,False
+DEV_051,DEVICE,Device DEV_051 (IMEI 867400183080825),1,CASE_005,2,0.001894,0.0016,0.000626,local case participant,ROUTINE,False
++919912944682,PHONE,Phone +919912944682,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,5,0.004735,0.008173,0.000625,cross-case bridge,cross-case priority review,False
+DEV_053,DEVICE,Device DEV_053 (IMEI 861921690901595),1,CASE_005,2,0.001894,0.0016,0.000625,local case participant,ROUTINE,False
+DEV_075,DEVICE,Device DEV_075 (IMEI 865207066543220),1,CASE_010,2,0.001894,0.0016,0.000625,local case participant,ROUTINE,False
+DEV_073,DEVICE,Device DEV_073 (IMEI 866014849321798),1,CASE_006,2,0.001894,0.0016,0.000625,local case participant,ROUTINE,False
+DEV_022,DEVICE,Device DEV_022 (IMEI 869094373213453),2,CASE_005; CASE_008,3,0.002841,0.001707,0.000624,cross-case bridge,cross-case priority review,False
+ACC_ICI_0278_031,BANK_ACCOUNT,Account ACC_ICI_0278_031,3,CASE_002; CASE_005; CASE_008,6,0.005682,0.0,0.000623,cross-case bridge,cross-case priority review,False
+SOC_065,SOCIAL_ACCOUNT,Instagram: @raju_769,1,CASE_006,3,0.002841,0.002666,0.000623,local case participant,ROUTINE,False
+SOC_066,SOCIAL_ACCOUNT,WhatsApp: @raju_576,1,CASE_006,3,0.002841,0.002666,0.000623,local case participant,ROUTINE,False
+DEV_041,DEVICE,Device DEV_041 (IMEI 868951967633769),1,CASE_007,2,0.001894,0.0016,0.000622,local case participant,ROUTINE,False
+DEV_064,DEVICE,Device DEV_064 (IMEI 861319381619752),1,CASE_004,2,0.001894,0.0016,0.000622,local case participant,ROUTINE,False
+ACC_CAN_9334_064,BANK_ACCOUNT,Account ACC_CAN_9334_064,1,CASE_006,3,0.002841,0.0,0.000622,local case participant,ROUTINE,False
+DEV_085,DEVICE,Device DEV_085 (IMEI 861472147781773),1,CASE_009,2,0.001894,0.0016,0.000621,local case participant,ROUTINE,False
+DEV_067,DEVICE,Device DEV_067 (IMEI 863723600104380),1,CASE_006,2,0.001894,0.0016,0.000621,local case participant,ROUTINE,False
++918515095407,PHONE,Phone +918515095407,4,CASE_001; CASE_003; CASE_007; CASE_009,4,0.003788,0.003149,0.00062,cross-case bridge,cross-case priority review,False
+DEV_072,DEVICE,Device DEV_072 (IMEI 865177798808648),1,CASE_006,2,0.001894,0.0016,0.000616,local case participant,ROUTINE,False
++917023590593,PHONE,Phone +917023590593,3,CASE_002; CASE_005; CASE_008,4,0.003788,2e-06,0.000615,cross-case bridge,cross-case priority review,False
+DEV_018,DEVICE,Device DEV_018 (IMEI 868670993277488),3,CASE_002; CASE_005; CASE_008,4,0.003788,0.0016,0.000615,cross-case bridge,cross-case priority review,False
+ACC_PAY_8568_017,BANK_ACCOUNT,Account ACC_PAY_8568_017,9,CASE_001; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,6,0.005682,4.8e-05,0.000615,cross-case bridge,cross-case priority review,False
+ACC_BAN_2491_034,BANK_ACCOUNT,Account ACC_BAN_2491_034,9,CASE_001; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,6,0.005682,8.3e-05,0.000614,cross-case bridge,cross-case priority review,False
+DEV_037,DEVICE,Device DEV_037 (IMEI 869246630495579),1,CASE_003,2,0.001894,0.0016,0.000611,local case participant,ROUTINE,False
++918530614492,PHONE,Phone +918530614492,3,CASE_002; CASE_005; CASE_008,3,0.002841,0.0,0.00061,cross-case bridge,cross-case priority review,False
++919850851122,PHONE,Phone +919850851122,1,CASE_010,3,0.002841,0.000932,0.000609,local case participant,ROUTINE,False
+PROV_RES_ENT_003,PERSON,Provisional Resolved Entity (PROV_RES_ENT_003),3,CASE_001; CASE_003; CASE_007,3,0.002841,0.0,0.000608,cross-case bridge,cross-case priority review,True
++919847077298,PHONE,Phone +919847077298,4,CASE_001; CASE_003; CASE_007; CASE_009,4,0.003788,1e-05,0.000608,cross-case bridge,cross-case priority review,False
++917245772648,PHONE,Phone +917245772648,3,CASE_002; CASE_005; CASE_008,4,0.003788,0.000643,0.000608,cross-case bridge,cross-case priority review,False
+ACC_ICI_7430_046,BANK_ACCOUNT,Account ACC_ICI_7430_046,3,CASE_002; CASE_005; CASE_008,6,0.005682,1e-06,0.000606,cross-case bridge,cross-case priority review,False
+DEV_031,DEVICE,Device DEV_031 (IMEI 865153867698241),1,CASE_001,2,0.001894,0.0016,0.000604,local case participant,ROUTINE,False
+VEH_038,VEHICLE,Vehicle JH-91-AX-6669 (VEH_038),3,CASE_001; CASE_006; CASE_007,4,0.003788,0.000121,0.000604,cross-case bridge,cross-case priority review,False
+DEV_084,DEVICE,Device DEV_084 (IMEI 868936312309472),1,CASE_005,2,0.001894,0.0016,0.000602,local case participant,ROUTINE,False
+DEV_028,DEVICE,Device DEV_028 (IMEI 862340751920861),2,CASE_002; CASE_005,3,0.002841,0.001698,0.000599,cross-case bridge,cross-case priority review,False
+DEV_024,DEVICE,Device DEV_024 (IMEI 865278242105528),2,CASE_002; CASE_008,3,0.002841,0.001815,0.000599,cross-case bridge,cross-case priority review,False
+SOC_027,SOCIAL_ACCOUNT,LinkedIn: @sethji_444,1,CASE_001,3,0.002841,0.002049,0.000599,local case participant,ROUTINE,False
+SOC_028,SOCIAL_ACCOUNT,Instagram: @sethji_263,1,CASE_001,3,0.002841,0.002049,0.000599,local case participant,ROUTINE,False
+PROV_RES_ENT_005,PERSON,Provisional Resolved Entity (PROV_RES_ENT_005),3,CASE_001; CASE_003; CASE_009,3,0.002841,0.0,0.000598,cross-case bridge,cross-case priority review,True
++919859731689,PHONE,Phone +919859731689,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,6,0.005682,0.002022,0.000597,cross-case bridge,cross-case priority review,False
+DEV_030,DEVICE,Device DEV_030 (IMEI 864412394260455),2,CASE_005; CASE_008,3,0.002841,0.0016,0.000597,cross-case bridge,cross-case priority review,False
+ACC_CAN_0884_082,BANK_ACCOUNT,Account ACC_CAN_0884_082,1,CASE_010,2,0.001894,2e-06,0.000587,local case participant,ROUTINE,False
+DEV_016,DEVICE,Device DEV_016 (IMEI 865048881437918),2,CASE_003; CASE_009,3,0.002841,0.00221,0.000586,cross-case bridge,cross-case priority review,False
+DEV_042,DEVICE,Device DEV_042 (IMEI 867485644957878),1,CASE_007,2,0.001894,0.0016,0.000586,local case participant,ROUTINE,False
+SOC_050,SOCIAL_ACCOUNT,Facebook: @vicky_954,1,CASE_005,3,0.002841,0.003662,0.000585,local case participant,ROUTINE,False
+PROV_RES_ENT_008,PERSON,Provisional Resolved Entity (PROV_RES_ENT_008),3,CASE_002; CASE_005; CASE_008,3,0.002841,0.0,0.000584,cross-case bridge,cross-case priority review,True
++917222873617,PHONE,Phone +917222873617,2,CASE_005; CASE_008,3,0.002841,0.0,0.000584,cross-case bridge,cross-case priority review,False
++918597131500,PHONE,Phone +918597131500,3,CASE_004; CASE_006; CASE_010,3,0.002841,0.0,0.000584,cross-case bridge,cross-case priority review,False
+SOC_045,SOCIAL_ACCOUNT,LinkedIn: @tiger_494,1,CASE_002,3,0.002841,0.006807,0.000584,local case participant,ROUTINE,False
+ACC_BAN_5984_089,BANK_ACCOUNT,Account ACC_BAN_5984_089,4,CASE_001; CASE_003; CASE_007; CASE_009,5,0.004735,1e-06,0.00058,cross-case bridge,cross-case priority review,False
++919771308842,PHONE,Phone +919771308842,2,CASE_005; CASE_008,3,0.002841,0.0,0.000579,cross-case bridge,cross-case priority review,False
+DEV_033,DEVICE,Device DEV_033 (IMEI 864114174929455),1,CASE_001,2,0.001894,0.0016,0.000577,local case participant,ROUTINE,False
+DEV_043,DEVICE,Device DEV_043 (IMEI 862588516389287),1,CASE_009,2,0.001894,0.0016,0.000576,local case participant,ROUTINE,False
+DEV_050,DEVICE,Device DEV_050 (IMEI 864035022005702),1,CASE_002,2,0.001894,0.0016,0.000574,local case participant,ROUTINE,False
+DEV_039,DEVICE,Device DEV_039 (IMEI 861990382606592),1,CASE_007,2,0.001894,0.0016,0.000573,local case participant,ROUTINE,False
+DEV_047,DEVICE,Device DEV_047 (IMEI 869819610669796),1,CASE_002,2,0.001894,0.0016,0.000573,local case participant,ROUTINE,False
++918871327848,PHONE,Phone +918871327848,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,4,0.003788,0.0,0.000572,cross-case bridge,cross-case priority review,False
+DEV_074,DEVICE,Device DEV_074 (IMEI 868897516286953),1,CASE_006,2,0.001894,0.0016,0.000572,local case participant,ROUTINE,False
+DEV_082,DEVICE,Device DEV_082 (IMEI 865798167005883),1,CASE_010,2,0.001894,0.0016,0.000569,local case participant,ROUTINE,False
+DEV_035,DEVICE,Device DEV_035 (IMEI 866684924033223),1,CASE_003,2,0.001894,0.0016,0.000568,local case participant,ROUTINE,False
+ACC_ICI_4159_092,BANK_ACCOUNT,Account ACC_ICI_4159_092,9,CASE_001; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,3,0.002841,0.000349,0.000568,cross-case bridge,cross-case priority review,False
+DEV_046,DEVICE,Device DEV_046 (IMEI 866652985443891),1,CASE_009,2,0.001894,0.0016,0.000567,local case participant,ROUTINE,False
+DEV_057,DEVICE,Device DEV_057 (IMEI 866863276207566),1,CASE_008,2,0.001894,0.0016,0.000564,local case participant,ROUTINE,False
++918019735027,PHONE,Phone +918019735027,3,CASE_004; CASE_006; CASE_010,3,0.002841,2e-06,0.000559,cross-case bridge,cross-case priority review,False
++917233851602,PHONE,Phone +917233851602,3,CASE_002; CASE_005; CASE_008,4,0.003788,4e-06,0.000557,cross-case bridge,cross-case priority review,False
+DEV_026,DEVICE,Device DEV_026 (IMEI 867962479773503),2,CASE_005; CASE_008,3,0.002841,0.001684,0.000556,cross-case bridge,cross-case priority review,False
+DEV_065,DEVICE,Device DEV_065 (IMEI 864171012434140),1,CASE_004,2,0.001894,0.0016,0.000556,local case participant,ROUTINE,False
++917058429638,PHONE,Phone +917058429638,2,CASE_005; CASE_008,3,0.002841,0.0,0.000555,cross-case bridge,cross-case priority review,False
+ACC_SBI_4568_037,BANK_ACCOUNT,Account ACC_SBI_4568_037,9,CASE_001; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,5,0.004735,0.000227,0.000554,cross-case bridge,cross-case priority review,False
+DEV_059,DEVICE,Device DEV_059 (IMEI 863269426179012),1,CASE_004,2,0.001894,0.0016,0.000552,local case participant,ROUTINE,False
+SOC_022,SOCIAL_ACCOUNT,Facebook: @tiger_709,2,CASE_002; CASE_008,3,0.002841,0.007308,0.000551,cross-case bridge,cross-case priority review,False
+SOC_014,SOCIAL_ACCOUNT,WhatsApp: @vicky_750,2,CASE_003; CASE_009,3,0.002841,0.006758,0.000549,cross-case bridge,cross-case priority review,False
+SOC_099,SOCIAL_ACCOUNT,WhatsApp: @vicky_3661,2,CASE_003; CASE_009,3,0.002841,0.006758,0.000549,cross-case bridge,cross-case priority review,False
+SOC_051,SOCIAL_ACCOUNT,WhatsApp: @tiger_104,1,CASE_008,3,0.002841,0.001513,0.000547,local case participant,ROUTINE,False
+SOC_052,SOCIAL_ACCOUNT,WhatsApp: @tiger_396,1,CASE_008,3,0.002841,0.001513,0.000547,local case participant,ROUTINE,False
++918098870866,PHONE,Phone +918098870866,3,CASE_004; CASE_006; CASE_010,3,0.002841,0.0,0.000543,cross-case bridge,cross-case priority review,False
++919854099326,PHONE,Phone +919854099326,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,5,0.004735,0.002275,0.000542,cross-case bridge,cross-case priority review,False
++918098663948,PHONE,Phone +918098663948,3,CASE_002; CASE_005; CASE_008,3,0.002841,1.3e-05,0.000539,cross-case bridge,cross-case priority review,False
+ACC_ICI_7046_084,BANK_ACCOUNT,Account ACC_ICI_7046_084,1,CASE_010,2,0.001894,0.0,0.000539,local case participant,ROUTINE,False
+SOC_090,SOCIAL_ACCOUNT,Facebook: @kaka_105,1,CASE_010,2,0.001894,0.00089,0.000537,local case participant,ROUTINE,False
++919727447248,PHONE,Phone +919727447248,1,CASE_010,2,0.001894,0.000555,0.000534,local case participant,ROUTINE,False
+SOC_015,SOCIAL_ACCOUNT,WhatsApp: @vicky_846,2,CASE_001; CASE_007,3,0.002841,0.002754,0.000533,cross-case bridge,cross-case priority review,False
+SOC_057,SOCIAL_ACCOUNT,LinkedIn: @kaka_730,1,CASE_004,2,0.001894,0.002417,0.00053,local case participant,ROUTINE,False
+SOC_058,SOCIAL_ACCOUNT,Instagram: @kaka_575,1,CASE_004,2,0.001894,0.002417,0.00053,local case participant,ROUTINE,False
+ACC_AXI_7757_016,BANK_ACCOUNT,Account ACC_AXI_7757_016,4,CASE_001; CASE_003; CASE_007; CASE_009,4,0.003788,1e-05,0.000529,cross-case bridge,cross-case priority review,False
+SOC_001,SOCIAL_ACCOUNT,Instagram: @vicky_475,4,CASE_001; CASE_003; CASE_007; CASE_009,3,0.002841,0.012501,0.000528,cross-case bridge; high-betweenness conduit,cross-case priority review,False
+SOC_002,SOCIAL_ACCOUNT,LinkedIn: @vicky_944,4,CASE_001; CASE_003; CASE_007; CASE_009,3,0.002841,0.012501,0.000528,cross-case bridge; high-betweenness conduit,cross-case priority review,False
+SOC_094,SOCIAL_ACCOUNT,WhatsApp: @sethji_589,1,CASE_010,2,0.001894,0.001153,0.000526,local case participant,ROUTINE,False
+DEV_083,DEVICE,Device DEV_083 (IMEI 862612491666355),1,CASE_003,2,0.001894,0.0016,0.000525,local case participant,ROUTINE,False
+SOC_061,SOCIAL_ACCOUNT,LinkedIn: @ramukaka_913,1,CASE_004,2,0.001894,0.004787,0.000525,local case participant,ROUTINE,False
++919873920651,PHONE,Phone +919873920651,1,CASE_010,2,0.001894,0.00065,0.000522,local case participant,ROUTINE,False
++919841383044,PHONE,Phone +919841383044,1,CASE_009,3,0.002841,0.0,0.000512,local case participant,ROUTINE,False
+SOC_043,SOCIAL_ACCOUNT,LinkedIn: @mama_336,1,CASE_002,2,0.001894,0.002292,0.000512,local case participant,ROUTINE,False
+SOC_044,SOCIAL_ACCOUNT,Instagram: @mama_317,1,CASE_002,2,0.001894,0.002292,0.000512,local case participant,ROUTINE,False
++919848604965,PHONE,Phone +919848604965,1,CASE_008,3,0.002841,1e-06,0.000511,local case participant,ROUTINE,False
+SOC_078,SOCIAL_ACCOUNT,Telegram: @guru_392,1,CASE_010,2,0.001894,0.001014,0.00051,local case participant,ROUTINE,False
++917233635791,PHONE,Phone +917233635791,3,CASE_002; CASE_005; CASE_008,4,0.003788,7.9e-05,0.000509,cross-case bridge,cross-case priority review,False
+DEV_054,DEVICE,Device DEV_054 (IMEI 866886885350850),1,CASE_005,2,0.001894,0.0016,0.000506,local case participant,ROUTINE,False
+SOC_079,SOCIAL_ACCOUNT,LinkedIn: @shooter_944,1,CASE_003,2,0.001894,0.011279,0.000506,high-betweenness conduit,ROUTINE,False
+PROV_RES_ENT_016,PERSON,Provisional Resolved Entity (PROV_RES_ENT_016),2,CASE_003; CASE_009,2,0.001894,0.0,0.000502,cross-case bridge,cross-case priority review,True
++918858970845,PHONE,Phone +918858970845,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,4,0.003788,0.003064,0.000502,cross-case bridge,cross-case priority review,False
+IMEI_866780131175358,DEVICE,IMEI 866780131175358,1,CASE_004,1,0.000947,0.0,0.0005,local case participant,ROUTINE,False
+ACC_HDF_7403_077,BANK_ACCOUNT,Account ACC_HDF_7403_077,9,CASE_001; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,4,0.003788,0.000192,0.000499,cross-case bridge,cross-case priority review,False
+IMEI_863711742363297,DEVICE,IMEI 863711742363297,1,CASE_006,1,0.000947,0.0,0.000498,local case participant,ROUTINE,False
+SOC_087,SOCIAL_ACCOUNT,Telegram: @doctor_90,1,CASE_003,2,0.001894,0.001142,0.000498,local case participant,ROUTINE,False
+SOC_033,SOCIAL_ACCOUNT,LinkedIn: @guru_698,1,CASE_003,2,0.001894,0.002041,0.000497,local case participant,ROUTINE,False
+SOC_077,SOCIAL_ACCOUNT,Instagram: @mama_19,1,CASE_010,2,0.001894,0.001906,0.000489,local case participant,ROUTINE,False
+ACC_BAN_5564_051,BANK_ACCOUNT,Account ACC_BAN_5564_051,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,5,0.004735,0.000308,0.000488,cross-case bridge,cross-case priority review,False
++919862958901,PHONE,Phone +919862958901,1,CASE_003,2,0.001894,0.000826,0.000487,local case participant,ROUTINE,False
+SOC_084,SOCIAL_ACCOUNT,Instagram: @pradhan_119,1,CASE_010,2,0.001894,0.001301,0.000482,local case participant,ROUTINE,False
+PROV_RES_ENT_012,PERSON,Provisional Resolved Entity (PROV_RES_ENT_012),2,CASE_002; CASE_008,2,0.001894,0.0,0.000481,cross-case bridge,cross-case priority review,True
+IMEI_863194089051315,DEVICE,IMEI 863194089051315,1,CASE_010,1,0.000947,0.0,0.000481,local case participant,ROUTINE,False
+ACC_SBI_0691_039,BANK_ACCOUNT,Account ACC_SBI_0691_039,4,CASE_001; CASE_003; CASE_007; CASE_009,4,0.003788,0.0,0.000481,cross-case bridge,cross-case priority review,False
+ACC_PAY_6247_043,BANK_ACCOUNT,Account ACC_PAY_6247_043,4,CASE_001; CASE_003; CASE_007; CASE_009,3,0.002841,0.0,0.000479,cross-case bridge,cross-case priority review,False
+ACC_PNB_9544_052,BANK_ACCOUNT,Account ACC_PNB_9544_052,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,5,0.004735,0.00024,0.000479,cross-case bridge,cross-case priority review,False
+PROV_RES_ENT_015,PERSON,Provisional Resolved Entity (PROV_RES_ENT_015),2,CASE_003; CASE_007,2,0.001894,0.0,0.000477,cross-case bridge,cross-case priority review,True
++918887835998,PHONE,Phone +918887835998,4,CASE_001; CASE_003; CASE_007; CASE_009,3,0.002841,1.1e-05,0.000477,cross-case bridge,cross-case priority review,False
+PROV_RES_ENT_017,PERSON,Provisional Resolved Entity (PROV_RES_ENT_017),2,CASE_005; CASE_008,2,0.001894,0.0,0.000473,cross-case bridge,cross-case priority review,True
++919978147397,PHONE,Phone +919978147397,1,CASE_001,3,0.002841,1e-05,0.000472,local case participant,ROUTINE,False
+IMEI_868752349138696,DEVICE,IMEI 868752349138696,1,CASE_010,1,0.000947,0.0,0.000472,local case participant,ROUTINE,False
+IMEI_866328471225477,DEVICE,IMEI 866328471225477,1,CASE_003,1,0.000947,0.0,0.000472,local case participant,ROUTINE,False
+IMEI_868450352878027,DEVICE,IMEI 868450352878027,1,CASE_004,1,0.000947,0.0,0.000468,local case participant,ROUTINE,False
+SOC_070,SOCIAL_ACCOUNT,Telegram: @pradhan_999,1,CASE_006,2,0.001894,0.005551,0.000468,local case participant,ROUTINE,False
+IMEI_869162560078873,DEVICE,IMEI 869162560078873,1,CASE_001,1,0.000947,0.0,0.000467,local case participant,ROUTINE,False
+SOC_095,SOCIAL_ACCOUNT,Facebook: @shooter_245,1,CASE_010,2,0.001894,0.007246,0.000463,local case participant,ROUTINE,False
+PROV_RES_ENT_018,PERSON,Provisional Resolved Entity (PROV_RES_ENT_018),2,CASE_005; CASE_008,2,0.001894,0.0,0.000462,cross-case bridge,cross-case priority review,True
+IMEI_861725402267158,DEVICE,IMEI 861725402267158,1,CASE_009,1,0.000947,0.0,0.000462,local case participant,ROUTINE,False
+IMEI_862807899024580,DEVICE,IMEI 862807899024580,1,CASE_010,1,0.000947,0.0,0.000462,local case participant,ROUTINE,False
+IMEI_862484831679063,DEVICE,IMEI 862484831679063,1,CASE_002,1,0.000947,0.0,0.000461,local case participant,ROUTINE,False
+SOC_073,SOCIAL_ACCOUNT,LinkedIn: @kaka_667,2,CASE_004; CASE_010,2,0.001894,0.001089,0.000461,cross-case bridge,cross-case priority review,False
+SOC_074,SOCIAL_ACCOUNT,Facebook: @kaka_869,2,CASE_004; CASE_010,2,0.001894,0.001089,0.000461,cross-case bridge,cross-case priority review,False
+PROV_RES_ENT_006,PERSON,Provisional Resolved Entity (PROV_RES_ENT_006),2,CASE_001; CASE_007,2,0.001894,0.0,0.000459,cross-case bridge,cross-case priority review,True
+PROV_RES_ENT_014,PERSON,Provisional Resolved Entity (PROV_RES_ENT_014),2,CASE_003; CASE_009,2,0.001894,0.0,0.000459,cross-case bridge,cross-case priority review,True
+SOC_062,SOCIAL_ACCOUNT,Facebook: @master_832,1,CASE_004,2,0.001894,0.001669,0.000458,local case participant,ROUTINE,False
+SOC_092,SOCIAL_ACCOUNT,Facebook: @sethji_729,1,CASE_004,1,0.000947,0.0,0.000457,local case participant,ROUTINE,False
+IMEI_861921690901595,DEVICE,IMEI 861921690901595,1,CASE_005,1,0.000947,0.0,0.000456,local case participant,ROUTINE,False
+IMEI_865207066543220,DEVICE,IMEI 865207066543220,1,CASE_010,1,0.000947,0.0,0.000456,local case participant,ROUTINE,False
+IMEI_866014849321798,DEVICE,IMEI 866014849321798,1,CASE_006,1,0.000947,0.0,0.000456,local case participant,ROUTINE,False
+IMEI_862663568354585,DEVICE,IMEI 862663568354585,1,CASE_008,1,0.000947,0.0,0.000456,local case participant,ROUTINE,False
+IMEI_867400183080825,DEVICE,IMEI 867400183080825,1,CASE_005,1,0.000947,0.0,0.000456,local case participant,ROUTINE,False
+IMEI_869554570502206,DEVICE,IMEI 869554570502206,1,CASE_004,1,0.000947,0.0,0.000456,local case participant,ROUTINE,False
++918838984499,PHONE,Phone +918838984499,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,3,0.002841,0.000526,0.000455,cross-case bridge,cross-case priority review,False
+IMEI_868951967633769,DEVICE,IMEI 868951967633769,1,CASE_007,1,0.000947,0.0,0.000454,local case participant,ROUTINE,False
+IMEI_861472147781773,DEVICE,IMEI 861472147781773,1,CASE_009,1,0.000947,0.0,0.000454,local case participant,ROUTINE,False
+IMEI_861319381619752,DEVICE,IMEI 861319381619752,1,CASE_004,1,0.000947,0.0,0.000454,local case participant,ROUTINE,False
+IMEI_863723600104380,DEVICE,IMEI 863723600104380,1,CASE_006,1,0.000947,0.0,0.000454,local case participant,ROUTINE,False
+SOC_060,SOCIAL_ACCOUNT,WhatsApp: @captain_325,1,CASE_004,2,0.001894,0.005472,0.000454,local case participant,ROUTINE,False
+IMEI_865177798808648,DEVICE,IMEI 865177798808648,1,CASE_006,1,0.000947,0.0,0.000451,local case participant,ROUTINE,False
+ACC_ICI_0597_048,BANK_ACCOUNT,Account ACC_ICI_0597_048,3,CASE_002; CASE_005; CASE_008,4,0.003788,0.0,0.00045,cross-case bridge,cross-case priority review,False
++917030284415,PHONE,Phone +917030284415,2,CASE_006; CASE_010,3,0.002841,0.001509,0.000447,cross-case bridge,cross-case priority review,False
+SOC_034,SOCIAL_ACCOUNT,Facebook: @master_421,1,CASE_003,2,0.001894,0.003206,0.000446,local case participant,ROUTINE,False
+PROV_RES_ENT_010,PERSON,Provisional Resolved Entity (PROV_RES_ENT_010),2,CASE_002; CASE_008,2,0.001894,0.0,0.000442,cross-case bridge,cross-case priority review,True
+PROV_RES_ENT_011,PERSON,Provisional Resolved Entity (PROV_RES_ENT_011),2,CASE_002; CASE_005,2,0.001894,0.0,0.000442,cross-case bridge,cross-case priority review,True
+SOC_021,SOCIAL_ACCOUNT,Telegram: @agent_469,2,CASE_005; CASE_008,2,0.001894,0.003802,0.000442,cross-case bridge,cross-case priority review,False
+PROV_RES_ENT_007,PERSON,Provisional Resolved Entity (PROV_RES_ENT_007),2,CASE_001; CASE_007,2,0.001894,0.0,0.000441,cross-case bridge,cross-case priority review,True
+PROV_RES_ENT_019,PERSON,Provisional Resolved Entity (PROV_RES_ENT_019),2,CASE_005; CASE_008,2,0.001894,0.0,0.00044,cross-case bridge,cross-case priority review,True
+PROV_RES_ENT_009,PERSON,Provisional Resolved Entity (PROV_RES_ENT_009),2,CASE_002; CASE_005,2,0.001894,0.0,0.000439,cross-case bridge,cross-case priority review,True
+SOC_075,SOCIAL_ACCOUNT,Facebook: @master_792,1,CASE_010,2,0.001894,0.009758,0.000438,local case participant,ROUTINE,False
+PROV_RES_ENT_013,PERSON,Provisional Resolved Entity (PROV_RES_ENT_013),2,CASE_003; CASE_007,2,0.001894,0.0,0.000437,cross-case bridge,cross-case priority review,True
+SOC_010,SOCIAL_ACCOUNT,Instagram: @captain_744,2,CASE_001; CASE_007,2,0.001894,0.002133,0.000437,cross-case bridge,cross-case priority review,False
+SOC_011,SOCIAL_ACCOUNT,LinkedIn: @captain_466,2,CASE_001; CASE_007,2,0.001894,0.002133,0.000437,cross-case bridge,cross-case priority review,False
+SOC_049,SOCIAL_ACCOUNT,Instagram: @captain_271,1,CASE_005,2,0.001894,0.000578,0.000437,local case participant,ROUTINE,False
+SOC_093,SOCIAL_ACCOUNT,Telegram: @tiger_875,1,CASE_007,2,0.001894,0.001303,0.000437,local case participant,ROUTINE,False
+SOC_096,SOCIAL_ACCOUNT,Telegram: @tiger_5441,1,CASE_007,2,0.001894,0.001303,0.000437,local case participant,ROUTINE,False
+SOC_097,SOCIAL_ACCOUNT,LinkedIn: @captain_1539,1,CASE_005,2,0.001894,0.000578,0.000437,local case participant,ROUTINE,False
+SOC_100,SOCIAL_ACCOUNT,Telegram: @tiger_9856,1,CASE_007,2,0.001894,0.001303,0.000437,local case participant,ROUTINE,False
+SOC_025,SOCIAL_ACCOUNT,Instagram: @netaji_864,2,CASE_002; CASE_008,2,0.001894,0.004134,0.000436,cross-case bridge,cross-case priority review,False
+SOC_067,SOCIAL_ACCOUNT,Instagram: @guru_210,1,CASE_006,2,0.001894,0.004842,0.000436,local case participant,ROUTINE,False
+SOC_046,SOCIAL_ACCOUNT,Instagram: @vermaji_317,1,CASE_002,2,0.001894,0.001498,0.000435,local case participant,ROUTINE,False
+ACC_HDF_5904_083,BANK_ACCOUNT,Account ACC_HDF_5904_083,4,CASE_001; CASE_003; CASE_007; CASE_009,3,0.002841,0.0,0.000433,cross-case bridge,cross-case priority review,False
+ACC_CAN_8900_036,BANK_ACCOUNT,Account ACC_CAN_8900_036,4,CASE_001; CASE_003; CASE_007; CASE_009,3,0.002841,0.0,0.000433,cross-case bridge,cross-case priority review,False
+SOC_063,SOCIAL_ACCOUNT,WhatsApp: @vicky_946,1,CASE_006,2,0.001894,0.001073,0.000432,local case participant,ROUTINE,False
+SOC_064,SOCIAL_ACCOUNT,WhatsApp: @vicky_433,1,CASE_006,2,0.001894,0.001073,0.000432,local case participant,ROUTINE,False
+SOC_068,SOCIAL_ACCOUNT,Telegram: @agent_593,1,CASE_006,2,0.001894,0.005391,0.000432,local case participant,ROUTINE,False
+SOC_030,SOCIAL_ACCOUNT,Facebook: @doctor_42,1,CASE_001,2,0.001894,0.012862,0.00043,high-betweenness conduit,ROUTINE,False
+SOC_039,SOCIAL_ACCOUNT,LinkedIn: @sonu_236,1,CASE_009,2,0.001894,0.003192,0.00043,local case participant,ROUTINE,False
+SOC_040,SOCIAL_ACCOUNT,WhatsApp: @sonu_72,1,CASE_009,2,0.001894,0.003192,0.00043,local case participant,ROUTINE,False
+PROV_RES_ENT_004,PERSON,Provisional Resolved Entity (PROV_RES_ENT_004),2,CASE_001; CASE_009,2,0.001894,0.0,0.000429,cross-case bridge,cross-case priority review,True
+SOC_029,SOCIAL_ACCOUNT,Instagram: @captain_292,1,CASE_001,2,0.001894,0.009176,0.000429,local case participant,ROUTINE,False
+SOC_020,SOCIAL_ACCOUNT,Instagram: @agent_794,2,CASE_005; CASE_008,2,0.001894,0.00719,0.000428,cross-case bridge,cross-case priority review,False
+SOC_007,SOCIAL_ACCOUNT,LinkedIn: @sethji_934,2,CASE_003; CASE_009,2,0.001894,0.001492,0.000427,cross-case bridge,cross-case priority review,False
+SOC_026,SOCIAL_ACCOUNT,Facebook: @sonu_315,2,CASE_005; CASE_008,2,0.001894,0.008787,0.000427,cross-case bridge,cross-case priority review,False
+SOC_041,SOCIAL_ACCOUNT,Telegram: @shooter_579,1,CASE_009,2,0.001894,0.001273,0.000427,local case participant,ROUTINE,False
+SOC_047,SOCIAL_ACCOUNT,Telegram: @doctor_946,1,CASE_005,2,0.001894,0.000588,0.000427,local case participant,ROUTINE,False
+SOC_048,SOCIAL_ACCOUNT,Telegram: @doctor_436,1,CASE_005,2,0.001894,0.000588,0.000427,local case participant,ROUTINE,False
+SOC_016,SOCIAL_ACCOUNT,Instagram: @vicky_602,3,CASE_002; CASE_005; CASE_008,2,0.001894,0.008933,0.000417,cross-case bridge,cross-case priority review,False
+SOC_042,SOCIAL_ACCOUNT,WhatsApp: @captain_974,1,CASE_009,2,0.001894,0.004447,0.000417,local case participant,ROUTINE,False
+IMEI_866456110934764,DEVICE,IMEI 866456110934764,1,CASE_008,1,0.000947,0.0,0.000416,local case participant,ROUTINE,False
+SOC_018,SOCIAL_ACCOUNT,Facebook: @doctor_967,2,CASE_002; CASE_005,2,0.001894,0.006777,0.000416,cross-case bridge,cross-case priority review,False
+SOC_019,SOCIAL_ACCOUNT,Facebook: @doctor_303,2,CASE_002; CASE_005,2,0.001894,0.006777,0.000416,cross-case bridge,cross-case priority review,False
+SOC_031,SOCIAL_ACCOUNT,Facebook: @pradhan_256,1,CASE_003,2,0.001894,0.000962,0.000414,local case participant,ROUTINE,False
+SOC_032,SOCIAL_ACCOUNT,Facebook: @pradhan_618,1,CASE_003,2,0.001894,0.000962,0.000414,local case participant,ROUTINE,False
+SOC_086,SOCIAL_ACCOUNT,LinkedIn: @bhaiya_268,3,CASE_004; CASE_006; CASE_010,2,0.001894,0.001532,0.000413,cross-case bridge,cross-case priority review,False
++919420106509,PHONE,Phone +919420106509,1,CASE_003,2,0.001894,0.0,0.000411,local case participant,ROUTINE,False
+ACC_HDF_2471_042,BANK_ACCOUNT,Account ACC_HDF_2471_042,9,CASE_001; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,3,0.002841,0.000254,0.000411,cross-case bridge,cross-case priority review,False
+ACC_HDF_3553_091,BANK_ACCOUNT,Account ACC_HDF_3553_091,4,CASE_001; CASE_003; CASE_007; CASE_009,3,0.002841,0.0,0.000411,cross-case bridge,cross-case priority review,False
+SOC_008,SOCIAL_ACCOUNT,LinkedIn: @ramu_163,3,CASE_001; CASE_003; CASE_009,2,0.001894,0.010096,0.000409,cross-case bridge; high-betweenness conduit,cross-case priority review,False
++917055876720,PHONE,Phone +917055876720,4,CASE_001; CASE_003; CASE_007; CASE_009,3,0.002841,0.0,0.000408,cross-case bridge,cross-case priority review,False
+SOC_003,SOCIAL_ACCOUNT,LinkedIn: @sethji_831,4,CASE_001; CASE_003; CASE_007; CASE_009,2,0.001894,0.002264,0.000408,cross-case bridge,cross-case priority review,False
+SOC_009,SOCIAL_ACCOUNT,LinkedIn: @ramu_462,3,CASE_001; CASE_003; CASE_009,2,0.001894,0.003738,0.000408,cross-case bridge,cross-case priority review,False
++919954619335,PHONE,Phone +919954619335,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,4,0.003788,0.003359,0.000407,cross-case bridge,cross-case priority review,False
+CASE_002_VIC_01,VICTIM,Victim (CASE_002_VIC_01),1,CASE_002,1,0.000947,0.0,0.000405,local case participant,ROUTINE,False
+CASE_007_VIC_01,VICTIM,Victim (CASE_007_VIC_01),1,CASE_007,1,0.000947,0.0,0.000405,local case participant,ROUTINE,False
+CASE_007_VIC_02,VICTIM,Victim (CASE_007_VIC_02),1,CASE_007,1,0.000947,0.0,0.000405,local case participant,ROUTINE,False
+SOC_017,SOCIAL_ACCOUNT,Telegram: @vicky_362,3,CASE_002; CASE_005; CASE_008,2,0.001894,0.004673,0.000405,cross-case bridge,cross-case priority review,False
+IMEI_869246630495579,DEVICE,IMEI 869246630495579,1,CASE_003,1,0.000947,0.0,0.000403,local case participant,ROUTINE,False
+SOC_005,SOCIAL_ACCOUNT,Telegram: @ustad_550,3,CASE_001; CASE_003; CASE_007,2,0.001894,0.002389,0.000403,cross-case bridge,cross-case priority review,False
+IMEI_865153867698241,DEVICE,IMEI 865153867698241,1,CASE_001,1,0.000947,0.0,0.0004,local case participant,ROUTINE,False
+SOC_037,SOCIAL_ACCOUNT,LinkedIn: @agent_336,1,CASE_007,2,0.001894,0.007019,0.0004,local case participant,ROUTINE,False
+IMEI_868936312309472,DEVICE,IMEI 868936312309472,1,CASE_005,1,0.000947,0.0,0.000399,local case participant,ROUTINE,False
+CASE_001_VIC_01,VICTIM,Victim (CASE_001_VIC_01),1,CASE_001,1,0.000947,0.0,0.000398,local case participant,ROUTINE,False
+CASE_001_VIC_02,VICTIM,Victim (CASE_001_VIC_02),1,CASE_001,1,0.000947,0.0,0.000398,local case participant,ROUTINE,False
+CASE_001_VIC_03,VICTIM,Victim (CASE_001_VIC_03),1,CASE_001,1,0.000947,0.0,0.000398,local case participant,ROUTINE,False
+CASE_008_VIC_01,VICTIM,Victim (CASE_008_VIC_01),1,CASE_008,1,0.000947,0.0,0.000398,local case participant,ROUTINE,False
+CASE_008_VIC_02,VICTIM,Victim (CASE_008_VIC_02),1,CASE_008,1,0.000947,0.0,0.000398,local case participant,ROUTINE,False
+IMEI_867485644957878,DEVICE,IMEI 867485644957878,1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00041,EVIDENCE,Evidence EVID_00041 (WhatsApp Chat Export),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00135,EVIDENCE,Evidence EVID_00135 (Social Media OSINT Dump),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00146,EVIDENCE,Evidence EVID_00146 (WhatsApp Chat Export),1,CASE_002,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00105,EVIDENCE,Evidence EVID_00105 (Seized Physical Diary / Ledger),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00076,EVIDENCE,Evidence EVID_00076 (WhatsApp Chat Export),1,CASE_002,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00016,EVIDENCE,Evidence EVID_00016 (Digital CDR Extraction),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00094,EVIDENCE,Evidence EVID_00094 (ANPR Camera Capture),1,CASE_002,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00131,EVIDENCE,Evidence EVID_00131 (Seized Physical Diary / Ledger),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00106,EVIDENCE,Evidence EVID_00106 (Social Media OSINT Dump),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00072,EVIDENCE,Evidence EVID_00072 (Mobile Forensic Extraction Report (UFED)),1,CASE_002,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00190,EVIDENCE,Evidence EVID_00190 (FASTag Toll Transit Log),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00125,EVIDENCE,Evidence EVID_00125 (Digital CDR Extraction),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00107,EVIDENCE,Evidence EVID_00107 (WhatsApp Chat Export),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00117,EVIDENCE,Evidence EVID_00117 (FASTag Toll Transit Log),1,CASE_002,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00056,EVIDENCE,Evidence EVID_00056 (Social Media OSINT Dump),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00025,EVIDENCE,Evidence EVID_00025 (Seized Physical Diary / Ledger),1,CASE_002,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00091,EVIDENCE,Evidence EVID_00091 (Bank Account Ledger),1,CASE_002,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00054,EVIDENCE,Evidence EVID_00054 (FASTag Toll Transit Log),1,CASE_002,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00185,EVIDENCE,Evidence EVID_00185 (FASTag Toll Transit Log),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00133,EVIDENCE,Evidence EVID_00133 (Bank Account Ledger),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00010,EVIDENCE,Evidence EVID_00010 (WhatsApp Chat Export),1,CASE_002,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00122,EVIDENCE,Evidence EVID_00122 (Bank Account Ledger),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00112,EVIDENCE,Evidence EVID_00112 (Mobile Forensic Extraction Report (UFED)),1,CASE_002,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00182,EVIDENCE,Evidence EVID_00182 (Mobile Forensic Extraction Report (UFED)),1,CASE_002,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00109,EVIDENCE,Evidence EVID_00109 (Social Media OSINT Dump),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00186,EVIDENCE,Evidence EVID_00186 (Mobile Forensic Extraction Report (UFED)),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00184,EVIDENCE,Evidence EVID_00184 (Bank Account Ledger),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00098,EVIDENCE,Evidence EVID_00098 (FASTag Toll Transit Log),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00020,EVIDENCE,Evidence EVID_00020 (Digital CDR Extraction),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00055,EVIDENCE,Evidence EVID_00055 (Social Media OSINT Dump),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00196,EVIDENCE,Evidence EVID_00196 (WhatsApp Chat Export),1,CASE_002,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00097,EVIDENCE,Evidence EVID_00097 (Digital CDR Extraction),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00170,EVIDENCE,Evidence EVID_00170 (WhatsApp Chat Export),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00111,EVIDENCE,Evidence EVID_00111 (WhatsApp Chat Export),1,CASE_002,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00199,EVIDENCE,Evidence EVID_00199 (Digital CDR Extraction),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00144,EVIDENCE,Evidence EVID_00144 (Digital CDR Extraction),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00188,EVIDENCE,Evidence EVID_00188 (WhatsApp Chat Export),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00064,EVIDENCE,Evidence EVID_00064 (Digital CDR Extraction),1,CASE_002,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00197,EVIDENCE,Evidence EVID_00197 (Seized Physical Diary / Ledger),1,CASE_002,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00027,EVIDENCE,Evidence EVID_00027 (WhatsApp Chat Export),1,CASE_002,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00085,EVIDENCE,Evidence EVID_00085 (Mobile Forensic Extraction Report (UFED)),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00080,EVIDENCE,Evidence EVID_00080 (Digital CDR Extraction),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00195,EVIDENCE,Evidence EVID_00195 (Mobile Forensic Extraction Report (UFED)),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00175,EVIDENCE,Evidence EVID_00175 (ANPR Camera Capture),1,CASE_002,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00163,EVIDENCE,Evidence EVID_00163 (WhatsApp Chat Export),1,CASE_002,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00166,EVIDENCE,Evidence EVID_00166 (FASTag Toll Transit Log),1,CASE_002,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00155,EVIDENCE,Evidence EVID_00155 (WhatsApp Chat Export),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00118,EVIDENCE,Evidence EVID_00118 (FASTag Toll Transit Log),1,CASE_002,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00176,EVIDENCE,Evidence EVID_00176 (Seized Physical Diary / Ledger),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00012,EVIDENCE,Evidence EVID_00012 (Seized Physical Diary / Ledger),1,CASE_002,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00092,EVIDENCE,Evidence EVID_00092 (Seized Physical Diary / Ledger),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00051,EVIDENCE,Evidence EVID_00051 (ANPR Camera Capture),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+EVID_00024,EVIDENCE,Evidence EVID_00024 (Bank Account Ledger),1,CASE_007,1,0.000947,0.0,0.000392,local case participant,ROUTINE,False
+IMEI_864114174929455,DEVICE,IMEI 864114174929455,1,CASE_001,1,0.000947,0.0,0.000389,local case participant,ROUTINE,False
+IMEI_862588516389287,DEVICE,IMEI 862588516389287,1,CASE_009,1,0.000947,0.0,0.000388,local case participant,ROUTINE,False
+CASE_004_VIC_01,VICTIM,Victim (CASE_004_VIC_01),1,CASE_004,1,0.000947,0.0,0.000387,local case participant,ROUTINE,False
+CASE_004_VIC_02,VICTIM,Victim (CASE_004_VIC_02),1,CASE_004,1,0.000947,0.0,0.000387,local case participant,ROUTINE,False
+CASE_004_VIC_03,VICTIM,Victim (CASE_004_VIC_03),1,CASE_004,1,0.000947,0.0,0.000387,local case participant,ROUTINE,False
+CASE_005_VIC_01,VICTIM,Victim (CASE_005_VIC_01),1,CASE_005,1,0.000947,0.0,0.000387,local case participant,ROUTINE,False
+CASE_005_VIC_02,VICTIM,Victim (CASE_005_VIC_02),1,CASE_005,1,0.000947,0.0,0.000387,local case participant,ROUTINE,False
+CASE_005_VIC_03,VICTIM,Victim (CASE_005_VIC_03),1,CASE_005,1,0.000947,0.0,0.000387,local case participant,ROUTINE,False
+CASE_005_VIC_04,VICTIM,Victim (CASE_005_VIC_04),1,CASE_005,1,0.000947,0.0,0.000387,local case participant,ROUTINE,False
+CASE_005_VIC_05,VICTIM,Victim (CASE_005_VIC_05),1,CASE_005,1,0.000947,0.0,0.000387,local case participant,ROUTINE,False
+IMEI_861990382606592,DEVICE,IMEI 861990382606592,1,CASE_007,1,0.000947,0.0,0.000387,local case participant,ROUTINE,False
+IMEI_864035022005702,DEVICE,IMEI 864035022005702,1,CASE_002,1,0.000947,0.0,0.000387,local case participant,ROUTINE,False
+IMEI_868897516286953,DEVICE,IMEI 868897516286953,1,CASE_006,1,0.000947,0.0,0.000386,local case participant,ROUTINE,False
+IMEI_866684924033223,DEVICE,IMEI 866684924033223,1,CASE_003,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+IMEI_865798167005883,DEVICE,IMEI 865798167005883,1,CASE_010,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00006,EVIDENCE,Evidence EVID_00006 (Bank Account Ledger),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00189,EVIDENCE,Evidence EVID_00189 (Digital CDR Extraction),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00100,EVIDENCE,Evidence EVID_00100 (Social Media OSINT Dump),1,CASE_008,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00119,EVIDENCE,Evidence EVID_00119 (FASTag Toll Transit Log),1,CASE_008,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00114,EVIDENCE,Evidence EVID_00114 (Social Media OSINT Dump),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00075,EVIDENCE,Evidence EVID_00075 (FASTag Toll Transit Log),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00030,EVIDENCE,Evidence EVID_00030 (ANPR Camera Capture),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00040,EVIDENCE,Evidence EVID_00040 (ANPR Camera Capture),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00167,EVIDENCE,Evidence EVID_00167 (FASTag Toll Transit Log),1,CASE_008,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00165,EVIDENCE,Evidence EVID_00165 (WhatsApp Chat Export),1,CASE_008,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00001,EVIDENCE,Evidence EVID_00001 (FASTag Toll Transit Log),1,CASE_008,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00086,EVIDENCE,Evidence EVID_00086 (Social Media OSINT Dump),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00049,EVIDENCE,Evidence EVID_00049 (Seized Physical Diary / Ledger),1,CASE_008,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00089,EVIDENCE,Evidence EVID_00089 (Bank Account Ledger),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00193,EVIDENCE,Evidence EVID_00193 (FASTag Toll Transit Log),1,CASE_008,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00134,EVIDENCE,Evidence EVID_00134 (Digital CDR Extraction),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00141,EVIDENCE,Evidence EVID_00141 (Social Media OSINT Dump),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00183,EVIDENCE,Evidence EVID_00183 (Mobile Forensic Extraction Report (UFED)),1,CASE_008,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00021,EVIDENCE,Evidence EVID_00021 (ANPR Camera Capture),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00178,EVIDENCE,Evidence EVID_00178 (Digital CDR Extraction),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00081,EVIDENCE,Evidence EVID_00081 (Social Media OSINT Dump),1,CASE_008,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00160,EVIDENCE,Evidence EVID_00160 (ANPR Camera Capture),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00128,EVIDENCE,Evidence EVID_00128 (Digital CDR Extraction),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00110,EVIDENCE,Evidence EVID_00110 (Mobile Forensic Extraction Report (UFED)),1,CASE_008,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00044,EVIDENCE,Evidence EVID_00044 (Bank Account Ledger),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00078,EVIDENCE,Evidence EVID_00078 (Digital CDR Extraction),1,CASE_008,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00066,EVIDENCE,Evidence EVID_00066 (WhatsApp Chat Export),1,CASE_008,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00061,EVIDENCE,Evidence EVID_00061 (ANPR Camera Capture),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00177,EVIDENCE,Evidence EVID_00177 (Social Media OSINT Dump),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00179,EVIDENCE,Evidence EVID_00179 (Mobile Forensic Extraction Report (UFED)),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00130,EVIDENCE,Evidence EVID_00130 (ANPR Camera Capture),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00108,EVIDENCE,Evidence EVID_00108 (Mobile Forensic Extraction Report (UFED)),1,CASE_008,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00026,EVIDENCE,Evidence EVID_00026 (ANPR Camera Capture),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00035,EVIDENCE,Evidence EVID_00035 (Mobile Forensic Extraction Report (UFED)),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00116,EVIDENCE,Evidence EVID_00116 (Digital CDR Extraction),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00145,EVIDENCE,Evidence EVID_00145 (Social Media OSINT Dump),1,CASE_008,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00126,EVIDENCE,Evidence EVID_00126 (WhatsApp Chat Export),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00142,EVIDENCE,Evidence EVID_00142 (Bank Account Ledger),1,CASE_008,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00137,EVIDENCE,Evidence EVID_00137 (ANPR Camera Capture),1,CASE_008,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00159,EVIDENCE,Evidence EVID_00159 (Digital CDR Extraction),1,CASE_008,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00115,EVIDENCE,Evidence EVID_00115 (Bank Account Ledger),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00096,EVIDENCE,Evidence EVID_00096 (WhatsApp Chat Export),1,CASE_008,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00087,EVIDENCE,Evidence EVID_00087 (ANPR Camera Capture),1,CASE_008,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+EVID_00059,EVIDENCE,Evidence EVID_00059 (Social Media OSINT Dump),1,CASE_001,1,0.000947,0.0,0.000385,local case participant,ROUTINE,False
+CASE_010_VIC_01,VICTIM,Victim (CASE_010_VIC_01),1,CASE_010,1,0.000947,0.0,0.000384,local case participant,ROUTINE,False
+CASE_010_VIC_02,VICTIM,Victim (CASE_010_VIC_02),1,CASE_010,1,0.000947,0.0,0.000384,local case participant,ROUTINE,False
+CASE_010_VIC_03,VICTIM,Victim (CASE_010_VIC_03),1,CASE_010,1,0.000947,0.0,0.000384,local case participant,ROUTINE,False
+CASE_010_VIC_04,VICTIM,Victim (CASE_010_VIC_04),1,CASE_010,1,0.000947,0.0,0.000384,local case participant,ROUTINE,False
+CASE_010_VIC_05,VICTIM,Victim (CASE_010_VIC_05),1,CASE_010,1,0.000947,0.0,0.000384,local case participant,ROUTINE,False
+IMEI_866652985443891,DEVICE,IMEI 866652985443891,1,CASE_009,1,0.000947,0.0,0.000384,local case participant,ROUTINE,False
+ACC_AXI_7716_049,BANK_ACCOUNT,Account ACC_AXI_7716_049,3,CASE_002; CASE_005; CASE_008,3,0.002841,0.0,0.000384,cross-case bridge,cross-case priority review,False
+IMEI_864171012434140,DEVICE,IMEI 864171012434140,1,CASE_004,1,0.000947,0.0,0.00038,local case participant,ROUTINE,False
+IMEI_866090633693692,DEVICE,IMEI 866090633693692,2,CASE_001; CASE_007,1,0.000947,0.0,0.000379,cross-case bridge,cross-case priority review,False
+IMEI_866427409007382,DEVICE,IMEI 866427409007382,1,CASE_009,1,0.000947,0.0,0.000379,local case participant,ROUTINE,False
+IMEI_863269426179012,DEVICE,IMEI 863269426179012,1,CASE_004,1,0.000947,0.0,0.000378,local case participant,ROUTINE,False
+CASE_003_VIC_01,VICTIM,Victim (CASE_003_VIC_01),1,CASE_003,1,0.000947,0.0,0.000377,local case participant,ROUTINE,False
+CASE_003_VIC_02,VICTIM,Victim (CASE_003_VIC_02),1,CASE_003,1,0.000947,0.0,0.000377,local case participant,ROUTINE,False
+EVID_00007,EVIDENCE,Evidence EVID_00007 (Seized Physical Diary / Ledger),1,CASE_005,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00158,EVIDENCE,Evidence EVID_00158 (WhatsApp Chat Export),1,CASE_005,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00013,EVIDENCE,Evidence EVID_00013 (Seized Physical Diary / Ledger),1,CASE_004,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00181,EVIDENCE,Evidence EVID_00181 (Mobile Forensic Extraction Report (UFED)),1,CASE_004,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00068,EVIDENCE,Evidence EVID_00068 (ANPR Camera Capture),1,CASE_004,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00090,EVIDENCE,Evidence EVID_00090 (Mobile Forensic Extraction Report (UFED)),1,CASE_004,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00046,EVIDENCE,Evidence EVID_00046 (Bank Account Ledger),1,CASE_005,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00067,EVIDENCE,Evidence EVID_00067 (ANPR Camera Capture),1,CASE_005,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00058,EVIDENCE,Evidence EVID_00058 (Bank Account Ledger),1,CASE_005,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00099,EVIDENCE,Evidence EVID_00099 (Seized Physical Diary / Ledger),1,CASE_005,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00008,EVIDENCE,Evidence EVID_00008 (WhatsApp Chat Export),1,CASE_004,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00161,EVIDENCE,Evidence EVID_00161 (Social Media OSINT Dump),1,CASE_004,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00151,EVIDENCE,Evidence EVID_00151 (Seized Physical Diary / Ledger),1,CASE_005,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00077,EVIDENCE,Evidence EVID_00077 (FASTag Toll Transit Log),1,CASE_005,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00057,EVIDENCE,Evidence EVID_00057 (Seized Physical Diary / Ledger),1,CASE_004,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00045,EVIDENCE,Evidence EVID_00045 (Seized Physical Diary / Ledger),1,CASE_004,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00063,EVIDENCE,Evidence EVID_00063 (Seized Physical Diary / Ledger),1,CASE_004,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00065,EVIDENCE,Evidence EVID_00065 (WhatsApp Chat Export),1,CASE_005,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00156,EVIDENCE,Evidence EVID_00156 (Social Media OSINT Dump),1,CASE_005,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00124,EVIDENCE,Evidence EVID_00124 (WhatsApp Chat Export),1,CASE_005,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00104,EVIDENCE,Evidence EVID_00104 (Bank Account Ledger),1,CASE_005,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00093,EVIDENCE,Evidence EVID_00093 (Seized Physical Diary / Ledger),1,CASE_005,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00174,EVIDENCE,Evidence EVID_00174 (Mobile Forensic Extraction Report (UFED)),1,CASE_004,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00169,EVIDENCE,Evidence EVID_00169 (Bank Account Ledger),1,CASE_004,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00015,EVIDENCE,Evidence EVID_00015 (Seized Physical Diary / Ledger),1,CASE_004,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00002,EVIDENCE,Evidence EVID_00002 (FASTag Toll Transit Log),1,CASE_004,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00180,EVIDENCE,Evidence EVID_00180 (Social Media OSINT Dump),1,CASE_005,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00017,EVIDENCE,Evidence EVID_00017 (Seized Physical Diary / Ledger),1,CASE_004,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00062,EVIDENCE,Evidence EVID_00062 (FASTag Toll Transit Log),1,CASE_005,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00149,EVIDENCE,Evidence EVID_00149 (Digital CDR Extraction),1,CASE_005,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00139,EVIDENCE,Evidence EVID_00139 (WhatsApp Chat Export),1,CASE_004,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00150,EVIDENCE,Evidence EVID_00150 (Bank Account Ledger),1,CASE_005,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+EVID_00037,EVIDENCE,Evidence EVID_00037 (ANPR Camera Capture),1,CASE_005,1,0.000947,0.0,0.000375,local case participant,ROUTINE,False
+IMEI_862268536488751,DEVICE,IMEI 862268536488751,2,CASE_001; CASE_007,1,0.000947,0.0,0.000373,cross-case bridge,cross-case priority review,False
+IMEI_868125845409944,DEVICE,IMEI 868125845409944,1,CASE_002,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+IMEI_868776498177357,DEVICE,IMEI 868776498177357,1,CASE_003,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00028,EVIDENCE,Evidence EVID_00028 (WhatsApp Chat Export),1,CASE_010,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00047,EVIDENCE,Evidence EVID_00047 (Social Media OSINT Dump),1,CASE_010,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00101,EVIDENCE,Evidence EVID_00101 (Social Media OSINT Dump),1,CASE_006,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00011,EVIDENCE,Evidence EVID_00011 (FASTag Toll Transit Log),1,CASE_010,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00073,EVIDENCE,Evidence EVID_00073 (Social Media OSINT Dump),1,CASE_006,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00019,EVIDENCE,Evidence EVID_00019 (Social Media OSINT Dump),1,CASE_010,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00154,EVIDENCE,Evidence EVID_00154 (Social Media OSINT Dump),1,CASE_010,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00084,EVIDENCE,Evidence EVID_00084 (Seized Physical Diary / Ledger),1,CASE_010,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00164,EVIDENCE,Evidence EVID_00164 (Seized Physical Diary / Ledger),1,CASE_006,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00009,EVIDENCE,Evidence EVID_00009 (Social Media OSINT Dump),1,CASE_006,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00198,EVIDENCE,Evidence EVID_00198 (ANPR Camera Capture),1,CASE_010,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00127,EVIDENCE,Evidence EVID_00127 (Seized Physical Diary / Ledger),1,CASE_010,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00162,EVIDENCE,Evidence EVID_00162 (Seized Physical Diary / Ledger),1,CASE_006,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00082,EVIDENCE,Evidence EVID_00082 (Seized Physical Diary / Ledger),1,CASE_010,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00200,EVIDENCE,Evidence EVID_00200 (Seized Physical Diary / Ledger),1,CASE_010,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00194,EVIDENCE,Evidence EVID_00194 (Mobile Forensic Extraction Report (UFED)),1,CASE_006,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00003,EVIDENCE,Evidence EVID_00003 (Digital CDR Extraction),1,CASE_010,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00014,EVIDENCE,Evidence EVID_00014 (FASTag Toll Transit Log),1,CASE_006,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00074,EVIDENCE,Evidence EVID_00074 (Seized Physical Diary / Ledger),1,CASE_006,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00029,EVIDENCE,Evidence EVID_00029 (WhatsApp Chat Export),1,CASE_010,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00113,EVIDENCE,Evidence EVID_00113 (ANPR Camera Capture),1,CASE_006,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00071,EVIDENCE,Evidence EVID_00071 (WhatsApp Chat Export),1,CASE_010,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00153,EVIDENCE,Evidence EVID_00153 (Bank Account Ledger),1,CASE_006,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00191,EVIDENCE,Evidence EVID_00191 (FASTag Toll Transit Log),1,CASE_006,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00143,EVIDENCE,Evidence EVID_00143 (Mobile Forensic Extraction Report (UFED)),1,CASE_010,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00004,EVIDENCE,Evidence EVID_00004 (ANPR Camera Capture),1,CASE_006,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00147,EVIDENCE,Evidence EVID_00147 (FASTag Toll Transit Log),1,CASE_010,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00032,EVIDENCE,Evidence EVID_00032 (Bank Account Ledger),1,CASE_010,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00129,EVIDENCE,Evidence EVID_00129 (ANPR Camera Capture),1,CASE_010,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00018,EVIDENCE,Evidence EVID_00018 (Bank Account Ledger),1,CASE_010,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00157,EVIDENCE,Evidence EVID_00157 (Seized Physical Diary / Ledger),1,CASE_010,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00039,EVIDENCE,Evidence EVID_00039 (ANPR Camera Capture),1,CASE_010,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00060,EVIDENCE,Evidence EVID_00060 (Mobile Forensic Extraction Report (UFED)),1,CASE_006,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+EVID_00083,EVIDENCE,Evidence EVID_00083 (Digital CDR Extraction),1,CASE_006,1,0.000947,0.0,0.000372,local case participant,ROUTINE,False
+IMEI_865982638331307,DEVICE,IMEI 865982638331307,1,CASE_009,1,0.000947,0.0,0.000369,local case participant,ROUTINE,False
+SOC_081,SOCIAL_ACCOUNT,LinkedIn: @amit_431,1,CASE_009,1,0.000947,0.0,0.000365,local case participant,ROUTINE,False
+EVID_00123,EVIDENCE,Evidence EVID_00123 (FASTag Toll Transit Log),1,CASE_003,1,0.000947,0.0,0.000365,local case participant,ROUTINE,False
+EVID_00140,EVIDENCE,Evidence EVID_00140 (Digital CDR Extraction),1,CASE_003,1,0.000947,0.0,0.000365,local case participant,ROUTINE,False
+EVID_00088,EVIDENCE,Evidence EVID_00088 (Digital CDR Extraction),1,CASE_003,1,0.000947,0.0,0.000365,local case participant,ROUTINE,False
+EVID_00136,EVIDENCE,Evidence EVID_00136 (Mobile Forensic Extraction Report (UFED)),1,CASE_003,1,0.000947,0.0,0.000365,local case participant,ROUTINE,False
+EVID_00048,EVIDENCE,Evidence EVID_00048 (WhatsApp Chat Export),1,CASE_003,1,0.000947,0.0,0.000365,local case participant,ROUTINE,False
+EVID_00070,EVIDENCE,Evidence EVID_00070 (Digital CDR Extraction),1,CASE_003,1,0.000947,0.0,0.000365,local case participant,ROUTINE,False
+EVID_00192,EVIDENCE,Evidence EVID_00192 (Seized Physical Diary / Ledger),1,CASE_003,1,0.000947,0.0,0.000365,local case participant,ROUTINE,False
+EVID_00043,EVIDENCE,Evidence EVID_00043 (Mobile Forensic Extraction Report (UFED)),1,CASE_003,1,0.000947,0.0,0.000365,local case participant,ROUTINE,False
+EVID_00171,EVIDENCE,Evidence EVID_00171 (FASTag Toll Transit Log),1,CASE_003,1,0.000947,0.0,0.000365,local case participant,ROUTINE,False
+EVID_00069,EVIDENCE,Evidence EVID_00069 (Bank Account Ledger),1,CASE_003,1,0.000947,0.0,0.000365,local case participant,ROUTINE,False
+EVID_00138,EVIDENCE,Evidence EVID_00138 (Seized Physical Diary / Ledger),1,CASE_003,1,0.000947,0.0,0.000365,local case participant,ROUTINE,False
+EVID_00187,EVIDENCE,Evidence EVID_00187 (WhatsApp Chat Export),1,CASE_003,1,0.000947,0.0,0.000365,local case participant,ROUTINE,False
+EVID_00152,EVIDENCE,Evidence EVID_00152 (Seized Physical Diary / Ledger),1,CASE_003,1,0.000947,0.0,0.000365,local case participant,ROUTINE,False
+EVID_00052,EVIDENCE,Evidence EVID_00052 (WhatsApp Chat Export),1,CASE_003,1,0.000947,0.0,0.000365,local case participant,ROUTINE,False
+EVID_00079,EVIDENCE,Evidence EVID_00079 (FASTag Toll Transit Log),1,CASE_003,1,0.000947,0.0,0.000365,local case participant,ROUTINE,False
+EVID_00148,EVIDENCE,Evidence EVID_00148 (Mobile Forensic Extraction Report (UFED)),1,CASE_003,1,0.000947,0.0,0.000365,local case participant,ROUTINE,False
+EVID_00120,EVIDENCE,Evidence EVID_00120 (ANPR Camera Capture),1,CASE_003,1,0.000947,0.0,0.000365,local case participant,ROUTINE,False
+EVID_00103,EVIDENCE,Evidence EVID_00103 (Social Media OSINT Dump),1,CASE_003,1,0.000947,0.0,0.000365,local case participant,ROUTINE,False
+EVID_00036,EVIDENCE,Evidence EVID_00036 (Digital CDR Extraction),1,CASE_003,1,0.000947,0.0,0.000365,local case participant,ROUTINE,False
+EVID_00022,EVIDENCE,Evidence EVID_00022 (Bank Account Ledger),1,CASE_003,1,0.000947,0.0,0.000365,local case participant,ROUTINE,False
+EVID_00168,EVIDENCE,Evidence EVID_00168 (FASTag Toll Transit Log),1,CASE_003,1,0.000947,0.0,0.000365,local case participant,ROUTINE,False
++919499078806,PHONE,Phone +919499078806,1,CASE_007,2,0.001894,0.0,0.000364,local case participant,ROUTINE,False
+ACC_PNB_2451_085,BANK_ACCOUNT,Account ACC_PNB_2451_085,3,CASE_001; CASE_003; CASE_009,2,0.001894,0.0,0.000364,cross-case bridge,cross-case priority review,False
+SOC_089,SOCIAL_ACCOUNT,Instagram: @mamta_317,1,CASE_004,1,0.000947,0.0,0.000364,local case participant,ROUTINE,False
+CASE_009_VIC_01,VICTIM,Victim (CASE_009_VIC_01),1,CASE_009,1,0.000947,0.0,0.000363,local case participant,ROUTINE,False
+CASE_009_VIC_02,VICTIM,Victim (CASE_009_VIC_02),1,CASE_009,1,0.000947,0.0,0.000363,local case participant,ROUTINE,False
++918092058189,PHONE,Phone +918092058189,3,CASE_002; CASE_005; CASE_008,2,0.001894,0.0,0.000363,cross-case bridge,cross-case priority review,False
+EVID_00031,EVIDENCE,Evidence EVID_00031 (Seized Physical Diary / Ledger),1,CASE_009,1,0.000947,0.0,0.000352,local case participant,ROUTINE,False
+EVID_00038,EVIDENCE,Evidence EVID_00038 (Social Media OSINT Dump),1,CASE_009,1,0.000947,0.0,0.000352,local case participant,ROUTINE,False
+EVID_00095,EVIDENCE,Evidence EVID_00095 (Social Media OSINT Dump),1,CASE_009,1,0.000947,0.0,0.000352,local case participant,ROUTINE,False
+EVID_00050,EVIDENCE,Evidence EVID_00050 (Mobile Forensic Extraction Report (UFED)),1,CASE_009,1,0.000947,0.0,0.000352,local case participant,ROUTINE,False
+EVID_00102,EVIDENCE,Evidence EVID_00102 (Bank Account Ledger),1,CASE_009,1,0.000947,0.0,0.000352,local case participant,ROUTINE,False
+EVID_00121,EVIDENCE,Evidence EVID_00121 (ANPR Camera Capture),1,CASE_009,1,0.000947,0.0,0.000352,local case participant,ROUTINE,False
+EVID_00005,EVIDENCE,Evidence EVID_00005 (Digital CDR Extraction),1,CASE_009,1,0.000947,0.0,0.000352,local case participant,ROUTINE,False
+EVID_00172,EVIDENCE,Evidence EVID_00172 (Mobile Forensic Extraction Report (UFED)),1,CASE_009,1,0.000947,0.0,0.000352,local case participant,ROUTINE,False
+EVID_00033,EVIDENCE,Evidence EVID_00033 (FASTag Toll Transit Log),1,CASE_009,1,0.000947,0.0,0.000352,local case participant,ROUTINE,False
+EVID_00034,EVIDENCE,Evidence EVID_00034 (Mobile Forensic Extraction Report (UFED)),1,CASE_009,1,0.000947,0.0,0.000352,local case participant,ROUTINE,False
+EVID_00023,EVIDENCE,Evidence EVID_00023 (Digital CDR Extraction),1,CASE_009,1,0.000947,0.0,0.000352,local case participant,ROUTINE,False
+EVID_00053,EVIDENCE,Evidence EVID_00053 (WhatsApp Chat Export),1,CASE_009,1,0.000947,0.0,0.000352,local case participant,ROUTINE,False
+EVID_00042,EVIDENCE,Evidence EVID_00042 (ANPR Camera Capture),1,CASE_009,1,0.000947,0.0,0.000352,local case participant,ROUTINE,False
+EVID_00173,EVIDENCE,Evidence EVID_00173 (Mobile Forensic Extraction Report (UFED)),1,CASE_009,1,0.000947,0.0,0.000352,local case participant,ROUTINE,False
+EVID_00132,EVIDENCE,Evidence EVID_00132 (Bank Account Ledger),1,CASE_009,1,0.000947,0.0,0.000352,local case participant,ROUTINE,False
+SOC_054,SOCIAL_ACCOUNT,Instagram: @santosh_900,1,CASE_008,1,0.000947,0.0,0.000347,local case participant,ROUTINE,False
+SOC_071,SOCIAL_ACCOUNT,Instagram: @pooja_760,1,CASE_010,1,0.000947,0.0,0.00034,local case participant,ROUTINE,False
+SOC_072,SOCIAL_ACCOUNT,Instagram: @pooja_747,1,CASE_010,1,0.000947,0.0,0.00034,local case participant,ROUTINE,False
+SOC_085,SOCIAL_ACCOUNT,Instagram: @kavita_256,1,CASE_003,1,0.000947,0.0,0.00034,local case participant,ROUTINE,False
+SOC_091,SOCIAL_ACCOUNT,Telegram: @geeta_575,1,CASE_009,1,0.000947,0.0,0.000335,local case participant,ROUTINE,False
+SOC_076,SOCIAL_ACCOUNT,Instagram: @harish_872,1,CASE_010,1,0.000947,0.0,0.000329,local case participant,ROUTINE,False
+SOC_055,SOCIAL_ACCOUNT,Facebook: @seema_226,2,CASE_004; CASE_010,1,0.000947,0.0,0.000323,cross-case bridge,cross-case priority review,False
+SOC_056,SOCIAL_ACCOUNT,Facebook: @seema_774,2,CASE_004; CASE_010,1,0.000947,0.0,0.000323,cross-case bridge,cross-case priority review,False
+IMEI_863008469406471,DEVICE,IMEI 863008469406471,2,CASE_002; CASE_008,1,0.000947,0.0,0.000322,cross-case bridge,cross-case priority review,False
+IMEI_869819610669796,DEVICE,IMEI 869819610669796,1,CASE_002,1,0.000947,0.0,0.000321,local case participant,ROUTINE,False
+IMEI_868575235744064,DEVICE,IMEI 868575235744064,2,CASE_003; CASE_007,1,0.000947,0.0,0.000321,cross-case bridge,cross-case priority review,False
+IMEI_869094373213453,DEVICE,IMEI 869094373213453,2,CASE_005; CASE_008,1,0.000947,0.0,0.00032,cross-case bridge,cross-case priority review,False
+IMEI_866863276207566,DEVICE,IMEI 866863276207566,1,CASE_008,1,0.000947,0.0,0.000318,local case participant,ROUTINE,False
+SOC_035,SOCIAL_ACCOUNT,LinkedIn: @vikram_232,1,CASE_007,1,0.000947,0.0,0.000316,local case participant,ROUTINE,False
+SOC_036,SOCIAL_ACCOUNT,LinkedIn: @vikram_306,1,CASE_007,1,0.000947,0.0,0.000316,local case participant,ROUTINE,False
+IMEI_862340751920861,DEVICE,IMEI 862340751920861,2,CASE_002; CASE_005,1,0.000947,0.0,0.000313,cross-case bridge,cross-case priority review,False
+IMEI_865278242105528,DEVICE,IMEI 865278242105528,2,CASE_002; CASE_008,1,0.000947,0.0,0.000313,cross-case bridge,cross-case priority review,False
+IMEI_864412394260455,DEVICE,IMEI 864412394260455,1,CASE_008,1,0.000947,0.0,0.000312,local case participant,ROUTINE,False
+SOC_083,SOCIAL_ACCOUNT,WhatsApp: @amit_27,1,CASE_009,1,0.000947,0.0,0.000309,local case participant,ROUTINE,False
+IMEI_862612491666355,DEVICE,IMEI 862612491666355,1,CASE_003,1,0.000947,0.0,0.000306,local case participant,ROUTINE,False
+SOC_088,SOCIAL_ACCOUNT,Telegram: @pankaj_588,1,CASE_006,1,0.000947,0.0,0.000305,local case participant,ROUTINE,False
+SOC_053,SOCIAL_ACCOUNT,Facebook: @neelam_202,1,CASE_008,1,0.000947,0.0,0.000304,local case participant,ROUTINE,False
+SOC_082,SOCIAL_ACCOUNT,LinkedIn: @shobha_749,3,CASE_004; CASE_006; CASE_010,1,0.000947,0.0,0.000303,cross-case bridge,cross-case priority review,False
+SOC_012,SOCIAL_ACCOUNT,Instagram: @raju_535,2,CASE_003; CASE_007,1,0.000947,0.0,0.000302,cross-case bridge,cross-case priority review,False
+SOC_013,SOCIAL_ACCOUNT,LinkedIn: @raju_69,2,CASE_003; CASE_007,1,0.000947,0.0,0.000302,cross-case bridge,cross-case priority review,False
+IMEI_866886885350850,DEVICE,IMEI 866886885350850,1,CASE_005,1,0.000947,0.0,0.0003,local case participant,ROUTINE,False
+SOC_059,SOCIAL_ACCOUNT,WhatsApp: @ustad_399,3,CASE_004; CASE_006; CASE_010,1,0.000947,0.0,0.000299,cross-case bridge,cross-case priority review,False
+IMEI_865784943957733,DEVICE,IMEI 865784943957733,3,CASE_001; CASE_007; CASE_009,1,0.000947,0.0,0.000296,cross-case bridge,cross-case priority review,False
++918017863981,PHONE,Phone +918017863981,3,CASE_002; CASE_005; CASE_008,2,0.001894,6.6e-05,0.00029,cross-case bridge,cross-case priority review,False
+IMEI_867069277631718,DEVICE,IMEI 867069277631718,2,CASE_001; CASE_003,1,0.000947,0.0,0.000288,cross-case bridge,cross-case priority review,False
+IMEI_867950204204415,DEVICE,IMEI 867950204204415,5,CASE_001; CASE_002; CASE_004; CASE_006; CASE_010,1,0.000947,0.0,0.000287,cross-case bridge,cross-case priority review,False
+SOC_004,SOCIAL_ACCOUNT,Instagram: @mamta_706,3,CASE_003; CASE_007; CASE_009,1,0.000947,0.0,0.000286,cross-case bridge,cross-case priority review,False
+SOC_098,SOCIAL_ACCOUNT,Instagram: @mamta_3362,3,CASE_003; CASE_007; CASE_009,1,0.000947,0.0,0.000286,cross-case bridge,cross-case priority review,False
+SOC_038,SOCIAL_ACCOUNT,WhatsApp: @kabir_907,1,CASE_007,1,0.000947,0.0,0.000284,local case participant,ROUTINE,False
+SOC_080,SOCIAL_ACCOUNT,Telegram: @gopal_26,3,CASE_002; CASE_005; CASE_008,1,0.000947,0.0,0.000283,cross-case bridge,cross-case priority review,False
+SOC_023,SOCIAL_ACCOUNT,WhatsApp: @sunil_131,3,CASE_002; CASE_005; CASE_008,1,0.000947,0.0,0.000277,cross-case bridge,cross-case priority review,False
+IMEI_862492914413340,DEVICE,IMEI 862492914413340,2,CASE_001; CASE_007,1,0.000947,0.0,0.000274,cross-case bridge,cross-case priority review,False
+SOC_024,SOCIAL_ACCOUNT,Telegram: @usha_551,3,CASE_002; CASE_005; CASE_008,1,0.000947,0.0,0.000273,cross-case bridge,cross-case priority review,False
+SOC_006,SOCIAL_ACCOUNT,LinkedIn: @gopal_124,3,CASE_001; CASE_003; CASE_009,1,0.000947,0.0,0.000268,cross-case bridge,cross-case priority review,False
+ACC_ICI_5740_079,BANK_ACCOUNT,Account ACC_ICI_5740_079,9,CASE_001; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,2,0.001894,2.3e-05,0.000257,cross-case bridge,cross-case priority review,False
+IMEI_865048881437918,DEVICE,IMEI 865048881437918,2,CASE_003; CASE_009,1,0.000947,0.0,0.000254,cross-case bridge,cross-case priority review,False
+IMEI_867962479773503,DEVICE,IMEI 867962479773503,2,CASE_005; CASE_008,1,0.000947,0.0,0.000249,cross-case bridge,cross-case priority review,False
+IMEI_868670993277488,DEVICE,IMEI 868670993277488,3,CASE_002; CASE_005; CASE_008,1,0.000947,0.0,0.000227,cross-case bridge,cross-case priority review,False
+LOC_Bhopal,LOCATION,Location Bhopal,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,0,0.0,0.0,0.000144,cross-case bridge,cross-case priority review,False
+LOC_Siliguri,LOCATION,Location Siliguri,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,0,0.0,0.0,0.000144,cross-case bridge,cross-case priority review,False
+LOC_Agra,LOCATION,Location Agra,9,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_009; CASE_010,0,0.0,0.0,0.000144,cross-case bridge,cross-case priority review,False
+LOC_Chandigarh,LOCATION,Location Chandigarh,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,0,0.0,0.0,0.000144,cross-case bridge,cross-case priority review,False
+LOC_Murshidabad,LOCATION,Location Murshidabad,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,0,0.0,0.0,0.000144,cross-case bridge,cross-case priority review,False
+LOC_Jaipur,LOCATION,Location Jaipur,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,0,0.0,0.0,0.000144,cross-case bridge,cross-case priority review,False
+LOC_Ranchi,LOCATION,Location Ranchi,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,0,0.0,0.0,0.000144,cross-case bridge,cross-case priority review,False
+LOC_TWR-DL-KASHMEREGATE-04,LOCATION,Location TWR-DL-KASHMEREGATE-04,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,0,0.0,0.0,0.000144,cross-case bridge,cross-case priority review,False
+LOC_TWR-UP-AGRA-06,LOCATION,Location TWR-UP-AGRA-06,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,0,0.0,0.0,0.000144,cross-case bridge,cross-case priority review,False
+LOC_TWR-BR-PATNA-13,LOCATION,Location TWR-BR-PATNA-13,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,0,0.0,0.0,0.000144,cross-case bridge,cross-case priority review,False
+LOC_TWR-JH-RANCHI-08,LOCATION,Location TWR-JH-RANCHI-08,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,0,0.0,0.0,0.000144,cross-case bridge,cross-case priority review,False
+LOC_TWR-DL-MAHIPALPUR-09,LOCATION,Location TWR-DL-MAHIPALPUR-09,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,0,0.0,0.0,0.000144,cross-case bridge,cross-case priority review,False
+LOC_TWR-WB-MALDA-03,LOCATION,Location TWR-WB-MALDA-03,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,0,0.0,0.0,0.000144,cross-case bridge,cross-case priority review,False
+LOC_TWR-WB-SEALDAH-05,LOCATION,Location TWR-WB-SEALDAH-05,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,0,0.0,0.0,0.000144,cross-case bridge,cross-case priority review,False
+LOC_TWR-WB-SILIGURI-11,LOCATION,Location TWR-WB-SILIGURI-11,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,0,0.0,0.0,0.000144,cross-case bridge,cross-case priority review,False
+LOC_TWR-JH-DHANBAD-14,LOCATION,Location TWR-JH-DHANBAD-14,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,0,0.0,0.0,0.000144,cross-case bridge,cross-case priority review,False
+LOC_TWR-HR-PANIPAT-12,LOCATION,Location TWR-HR-PANIPAT-12,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,0,0.0,0.0,0.000144,cross-case bridge,cross-case priority review,False
+LOC_TWR-RJ-JAIPUR-10,LOCATION,Location TWR-RJ-JAIPUR-10,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,0,0.0,0.0,0.000144,cross-case bridge,cross-case priority review,False
+LOC_TWR-HR-GURUGRAM-07,LOCATION,Location TWR-HR-GURUGRAM-07,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,0,0.0,0.0,0.000144,cross-case bridge,cross-case priority review,False
+LOC_TWR-WB-HOWRAH-02,LOCATION,Location TWR-WB-HOWRAH-02,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,0,0.0,0.0,0.000144,cross-case bridge,cross-case priority review,False
+LOC_TWR-UP-KANPUR-15,LOCATION,Location TWR-UP-KANPUR-15,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,0,0.0,0.0,0.000144,cross-case bridge,cross-case priority review,False
+LOC_TWR-DL-ANANDVIHAR-01,LOCATION,Location TWR-DL-ANANDVIHAR-01,10,CASE_001; CASE_002; CASE_003; CASE_004; CASE_005; CASE_006; CASE_007; CASE_008; CASE_009; CASE_010,0,0.0,0.0,0.000144,cross-case bridge,cross-case priority review,False

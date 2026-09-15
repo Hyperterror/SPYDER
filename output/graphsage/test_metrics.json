@@ -1,0 +1,30 @@
+{
+  "case_aware_test": {
+    "split_name": "Case-Aware Test",
+    "sample_count": 916,
+    "positives": 19,
+    "negatives": 897,
+    "roc_auc": 0.7979,
+    "pr_auc": 0.2108,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "false_positive_rate": 0.0
+  },
+  "entity_disjoint_test": {
+    "split_name": "Strict Entity-Disjoint Test",
+    "sample_count": 155,
+    "positives": 1,
+    "negatives": 154,
+    "roc_auc": 0.7662,
+    "pr_auc": 0.027,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "false_positive_rate": 0.0
+  },
+  "split_disclosures": {
+    "case_aware": "Case-aware split contains 64 overlapping entities across cross-case boundaries.",
+    "entity_disjoint": "Strictly entity-disjoint: exactly zero person entity overlap between train and test."
+  }
+}

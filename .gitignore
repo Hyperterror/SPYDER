@@ -85,3 +85,6 @@ postgres_data/
 neo4j_data/
 neo4j_logs/
 minio_data/
+
+# ─── Temporary / Zip extraction folders ───────────────────────────────────────
+SPYDER-main/

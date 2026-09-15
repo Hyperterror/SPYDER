@@ -8,9 +8,9 @@ import KpiCard from '@/components/ui/KpiCard'
 import StatusBadge from '@/components/ui/StatusBadge'
 import ActionQueueItem from '@/components/ui/ActionQueueItem'
 import Modal from '@/components/ui/Modal'
-import { casesApi } from '@/lib/api'
+import { casesApi, intelligenceApi } from '@/lib/api'
 import { isAuthenticated } from '@/lib/auth'
-import type { Case } from '@/types'
+import type { Case, InvestigationLead } from '@/types'
 
 /* ─── KPI Icons ─────────────────────────────────────────────────────────── */
 const CasesIcon = () => (
@@ -51,9 +51,12 @@ function formatDate(iso: string) {
 
 export default function DashboardPage() {
   const router = useRouter()
-  const [cases, setCases]           = useState<Case[]>([])
-  const [loading, setLoading]       = useState(true)
-  const [selectedCase, setSelected] = useState<Case | null>(null)
+  const [cases, setCases]                   = useState<Case[]>([])
+  const [leads, setLeads]                   = useState<InvestigationLead[]>([])
+  const [leadsTotal, setLeadsTotal]         = useState<number>(0)
+  const [crossCaseTotal, setCrossCaseTotal] = useState<number>(0)
+  const [loading, setLoading]               = useState(true)
+  const [selectedCase, setSelected]         = useState<Case | null>(null)
 
   useEffect(() => {
     if (!isAuthenticated()) { router.replace('/login'); return }
@@ -61,6 +64,19 @@ export default function DashboardPage() {
       .then(({ data }) => setCases(data))
       .catch(() => {})
       .finally(() => setLoading(false))
+
+    intelligenceApi.getLeads({ limit: 4 })
+      .then(({ data }) => {
+        setLeads(data.leads ?? [])
+        setLeadsTotal(data.total ?? 0)
+      })
+      .catch(() => {})
+
+    intelligenceApi.getCrossCase({ limit: 1 })
+      .then(({ data }) => {
+        setCrossCaseTotal(data.total ?? 0)
+      })
+      .catch(() => {})
   }, [router])
 
   const activeCases     = cases.filter((c) => c.status === 'ACTIVE').length
@@ -88,10 +104,10 @@ export default function DashboardPage() {
 
         {/* KPI Cards */}
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <KpiCard icon={<CasesIcon />}         label="Active Cases"    value={activeCases || 14}  trendDelta={2}  color="cyan"   />
-          <KpiCard icon={<ReviewsIcon />}        label="Pending Reviews" value={37}                 trendDelta={12} color="red"    />
+          <KpiCard icon={<CasesIcon />}         label="Active Cases"    value={activeCases || (cases.length ? cases.length : 14)}  trendDelta={2}  color="cyan"   />
+          <KpiCard icon={<ReviewsIcon />}        label="Pending Reviews" value={leadsTotal || 37}                 trendDelta={12} color="red"    />
           <KpiCard icon={<ContradictionsIcon />} label="Contradictions"  value={6}                  trendDelta={3}  color="amber"  />
-          <KpiCard icon={<LinksIcon />}          label="Cross-Case Links" value={3}                 trendDelta={1}  color="purple" />
+          <KpiCard icon={<LinksIcon />}          label="Cross-Case Links" value={crossCaseTotal || 3}                 trendDelta={1}  color="purple" />
         </section>
 
         {/* Middle: Investigations + Priority Queue */}
@@ -160,43 +176,82 @@ export default function DashboardPage() {
           <div className="lg:col-span-5 bg-brand-panel border border-brand-border rounded-lg p-4">
             <div className="flex items-center justify-between mb-3">
               <h2 className="text-sm font-bold text-white tracking-wide">Priority Action Queue</h2>
-              <a href="#" className="text-xs text-brand-cyan hover:underline flex items-center gap-1 font-medium">
-                View All <span>→</span>
-              </a>
+              <span className="text-xs text-brand-cyan flex items-center gap-1 font-medium">
+                {leadsTotal > 0 ? `${leadsTotal} Leads Active` : 'Automated Review'}
+              </span>
             </div>
             <div className="space-y-2.5">
-              <ActionQueueItem
-                title="Candidate Entity Match"
-                badge="High Priority"
-                color="red"
-                description={<>Possible match for <span className="font-mono text-brand-cyan">+91 98XXXXXX12</span> with existing suspect in Case #25998.</>}
-                timeAgo="3h ago"
-                icon={<svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" /></svg>}
-              />
-              <ActionQueueItem
-                title="Contradiction Detected"
-                badge="Needs Review"
-                color="amber"
-                description="Location data conflicts with witness statement for Case #26189."
-                timeAgo="5h ago"
-                icon={<svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" /></svg>}
-              />
-              <ActionQueueItem
-                title="Cross-Case Link"
-                badge="Medium"
-                color="cyan"
-                description={<>Vehicle <span className="font-mono text-white">DL01AB1234</span> appears in 2 cases.</>}
-                timeAgo="1d ago"
-                icon={<svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" /></svg>}
-              />
-              <ActionQueueItem
-                title="Unusual Financial Activity"
-                badge="Medium"
-                color="purple"
-                description="Multiple transfers from A/C XXXX4021 to high-risk entities."
-                timeAgo="1d ago"
-                icon={<svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" /></svg>}
-              />
+              {leads.length > 0 ? (
+                leads.slice(0, 4).map((lead) => {
+                  const color: 'red' | 'amber' | 'cyan' =
+                    lead.priority === 'HIGH' ? 'red' : lead.priority === 'REVIEW' ? 'amber' : 'cyan'
+                  const badge =
+                    lead.priority === 'HIGH' ? 'High Priority' : lead.priority === 'REVIEW' ? 'Needs Review' : 'Potential Lead'
+                  const targetCase = lead.source_case_ids[0] || lead.target_case_ids[0]
+                  return (
+                    <ActionQueueItem
+                      key={lead.lead_id}
+                      title={lead.prediction_type}
+                      badge={badge}
+                      color={color}
+                      description={
+                        <div>
+                          <div className="flex items-center gap-1 font-mono text-xs">
+                            <span className="text-brand-cyan">{lead.source_entity}</span>
+                            <span className="text-slate-500">↔</span>
+                            <span className="text-white">{lead.target_entity}</span>
+                          </div>
+                          <p className="text-[11px] text-slate-300 mt-1 line-clamp-2">
+                            Score: {(lead.confidence).toFixed(2)} · {lead.explanation}
+                          </p>
+                        </div>
+                      }
+                      timeAgo="Active"
+                      icon={
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
+                        </svg>
+                      }
+                      onReview={targetCase ? () => router.push(`/cases/${targetCase}/graph`) : undefined}
+                    />
+                  )
+                })
+              ) : (
+                <>
+                  <ActionQueueItem
+                    title="Candidate Entity Match"
+                    badge="High Priority"
+                    color="red"
+                    description={<>Possible match for <span className="font-mono text-brand-cyan">+91 98XXXXXX12</span> with existing suspect in Case #25998.</>}
+                    timeAgo="3h ago"
+                    icon={<svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" /></svg>}
+                  />
+                  <ActionQueueItem
+                    title="Contradiction Detected"
+                    badge="Needs Review"
+                    color="amber"
+                    description="Location data conflicts with witness statement for Case #26189."
+                    timeAgo="5h ago"
+                    icon={<svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" /></svg>}
+                  />
+                  <ActionQueueItem
+                    title="Cross-Case Link"
+                    badge="Medium"
+                    color="cyan"
+                    description={<>Vehicle <span className="font-mono text-white">DL01AB1234</span> appears in 2 cases.</>}
+                    timeAgo="1d ago"
+                    icon={<svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" /></svg>}
+                  />
+                  <ActionQueueItem
+                    title="Unusual Financial Activity"
+                    badge="Medium"
+                    color="purple"
+                    description="Multiple transfers from A/C XXXX4021 to high-risk entities."
+                    timeAgo="1d ago"
+                    icon={<svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" /></svg>}
+                  />
+                </>
+              )}
             </div>
           </div>
         </section>

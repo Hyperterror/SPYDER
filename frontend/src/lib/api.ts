@@ -1,4 +1,5 @@
 import axios, { AxiosInstance, InternalAxiosRequestConfig } from 'axios'
+import type { LeadResponse, InvestigationLead, StructuredEvidenceRecord, CrossCaseResponse } from '@/types'
 
 const BASE_URL = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:8000'
 
@@ -128,6 +129,31 @@ export const auditApi = {
       evidence_id: evidenceId,
       graph_reference: graphRef,
     }),
+}
+
+// ─── Intelligence (Phase 5A / 5B) ──────────────────────────────────────────
+export const intelligenceApi = {
+  getLeads: (params?: {
+    case_id?: string
+    min_confidence?: number
+    priority?: string
+    is_cross_case?: boolean
+    limit?: number
+    offset?: number
+  }) => api.get<LeadResponse>('/api/v1/intelligence/leads', { params }),
+
+  getLead: (leadId: string) =>
+    api.get<InvestigationLead>(`/api/v1/intelligence/leads/${leadId}`),
+
+  getLeadEvidence: (leadId: string) =>
+    api.get<StructuredEvidenceRecord[]>(`/api/v1/intelligence/leads/${leadId}/evidence`),
+
+  getCrossCase: (params?: {
+    min_confidence?: number
+    priority?: string
+    limit?: number
+    offset?: number
+  }) => api.get<CrossCaseResponse>('/api/v1/intelligence/cross-case', { params }),
 }
 
 export default api

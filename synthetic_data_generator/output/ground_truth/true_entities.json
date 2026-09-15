@@ -1,0 +1,1227 @@
+[
+  {
+    "global_id": "GLOBAL_ENT_001",
+    "true_name": "Aarav Gupta",
+    "canonical_alias": "Vicky",
+    "age_group": "18-25",
+    "true_role": "coordinator",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_001",
+      "CASE_003",
+      "CASE_007",
+      "CASE_009"
+    ],
+    "base_city": "Murshidabad",
+    "address": "358, Civil Lines, Murshidabad",
+    "occupation": "Agency Proprietor",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_002",
+    "true_name": "Kabir Sharma",
+    "canonical_alias": "Sethji",
+    "age_group": "26-35",
+    "true_role": "financier",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_001",
+      "CASE_007",
+      "CASE_009"
+    ],
+    "base_city": "Jaipur",
+    "address": "320, Station Road, Jaipur",
+    "occupation": "NGO Volunteer",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_003",
+    "true_name": "Mamta Sharma",
+    "canonical_alias": null,
+    "age_group": "36-50",
+    "true_role": "financier",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_003",
+      "CASE_007"
+    ],
+    "base_city": "Siliguri",
+    "address": "369, Near Bus Terminus, Siliguri",
+    "occupation": "Security Guard",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_004",
+    "true_name": "Sunil Verma",
+    "canonical_alias": "Ustad",
+    "age_group": "36-50",
+    "true_role": "transporter",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_001",
+      "CASE_003",
+      "CASE_007"
+    ],
+    "base_city": "Kolkata",
+    "address": "445, Railway Colony, Kolkata",
+    "occupation": "Placement Agent",
+    "is_hard_negative": true,
+    "hard_negative_group": "HN_GROUP_SUNIL"
+  },
+  {
+    "global_id": "GLOBAL_ENT_005",
+    "true_name": "Gopal Yadav",
+    "canonical_alias": null,
+    "age_group": "36-50",
+    "true_role": "transporter",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_001",
+      "CASE_009"
+    ],
+    "base_city": "Delhi NCR",
+    "address": "52, Civil Lines, Delhi NCR",
+    "occupation": "Mobile Repair Shop Owner",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_006",
+    "true_name": "Subhash Kumar",
+    "canonical_alias": "Sethji",
+    "age_group": "18-25",
+    "true_role": "transporter",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_003",
+      "CASE_009"
+    ],
+    "base_city": "Kolkata",
+    "address": "52, Bazaar Road, Kolkata",
+    "occupation": "Unemployed",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_007",
+    "true_name": "Ramesh Chand",
+    "canonical_alias": "Ramu",
+    "age_group": "18-25",
+    "true_role": "recruiter",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_001",
+      "CASE_003",
+      "CASE_009"
+    ],
+    "base_city": "Siliguri",
+    "address": "355, Industrial Area Phase 1, Siliguri",
+    "occupation": "Transporter",
+    "is_hard_negative": true,
+    "hard_negative_group": "HN_GROUP_RAMESH"
+  },
+  {
+    "global_id": "GLOBAL_ENT_008",
+    "true_name": "Manoj Ghosh",
+    "canonical_alias": "Captain",
+    "age_group": "18-25",
+    "true_role": "recruiter",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_001",
+      "CASE_007"
+    ],
+    "base_city": "Jaipur",
+    "address": "124, Railway Colony, Jaipur",
+    "occupation": "Tea Stall Owner",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_009",
+    "true_name": "Pankaj Prasad",
+    "canonical_alias": "Raju",
+    "age_group": "26-35",
+    "true_role": "recruiter",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_003",
+      "CASE_007"
+    ],
+    "base_city": "Jaipur",
+    "address": "379, Railway Colony, Jaipur",
+    "occupation": "Driver",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_010",
+    "true_name": "Harish Biswas",
+    "canonical_alias": "Vicky",
+    "age_group": "36-50",
+    "true_role": "document_facilitator",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_003",
+      "CASE_009"
+    ],
+    "base_city": "Siliguri",
+    "address": "393, Civil Lines, Siliguri",
+    "occupation": "NGO Volunteer",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_011",
+    "true_name": "Amit Thakur",
+    "canonical_alias": "Vicky",
+    "age_group": "18-25",
+    "true_role": "local_associate",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_001",
+      "CASE_007"
+    ],
+    "base_city": "Jaipur",
+    "address": "264, Gandhi Nagar, Jaipur",
+    "occupation": "Labor Contractor",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_012",
+    "true_name": "Vikramaditya Rao",
+    "canonical_alias": "Vicky",
+    "age_group": "50+",
+    "true_role": "coordinator",
+    "network_cluster": "NETWORK_BETA",
+    "case_memberships": [
+      "CASE_002",
+      "CASE_005",
+      "CASE_008"
+    ],
+    "base_city": "Chandigarh",
+    "address": "207, New Basti, Chandigarh",
+    "occupation": "Agency Proprietor",
+    "is_hard_negative": true,
+    "hard_negative_group": "HN_GROUP_VICKY"
+  },
+  {
+    "global_id": "GLOBAL_ENT_013",
+    "true_name": "Gopal Sharma",
+    "canonical_alias": "Doctor",
+    "age_group": "36-50",
+    "true_role": "recruiter",
+    "network_cluster": "NETWORK_BETA",
+    "case_memberships": [
+      "CASE_002",
+      "CASE_005"
+    ],
+    "base_city": "Panipat",
+    "address": "396, Industrial Area Phase 1, Panipat",
+    "occupation": "Labor Contractor",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_014",
+    "true_name": "Deepak Biswas",
+    "canonical_alias": "Agent",
+    "age_group": "18-25",
+    "true_role": "recruiter",
+    "network_cluster": "NETWORK_BETA",
+    "case_memberships": [
+      "CASE_005",
+      "CASE_008"
+    ],
+    "base_city": "Gurugram",
+    "address": "268, Subhash Chowk, Gurugram",
+    "occupation": "Auto Driver",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_015",
+    "true_name": "Ashok Khatun",
+    "canonical_alias": "Tiger",
+    "age_group": "18-25",
+    "true_role": "financier",
+    "network_cluster": "NETWORK_BETA",
+    "case_memberships": [
+      "CASE_002",
+      "CASE_008"
+    ],
+    "base_city": "Patna",
+    "address": "288, Civil Lines, Patna",
+    "occupation": "Cloth Merchant",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_016",
+    "true_name": "Sunil Thakur",
+    "canonical_alias": null,
+    "age_group": "26-35",
+    "true_role": "financier",
+    "network_cluster": "NETWORK_BETA",
+    "case_memberships": [
+      "CASE_005",
+      "CASE_008"
+    ],
+    "base_city": "Gurugram",
+    "address": "134, Station Road, Gurugram",
+    "occupation": "Tour Operator",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_017",
+    "true_name": "Usha Kumar",
+    "canonical_alias": null,
+    "age_group": "26-35",
+    "true_role": "transporter",
+    "network_cluster": "NETWORK_BETA",
+    "case_memberships": [
+      "CASE_002",
+      "CASE_005"
+    ],
+    "base_city": "Panipat",
+    "address": "404, Subhash Chowk, Panipat",
+    "occupation": "Driver",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_018",
+    "true_name": "Deepak Gupta",
+    "canonical_alias": "Netaji",
+    "age_group": "26-35",
+    "true_role": "transporter",
+    "network_cluster": "NETWORK_BETA",
+    "case_memberships": [
+      "CASE_002",
+      "CASE_008"
+    ],
+    "base_city": "Chandigarh",
+    "address": "120, Civil Lines, Chandigarh",
+    "occupation": "Auto Driver",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_019",
+    "true_name": "Tarun Soren",
+    "canonical_alias": "Sonu",
+    "age_group": "26-35",
+    "true_role": "local_associate",
+    "network_cluster": "NETWORK_BETA",
+    "case_memberships": [
+      "CASE_005",
+      "CASE_008"
+    ],
+    "base_city": "Chandigarh",
+    "address": "73, Bazaar Road, Chandigarh",
+    "occupation": "Tour Operator",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_020",
+    "true_name": "Kamal Poddar",
+    "canonical_alias": "Sethji",
+    "age_group": "26-35",
+    "true_role": "recruiter",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_001"
+    ],
+    "base_city": "Murshidabad",
+    "address": "48, Station Road, Murshidabad",
+    "occupation": "Tour Operator",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_021",
+    "true_name": "Pankaj Kumar",
+    "canonical_alias": "Captain",
+    "age_group": "26-35",
+    "true_role": "local_associate",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_001"
+    ],
+    "base_city": "Delhi NCR",
+    "address": "121, Civil Lines, Delhi NCR",
+    "occupation": "Driver",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_022",
+    "true_name": "Usha Saha",
+    "canonical_alias": "Doctor",
+    "age_group": "50+",
+    "true_role": "legitimate_contact",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_001"
+    ],
+    "base_city": "Delhi NCR",
+    "address": "193, Near Bus Terminus, Delhi NCR",
+    "occupation": "Factory Supervisor",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_023",
+    "true_name": "Kabir Murmu",
+    "canonical_alias": "Pradhan",
+    "age_group": "36-50",
+    "true_role": "recruiter",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_003"
+    ],
+    "base_city": "Murshidabad",
+    "address": "43, Near Bus Terminus, Murshidabad",
+    "occupation": "Labor Contractor",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_024",
+    "true_name": "Geeta Poddar",
+    "canonical_alias": "Guru",
+    "age_group": "26-35",
+    "true_role": "local_associate",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_003"
+    ],
+    "base_city": "Siliguri",
+    "address": "154, Transport Nagar, Siliguri",
+    "occupation": "Tour Operator",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_025",
+    "true_name": "Gopal Yadav",
+    "canonical_alias": "Master",
+    "age_group": "26-35",
+    "true_role": "legitimate_contact",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_003"
+    ],
+    "base_city": "Murshidabad",
+    "address": "59, Bazaar Road, Murshidabad",
+    "occupation": "NGO Volunteer",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_026",
+    "true_name": "Vikram Prasad",
+    "canonical_alias": null,
+    "age_group": "50+",
+    "true_role": "recruiter",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_007"
+    ],
+    "base_city": "Siliguri",
+    "address": "206, Station Road, Siliguri",
+    "occupation": "Security Guard",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_027",
+    "true_name": "Dinesh Mishra",
+    "canonical_alias": "Agent",
+    "age_group": "26-35",
+    "true_role": "local_associate",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_007"
+    ],
+    "base_city": "Jaipur",
+    "address": "350, Transport Nagar, Jaipur",
+    "occupation": "Hotel Manager",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_028",
+    "true_name": "Kabir Mahato",
+    "canonical_alias": null,
+    "age_group": "18-25",
+    "true_role": "legitimate_contact",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_007"
+    ],
+    "base_city": "Murshidabad",
+    "address": "394, Railway Colony, Murshidabad",
+    "occupation": "Placement Agent",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_029",
+    "true_name": "Ashok Choudhury",
+    "canonical_alias": "Sonu",
+    "age_group": "18-25",
+    "true_role": "recruiter",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_009"
+    ],
+    "base_city": "Murshidabad",
+    "address": "447, Subhash Chowk, Murshidabad",
+    "occupation": "Tour Operator",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_030",
+    "true_name": "Manoj Prasad",
+    "canonical_alias": "Shooter",
+    "age_group": "18-25",
+    "true_role": "local_associate",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_009"
+    ],
+    "base_city": "Siliguri",
+    "address": "308, New Basti, Siliguri",
+    "occupation": "Tour Operator",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_031",
+    "true_name": "Kamal Mahato",
+    "canonical_alias": "Captain",
+    "age_group": "26-35",
+    "true_role": "legitimate_contact",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_009"
+    ],
+    "base_city": "Siliguri",
+    "address": "354, Railway Colony, Siliguri",
+    "occupation": "Security Guard",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_032",
+    "true_name": "Tarun Soren",
+    "canonical_alias": "Mama",
+    "age_group": "18-25",
+    "true_role": "recruiter",
+    "network_cluster": "NETWORK_BETA",
+    "case_memberships": [
+      "CASE_002"
+    ],
+    "base_city": "Ranchi",
+    "address": "16, Transport Nagar, Ranchi",
+    "occupation": "Tour Operator",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_033",
+    "true_name": "Ashok Gupta",
+    "canonical_alias": "Tiger",
+    "age_group": "36-50",
+    "true_role": "local_associate",
+    "network_cluster": "NETWORK_BETA",
+    "case_memberships": [
+      "CASE_002"
+    ],
+    "base_city": "Ranchi",
+    "address": "137, Railway Colony, Ranchi",
+    "occupation": "Transporter",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_034",
+    "true_name": "Sunil K. Verma",
+    "canonical_alias": "Vermaji",
+    "age_group": "36-50",
+    "true_role": "legitimate_contact",
+    "network_cluster": "NETWORK_BETA",
+    "case_memberships": [
+      "CASE_002"
+    ],
+    "base_city": "Panipat",
+    "address": "16, Civil Lines, Panipat",
+    "occupation": "Bus Ticket Clerk",
+    "is_hard_negative": true,
+    "hard_negative_group": "HN_GROUP_SUNIL"
+  },
+  {
+    "global_id": "GLOBAL_ENT_035",
+    "true_name": "Rakesh Gupta",
+    "canonical_alias": "Doctor",
+    "age_group": "36-50",
+    "true_role": "recruiter",
+    "network_cluster": "NETWORK_BETA",
+    "case_memberships": [
+      "CASE_005"
+    ],
+    "base_city": "Panipat",
+    "address": "91, Industrial Area Phase 1, Panipat",
+    "occupation": "Hotel Manager",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_036",
+    "true_name": "Vikram Murmu",
+    "canonical_alias": "Captain",
+    "age_group": "18-25",
+    "true_role": "local_associate",
+    "network_cluster": "NETWORK_BETA",
+    "case_memberships": [
+      "CASE_005"
+    ],
+    "base_city": "Panipat",
+    "address": "262, Industrial Area Phase 1, Panipat",
+    "occupation": "Tour Operator",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_037",
+    "true_name": "Sanjay Verma",
+    "canonical_alias": "Vicky",
+    "age_group": "50+",
+    "true_role": "legitimate_contact",
+    "network_cluster": "NETWORK_BETA",
+    "case_memberships": [
+      "CASE_005"
+    ],
+    "base_city": "Gurugram",
+    "address": "94, Transport Nagar, Gurugram",
+    "occupation": "Travel Agent",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_038",
+    "true_name": "Rekha Poddar",
+    "canonical_alias": "Tiger",
+    "age_group": "50+",
+    "true_role": "recruiter",
+    "network_cluster": "NETWORK_BETA",
+    "case_memberships": [
+      "CASE_008"
+    ],
+    "base_city": "Panipat",
+    "address": "294, Subhash Chowk, Panipat",
+    "occupation": "Property Broker",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_039",
+    "true_name": "Neelam Verma",
+    "canonical_alias": null,
+    "age_group": "18-25",
+    "true_role": "local_associate",
+    "network_cluster": "NETWORK_BETA",
+    "case_memberships": [
+      "CASE_008"
+    ],
+    "base_city": "Patna",
+    "address": "361, Bazaar Road, Patna",
+    "occupation": "Mobile Repair Shop Owner",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_040",
+    "true_name": "Santosh Khatun",
+    "canonical_alias": null,
+    "age_group": "50+",
+    "true_role": "legitimate_contact",
+    "network_cluster": "NETWORK_BETA",
+    "case_memberships": [
+      "CASE_008"
+    ],
+    "base_city": "Patna",
+    "address": "95, Subhash Chowk, Patna",
+    "occupation": "Travel Agent",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_041",
+    "true_name": "Seema Saha",
+    "canonical_alias": null,
+    "age_group": "18-25",
+    "true_role": "coordinator",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_004"
+    ],
+    "base_city": "Kanpur",
+    "address": "148, Subhash Chowk, Kanpur",
+    "occupation": "Agency Proprietor",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_042",
+    "true_name": "Kabir Roy",
+    "canonical_alias": "Kaka",
+    "age_group": "26-35",
+    "true_role": "recruiter",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_004"
+    ],
+    "base_city": "Gwalior",
+    "address": "168, Bazaar Road, Gwalior",
+    "occupation": "Travel Agent",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_043",
+    "true_name": "Amit Patel",
+    "canonical_alias": "Ustad",
+    "age_group": "50+",
+    "true_role": "transporter",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_004"
+    ],
+    "base_city": "Gwalior",
+    "address": "191, Civil Lines, Gwalior",
+    "occupation": "Cloth Merchant",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_044",
+    "true_name": "Sunil Gupta",
+    "canonical_alias": "Captain",
+    "age_group": "50+",
+    "true_role": "local_associate",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_004"
+    ],
+    "base_city": "Agra",
+    "address": "67, New Basti, Agra",
+    "occupation": "Mobile Repair Shop Owner",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_045",
+    "true_name": "Ramesh Chand",
+    "canonical_alias": "Ramu Kaka",
+    "age_group": "26-35",
+    "true_role": "legitimate_contact",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_004"
+    ],
+    "base_city": "Agra",
+    "address": "209, New Basti, Agra",
+    "occupation": "Tea Stall Owner",
+    "is_hard_negative": true,
+    "hard_negative_group": "HN_GROUP_RAMESH"
+  },
+  {
+    "global_id": "GLOBAL_ENT_046",
+    "true_name": "Shobha Sharma",
+    "canonical_alias": "Master",
+    "age_group": "18-25",
+    "true_role": "legitimate_contact",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_004"
+    ],
+    "base_city": "Kanpur",
+    "address": "198, Near Bus Terminus, Kanpur",
+    "occupation": "Cloth Merchant",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_047",
+    "true_name": "Vikram Rathore",
+    "canonical_alias": "Vicky",
+    "age_group": "50+",
+    "true_role": "coordinator",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_006"
+    ],
+    "base_city": "Gwalior",
+    "address": "271, Industrial Area Phase 1, Gwalior",
+    "occupation": "Auto Driver",
+    "is_hard_negative": true,
+    "hard_negative_group": "HN_GROUP_VICKY"
+  },
+  {
+    "global_id": "GLOBAL_ENT_048",
+    "true_name": "Subhash Mishra",
+    "canonical_alias": "Raju",
+    "age_group": "26-35",
+    "true_role": "recruiter",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_006"
+    ],
+    "base_city": "Bhopal",
+    "address": "352, Near Bus Terminus, Bhopal",
+    "occupation": "Auto Driver",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_049",
+    "true_name": "Aarav Mishra",
+    "canonical_alias": "Guru",
+    "age_group": "50+",
+    "true_role": "transporter",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_006"
+    ],
+    "base_city": "Nagpur",
+    "address": "322, Railway Colony, Nagpur",
+    "occupation": "Factory Supervisor",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_050",
+    "true_name": "Vikram Choudhury",
+    "canonical_alias": "Agent",
+    "age_group": "36-50",
+    "true_role": "local_associate",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_006"
+    ],
+    "base_city": "Kanpur",
+    "address": "349, Gandhi Nagar, Kanpur",
+    "occupation": "Cloth Merchant",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_051",
+    "true_name": "Babita Murmu",
+    "canonical_alias": "Raju",
+    "age_group": "26-35",
+    "true_role": "legitimate_contact",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_006"
+    ],
+    "base_city": "Kanpur",
+    "address": "24, Station Road, Kanpur",
+    "occupation": "Driver",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_052",
+    "true_name": "Mohit Biswas",
+    "canonical_alias": "Pradhan",
+    "age_group": "50+",
+    "true_role": "legitimate_contact",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_006"
+    ],
+    "base_city": "Nagpur",
+    "address": "111, Near Bus Terminus, Nagpur",
+    "occupation": "Unemployed",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_053",
+    "true_name": "Pooja Yadav",
+    "canonical_alias": null,
+    "age_group": "50+",
+    "true_role": "coordinator",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_010"
+    ],
+    "base_city": "Kanpur",
+    "address": "102, Civil Lines, Kanpur",
+    "occupation": "Agency Proprietor",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_054",
+    "true_name": "Babita Yadav",
+    "canonical_alias": "Kaka",
+    "age_group": "36-50",
+    "true_role": "recruiter",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_010"
+    ],
+    "base_city": "Nagpur",
+    "address": "298, New Basti, Nagpur",
+    "occupation": "Factory Supervisor",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_055",
+    "true_name": "Mahesh Choudhury",
+    "canonical_alias": "Master",
+    "age_group": "50+",
+    "true_role": "transporter",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_010"
+    ],
+    "base_city": "Bhopal",
+    "address": "93, Transport Nagar, Bhopal",
+    "occupation": "Security Guard",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_056",
+    "true_name": "Harish Gupta",
+    "canonical_alias": null,
+    "age_group": "36-50",
+    "true_role": "local_associate",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_010"
+    ],
+    "base_city": "Nagpur",
+    "address": "260, Bazaar Road, Nagpur",
+    "occupation": "Factory Supervisor",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_057",
+    "true_name": "Suman Das",
+    "canonical_alias": "Mama",
+    "age_group": "26-35",
+    "true_role": "legitimate_contact",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_010"
+    ],
+    "base_city": "Nagpur",
+    "address": "53, Subhash Chowk, Nagpur",
+    "occupation": "Tea Stall Owner",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_058",
+    "true_name": "Rakesh Tiwari",
+    "canonical_alias": "Guru",
+    "age_group": "50+",
+    "true_role": "legitimate_contact",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_010"
+    ],
+    "base_city": "Bhopal",
+    "address": "181, Civil Lines, Bhopal",
+    "occupation": "NGO Volunteer",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_059",
+    "true_name": "Kamal Tiwari",
+    "canonical_alias": "Shooter",
+    "age_group": "36-50",
+    "true_role": "local_associate",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_003"
+    ],
+    "base_city": "Delhi NCR",
+    "address": "256, Station Road, Delhi NCR",
+    "occupation": "Auto Driver",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_060",
+    "true_name": "Gopal Khatun",
+    "canonical_alias": null,
+    "age_group": "50+",
+    "true_role": "transporter",
+    "network_cluster": "NETWORK_BETA",
+    "case_memberships": [
+      "CASE_005"
+    ],
+    "base_city": "Chandigarh",
+    "address": "124, Industrial Area Phase 1, Chandigarh",
+    "occupation": "Driver",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_061",
+    "true_name": "Amit Ghosh",
+    "canonical_alias": null,
+    "age_group": "18-25",
+    "true_role": "local_associate",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_009"
+    ],
+    "base_city": "Siliguri",
+    "address": "330, Civil Lines, Siliguri",
+    "occupation": "Unemployed",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_062",
+    "true_name": "Shobha Singh",
+    "canonical_alias": null,
+    "age_group": "50+",
+    "true_role": "transporter",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_010"
+    ],
+    "base_city": "Kanpur",
+    "address": "37, Industrial Area Phase 1, Kanpur",
+    "occupation": "Cloth Merchant",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_063",
+    "true_name": "Amit Gupta",
+    "canonical_alias": null,
+    "age_group": "50+",
+    "true_role": "local_associate",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_009"
+    ],
+    "base_city": "Delhi NCR",
+    "address": "141, Gandhi Nagar, Delhi NCR",
+    "occupation": "Travel Agent",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_064",
+    "true_name": "Rajesh Das",
+    "canonical_alias": "Pradhan",
+    "age_group": "26-35",
+    "true_role": "legitimate_contact",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_010"
+    ],
+    "base_city": "Agra",
+    "address": "398, Station Road, Agra",
+    "occupation": "Hotel Manager",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_065",
+    "true_name": "Kavita Mahato",
+    "canonical_alias": null,
+    "age_group": "36-50",
+    "true_role": "legitimate_contact",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_003"
+    ],
+    "base_city": "Delhi NCR",
+    "address": "370, Industrial Area Phase 1, Delhi NCR",
+    "occupation": "Transporter",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_066",
+    "true_name": "Deepak Mishra",
+    "canonical_alias": "Bhaiya",
+    "age_group": "50+",
+    "true_role": "transporter",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_010"
+    ],
+    "base_city": "Gwalior",
+    "address": "306, Near Bus Terminus, Gwalior",
+    "occupation": "Hotel Manager",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_067",
+    "true_name": "Anil Murmu",
+    "canonical_alias": "Doctor",
+    "age_group": "36-50",
+    "true_role": "legitimate_contact",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_003"
+    ],
+    "base_city": "Jaipur",
+    "address": "412, Station Road, Jaipur",
+    "occupation": "NGO Volunteer",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_068",
+    "true_name": "Pankaj Sharma",
+    "canonical_alias": null,
+    "age_group": "36-50",
+    "true_role": "legitimate_contact",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_006"
+    ],
+    "base_city": "Bhopal",
+    "address": "66, Near Bus Terminus, Bhopal",
+    "occupation": "Factory Supervisor",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_069",
+    "true_name": "Mamta Khatun",
+    "canonical_alias": null,
+    "age_group": "50+",
+    "true_role": "local_associate",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_004"
+    ],
+    "base_city": "Nagpur",
+    "address": "408, Transport Nagar, Nagpur",
+    "occupation": "NGO Volunteer",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_070",
+    "true_name": "Manoj Kumar",
+    "canonical_alias": "Kaka",
+    "age_group": "50+",
+    "true_role": "local_associate",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_010"
+    ],
+    "base_city": "Kanpur",
+    "address": "396, Transport Nagar, Kanpur",
+    "occupation": "Cloth Merchant",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_071",
+    "true_name": "Geeta Thakur",
+    "canonical_alias": null,
+    "age_group": "36-50",
+    "true_role": "local_associate",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_009"
+    ],
+    "base_city": "Kolkata",
+    "address": "155, New Basti, Kolkata",
+    "occupation": "Travel Agent",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_072",
+    "true_name": "Shobha Roy",
+    "canonical_alias": "Sethji",
+    "age_group": "50+",
+    "true_role": "legitimate_contact",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_004"
+    ],
+    "base_city": "Bhopal",
+    "address": "342, Transport Nagar, Bhopal",
+    "occupation": "Travel Agent",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_073",
+    "true_name": "Manoj Mishra",
+    "canonical_alias": "Tiger",
+    "age_group": "36-50",
+    "true_role": "legitimate_contact",
+    "network_cluster": "NETWORK_ALPHA",
+    "case_memberships": [
+      "CASE_007"
+    ],
+    "base_city": "Delhi NCR",
+    "address": "295, Civil Lines, Delhi NCR",
+    "occupation": "NGO Volunteer",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_074",
+    "true_name": "Dinesh Gupta",
+    "canonical_alias": "Sethji",
+    "age_group": "36-50",
+    "true_role": "local_associate",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_010"
+    ],
+    "base_city": "Agra",
+    "address": "381, Bazaar Road, Agra",
+    "occupation": "Labor Contractor",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  },
+  {
+    "global_id": "GLOBAL_ENT_075",
+    "true_name": "Geeta Roy",
+    "canonical_alias": "Shooter",
+    "age_group": "18-25",
+    "true_role": "transporter",
+    "network_cluster": "INDEPENDENT",
+    "case_memberships": [
+      "CASE_010"
+    ],
+    "base_city": "Nagpur",
+    "address": "317, Industrial Area Phase 1, Nagpur",
+    "occupation": "Hotel Manager",
+    "is_hard_negative": false,
+    "hard_negative_group": null
+  }
+]

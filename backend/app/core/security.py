@@ -1,28 +1,27 @@
-import warnings
+import bcrypt
 from datetime import datetime, timedelta, timezone
 from typing import Optional
 from jose import JWTError, jwt
-
-# Suppress passlib's bcrypt version-detection warning (harmless with bcrypt 4.x)
-with warnings.catch_warnings():
-    warnings.filterwarnings("ignore", message=".*error reading bcrypt version.*")
-    from passlib.context import CryptContext
 from fastapi import Depends, HTTPException, status
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from sqlalchemy.orm import Session
 from app.core.config import settings
 from app.core.database import get_db
 
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 bearer_scheme = HTTPBearer()
 
 
 def hash_password(password: str) -> str:
-    return pwd_context.hash(password)
+    pw_bytes = password.encode("utf-8")[:72]
+    return bcrypt.hashpw(pw_bytes, bcrypt.gensalt()).decode("utf-8")
 
 
 def verify_password(plain: str, hashed: str) -> bool:
-    return pwd_context.verify(plain, hashed)
+    try:
+        pw_bytes = plain.encode("utf-8")[:72]
+        return bcrypt.checkpw(pw_bytes, hashed.encode("utf-8"))
+    except Exception:
+        return False
 
 
 def create_access_token(subject: str, role: str) -> str:

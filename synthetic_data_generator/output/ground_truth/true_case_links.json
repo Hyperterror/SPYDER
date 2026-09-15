@@ -1,0 +1,448 @@
+[
+  {
+    "case_a": "CASE_001",
+    "case_b": "CASE_002",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_001",
+    "case_b": "CASE_003",
+    "is_linked": true,
+    "syndicate_cluster": "NETWORK_ALPHA",
+    "shared_global_entities_count": 3,
+    "shared_global_entities": [
+      "GLOBAL_ENT_001",
+      "GLOBAL_ENT_004",
+      "GLOBAL_ENT_007"
+    ],
+    "relationship_description": "Syndicate co-membership in NETWORK_ALPHA"
+  },
+  {
+    "case_a": "CASE_001",
+    "case_b": "CASE_004",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_001",
+    "case_b": "CASE_005",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_001",
+    "case_b": "CASE_006",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_001",
+    "case_b": "CASE_007",
+    "is_linked": true,
+    "syndicate_cluster": "NETWORK_ALPHA",
+    "shared_global_entities_count": 5,
+    "shared_global_entities": [
+      "GLOBAL_ENT_001",
+      "GLOBAL_ENT_002",
+      "GLOBAL_ENT_004",
+      "GLOBAL_ENT_008",
+      "GLOBAL_ENT_011"
+    ],
+    "relationship_description": "Syndicate co-membership in NETWORK_ALPHA"
+  },
+  {
+    "case_a": "CASE_001",
+    "case_b": "CASE_008",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_001",
+    "case_b": "CASE_009",
+    "is_linked": true,
+    "syndicate_cluster": "NETWORK_ALPHA",
+    "shared_global_entities_count": 4,
+    "shared_global_entities": [
+      "GLOBAL_ENT_001",
+      "GLOBAL_ENT_002",
+      "GLOBAL_ENT_005",
+      "GLOBAL_ENT_007"
+    ],
+    "relationship_description": "Syndicate co-membership in NETWORK_ALPHA"
+  },
+  {
+    "case_a": "CASE_001",
+    "case_b": "CASE_010",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_002",
+    "case_b": "CASE_003",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_002",
+    "case_b": "CASE_004",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_002",
+    "case_b": "CASE_005",
+    "is_linked": true,
+    "syndicate_cluster": "NETWORK_BETA",
+    "shared_global_entities_count": 3,
+    "shared_global_entities": [
+      "GLOBAL_ENT_012",
+      "GLOBAL_ENT_013",
+      "GLOBAL_ENT_017"
+    ],
+    "relationship_description": "Syndicate co-membership in NETWORK_BETA"
+  },
+  {
+    "case_a": "CASE_002",
+    "case_b": "CASE_006",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_002",
+    "case_b": "CASE_007",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_002",
+    "case_b": "CASE_008",
+    "is_linked": true,
+    "syndicate_cluster": "NETWORK_BETA",
+    "shared_global_entities_count": 3,
+    "shared_global_entities": [
+      "GLOBAL_ENT_012",
+      "GLOBAL_ENT_015",
+      "GLOBAL_ENT_018"
+    ],
+    "relationship_description": "Syndicate co-membership in NETWORK_BETA"
+  },
+  {
+    "case_a": "CASE_002",
+    "case_b": "CASE_009",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_002",
+    "case_b": "CASE_010",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_003",
+    "case_b": "CASE_004",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_003",
+    "case_b": "CASE_005",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_003",
+    "case_b": "CASE_006",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_003",
+    "case_b": "CASE_007",
+    "is_linked": true,
+    "syndicate_cluster": "NETWORK_ALPHA",
+    "shared_global_entities_count": 4,
+    "shared_global_entities": [
+      "GLOBAL_ENT_001",
+      "GLOBAL_ENT_003",
+      "GLOBAL_ENT_004",
+      "GLOBAL_ENT_009"
+    ],
+    "relationship_description": "Syndicate co-membership in NETWORK_ALPHA"
+  },
+  {
+    "case_a": "CASE_003",
+    "case_b": "CASE_008",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_003",
+    "case_b": "CASE_009",
+    "is_linked": true,
+    "syndicate_cluster": "NETWORK_ALPHA",
+    "shared_global_entities_count": 4,
+    "shared_global_entities": [
+      "GLOBAL_ENT_001",
+      "GLOBAL_ENT_006",
+      "GLOBAL_ENT_007",
+      "GLOBAL_ENT_010"
+    ],
+    "relationship_description": "Syndicate co-membership in NETWORK_ALPHA"
+  },
+  {
+    "case_a": "CASE_003",
+    "case_b": "CASE_010",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_004",
+    "case_b": "CASE_005",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_004",
+    "case_b": "CASE_006",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_004",
+    "case_b": "CASE_007",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_004",
+    "case_b": "CASE_008",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_004",
+    "case_b": "CASE_009",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_004",
+    "case_b": "CASE_010",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_005",
+    "case_b": "CASE_006",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_005",
+    "case_b": "CASE_007",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_005",
+    "case_b": "CASE_008",
+    "is_linked": true,
+    "syndicate_cluster": "NETWORK_BETA",
+    "shared_global_entities_count": 4,
+    "shared_global_entities": [
+      "GLOBAL_ENT_012",
+      "GLOBAL_ENT_014",
+      "GLOBAL_ENT_016",
+      "GLOBAL_ENT_019"
+    ],
+    "relationship_description": "Syndicate co-membership in NETWORK_BETA"
+  },
+  {
+    "case_a": "CASE_005",
+    "case_b": "CASE_009",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_005",
+    "case_b": "CASE_010",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_006",
+    "case_b": "CASE_007",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_006",
+    "case_b": "CASE_008",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_006",
+    "case_b": "CASE_009",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_006",
+    "case_b": "CASE_010",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_007",
+    "case_b": "CASE_008",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_007",
+    "case_b": "CASE_009",
+    "is_linked": true,
+    "syndicate_cluster": "NETWORK_ALPHA",
+    "shared_global_entities_count": 2,
+    "shared_global_entities": [
+      "GLOBAL_ENT_001",
+      "GLOBAL_ENT_002"
+    ],
+    "relationship_description": "Syndicate co-membership in NETWORK_ALPHA"
+  },
+  {
+    "case_a": "CASE_007",
+    "case_b": "CASE_010",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_008",
+    "case_b": "CASE_009",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_008",
+    "case_b": "CASE_010",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  },
+  {
+    "case_a": "CASE_009",
+    "case_b": "CASE_010",
+    "is_linked": false,
+    "syndicate_cluster": null,
+    "shared_global_entities_count": 0,
+    "shared_global_entities": [],
+    "relationship_description": "Unrelated independent operations"
+  }
+]

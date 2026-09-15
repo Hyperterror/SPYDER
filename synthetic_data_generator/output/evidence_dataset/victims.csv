@@ -1,0 +1,26 @@
+victim_id,case_id,age_group,reported_location,last_known_location,recruitment_channel,status,sensitive_flag
+CASE_001_VIC_01,CASE_001,Adult (23-30),Murshidabad,Jaipur,Social Media Job Advertisement,Identified in Transit,True
+CASE_001_VIC_02,CASE_001,Adult (23-30),Murshidabad,Jaipur,Placement Agency Lure,Missing,True
+CASE_001_VIC_03,CASE_001,Adult (23-30),Murshidabad,Jaipur,Marriage Proposal Fraud,Under Protective Shelter,True
+CASE_002_VIC_01,CASE_002,Adult (23-30),Ranchi,Panipat,Marriage Proposal Fraud,Identified in Transit,True
+CASE_003_VIC_01,CASE_003,Minor (14-17),Murshidabad,Jaipur,Marriage Proposal Fraud,Rescued,True
+CASE_003_VIC_02,CASE_003,Minor (14-17),Murshidabad,Jaipur,Social Media Job Advertisement,Rescued,True
+CASE_004_VIC_01,CASE_004,Minor (14-17),Agra,Nagpur,Acquaintance Referral,Rescued,True
+CASE_004_VIC_02,CASE_004,Minor (14-17),Agra,Nagpur,Placement Agency Lure,Rescued,True
+CASE_004_VIC_03,CASE_004,Adult (23-30),Agra,Nagpur,Acquaintance Referral,Identified in Transit,True
+CASE_005_VIC_01,CASE_005,Minor (14-17),Ranchi,Panipat,Placement Agency Lure,Identified in Transit,True
+CASE_005_VIC_02,CASE_005,Young Adult (18-22),Ranchi,Panipat,Social Media Job Advertisement,Missing,True
+CASE_005_VIC_03,CASE_005,Minor (14-17),Ranchi,Panipat,Marriage Proposal Fraud,Rescued,True
+CASE_005_VIC_04,CASE_005,Minor (14-17),Ranchi,Panipat,Social Media Job Advertisement,Missing,True
+CASE_005_VIC_05,CASE_005,Young Adult (18-22),Ranchi,Panipat,Hospitality Trainee Offer,Identified in Transit,True
+CASE_007_VIC_01,CASE_007,Adult (23-30),Murshidabad,Jaipur,Marriage Proposal Fraud,Rescued,True
+CASE_007_VIC_02,CASE_007,Young Adult (18-22),Murshidabad,Jaipur,Marriage Proposal Fraud,Under Protective Shelter,True
+CASE_008_VIC_01,CASE_008,Minor (14-17),Ranchi,Panipat,Acquaintance Referral,Missing,True
+CASE_008_VIC_02,CASE_008,Young Adult (18-22),Ranchi,Panipat,Social Media Job Advertisement,Missing,True
+CASE_009_VIC_01,CASE_009,Adult (23-30),Murshidabad,Jaipur,Marriage Proposal Fraud,Missing,True
+CASE_009_VIC_02,CASE_009,Young Adult (18-22),Murshidabad,Jaipur,Placement Agency Lure,Missing,True
+CASE_010_VIC_01,CASE_010,Young Adult (18-22),Agra,Nagpur,Acquaintance Referral,Under Protective Shelter,True
+CASE_010_VIC_02,CASE_010,Adult (23-30),Agra,Nagpur,Marriage Proposal Fraud,Identified in Transit,True
+CASE_010_VIC_03,CASE_010,Minor (14-17),Agra,Nagpur,Social Media Job Advertisement,Rescued,True
+CASE_010_VIC_04,CASE_010,Minor (14-17),Agra,Nagpur,Marriage Proposal Fraud,Identified in Transit,True
+CASE_010_VIC_05,CASE_010,Minor (14-17),Agra,Nagpur,Placement Agency Lure,Under Protective Shelter,True

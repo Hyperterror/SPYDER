@@ -84,16 +84,21 @@ export default function CytoscapeCanvas({
           }
         }),
         ...edges
-          .map((e) => ({
-            group: 'edges' as const,
-            data: {
-              id:     String(e.id ?? Math.random()),
-              source: String((e as Record<string,unknown>).source ?? ''),
-              target: String((e as Record<string,unknown>).target ?? ''),
-              label:  e.relationship_type ?? '',
-              raw:    e,
-            },
-          }))
+          .map((e) => {
+            const raw = e as Record<string, unknown>
+            const isCandidate = Boolean(raw.is_candidate)
+            return {
+              group: 'edges' as const,
+              data: {
+                id: String(e.id ?? Math.random()),
+                source: String(raw.source ?? ''),
+                target: String(raw.target ?? ''),
+                label: (e.relationship_type as string) ?? (isCandidate ? 'Potential Association' : ''),
+                is_candidate: isCandidate ? 'true' : 'false',
+                raw: e,
+              },
+            }
+          })
           .filter((e) => e.data.source && e.data.target),
       ]
 
@@ -148,12 +153,32 @@ export default function CytoscapeCanvas({
             },
           },
           {
+            selector: 'edge[is_candidate = "true"]',
+            style: {
+              'width': 2.0,
+              'line-color': '#A855F7',
+              'line-style': 'dashed',
+              'target-arrow-color': '#A855F7',
+              'target-arrow-shape': 'triangle',
+              'opacity': 0.85,
+            },
+          },
+          {
             selector: 'edge:selected',
             style: {
               'width': 2.5,
               'line-color': '#00E5FF',
               'target-arrow-color': '#00E5FF',
               'opacity': 1,
+            },
+          },
+          {
+            selector: 'edge[is_candidate = "true"]:selected',
+            style: {
+              'width': 3.0,
+              'line-color': '#C084FC',
+              'target-arrow-color': '#C084FC',
+              'opacity': 1.0,
             },
           },
         ],
@@ -165,7 +190,7 @@ export default function CytoscapeCanvas({
           idealEdgeLength: 90,
           padding: 40,
           randomize: false,
-        } as Record<string, unknown>,
+        } as any,
         userZoomingEnabled: true,
         userPanningEnabled: true,
       })

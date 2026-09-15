@@ -8,9 +8,9 @@ import GraphFilters from '@/components/graph/GraphFilters'
 import NodeInspector from '@/components/graph/NodeInspector'
 import EdgeInspector from '@/components/graph/EdgeInspector'
 import { useToast } from '@/components/ui/ToastNotification'
-import { graphApi, casesApi } from '@/lib/api'
+import { graphApi, casesApi, intelligenceApi } from '@/lib/api'
 import { isAuthenticated } from '@/lib/auth'
-import type { GraphNode, GraphEdge, Case } from '@/types'
+import type { GraphNode, GraphEdge, Case, InvestigationLead } from '@/types'
 
 // Load Cytoscape client-side only — stable dynamic import
 const CytoscapeCanvas = dynamic(
@@ -42,15 +42,17 @@ interface EdgeDetail {
   relationship_type: string
   source: { labels: string[]; normalized_number?: string; normalized_identifier?: string }
   target: { labels: string[]; normalized_number?: string; normalized_identifier?: string }
-  event: {
+  event?: {
     timestamp_utc?: string; duration_seconds?: number
     amount?: number; currency?: string; transaction_id?: string; transaction_type?: string
   }
-  provenance: {
+  provenance?: {
     evidence_id?: string; source_file_name?: string; source_row_number?: number
     source_hash?: string; verification_status?: string; relationship_status?: string; confidence_label?: string
   }
   limitations?: string[]
+  is_candidate?: boolean
+  candidate_lead?: InvestigationLead
 }
 
 export default function GraphPage() {
@@ -61,6 +63,9 @@ export default function GraphPage() {
   // ── Graph data lives in refs → canvas never re-initialises on inspector open ──
   const nodesRef = useRef<GraphNode[]>([])
   const edgesRef = useRef<GraphEdge[]>([])
+  const confirmedNodesRef = useRef<GraphNode[]>([])
+  const confirmedEdgesRef = useRef<GraphEdge[]>([])
+  const candidateLeadsRef = useRef<InvestigationLead[]>([])
 
   // ── UI state (none of these should re-trigger CytoscapeCanvas) ──────────────
   const [caseData, setCaseData]         = useState<Case | null>(null)
@@ -71,6 +76,8 @@ export default function GraphPage() {
   const [leftOpen, setLeftOpen]         = useState(true)
   const [selectedNode, setSelectedNode] = useState<GraphNode | null>(null)
   const [selectedEdge, setSelectedEdge] = useState<EdgeDetail | null>(null)
+  const [showCandidateLinks, setShowCandidateLinks] = useState(true)
+  const [candidateCount, setCandidateCount] = useState(0)
 
   // ── Filter state ─────────────────────────────────────────────────────────────
   const [entitySearch, setEntitySearch] = useState('')
@@ -79,30 +86,100 @@ export default function GraphPage() {
     'CALLED', 'TRANSFERRED_TO', 'USED_DEVICE', 'CONNECTED_TO_TOWER',
   ])
 
+  // ── Helper to assemble visible elements ───────────────────────────────────────
+  const rebuildVisibleGraph = useCallback((
+    includeCandidates: boolean,
+    baseNodes = confirmedNodesRef.current,
+    baseEdges = confirmedEdgesRef.current,
+    leads = candidateLeadsRef.current,
+  ) => {
+    if (!includeCandidates || leads.length === 0) {
+      nodesRef.current = [...baseNodes]
+      edgesRef.current = [...baseEdges]
+    } else {
+      const existingNodeIds = new Set(baseNodes.map((n) => String(n.id)))
+      const additionalNodes: GraphNode[] = []
+      for (const lead of leads) {
+        if (!existingNodeIds.has(lead.source_entity)) {
+          additionalNodes.push({
+            id: lead.source_entity,
+            labels: ['Person'],
+            normalized_identifier: lead.source_entity,
+          })
+          existingNodeIds.add(lead.source_entity)
+        }
+        if (!existingNodeIds.has(lead.target_entity)) {
+          additionalNodes.push({
+            id: lead.target_entity,
+            labels: ['Person'],
+            normalized_identifier: lead.target_entity,
+          })
+          existingNodeIds.add(lead.target_entity)
+        }
+      }
+
+      const candidateEdges: GraphEdge[] = leads.map((lead) => ({
+        id: `lead_${lead.lead_id}`,
+        source: lead.source_entity,
+        target: lead.target_entity,
+        relationship_type: lead.prediction_type,
+        is_candidate: true,
+        candidate_lead: lead,
+      } as unknown as GraphEdge))
+
+      nodesRef.current = [...baseNodes, ...additionalNodes]
+      edgesRef.current = [...baseEdges, ...candidateEdges]
+    }
+    setGraphStats({ nodes: nodesRef.current.length, edges: edgesRef.current.length })
+    setGraphKey((k) => k + 1)
+  }, [])
+
   // ── Load graph data — only updates refs, then bumps graphKey to rebuild canvas ─
-  const loadGraph = useCallback(async (params?: Record<string, unknown>) => {
+  const loadGraph = useCallback(async (params?: Record<string, unknown>, caseCodeOverride?: string) => {
     setLoading(true)
     setSelectedNode(null)
     setSelectedEdge(null)
     try {
-      const { data } = await graphApi.subgraph(caseId, {
-        depth,
-        relationship_types: relTypes.join(','),
-        entity: entitySearch || undefined,
-        limit_nodes: 200,
-        ...params,
-      })
-      nodesRef.current = data.nodes ?? []
-      edgesRef.current = data.edges ?? []
-      setGraphStats({ nodes: nodesRef.current.length, edges: edgesRef.current.length })
-      setGraphKey((k) => k + 1)   // force canvas rebuild with new data
-    } catch (err: unknown) {
-      const status = (err as { response?: { status?: number } })?.response?.status
-      if (status === 404 || status === 403) {
-        toast('No graph data yet. Import and parse evidence first.', 'warn')
-      } else {
-        toast('Failed to load graph', 'error')
+      let baseNodes: GraphNode[] = []
+      let baseEdges: GraphEdge[] = []
+      try {
+        const { data } = await graphApi.subgraph(caseId, {
+          depth,
+          relationship_types: relTypes.join(','),
+          entity: entitySearch || undefined,
+          limit_nodes: 200,
+          ...params,
+        })
+        baseNodes = data.nodes ?? []
+        baseEdges = data.edges ?? []
+      } catch {
+        // Base graph may be empty if evidence not yet imported
       }
+      confirmedNodesRef.current = baseNodes
+      confirmedEdgesRef.current = baseEdges
+
+      // Fetch AI Candidate Leads
+      let leads: InvestigationLead[] = []
+      const effectiveCaseCode = caseCodeOverride || caseData?.case_code || caseId
+      try {
+        const { data: leadData } = await intelligenceApi.getLeads({
+          case_id: effectiveCaseCode,
+          limit: 100,
+        })
+        leads = leadData.leads ?? []
+        if (leads.length === 0 && effectiveCaseCode !== caseId) {
+          const fallbackRes = await intelligenceApi.getLeads({ case_id: caseId, limit: 100 })
+          leads = fallbackRes.data.leads ?? []
+        }
+      } catch {
+        // Leads optional
+      }
+      candidateLeadsRef.current = leads
+      setCandidateCount(leads.length)
+
+      rebuildVisibleGraph(showCandidateLinks, baseNodes, baseEdges, leads)
+    } catch {
+      toast('Failed to load graph', 'error')
       nodesRef.current = []
       edgesRef.current = []
       setGraphStats({ nodes: 0, edges: 0 })
@@ -110,13 +187,31 @@ export default function GraphPage() {
     } finally {
       setLoading(false)
     }
-  }, [caseId, depth, relTypes, entitySearch, toast])
+  }, [caseId, caseData, depth, relTypes, entitySearch, showCandidateLinks, rebuildVisibleGraph, toast])
 
   useEffect(() => {
     if (!isAuthenticated()) { router.replace('/login'); return }
-    casesApi.get(caseId).then(({ data }) => setCaseData(data)).catch(() => {})
-    loadGraph()
+    let activeCaseCode = caseId
+    casesApi.get(caseId)
+      .then(({ data }) => {
+        setCaseData(data)
+        if (data?.case_code) {
+          activeCaseCode = data.case_code
+        }
+      })
+      .catch(() => {})
+      .finally(() => {
+        loadGraph(undefined, activeCaseCode)
+      })
   }, [caseId, router]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  const toggleCandidateLinks = useCallback(() => {
+    setShowCandidateLinks((prev) => {
+      const next = !prev
+      rebuildVisibleGraph(next)
+      return next
+    })
+  }, [rebuildVisibleGraph])
 
   // ── Node click — only sets inspector state, never touches graph data ─────────
   const handleNodeClick = useCallback((node: GraphNode) => {
@@ -124,10 +219,24 @@ export default function GraphPage() {
     setSelectedEdge(null)
   }, [])
 
-  // ── Edge click — fetches provenance details without re-loading graph ─────────
+  // ── Edge click — handles candidate links & confirmed edges ──────────────────
   const handleEdgeClick = useCallback(async (edgeId: string) => {
-    // First look up the edge locally from our cached edges
     const localEdge = edgesRef.current.find((e) => (e as Record<string, unknown>).id === edgeId)
+    const raw = localEdge as Record<string, unknown> | undefined
+
+    if (raw?.is_candidate && raw.candidate_lead) {
+      const lead = raw.candidate_lead as InvestigationLead
+      setSelectedEdge({
+        edge_id: edgeId,
+        relationship_type: lead.prediction_type,
+        source: { labels: ['Person'], normalized_identifier: lead.source_entity },
+        target: { labels: ['Person'], normalized_identifier: lead.target_entity },
+        is_candidate: true,
+        candidate_lead: lead,
+      })
+      setSelectedNode(null)
+      return
+    }
 
     if (localEdge) {
       // Build edge detail from local data — no API call needed
@@ -205,21 +314,41 @@ export default function GraphPage() {
             </p>
           </div>
 
-          {/* View tabs */}
-          <div className="flex items-center space-x-1 bg-[#07111A] p-0.5 rounded-lg border border-brand-border text-xs font-medium">
-            {VIEW_TABS.map((t) => (
-              <button
-                key={t.key}
-                onClick={() => setViewTab(t.key)}
-                className={`px-2.5 py-1 rounded-md transition ${
-                  viewTab === t.key
-                    ? 'text-black bg-brand-cyan font-semibold shadow-sm'
-                    : 'text-slate-300 hover:text-white hover:bg-slate-800/80'
-                }`}
-              >
-                {t.label}
-              </button>
-            ))}
+          {/* Controls: View tabs & AI Candidate Leads Toggle */}
+          <div className="flex items-center gap-2">
+            <button
+              onClick={toggleCandidateLinks}
+              className={`px-2.5 py-1 rounded-md text-xs font-mono font-medium transition flex items-center gap-1.5 border ${
+                showCandidateLinks
+                  ? 'bg-purple-500/20 text-purple-300 border-purple-500/40 shadow-sm'
+                  : 'bg-[#07111A] text-slate-400 border-brand-border hover:text-slate-200'
+              }`}
+              title="Toggle AI GraphSAGE candidate associations"
+            >
+              <span className={`w-1.5 h-1.5 rounded-full ${showCandidateLinks ? 'bg-purple-400 animate-pulse' : 'bg-slate-500'}`} />
+              <span>AI Leads</span>
+              {candidateCount > 0 && (
+                <span className="px-1.5 py-0.2 text-[10px] rounded bg-purple-500/30 text-purple-200 font-bold">
+                  {candidateCount}
+                </span>
+              )}
+            </button>
+
+            <div className="flex items-center space-x-1 bg-[#07111A] p-0.5 rounded-lg border border-brand-border text-xs font-medium">
+              {VIEW_TABS.map((t) => (
+                <button
+                  key={t.key}
+                  onClick={() => setViewTab(t.key)}
+                  className={`px-2.5 py-1 rounded-md transition ${
+                    viewTab === t.key
+                      ? 'text-black bg-brand-cyan font-semibold shadow-sm'
+                      : 'text-slate-300 hover:text-white hover:bg-slate-800/80'
+                  }`}
+                >
+                  {t.label}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
 

@@ -1,0 +1,1001 @@
+message_id,timestamp,sender,receiver,message_text,platform,language,case_id
+MSG_00584,2025-02-05 11:51:02,+918082672055,+919828760553,Call you back after lunch.,Telegram,English,CASE_010
+MSG_00840,2025-02-06 00:35:39,+918858557203,+919896934122,Mule account details shared on Telegram. Route the payment through UPI.,WhatsApp,English,CASE_008
+MSG_00243,2025-02-06 00:39:26,+919453261270,+919754265498,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,SMS,English,CASE_001
+MSG_00629,2025-02-06 17:35:59,+919416927215,+919896934122,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,WhatsApp,English,CASE_005
+MSG_00671,2025-02-07 02:23:05,+919925558733,+917049533757,Send grocery list on WhatsApp.,WhatsApp,English,CASE_009
+MSG_00623,2025-02-07 02:57:38,+919448683937,+918556175477,Send grocery list on WhatsApp.,Signal,English,CASE_001
+MSG_00169,2025-02-07 10:36:20,+919852213778,+918888802305,New placement registration slip ready. Tell family everything is legal.,Telegram,English,CASE_007
+MSG_00159,2025-02-07 13:34:11,+919420796722,+918888802305,New placement registration slip ready. Tell family everything is legal.,Signal,English,CASE_003
+MSG_00895,2025-02-07 14:55:53,+918020997276,+919869096899,Bhai recharge kar dena 299 wala.,Telegram,Hinglish,CASE_009
+MSG_00658,2025-02-07 15:00:08,+919869287967,+917243492807,Will reach home in 10 minutes.,SMS,English,CASE_006
+MSG_00029,2025-02-07 15:04:10,+919448605268,+918850151803,Cash delivered to Kolkata agent. Token number verified.,Telegram,English,CASE_006
+MSG_00088,2025-02-07 16:12:23,+919822257687,+918024055958,Send grocery list on WhatsApp.,WhatsApp,English,CASE_007
+MSG_00831,2025-02-07 16:12:58,+917233635791,+919833386929,Call you back after lunch.,Signal,English,CASE_002
+MSG_00729,2025-02-07 17:36:27,+919851949529,+919971315464,Cash delivered to Kolkata agent. Token number verified.,SMS,English,CASE_010
+MSG_00905,2025-02-07 22:17:14,+919725228493,+919895060193,Send the photo and Aadhaar copy of the candidate immediately.,Signal,English,CASE_008
+MSG_00691,2025-02-07 23:04:31,+919822257687,+919422246348,Change SIM card tonight after crossing state border.,Telegram,English,CASE_009
+MSG_00568,2025-02-08 00:58:05,+917067392300,+919422246348,Will reach home in 10 minutes.,Telegram,English,CASE_009
+MSG_00957,2025-02-08 05:04:26,+919822257687,+919435583290,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Signal,Hinglish,CASE_001
+MSG_00132,2025-02-08 07:45:59,+919432329103,+918597729428,Bhai recharge kar dena 299 wala.,WhatsApp,Hinglish,CASE_008
+MSG_00181,2025-02-08 10:38:21,+918888802305,+919934359060,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,Telegram,English,CASE_009
+MSG_00763,2025-02-08 11:16:29,+917285579195,+919999943797,Meeting postponed to tomorrow 3 PM.,WhatsApp,English,CASE_003
+MSG_00588,2025-02-08 12:58:03,+918024500158,+919422960658,Payment received for tea stall delivery.,WhatsApp,English,CASE_006
+MSG_00232,2025-02-08 19:07:15,+919474759996,+919432329103,Mule account details shared on Telegram. Route the payment through UPI.,Signal,English,CASE_008
+MSG_00487,2025-02-08 20:52:21,+919725228493,+918052885071,Bhai recharge kar dena 299 wala.,Signal,Hinglish,CASE_005
+MSG_00490,2025-02-08 22:04:46,+918532325567,+919490180577,Send grocery list on WhatsApp.,WhatsApp,English,CASE_006
+MSG_00410,2025-02-09 01:51:35,+919474759996,+919417275149,Family is asking for location update. Give standard company excuse.,WhatsApp,English,CASE_008
+MSG_00162,2025-02-09 05:44:41,+919896934122,+918858557203,Family is asking for location update. Give standard company excuse.,SMS,English,CASE_005
+MSG_00171,2025-02-09 06:59:50,+919474759996,+919417275149,Tickets confirmed for 3 persons on 12302 train coach S3.,Signal,English,CASE_002
+MSG_00082,2025-02-09 07:46:45,+918536799898,+919446540265,Bhai recharge kar dena 299 wala.,Signal,Hinglish,CASE_009
+MSG_00046,2025-02-09 10:18:05,+918898292612,+919433574011,Driver reached destination border post. Awaiting clearance.,Telegram,English,CASE_005
+MSG_00481,2025-02-09 12:01:57,+919955461591,+918545353058,Bhai recharge kar dena 299 wala.,Signal,Hinglish,CASE_010
+MSG_00258,2025-02-09 17:38:59,+919934359060,+917294658420,Call you back after lunch.,Telegram,English,CASE_001
+MSG_00343,2025-02-09 20:37:53,+918830739712,+918876669607,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,WhatsApp,English,CASE_010
+MSG_00068,2025-02-09 21:54:06,+918889212676,+919422246348,Cash delivered to Kolkata agent. Token number verified.,WhatsApp,English,CASE_009
+MSG_00949,2025-02-10 00:21:53,+919781291936,+919763339667,Advance 25000 transfer kar diya hai account me check karo.,SMS,Hinglish,CASE_010
+MSG_00219,2025-02-10 04:05:59,+918888802305,+919852213778,Keep the safehouse room locked from outside until further instructions.,Telegram,English,CASE_003
+MSG_00017,2025-02-10 04:17:19,+919433574011,+919751708177,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,SMS,English,CASE_002
+MSG_00488,2025-02-11 03:48:17,+918532325567,+919912944682,Meeting postponed to tomorrow 3 PM.,Telegram,English,CASE_006
+MSG_00401,2025-02-11 16:59:54,+919773149551,+918587585294,Will reach home in 10 minutes.,Signal,English,CASE_007
+MSG_00378,2025-02-11 17:52:49,+919433574011,+919896934122,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",SMS,Hinglish,CASE_005
+MSG_00139,2025-02-11 21:36:47,+919789991301,+918839735904,Do not call on this regular SIM. Call only via encrypted app.,Telegram,English,CASE_003
+MSG_00445,2025-02-11 23:43:56,+919911086890,+919828760553,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,Telegram,English,CASE_010
+MSG_00100,2025-02-12 00:13:03,+919432329103,+919474759996,Tickets confirmed for 3 persons on 12302 train coach S3.,SMS,English,CASE_008
+MSG_00397,2025-02-12 05:10:13,+919896934122,+919968802946,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Telegram,Hinglish,CASE_005
+MSG_00196,2025-02-12 09:54:20,+919414968688,+919453261270,Mule account details shared on Telegram. Route the payment through UPI.,Signal,English,CASE_009
+MSG_00802,2025-02-12 15:50:59,+918889212676,+919422246348,Do not call on this regular SIM. Call only via encrypted app.,Telegram,English,CASE_009
+MSG_00557,2025-02-12 20:34:13,+919852213778,+919446540265,Cash delivered to Kolkata agent. Token number verified.,Signal,English,CASE_007
+MSG_00641,2025-02-13 02:16:33,+919420796722,+919724754064,Mule account details shared on Telegram. Route the payment through UPI.,WhatsApp,English,CASE_007
+MSG_00391,2025-02-13 04:46:41,+919852213778,+918888802305,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",SMS,Hinglish,CASE_003
+MSG_00188,2025-02-13 11:09:28,+919414968688,+919453261270,Keep the safehouse room locked from outside until further instructions.,SMS,English,CASE_009
+MSG_00268,2025-02-13 19:29:51,+919724754064,+919420796722,Mule account details shared on Telegram. Route the payment through UPI.,Telegram,English,CASE_003
+MSG_00211,2025-02-14 02:40:57,+918597729428,+918864759583,Bhai recharge kar dena 299 wala.,WhatsApp,Hinglish,CASE_008
+MSG_00707,2025-02-14 03:47:39,+919896934122,+919449172995,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Telegram,Hinglish,CASE_005
+MSG_00134,2025-02-14 04:14:11,+919448605268,+918834166826,Keep the safehouse room locked from outside until further instructions.,Telegram,English,CASE_004
+MSG_00183,2025-02-14 04:49:14,+919798145654,+918834166826,Cash delivered to Kolkata agent. Token number verified.,SMS,English,CASE_004
+MSG_00626,2025-02-14 05:11:34,+919417275149,+919968802946,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",Signal,Hinglish,CASE_005
+MSG_00011,2025-02-14 06:28:10,+919773149551,+918034134478,Payment received for tea stall delivery.,Telegram,English,CASE_001
+MSG_00125,2025-02-14 09:25:48,+918523613510,+918810154493,Bhai recharge kar dena 299 wala.,Signal,Hinglish,CASE_007
+MSG_00418,2025-02-14 11:20:14,+919934359060,+919446540265,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Telegram,Hinglish,CASE_009
+MSG_00450,2025-02-14 12:16:58,+918858557203,+917039448924,Payment received for tea stall delivery.,WhatsApp,English,CASE_002
+MSG_00006,2025-02-14 16:19:24,+919765133300,+918888802305,Send the photo and Aadhaar copy of the candidate immediately.,SMS,English,CASE_007
+MSG_00595,2025-02-14 21:43:35,+917099929175,+919761632653,Will reach home in 10 minutes.,Telegram,English,CASE_006
+MSG_00845,2025-02-15 01:01:23,+919813874790,+919751708177,Keep the safehouse room locked from outside until further instructions.,Signal,English,CASE_008
+MSG_00979,2025-02-15 01:49:33,+919441690501,+918069945655,Bhai recharge kar dena 299 wala.,WhatsApp,Hinglish,CASE_006
+MSG_00731,2025-02-15 04:51:37,+919474759996,+919751708177,Send the photo and Aadhaar copy of the candidate immediately.,Signal,English,CASE_008
+MSG_00477,2025-02-15 09:48:35,+919841837210,+917295387542,Will reach home in 10 minutes.,Signal,English,CASE_006
+MSG_00471,2025-02-15 12:18:54,+919417275149,+919416927215,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,Signal,English,CASE_005
+MSG_00837,2025-02-15 15:05:56,+919453261270,+919420796722,New placement registration slip ready. Tell family everything is legal.,Signal,English,CASE_007
+MSG_00249,2025-02-15 16:19:46,+919971315464,+919851949529,Driver reached destination border post. Awaiting clearance.,Telegram,English,CASE_010
+MSG_00122,2025-02-15 20:43:00,+918053299069,+918834166826,Send grocery list on WhatsApp.,WhatsApp,English,CASE_004
+MSG_00966,2025-02-16 09:12:09,+918898292612,+919433574011,Send the photo and Aadhaar copy of the candidate immediately.,WhatsApp,English,CASE_005
+MSG_00012,2025-02-16 09:32:30,+919854762841,+918864759583,Keep the safehouse room locked from outside until further instructions.,WhatsApp,English,CASE_002
+MSG_00449,2025-02-17 04:34:51,+918595800828,+919983076970,Call you back after lunch.,Signal,English,CASE_004
+MSG_00036,2025-02-17 10:58:38,+919420796722,+919453261270,Send the photo and Aadhaar copy of the candidate immediately.,Signal,English,CASE_009
+MSG_00296,2025-02-17 15:15:47,+919420796722,+919754265498,Driver reached destination border post. Awaiting clearance.,SMS,English,CASE_007
+MSG_00257,2025-02-17 19:00:37,+919754265498,+919987342561,Send the photo and Aadhaar copy of the candidate immediately.,Telegram,English,CASE_007
+MSG_00128,2025-02-17 19:49:36,+918888802305,+917212674689,Meeting postponed to tomorrow 3 PM.,SMS,English,CASE_003
+MSG_00280,2025-02-18 05:45:34,+919449172995,+919417275149,Send the photo and Aadhaar copy of the candidate immediately.,SMS,English,CASE_002
+MSG_00611,2025-02-18 06:14:41,+918871327848,+918063347164,Send grocery list on WhatsApp.,WhatsApp,English,CASE_009
+MSG_00235,2025-02-18 06:42:44,+919987342561,+919847077298,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",SMS,Hinglish,CASE_001
+MSG_00798,2025-02-18 08:12:10,+919474759996,+919417275149,Driver reached destination border post. Awaiting clearance.,Telegram,English,CASE_008
+MSG_00312,2025-02-18 14:57:31,+919773149551,+919453261270,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",Signal,Hinglish,CASE_001
+MSG_00185,2025-02-18 22:46:24,+919432329103,+919449172995,Driver reached destination border post. Awaiting clearance.,WhatsApp,English,CASE_005
+MSG_00635,2025-02-19 02:23:31,+918839711402,+917055358959,Meeting postponed to tomorrow 3 PM.,Telegram,English,CASE_007
+MSG_00977,2025-02-19 04:17:40,+919991644298,+917264932613,Send grocery list on WhatsApp.,WhatsApp,English,CASE_008
+MSG_00206,2025-02-19 08:09:50,+919449172995,+919432329103,Vehicle will reach highway toll plaza by 04:30 AM.,WhatsApp,English,CASE_005
+MSG_00698,2025-02-19 17:30:43,+919417275149,+919968802946,Keep the safehouse room locked from outside until further instructions.,Telegram,English,CASE_005
+MSG_00049,2025-02-19 18:27:26,+918557621071,+919417275149,Payment received for tea stall delivery.,WhatsApp,English,CASE_002
+MSG_00117,2025-02-19 19:10:39,+919971315464,+919851949529,Advance 25000 transfer kar diya hai account me check karo.,Signal,Hinglish,CASE_010
+MSG_00514,2025-02-19 21:11:42,+919813874790,+919751708177,New placement registration slip ready. Tell family everything is legal.,SMS,English,CASE_008
+MSG_00155,2025-02-20 02:21:40,+918839735904,+919786745380,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Signal,Hinglish,CASE_003
+MSG_00042,2025-02-20 03:08:17,+919453261270,+919420796722,Tickets confirmed for 3 persons on 12302 train coach S3.,WhatsApp,English,CASE_007
+MSG_00743,2025-02-20 07:54:15,+919968802946,+919417275149,New placement registration slip ready. Tell family everything is legal.,Signal,English,CASE_008
+MSG_00456,2025-02-20 12:20:50,+917023590593,+919813874790,Send grocery list on WhatsApp.,SMS,English,CASE_008
+MSG_00827,2025-02-20 13:25:50,+918581875527,+919969166287,Payment received for tea stall delivery.,Telegram,English,CASE_010
+MSG_00329,2025-02-21 04:56:09,+919420796722,+919724754064,Do not call on this regular SIM. Call only via encrypted app.,SMS,English,CASE_003
+MSG_00428,2025-02-21 05:58:26,+919496347724,+919769934576,Do not call on this regular SIM. Call only via encrypted app.,SMS,English,CASE_003
+MSG_00115,2025-02-21 08:11:11,+917231139813,+918842323627,Payment received for tea stall delivery.,Telegram,English,CASE_004
+MSG_00685,2025-02-21 11:58:16,+917264932613,+919895060193,Call you back after lunch.,WhatsApp,English,CASE_008
+MSG_00090,2025-02-21 17:01:00,+919463904155,+918830739712,Do not call on this regular SIM. Call only via encrypted app.,Signal,English,CASE_010
+MSG_00961,2025-02-21 18:31:55,+919417275149,+919474759996,Change SIM card tonight after crossing state border.,Signal,English,CASE_008
+MSG_00360,2025-02-21 20:31:38,+919816172803,+917222873617,Bhai recharge kar dena 299 wala.,WhatsApp,Hinglish,CASE_008
+MSG_00086,2025-02-21 23:39:44,+919934359060,+919754265498,New placement registration slip ready. Tell family everything is legal.,WhatsApp,English,CASE_001
+MSG_00653,2025-02-22 00:13:54,+919813874790,+919751708177,New placement registration slip ready. Tell family everything is legal.,Telegram,English,CASE_008
+MSG_00962,2025-02-22 02:17:08,+919754265498,+919420796722,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,Telegram,English,CASE_007
+MSG_00722,2025-02-22 06:52:34,+919822257687,+919934359060,Cash delivered to Kolkata agent. Token number verified.,Telegram,English,CASE_009
+MSG_00466,2025-02-22 08:29:37,+919420796722,+919453261270,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",Signal,Hinglish,CASE_001
+MSG_00772,2025-02-22 18:03:22,+918876669607,+918834166826,Advance 25000 transfer kar diya hai account me check karo.,WhatsApp,Hinglish,CASE_004
+MSG_00187,2025-02-22 21:42:19,+918842323627,+919470887034,Family is asking for location update. Give standard company excuse.,WhatsApp,English,CASE_004
+MSG_00199,2025-02-22 22:48:10,+918888802305,+919420796722,Family is asking for location update. Give standard company excuse.,WhatsApp,English,CASE_007
+MSG_00014,2025-02-23 01:53:00,+918587585294,+919852213778,Bhai recharge kar dena 299 wala.,SMS,Hinglish,CASE_007
+MSG_00702,2025-02-23 06:47:53,+919993652460,+917057201978,Bhai recharge kar dena 299 wala.,Signal,Hinglish,CASE_002
+MSG_00533,2025-02-23 14:36:07,+917061956500,+919851949529,Payment received for tea stall delivery.,Signal,English,CASE_010
+MSG_00807,2025-02-23 16:24:42,+919828760553,+919470887034,Vehicle will reach highway toll plaza by 04:30 AM.,WhatsApp,English,CASE_006
+MSG_00288,2025-02-23 21:12:43,+917057040785,+919441690501,Will reach home in 10 minutes.,WhatsApp,English,CASE_006
+MSG_00413,2025-02-23 21:16:11,+917227514010,+919420106509,Payment received for tea stall delivery.,Telegram,English,CASE_003
+MSG_00271,2025-02-24 05:36:21,+919470887034,+918842323627,Mule account details shared on Telegram. Route the payment through UPI.,Telegram,English,CASE_004
+MSG_00453,2025-02-24 05:38:02,+917260393104,+919754265498,Meeting postponed to tomorrow 3 PM.,Telegram,English,CASE_007
+MSG_00002,2025-02-24 11:39:30,+919496347724,+919769934576,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,Signal,English,CASE_003
+MSG_00133,2025-02-24 21:49:52,+918830739712,+917284303190,Payment received for tea stall delivery.,Signal,English,CASE_010
+MSG_00214,2025-02-24 23:34:00,+919463904155,+918834166826,Tickets confirmed for 3 persons on 12302 train coach S3.,SMS,English,CASE_010
+MSG_00697,2025-02-25 01:39:55,+918053299069,+919495618110,Payment received for tea stall delivery.,Signal,English,CASE_004
+MSG_00359,2025-02-25 03:34:39,+919453261270,+919754265498,Do not call on this regular SIM. Call only via encrypted app.,WhatsApp,English,CASE_007
+MSG_00737,2025-02-25 03:46:32,+919453261270,+919754265498,New placement registration slip ready. Tell family everything is legal.,SMS,English,CASE_007
+MSG_00461,2025-02-25 11:58:40,+919789991301,+919786745380,Family is asking for location update. Give standard company excuse.,SMS,English,CASE_007
+MSG_00758,2025-02-25 19:38:28,+919987342561,+919422246348,New placement registration slip ready. Tell family everything is legal.,Signal,English,CASE_003
+MSG_00496,2025-02-26 00:45:08,+919999943797,+919446540265,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Signal,Hinglish,CASE_003
+MSG_00901,2025-02-26 01:44:01,+919982017516,+917099929175,Send grocery list on WhatsApp.,Telegram,English,CASE_006
+MSG_00906,2025-02-26 06:48:30,+918576180344,+919982017516,Payment received for tea stall delivery.,Telegram,English,CASE_006
+MSG_00060,2025-02-26 07:10:37,+919964807553,+918022232184,Send grocery list on WhatsApp.,WhatsApp,English,CASE_009
+MSG_00255,2025-02-26 09:47:51,+919470606674,+917067392300,Bhai recharge kar dena 299 wala.,WhatsApp,Hinglish,CASE_009
+MSG_00746,2025-02-26 10:49:05,+919869287967,+918842323627,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",Telegram,Hinglish,CASE_004
+MSG_00735,2025-02-26 12:01:48,+918842323627,+919911086890,Change SIM card tonight after crossing state border.,Telegram,English,CASE_010
+MSG_00593,2025-02-26 14:08:43,+919754265498,+919420796722,Family is asking for location update. Give standard company excuse.,SMS,English,CASE_007
+MSG_00577,2025-02-26 20:02:47,+919854762841,+919896934122,Tickets confirmed for 3 persons on 12302 train coach S3.,WhatsApp,English,CASE_002
+MSG_00056,2025-02-27 01:26:34,+919852213778,+918888802305,Mule account details shared on Telegram. Route the payment through UPI.,Telegram,English,CASE_003
+MSG_00776,2025-02-27 03:58:47,+919485291541,+918033381086,Call you back after lunch.,SMS,English,CASE_004
+MSG_00804,2025-02-27 06:32:46,+918581875527,+918876669607,Call you back after lunch.,Signal,English,CASE_010
+MSG_00654,2025-02-27 09:03:46,+918889212676,+919422246348,Keep the safehouse room locked from outside until further instructions.,SMS,English,CASE_009
+MSG_00808,2025-02-27 13:51:46,+919453261270,+919420796722,Send the photo and Aadhaar copy of the candidate immediately.,Telegram,English,CASE_007
+MSG_00942,2025-02-27 18:21:28,+919420796722,+919754265498,Family is asking for location update. Give standard company excuse.,Telegram,English,CASE_007
+MSG_00991,2025-02-28 02:52:43,+918514159837,+919852213778,Call you back after lunch.,Signal,English,CASE_007
+MSG_00409,2025-02-28 12:16:14,+919828760553,+919781291936,New placement registration slip ready. Tell family everything is legal.,SMS,English,CASE_004
+MSG_00140,2025-02-28 15:56:37,+919896934122,+919854762841,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",WhatsApp,Hinglish,CASE_002
+MSG_00537,2025-02-28 19:28:35,+919754265498,+919453261270,Advance 25000 transfer kar diya hai account me check karo.,Telegram,Hinglish,CASE_001
+MSG_00426,2025-02-28 20:44:11,+918876669607,+918830739712,Cash delivered to Kolkata agent. Token number verified.,SMS,English,CASE_010
+MSG_00353,2025-03-01 00:34:32,+919854762841,+919896934122,Change SIM card tonight after crossing state border.,Telegram,English,CASE_002
+MSG_00265,2025-03-01 03:53:46,+917047550897,+919847962005,Bhai recharge kar dena 299 wala.,Signal,Hinglish,CASE_001
+MSG_00553,2025-03-01 05:02:09,+919983715012,+919751708177,Send the photo and Aadhaar copy of the candidate immediately.,SMS,English,CASE_002
+MSG_00813,2025-03-01 09:26:30,+919433574011,+918898292612,Change SIM card tonight after crossing state border.,Telegram,English,CASE_005
+MSG_00637,2025-03-01 12:30:42,+917047550897,+919978147397,Call you back after lunch.,Signal,English,CASE_001
+MSG_00346,2025-03-02 04:47:28,+918858557203,+919896934122,Vehicle will reach highway toll plaza by 04:30 AM.,SMS,English,CASE_008
+MSG_00788,2025-03-02 11:39:56,+919449172995,+919896934122,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,SMS,English,CASE_005
+MSG_00999,2025-03-02 12:27:19,+919751708177,+919474759996,Driver reached destination border post. Awaiting clearance.,Signal,English,CASE_008
+MSG_00633,2025-03-02 13:09:15,+919432329103,+919474759996,Family is asking for location update. Give standard company excuse.,Signal,English,CASE_008
+MSG_00172,2025-03-02 22:22:17,+918814818295,+918586166246,Payment received for tea stall delivery.,Signal,English,CASE_005
+MSG_00843,2025-03-02 23:58:17,+918858557203,+919896934122,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,Telegram,English,CASE_005
+MSG_00074,2025-03-03 04:52:29,+919854762841,+919896934122,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",SMS,Hinglish,CASE_002
+MSG_00855,2025-03-03 06:26:25,+919474759996,+918049916439,Bhai recharge kar dena 299 wala.,WhatsApp,Hinglish,CASE_008
+MSG_00873,2025-03-03 12:51:08,+919887566910,+918092427773,Bhai recharge kar dena 299 wala.,Telegram,Hinglish,CASE_003
+MSG_00911,2025-03-03 13:03:30,+919894216001,+918082672055,Will reach home in 10 minutes.,SMS,English,CASE_010
+MSG_00416,2025-03-03 20:04:16,+919417275149,+918092058189,Will reach home in 10 minutes.,Signal,English,CASE_005
+MSG_00736,2025-03-03 20:25:30,+919934359060,+918888802305,Driver reached destination border post. Awaiting clearance.,Signal,English,CASE_009
+MSG_00321,2025-03-03 20:39:18,+919769934576,+919446540265,Change SIM card tonight after crossing state border.,Signal,English,CASE_003
+MSG_00598,2025-03-03 22:51:31,+919794982908,+917055358959,Meeting postponed to tomorrow 3 PM.,SMS,English,CASE_007
+MSG_00693,2025-03-03 23:38:19,+918069945655,+919982017516,Send grocery list on WhatsApp.,SMS,English,CASE_006
+MSG_00861,2025-03-04 00:47:02,+919470887034,+919781291936,Send the photo and Aadhaar copy of the candidate immediately.,SMS,English,CASE_006
+MSG_00381,2025-03-04 02:25:35,+918069020960,+919450559278,Payment received for tea stall delivery.,Telegram,English,CASE_010
+MSG_00478,2025-03-04 08:07:59,+918858557203,+919432329103,Change SIM card tonight after crossing state border.,Telegram,English,CASE_008
+MSG_00148,2025-03-04 12:22:44,+918838874646,+917295387542,Meeting postponed to tomorrow 3 PM.,Telegram,English,CASE_006
+MSG_00334,2025-03-04 14:11:57,+919422960658,+919761632653,New placement registration slip ready. Tell family everything is legal.,Signal,English,CASE_006
+MSG_00061,2025-03-05 02:19:32,+919967805802,+918834166826,Change SIM card tonight after crossing state border.,SMS,English,CASE_004
+MSG_00944,2025-03-05 04:27:31,+919967805802,+918843638559,Send the photo and Aadhaar copy of the candidate immediately.,SMS,English,CASE_010
+MSG_00630,2025-03-05 21:02:43,+919449172995,+919765026398,New placement registration slip ready. Tell family everything is legal.,Telegram,English,CASE_002
+MSG_00781,2025-03-05 22:29:22,+919765026398,+917039448924,Bhai recharge kar dena 299 wala.,Telegram,Hinglish,CASE_002
+MSG_00079,2025-03-05 23:06:27,+917285579195,+918887835998,Send grocery list on WhatsApp.,WhatsApp,English,CASE_003
+MSG_00152,2025-03-06 04:11:47,+918814818295,+919751708177,Do not call on this regular SIM. Call only via encrypted app.,WhatsApp,English,CASE_005
+MSG_00649,2025-03-06 08:21:18,+919474759996,+919417275149,Tickets confirmed for 3 persons on 12302 train coach S3.,WhatsApp,English,CASE_008
+MSG_00908,2025-03-06 10:19:34,+917243492807,+919766500369,Call you back after lunch.,Signal,English,CASE_006
+MSG_00421,2025-03-06 16:10:15,+919869287967,+918842323627,Mule account details shared on Telegram. Route the payment through UPI.,Signal,English,CASE_004
+MSG_00386,2025-03-06 23:04:28,+917043266810,+919474759996,Bhai recharge kar dena 299 wala.,WhatsApp,Hinglish,CASE_002
+MSG_00687,2025-03-07 00:44:37,+919416927215,+919433574011,Do not call on this regular SIM. Call only via encrypted app.,SMS,English,CASE_005
+MSG_00673,2025-03-07 05:11:29,+919911086890,+919763339667,Mule account details shared on Telegram. Route the payment through UPI.,SMS,English,CASE_010
+MSG_00136,2025-03-07 05:56:46,+917057040785,+918858178682,Will reach home in 10 minutes.,Telegram,English,CASE_006
+MSG_00674,2025-03-07 08:48:43,+918864759583,+919895060193,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,SMS,English,CASE_008
+MSG_00790,2025-03-08 03:47:11,+917055172462,+919865137801,Call you back after lunch.,WhatsApp,English,CASE_004
+MSG_00824,2025-03-08 05:39:31,+919724754064,+919420796722,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,SMS,English,CASE_007
+MSG_00715,2025-03-08 07:47:32,+919474759996,+919725228493,Tickets confirmed for 3 persons on 12302 train coach S3.,SMS,English,CASE_008
+MSG_00197,2025-03-08 08:29:03,+917294658420,+919978147397,Payment received for tea stall delivery.,Signal,English,CASE_001
+MSG_00700,2025-03-08 14:30:54,+919798145654,+918834166826,Cash delivered to Kolkata agent. Token number verified.,Signal,English,CASE_004
+MSG_00095,2025-03-08 20:30:15,+919968802946,+919896934122,Cash delivered to Kolkata agent. Token number verified.,Signal,English,CASE_008
+MSG_00462,2025-03-09 04:18:10,+919449172995,+919417275149,Mule account details shared on Telegram. Route the payment through UPI.,Telegram,English,CASE_005
+MSG_00723,2025-03-09 18:41:40,+918830739712,+918876669607,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Telegram,Hinglish,CASE_010
+MSG_00399,2025-03-09 22:13:04,+919453261270,+917260393104,Send grocery list on WhatsApp.,Signal,English,CASE_007
+MSG_00308,2025-03-10 01:28:29,+918033818260,+919999943797,Payment received for tea stall delivery.,SMS,English,CASE_003
+MSG_00945,2025-03-10 11:07:54,+919789991301,+918839735904,Keep the safehouse room locked from outside until further instructions.,Telegram,English,CASE_003
+MSG_00238,2025-03-10 11:37:39,+919761632653,+919791478884,Driver reached destination border post. Awaiting clearance.,SMS,English,CASE_006
+MSG_00221,2025-03-10 19:15:24,+919763339667,+918834166826,Send the photo and Aadhaar copy of the candidate immediately.,Signal,English,CASE_004
+MSG_00438,2025-03-10 22:03:30,+919934359060,+919754265498,Driver reached destination border post. Awaiting clearance.,Telegram,English,CASE_001
+MSG_00272,2025-03-10 23:11:15,+919851949529,+919971315464,Mule account details shared on Telegram. Route the payment through UPI.,Signal,English,CASE_010
+MSG_00648,2025-03-11 01:23:49,+919769934576,+919496347724,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Signal,Hinglish,CASE_003
+MSG_00278,2025-03-11 10:38:16,+919724754064,+917052799022,Call you back after lunch.,Signal,English,CASE_001
+MSG_00769,2025-03-11 21:25:21,+919897874085,+918022232184,Call you back after lunch.,Signal,English,CASE_009
+MSG_00741,2025-03-12 08:47:57,+919463904155,+918082672055,Will reach home in 10 minutes.,Signal,English,CASE_010
+MSG_00675,2025-03-12 09:25:48,+919724754064,+917227514010,Will reach home in 10 minutes.,SMS,English,CASE_003
+MSG_00149,2025-03-12 13:37:40,+919441690501,+919828760553,Vehicle will reach highway toll plaza by 04:30 AM.,WhatsApp,English,CASE_006
+MSG_00894,2025-03-12 15:07:27,+919422246348,+918033562830,Will reach home in 10 minutes.,WhatsApp,English,CASE_003
+MSG_00286,2025-03-12 19:34:27,+919453261270,+919786745380,Mule account details shared on Telegram. Route the payment through UPI.,WhatsApp,English,CASE_007
+MSG_00501,2025-03-13 05:27:25,+919446540265,+919999943797,Change SIM card tonight after crossing state border.,Telegram,English,CASE_009
+MSG_00043,2025-03-13 06:14:32,+917276065552,+919925558733,Payment received for tea stall delivery.,SMS,English,CASE_003
+MSG_00273,2025-03-13 09:24:04,+919967805802,+918843638559,Send the photo and Aadhaar copy of the candidate immediately.,Signal,English,CASE_010
+MSG_00044,2025-03-13 11:33:22,+919894216001,+918035042738,Send grocery list on WhatsApp.,WhatsApp,English,CASE_010
+MSG_00087,2025-03-13 12:20:03,+918842323627,+919869287967,Change SIM card tonight after crossing state border.,WhatsApp,English,CASE_004
+MSG_00335,2025-03-13 16:12:33,+919433574011,+919896934122,Send the photo and Aadhaar copy of the candidate immediately.,SMS,English,CASE_005
+MSG_00569,2025-03-13 16:18:43,+919449172995,+919417275149,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Signal,Hinglish,CASE_002
+MSG_00941,2025-03-13 17:44:35,+918842323627,+919869287967,Driver reached destination border post. Awaiting clearance.,Telegram,English,CASE_004
+MSG_00016,2025-03-13 20:11:13,+919769934576,+919446540265,Send the photo and Aadhaar copy of the candidate immediately.,Signal,English,CASE_003
+MSG_00106,2025-03-14 01:04:55,+919987342561,+919847077298,Vehicle will reach highway toll plaza by 04:30 AM.,Telegram,English,CASE_001
+MSG_00892,2025-03-14 04:25:29,+919967805802,+919761632653,Do not call on this regular SIM. Call only via encrypted app.,WhatsApp,English,CASE_006
+MSG_00146,2025-03-14 08:01:56,+918889212676,+919422246348,Tickets confirmed for 3 persons on 12302 train coach S3.,SMS,English,CASE_009
+MSG_00441,2025-03-14 09:37:53,+919474759996,+919432329103,Cash delivered to Kolkata agent. Token number verified.,Telegram,English,CASE_008
+MSG_00534,2025-03-14 16:18:57,+917052777459,+919973481797,Payment received for tea stall delivery.,SMS,English,CASE_007
+MSG_00266,2025-03-14 22:24:06,+919828760553,+919781291936,Change SIM card tonight after crossing state border.,WhatsApp,English,CASE_004
+MSG_00366,2025-03-15 04:35:09,+919751708177,+919449172995,Driver reached destination border post. Awaiting clearance.,SMS,English,CASE_002
+MSG_00800,2025-03-15 05:22:05,+919446540265,+918814925405,Tickets confirmed for 3 persons on 12302 train coach S3.,Signal,English,CASE_003
+MSG_00039,2025-03-15 10:12:40,+919934359060,+919822257687,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Signal,Hinglish,CASE_009
+MSG_00612,2025-03-15 20:40:00,+919446540265,+919999943797,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",WhatsApp,Hinglish,CASE_003
+MSG_00405,2025-03-15 21:05:07,+919798145654,+919869287967,Vehicle will reach highway toll plaza by 04:30 AM.,Signal,English,CASE_006
+MSG_00452,2025-03-16 02:35:53,+918528419506,+919978147397,Will reach home in 10 minutes.,SMS,English,CASE_001
+MSG_00007,2025-03-16 03:25:28,+919417275149,+919474759996,Send the photo and Aadhaar copy of the candidate immediately.,Telegram,English,CASE_002
+MSG_00946,2025-03-16 04:28:53,+919469533928,+918536799898,Meeting postponed to tomorrow 3 PM.,WhatsApp,English,CASE_009
+MSG_00520,2025-03-16 05:19:12,+919987342561,+919754265498,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",WhatsApp,Hinglish,CASE_007
+MSG_00080,2025-03-16 14:57:12,+919414968688,+919789991301,Driver reached destination border post. Awaiting clearance.,SMS,English,CASE_009
+MSG_00374,2025-03-16 17:41:50,+917041943272,+918858557203,Will reach home in 10 minutes.,Signal,English,CASE_005
+MSG_00210,2025-03-16 23:40:19,+919813874790,+918049916439,Bhai recharge kar dena 299 wala.,WhatsApp,Hinglish,CASE_008
+MSG_00785,2025-03-17 01:57:12,+919453261270,+918528419506,Call you back after lunch.,Signal,English,CASE_001
+MSG_00244,2025-03-17 06:58:46,+919449172995,+917289526622,Send grocery list on WhatsApp.,Signal,English,CASE_002
+MSG_00993,2025-03-17 08:31:10,+918888802305,+919852213778,Driver reached destination border post. Awaiting clearance.,WhatsApp,English,CASE_007
+MSG_00836,2025-03-17 08:33:52,+919417275149,+918814818295,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",Signal,Hinglish,CASE_005
+MSG_00301,2025-03-17 17:46:34,+919433574011,+919896934122,Keep the safehouse room locked from outside until further instructions.,Signal,English,CASE_005
+MSG_00932,2025-03-17 19:36:23,+918888802305,+919934359060,Family is asking for location update. Give standard company excuse.,SMS,English,CASE_009
+MSG_00505,2025-03-18 02:02:19,+917099929175,+919422960658,Bhai recharge kar dena 299 wala.,Signal,Hinglish,CASE_006
+MSG_00124,2025-03-18 04:17:50,+919724754064,+919420796722,Driver reached destination border post. Awaiting clearance.,SMS,English,CASE_007
+MSG_00963,2025-03-18 04:34:40,+917231139813,+919983076970,Payment received for tea stall delivery.,Telegram,English,CASE_004
+MSG_00261,2025-03-18 05:44:21,+919417275149,+919968802946,New placement registration slip ready. Tell family everything is legal.,WhatsApp,English,CASE_008
+MSG_00084,2025-03-18 13:25:37,+918098870866,+918842323627,Payment received for tea stall delivery.,WhatsApp,English,CASE_004
+MSG_00161,2025-03-18 17:59:17,+919769934576,+919446540265,Advance 25000 transfer kar diya hai account me check karo.,WhatsApp,Hinglish,CASE_003
+MSG_00138,2025-03-18 19:54:15,+918842323627,+919470887034,Vehicle will reach highway toll plaza by 04:30 AM.,SMS,English,CASE_004
+MSG_00458,2025-03-19 02:35:51,+918556175477,+919794982908,Will reach home in 10 minutes.,WhatsApp,English,CASE_001
+MSG_00728,2025-03-19 03:40:57,+918834166826,+919967805802,New placement registration slip ready. Tell family everything is legal.,Signal,English,CASE_004
+MSG_00874,2025-03-19 20:55:10,+918829208935,+917224887509,Meeting postponed to tomorrow 3 PM.,SMS,English,CASE_004
+MSG_00958,2025-03-19 22:24:44,+919751708177,+919813874790,Change SIM card tonight after crossing state border.,Telegram,English,CASE_008
+MSG_00965,2025-03-19 23:49:58,+919470887034,+919828760553,Advance 25000 transfer kar diya hai account me check karo.,Telegram,Hinglish,CASE_006
+MSG_00868,2025-03-20 01:40:19,+918842323627,+918834166826,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Telegram,Hinglish,CASE_004
+MSG_00566,2025-03-20 01:50:30,+919773149551,+919453261270,Do not call on this regular SIM. Call only via encrypted app.,SMS,English,CASE_001
+MSG_00721,2025-03-20 04:22:14,+919786745380,+919453261270,Family is asking for location update. Give standard company excuse.,Telegram,English,CASE_007
+MSG_00770,2025-03-20 08:14:44,+919822257687,+919999943797,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",Telegram,Hinglish,CASE_001
+MSG_00543,2025-03-20 08:34:38,+919973481797,+917220066654,Bhai recharge kar dena 299 wala.,SMS,Hinglish,CASE_007
+MSG_00356,2025-03-20 17:30:43,+919795445405,+919798145654,Advance 25000 transfer kar diya hai account me check karo.,WhatsApp,Hinglish,CASE_010
+MSG_00415,2025-03-20 19:47:06,+919448605268,+918576180344,Payment received for tea stall delivery.,WhatsApp,English,CASE_006
+MSG_00613,2025-03-21 04:48:01,+919822257687,+919422246348,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",SMS,Hinglish,CASE_009
+MSG_00811,2025-03-21 08:36:18,+919934359060,+919964807553,Do not call on this regular SIM. Call only via encrypted app.,Signal,English,CASE_009
+MSG_00663,2025-03-21 12:03:55,+917233635791,+919833386929,Send grocery list on WhatsApp.,Signal,English,CASE_002
+MSG_00182,2025-03-21 12:25:46,+919744489940,+918020997276,Call you back after lunch.,Signal,English,CASE_009
+MSG_00423,2025-03-21 18:37:32,+919449172995,+917254448673,Will reach home in 10 minutes.,SMS,English,CASE_005
+MSG_00176,2025-03-21 19:44:11,+918034134478,+918810154493,Payment received for tea stall delivery.,WhatsApp,English,CASE_001
+MSG_00498,2025-03-22 01:36:51,+919828760553,+919470887034,Mule account details shared on Telegram. Route the payment through UPI.,SMS,English,CASE_006
+MSG_00303,2025-03-22 02:17:18,+919417275149,+919474759996,Family is asking for location update. Give standard company excuse.,Telegram,English,CASE_002
+MSG_00218,2025-03-22 10:47:47,+919433574011,+919896934122,Tickets confirmed for 3 persons on 12302 train coach S3.,Signal,English,CASE_005
+MSG_00109,2025-03-22 11:44:21,+919968802946,+919896934122,Vehicle will reach highway toll plaza by 04:30 AM.,Signal,English,CASE_005
+MSG_00503,2025-03-22 13:22:43,+919964807553,+919934359060,Change SIM card tonight after crossing state border.,Telegram,English,CASE_001
+MSG_00974,2025-03-22 14:18:48,+919420796722,+919724754064,Tickets confirmed for 3 persons on 12302 train coach S3.,SMS,English,CASE_001
+MSG_00004,2025-03-22 21:05:31,+919496347724,+917227514010,Payment received for tea stall delivery.,Signal,English,CASE_003
+MSG_00678,2025-03-23 01:27:13,+917049581964,+919724754064,Send grocery list on WhatsApp.,Telegram,English,CASE_007
+MSG_00240,2025-03-23 17:21:53,+919791478884,+919761632653,Do not call on this regular SIM. Call only via encrypted app.,Telegram,English,CASE_006
+MSG_00472,2025-03-23 18:02:50,+917039448924,+919417275149,Send grocery list on WhatsApp.,SMS,English,CASE_002
+MSG_00950,2025-03-23 19:35:51,+919449172995,+919417275149,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",SMS,Hinglish,CASE_005
+MSG_00018,2025-03-23 23:41:40,+919895060193,+917062734442,Meeting postponed to tomorrow 3 PM.,Signal,English,CASE_008
+MSG_00119,2025-03-24 10:57:11,+918519893106,+919446540265,Payment received for tea stall delivery.,SMS,English,CASE_007
+MSG_00495,2025-03-24 17:47:09,+919999943797,+919446540265,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,Signal,English,CASE_003
+MSG_00464,2025-03-24 22:04:26,+919828760553,+919470887034,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,Signal,English,CASE_006
+MSG_00601,2025-03-24 23:27:27,+918888802305,+919769934576,Advance 25000 transfer kar diya hai account me check karo.,SMS,Hinglish,CASE_003
+MSG_00882,2025-03-25 00:10:34,+918834166826,+919967805802,Tickets confirmed for 3 persons on 12302 train coach S3.,Telegram,English,CASE_004
+MSG_00414,2025-03-25 02:27:55,+919446540265,+919999943797,Send the photo and Aadhaar copy of the candidate immediately.,Signal,English,CASE_001
+MSG_00120,2025-03-25 07:25:17,+918515988382,+919911086890,Call you back after lunch.,SMS,English,CASE_010
+MSG_00298,2025-03-25 14:44:45,+919964807553,+919934359060,Vehicle will reach highway toll plaza by 04:30 AM.,SMS,English,CASE_001
+MSG_00783,2025-03-25 18:08:45,+917047550897,+919435583290,Send grocery list on WhatsApp.,Telegram,English,CASE_001
+MSG_00724,2025-03-25 18:26:12,+919994127561,+919896934122,Do not call on this regular SIM. Call only via encrypted app.,Telegram,English,CASE_005
+MSG_00614,2025-03-25 23:38:13,+919448605268,+919763339667,Cash delivered to Kolkata agent. Token number verified.,WhatsApp,English,CASE_010
+MSG_00550,2025-03-26 02:40:41,+919822257687,+919422246348,New placement registration slip ready. Tell family everything is legal.,WhatsApp,English,CASE_009
+MSG_00442,2025-03-26 05:06:29,+917052777459,+919724754064,Payment received for tea stall delivery.,Telegram,English,CASE_007
+MSG_00573,2025-03-26 19:49:17,+919968802946,+919896934122,Vehicle will reach highway toll plaza by 04:30 AM.,WhatsApp,English,CASE_005
+MSG_00856,2025-03-26 23:10:15,+917017538738,+918837542226,Will reach home in 10 minutes.,Telegram,English,CASE_003
+MSG_00717,2025-03-27 00:02:20,+919798145654,+918834166826,Change SIM card tonight after crossing state border.,Signal,English,CASE_004
+MSG_00602,2025-03-27 00:41:25,+917067392300,+919470606674,Meeting postponed to tomorrow 3 PM.,WhatsApp,English,CASE_009
+MSG_00867,2025-03-27 05:00:04,+918842323627,+919869287967,Family is asking for location update. Give standard company excuse.,Signal,English,CASE_004
+MSG_00751,2025-03-27 17:23:28,+918830739712,+919967805802,Advance 25000 transfer kar diya hai account me check karo.,SMS,Hinglish,CASE_004
+MSG_00178,2025-03-28 02:52:24,+918834166826,+918876669607,Family is asking for location update. Give standard company excuse.,Signal,English,CASE_004
+MSG_00065,2025-03-28 03:35:05,+918058155056,+918858557203,Send grocery list on WhatsApp.,Telegram,English,CASE_002
+MSG_00348,2025-03-28 10:32:33,+918534814337,+919964807553,Payment received for tea stall delivery.,Telegram,English,CASE_009
+MSG_00692,2025-03-28 13:10:38,+919441690501,+918838874646,Mule account details shared on Telegram. Route the payment through UPI.,SMS,English,CASE_006
+MSG_00596,2025-03-29 05:28:39,+918834166826,+919798145654,Change SIM card tonight after crossing state border.,Signal,English,CASE_004
+MSG_00650,2025-03-29 06:19:15,+919433574011,+919416927215,Do not call on this regular SIM. Call only via encrypted app.,SMS,English,CASE_005
+MSG_00777,2025-03-29 12:13:58,+919987342561,+919754265498,Tickets confirmed for 3 persons on 12302 train coach S3.,Signal,English,CASE_007
+MSG_00201,2025-03-29 17:29:05,+919417275149,+919474759996,New placement registration slip ready. Tell family everything is legal.,SMS,English,CASE_008
+MSG_00237,2025-03-30 02:51:36,+919416927215,+917086884584,Will reach home in 10 minutes.,SMS,English,CASE_005
+MSG_00262,2025-03-30 09:15:21,+919786745380,+919453261270,Vehicle will reach highway toll plaza by 04:30 AM.,SMS,English,CASE_007
+MSG_00582,2025-03-30 12:31:44,+918519893106,+919973481797,Will reach home in 10 minutes.,Telegram,English,CASE_007
+MSG_00373,2025-03-30 13:04:19,+919416927215,+919896934122,Do not call on this regular SIM. Call only via encrypted app.,WhatsApp,English,CASE_005
+MSG_00420,2025-03-30 17:36:06,+919417275149,+919474759996,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Telegram,Hinglish,CASE_002
+MSG_00174,2025-03-30 18:38:18,+919422304198,+918523613510,Meeting postponed to tomorrow 3 PM.,Telegram,English,CASE_007
+MSG_00402,2025-03-30 18:49:18,+919934359060,+917061338023,Meeting postponed to tomorrow 3 PM.,Signal,English,CASE_001
+MSG_00062,2025-03-30 19:03:19,+919968802946,+917086884584,Call you back after lunch.,SMS,English,CASE_005
+MSG_00073,2025-03-30 19:58:59,+919417275149,+918864759583,Send the photo and Aadhaar copy of the candidate immediately.,SMS,English,CASE_002
+MSG_00676,2025-03-31 00:06:12,+919417275149,+919968802946,Driver reached destination border post. Awaiting clearance.,SMS,English,CASE_008
+MSG_00725,2025-03-31 01:23:06,+919433574011,+918898292612,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",SMS,Hinglish,CASE_005
+MSG_00759,2025-03-31 06:49:13,+919967805802,+918830739712,Driver reached destination border post. Awaiting clearance.,WhatsApp,English,CASE_004
+MSG_00695,2025-03-31 06:52:00,+918888802305,+919420796722,Tickets confirmed for 3 persons on 12302 train coach S3.,SMS,English,CASE_007
+MSG_00659,2025-04-01 09:19:40,+919999943797,+919822257687,Send the photo and Aadhaar copy of the candidate immediately.,Signal,English,CASE_009
+MSG_00705,2025-04-01 11:38:15,+919789991301,+918839735904,Mule account details shared on Telegram. Route the payment through UPI.,WhatsApp,English,CASE_009
+MSG_00909,2025-04-01 13:34:05,+917232928708,+919858082464,Send grocery list on WhatsApp.,Signal,English,CASE_009
+MSG_00422,2025-04-01 19:11:32,+918898227303,+918576180344,Payment received for tea stall delivery.,SMS,English,CASE_006
+MSG_00829,2025-04-01 19:49:42,+919422246348,+919769934576,Family is asking for location update. Give standard company excuse.,Telegram,English,CASE_003
+MSG_00443,2025-04-01 22:52:36,+917061956500,+919763339667,Will reach home in 10 minutes.,Signal,English,CASE_010
+MSG_00709,2025-04-02 05:30:12,+919789991301,+919786745380,Vehicle will reach highway toll plaza by 04:30 AM.,SMS,English,CASE_007
+MSG_00987,2025-04-02 08:27:01,+919781291936,+919763339667,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,WhatsApp,English,CASE_010
+MSG_00500,2025-04-02 12:20:40,+919450559278,+917284303190,Payment received for tea stall delivery.,Telegram,English,CASE_010
+MSG_00752,2025-04-02 13:56:28,+919433574011,+919751708177,Driver reached destination border post. Awaiting clearance.,Signal,English,CASE_002
+MSG_00429,2025-04-02 17:25:54,+919433574011,+919896934122,New placement registration slip ready. Tell family everything is legal.,Signal,English,CASE_005
+MSG_00527,2025-04-02 17:31:53,+918858557203,+919896934122,New placement registration slip ready. Tell family everything is legal.,Signal,English,CASE_008
+MSG_00394,2025-04-02 18:39:37,+919420106509,+918033562830,Meeting postponed to tomorrow 3 PM.,WhatsApp,English,CASE_003
+MSG_00526,2025-04-02 21:04:51,+919964807553,+917017538738,Send grocery list on WhatsApp.,Telegram,English,CASE_003
+MSG_00372,2025-04-03 02:17:45,+919422246348,+919987342561,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,Signal,English,CASE_003
+MSG_00355,2025-04-03 06:30:07,+919446540265,+917231831387,Payment received for tea stall delivery.,SMS,English,CASE_007
+MSG_00486,2025-04-03 07:39:46,+919432329103,+918858557203,Tickets confirmed for 3 persons on 12302 train coach S3.,SMS,English,CASE_008
+MSG_00787,2025-04-03 11:12:03,+919470887034,+919781291936,New placement registration slip ready. Tell family everything is legal.,Signal,English,CASE_006
+MSG_00369,2025-04-03 16:21:22,+919813874790,+919751708177,Family is asking for location update. Give standard company excuse.,SMS,English,CASE_008
+MSG_00015,2025-04-03 19:18:54,+919896934122,+919994127561,Advance 25000 transfer kar diya hai account me check karo.,Telegram,Hinglish,CASE_005
+MSG_00066,2025-04-03 20:43:37,+919725228493,+919895060193,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Signal,Hinglish,CASE_008
+MSG_00492,2025-04-03 23:42:35,+919417275149,+919449172995,Tickets confirmed for 3 persons on 12302 train coach S3.,WhatsApp,English,CASE_002
+MSG_00995,2025-04-04 09:46:45,+919448605268,+918834166826,Do not call on this regular SIM. Call only via encrypted app.,WhatsApp,English,CASE_004
+MSG_00091,2025-04-04 11:09:06,+918581059199,+919873013961,Call you back after lunch.,Signal,English,CASE_002
+MSG_00475,2025-04-04 14:35:09,+919854762841,+919896934122,Advance 25000 transfer kar diya hai account me check karo.,Telegram,Hinglish,CASE_002
+MSG_00045,2025-04-04 21:40:12,+919474759996,+919432329103,Driver reached destination border post. Awaiting clearance.,SMS,English,CASE_008
+MSG_00922,2025-04-05 07:58:00,+918034134478,+919999943797,Call you back after lunch.,SMS,English,CASE_001
+MSG_00621,2025-04-05 07:59:22,+919433574011,+919432329103,Cash delivered to Kolkata agent. Token number verified.,SMS,English,CASE_005
+MSG_00118,2025-04-05 11:23:11,+918864759583,+919854762841,Do not call on this regular SIM. Call only via encrypted app.,WhatsApp,English,CASE_002
+MSG_00920,2025-04-05 16:43:49,+919420796722,+918888802305,Advance 25000 transfer kar diya hai account me check karo.,Telegram,Hinglish,CASE_007
+MSG_00589,2025-04-06 12:35:28,+919794982908,+919960237832,Keep the safehouse room locked from outside until further instructions.,WhatsApp,English,CASE_001
+MSG_00463,2025-04-06 12:58:21,+918839735904,+919786745380,Tickets confirmed for 3 persons on 12302 train coach S3.,Telegram,English,CASE_003
+MSG_00665,2025-04-06 15:02:49,+919474759996,+919751708177,New placement registration slip ready. Tell family everything is legal.,Telegram,English,CASE_002
+MSG_00008,2025-04-06 22:57:51,+919822257687,+918518184472,Call you back after lunch.,SMS,English,CASE_001
+MSG_00712,2025-04-06 23:20:19,+919987342561,+919847077298,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",WhatsApp,Hinglish,CASE_001
+MSG_00643,2025-04-07 05:38:21,+919911086890,+919828760553,Family is asking for location update. Give standard company excuse.,WhatsApp,English,CASE_010
+MSG_00826,2025-04-07 09:00:58,+917295851936,+919994127561,Send grocery list on WhatsApp.,WhatsApp,English,CASE_005
+MSG_00549,2025-04-07 12:22:25,+919417275149,+919968802946,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",SMS,Hinglish,CASE_005
+MSG_00499,2025-04-07 16:14:42,+919420796722,+919435583290,Send the photo and Aadhaar copy of the candidate immediately.,Telegram,English,CASE_001
+MSG_00848,2025-04-07 19:55:07,+919781291936,+919798145654,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",Signal,Hinglish,CASE_010
+MSG_00832,2025-04-07 21:50:56,+919934359060,+919964807553,Driver reached destination border post. Awaiting clearance.,SMS,English,CASE_009
+MSG_00720,2025-04-08 01:24:45,+919469533928,+918033562830,Payment received for tea stall delivery.,SMS,English,CASE_003
+MSG_00983,2025-04-08 10:53:50,+919934359060,+919446540265,Mule account details shared on Telegram. Route the payment through UPI.,SMS,English,CASE_009
+MSG_00010,2025-04-08 14:21:51,+919417275149,+919968802946,Driver reached destination border post. Awaiting clearance.,WhatsApp,English,CASE_008
+MSG_00762,2025-04-08 20:11:58,+918534814337,+919925558733,Call you back after lunch.,Telegram,English,CASE_009
+MSG_00714,2025-04-08 21:00:44,+919446540265,+919999943797,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Signal,Hinglish,CASE_003
+MSG_00135,2025-04-08 21:04:02,+919761632653,+917045596211,Payment received for tea stall delivery.,Telegram,English,CASE_006
+MSG_00647,2025-04-08 22:19:23,+919417275149,+919968802946,Keep the safehouse room locked from outside until further instructions.,WhatsApp,English,CASE_005
+MSG_00037,2025-04-09 00:05:59,+918830739712,+919967805802,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",WhatsApp,Hinglish,CASE_004
+MSG_00786,2025-04-09 12:21:56,+919751708177,+917057201978,Payment received for tea stall delivery.,Signal,English,CASE_002
+MSG_00893,2025-04-09 12:38:15,+919432329103,+918858557203,Change SIM card tonight after crossing state border.,SMS,English,CASE_008
+MSG_00976,2025-04-09 14:20:06,+919967805802,+919761632653,Advance 25000 transfer kar diya hai account me check karo.,WhatsApp,Hinglish,CASE_006
+MSG_00655,2025-04-09 22:36:57,+918842323627,+918019735027,Bhai recharge kar dena 299 wala.,WhatsApp,Hinglish,CASE_004
+MSG_00639,2025-04-10 00:16:24,+919420796722,+919724754064,Vehicle will reach highway toll plaza by 04:30 AM.,WhatsApp,English,CASE_003
+MSG_00927,2025-04-10 00:26:48,+918568816911,+919971315464,Call you back after lunch.,Signal,English,CASE_006
+MSG_00973,2025-04-10 06:57:53,+918834166826,+918842323627,New placement registration slip ready. Tell family everything is legal.,Telegram,English,CASE_004
+MSG_00151,2025-04-10 14:09:05,+919417275149,+919433574011,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",Telegram,Hinglish,CASE_005
+MSG_00939,2025-04-10 18:10:52,+919761632653,+919791478884,Driver reached destination border post. Awaiting clearance.,WhatsApp,English,CASE_006
+MSG_00921,2025-04-10 18:24:01,+918034134478,+919773149551,Payment received for tea stall delivery.,SMS,English,CASE_001
+MSG_00013,2025-04-10 20:55:59,+919420796722,+918888802305,Family is asking for location update. Give standard company excuse.,Signal,English,CASE_007
+MSG_00581,2025-04-10 22:15:57,+919765026398,+919474759996,Tickets confirmed for 3 persons on 12302 train coach S3.,SMS,English,CASE_002
+MSG_00681,2025-04-10 22:20:24,+919422246348,+918525503345,Will reach home in 10 minutes.,SMS,English,CASE_009
+MSG_00857,2025-04-10 22:51:37,+919432329103,+919433574011,Tickets confirmed for 3 persons on 12302 train coach S3.,SMS,English,CASE_005
+MSG_00233,2025-04-11 05:52:15,+919414968688,+919453261270,Family is asking for location update. Give standard company excuse.,WhatsApp,English,CASE_009
+MSG_00245,2025-04-11 13:45:10,+919773149551,+919453261270,Driver reached destination border post. Awaiting clearance.,Signal,English,CASE_001
+MSG_00114,2025-04-12 14:54:11,+918545353058,+919911086890,Bhai recharge kar dena 299 wala.,SMS,Hinglish,CASE_010
+MSG_00839,2025-04-12 16:38:23,+919446540265,+919934359060,Mule account details shared on Telegram. Route the payment through UPI.,SMS,English,CASE_009
+MSG_00833,2025-04-12 18:26:56,+918587585294,+919852213778,Call you back after lunch.,WhatsApp,English,CASE_007
+MSG_00704,2025-04-12 21:16:06,+919765026398,+919474759996,Keep the safehouse room locked from outside until further instructions.,Telegram,English,CASE_002
+MSG_00528,2025-04-13 02:28:32,+918887835998,+919822257687,Mule account details shared on Telegram. Route the payment through UPI.,Signal,English,CASE_007
+MSG_00738,2025-04-13 04:56:46,+919964807553,+919934359060,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Telegram,Hinglish,CASE_001
+MSG_00881,2025-04-13 07:33:15,+919417275149,+919433574011,Tickets confirmed for 3 persons on 12302 train coach S3.,Telegram,English,CASE_005
+MSG_00616,2025-04-13 08:51:36,+917041943272,+919994127561,Payment received for tea stall delivery.,SMS,English,CASE_005
+MSG_00202,2025-04-13 15:25:37,+919934359060,+919822257687,Keep the safehouse room locked from outside until further instructions.,Signal,English,CASE_001
+MSG_00850,2025-04-13 17:42:04,+919433574011,+918898292612,Keep the safehouse room locked from outside until further instructions.,Signal,English,CASE_005
+MSG_00775,2025-04-13 19:06:01,+919968802946,+917260785855,Bhai recharge kar dena 299 wala.,Telegram,Hinglish,CASE_005
+MSG_00295,2025-04-14 06:42:35,+919934359060,+919964807553,Driver reached destination border post. Awaiting clearance.,SMS,English,CASE_009
+MSG_00177,2025-04-14 12:49:31,+919769934576,+919496347724,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Telegram,Hinglish,CASE_003
+MSG_00713,2025-04-14 15:18:48,+918058155056,+918858557203,Call you back after lunch.,Signal,English,CASE_002
+MSG_00377,2025-04-14 21:27:32,+918834166826,+919448605268,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,Signal,English,CASE_004
+MSG_00157,2025-04-14 22:30:08,+919420796722,+918888802305,Do not call on this regular SIM. Call only via encrypted app.,Telegram,English,CASE_003
+MSG_00427,2025-04-15 01:48:57,+919754265498,+919453261270,Tickets confirmed for 3 persons on 12302 train coach S3.,SMS,English,CASE_007
+MSG_00799,2025-04-15 03:21:39,+919754265498,+919453261270,Change SIM card tonight after crossing state border.,SMS,English,CASE_001
+MSG_00220,2025-04-15 04:28:25,+919781291936,+919828760553,Do not call on this regular SIM. Call only via encrypted app.,WhatsApp,English,CASE_004
+MSG_00143,2025-04-15 06:05:36,+919417275149,+919416927215,Keep the safehouse room locked from outside until further instructions.,Telegram,English,CASE_005
+MSG_00305,2025-04-15 08:21:08,+919474759996,+919432329103,New placement registration slip ready. Tell family everything is legal.,SMS,English,CASE_008
+MSG_00711,2025-04-15 13:44:39,+918888802305,+919420796722,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",Telegram,Hinglish,CASE_003
+MSG_00491,2025-04-15 21:28:57,+919453261270,+919773149551,Driver reached destination border post. Awaiting clearance.,WhatsApp,English,CASE_007
+MSG_00610,2025-04-16 05:45:40,+918557141449,+919448605268,Call you back after lunch.,Telegram,English,CASE_006
+MSG_00447,2025-04-16 09:37:02,+919751708177,+919433574011,Keep the safehouse room locked from outside until further instructions.,WhatsApp,English,CASE_002
+MSG_00332,2025-04-16 10:00:03,+919417275149,+919474759996,Mule account details shared on Telegram. Route the payment through UPI.,SMS,English,CASE_008
+MSG_00404,2025-04-16 22:46:47,+919725228493,+917291512791,Call you back after lunch.,WhatsApp,English,CASE_008
+MSG_00822,2025-04-17 03:45:29,+918842323627,+919795445405,Driver reached destination border post. Awaiting clearance.,Signal,English,CASE_010
+MSG_00388,2025-04-17 07:30:24,+917086884584,+919983715012,Call you back after lunch.,WhatsApp,English,CASE_005
+MSG_00809,2025-04-17 07:48:28,+919420796722,+919453261270,Keep the safehouse room locked from outside until further instructions.,WhatsApp,English,CASE_009
+MSG_00627,2025-04-17 15:58:48,+919420796722,+919754265498,Vehicle will reach highway toll plaza by 04:30 AM.,Telegram,English,CASE_007
+MSG_00586,2025-04-17 16:52:09,+919470887034,+919781291936,New placement registration slip ready. Tell family everything is legal.,SMS,English,CASE_006
+MSG_00819,2025-04-17 20:51:35,+919849375156,+917222873617,Send grocery list on WhatsApp.,Telegram,English,CASE_008
+MSG_00040,2025-04-17 23:26:01,+919420796722,+919724754064,Vehicle will reach highway toll plaza by 04:30 AM.,SMS,English,CASE_001
+MSG_00260,2025-04-18 06:44:47,+919761632653,+918834166826,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,WhatsApp,English,CASE_004
+MSG_00180,2025-04-18 08:29:11,+918024055958,+919822257687,Will reach home in 10 minutes.,Telegram,English,CASE_007
+MSG_00716,2025-04-18 13:19:31,+919449172995,+917043266810,Bhai recharge kar dena 299 wala.,Signal,Hinglish,CASE_002
+MSG_00574,2025-04-18 14:43:24,+919420796722,+919453261270,Change SIM card tonight after crossing state border.,Signal,English,CASE_001
+MSG_00307,2025-04-18 17:13:43,+919433574011,+919751708177,Family is asking for location update. Give standard company excuse.,Telegram,English,CASE_002
+MSG_00284,2025-04-18 20:25:25,+919422960658,+919763339667,Change SIM card tonight after crossing state border.,Telegram,English,CASE_006
+MSG_00467,2025-04-19 02:36:38,+919964807553,+919934359060,Keep the safehouse room locked from outside until further instructions.,Telegram,English,CASE_009
+MSG_00886,2025-04-19 03:33:54,+919420796722,+919724754064,Send the photo and Aadhaar copy of the candidate immediately.,SMS,English,CASE_007
+MSG_00041,2025-04-19 04:56:45,+919828760553,+919470887034,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Signal,Hinglish,CASE_006
+MSG_00732,2025-04-19 09:46:39,+919896934122,+919449172995,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",SMS,Hinglish,CASE_005
+MSG_00771,2025-04-19 10:20:17,+919847077298,+917213933043,Send grocery list on WhatsApp.,SMS,English,CASE_001
+MSG_00877,2025-04-19 12:07:33,+919763339667,+918834166826,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",WhatsApp,Hinglish,CASE_004
+MSG_00512,2025-04-19 17:28:00,+919999943797,+918020997276,Send grocery list on WhatsApp.,WhatsApp,English,CASE_009
+MSG_00440,2025-04-19 22:50:12,+919822243983,+918519893106,Will reach home in 10 minutes.,Signal,English,CASE_007
+MSG_00434,2025-04-19 23:35:21,+919444269370,+917055172462,Meeting postponed to tomorrow 3 PM.,SMS,English,CASE_004
+MSG_00022,2025-04-20 09:38:51,+917212674689,+919925558733,Meeting postponed to tomorrow 3 PM.,SMS,English,CASE_003
+MSG_00567,2025-04-20 14:20:08,+917291512791,+919813874790,Bhai recharge kar dena 299 wala.,SMS,Hinglish,CASE_008
+MSG_00299,2025-04-20 18:02:11,+918098870866,+918842323627,Send grocery list on WhatsApp.,Telegram,English,CASE_004
+MSG_00636,2025-04-20 20:05:16,+919934359060,+918888802305,New placement registration slip ready. Tell family everything is legal.,SMS,English,CASE_009
+MSG_00536,2025-04-21 08:41:03,+919982017516,+918069945655,Bhai recharge kar dena 299 wala.,SMS,Hinglish,CASE_006
+MSG_00761,2025-04-21 09:16:21,+919422960658,+919763339667,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",Telegram,Hinglish,CASE_006
+MSG_00940,2025-04-21 09:34:59,+919893154172,+917029825571,Call you back after lunch.,Telegram,English,CASE_004
+MSG_00956,2025-04-21 14:18:30,+919761632653,+918834166826,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,SMS,English,CASE_004
+MSG_00469,2025-04-21 14:54:11,+919970867592,+917045596211,Bhai recharge kar dena 299 wala.,SMS,Hinglish,CASE_006
+MSG_00502,2025-04-21 15:38:08,+918834166826,+919463904155,Driver reached destination border post. Awaiting clearance.,Telegram,English,CASE_010
+MSG_00494,2025-04-21 18:19:29,+918530614492,+919751708177,Send grocery list on WhatsApp.,SMS,English,CASE_008
+MSG_00179,2025-04-22 03:23:47,+919417275149,+919968802946,Cash delivered to Kolkata agent. Token number verified.,Telegram,English,CASE_008
+MSG_00026,2025-04-22 11:03:25,+919896934122,+919968802946,Mule account details shared on Telegram. Route the payment through UPI.,Telegram,English,CASE_008
+MSG_00896,2025-04-22 16:43:53,+919841514326,+918595800828,Bhai recharge kar dena 299 wala.,WhatsApp,Hinglish,CASE_004
+MSG_00337,2025-04-22 18:09:58,+919754265498,+918536770773,Bhai recharge kar dena 299 wala.,Telegram,Hinglish,CASE_001
+MSG_00263,2025-04-22 18:54:01,+919446540265,+918814925405,Driver reached destination border post. Awaiting clearance.,WhatsApp,English,CASE_003
+MSG_00054,2025-04-22 22:52:01,+917212674689,+918814925405,Meeting postponed to tomorrow 3 PM.,WhatsApp,English,CASE_003
+MSG_00622,2025-04-23 02:20:15,+919420106509,+918510091737,Send grocery list on WhatsApp.,Telegram,English,CASE_003
+MSG_00482,2025-04-23 12:39:21,+919433574011,+919751708177,Vehicle will reach highway toll plaza by 04:30 AM.,Telegram,English,CASE_002
+MSG_00311,2025-04-23 14:40:18,+918850151803,+919448605268,Family is asking for location update. Give standard company excuse.,WhatsApp,English,CASE_006
+MSG_01000,2025-04-23 17:59:48,+918814925405,+919453261270,Vehicle will reach highway toll plaza by 04:30 AM.,WhatsApp,English,CASE_007
+MSG_00323,2025-04-24 01:19:11,+917227514010,+919420106509,Meeting postponed to tomorrow 3 PM.,Telegram,English,CASE_003
+MSG_00744,2025-04-24 02:50:04,+919474759996,+919417275149,Cash delivered to Kolkata agent. Token number verified.,SMS,English,CASE_008
+MSG_00978,2025-04-24 12:05:37,+919433574011,+919432329103,Mule account details shared on Telegram. Route the payment through UPI.,Telegram,English,CASE_005
+MSG_00953,2025-04-24 16:40:56,+918858557203,+919896934122,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,Signal,English,CASE_008
+MSG_00189,2025-04-24 20:02:44,+919420796722,+919724754064,Do not call on this regular SIM. Call only via encrypted app.,SMS,English,CASE_003
+MSG_00773,2025-04-25 00:55:15,+919893154172,+918053299069,Send grocery list on WhatsApp.,Telegram,English,CASE_004
+MSG_00646,2025-04-25 02:22:54,+917076596831,+919722130508,Will reach home in 10 minutes.,WhatsApp,English,CASE_005
+MSG_00609,2025-04-25 02:27:02,+919414968688,+919789991301,Cash delivered to Kolkata agent. Token number verified.,WhatsApp,English,CASE_009
+MSG_00069,2025-04-25 16:42:47,+919435583290,+919420796722,New placement registration slip ready. Tell family everything is legal.,Signal,English,CASE_001
+MSG_00583,2025-04-25 22:34:21,+919453261270,+919420796722,Advance 25000 transfer kar diya hai account me check karo.,Signal,Hinglish,CASE_007
+MSG_00053,2025-04-25 22:46:02,+918514159837,+919446540265,Call you back after lunch.,Signal,English,CASE_007
+MSG_00354,2025-04-25 23:39:35,+917034438599,+919994127561,Bhai recharge kar dena 299 wala.,WhatsApp,Hinglish,CASE_005
+MSG_00093,2025-04-26 03:05:05,+919798145654,+918834166826,Vehicle will reach highway toll plaza by 04:30 AM.,WhatsApp,English,CASE_004
+MSG_00368,2025-04-26 11:26:31,+919449172995,+919896934122,Vehicle will reach highway toll plaza by 04:30 AM.,Signal,English,CASE_005
+MSG_00825,2025-04-27 12:49:22,+919449172995,+919432329103,New placement registration slip ready. Tell family everything is legal.,SMS,English,CASE_005
+MSG_00406,2025-04-27 16:04:08,+919795445405,+918842323627,Cash delivered to Kolkata agent. Token number verified.,WhatsApp,English,CASE_010
+MSG_00971,2025-04-27 16:47:49,+918834166826,+918876669607,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Telegram,Hinglish,CASE_004
+MSG_00102,2025-04-27 19:14:33,+919417275149,+919968802946,Driver reached destination border post. Awaiting clearance.,WhatsApp,English,CASE_008
+MSG_00551,2025-04-27 21:32:03,+919416927215,+919433574011,Driver reached destination border post. Awaiting clearance.,Telegram,English,CASE_005
+MSG_00719,2025-04-27 22:20:39,+919973481797,+918587585294,Payment received for tea stall delivery.,Signal,English,CASE_007
+MSG_00789,2025-04-28 00:26:47,+919798145654,+919869287967,New placement registration slip ready. Tell family everything is legal.,SMS,English,CASE_006
+MSG_00938,2025-04-28 06:47:01,+919496347724,+918074382155,Send grocery list on WhatsApp.,WhatsApp,English,CASE_001
+MSG_00532,2025-04-28 08:01:39,+918531086112,+919849375156,Payment received for tea stall delivery.,SMS,English,CASE_008
+MSG_00158,2025-04-28 09:23:05,+918838874646,+919441690501,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,SMS,English,CASE_006
+MSG_00252,2025-04-28 12:49:48,+917057201978,+919417275149,Send grocery list on WhatsApp.,WhatsApp,English,CASE_002
+MSG_00948,2025-04-28 13:04:27,+919761632653,+919791478884,Change SIM card tonight after crossing state border.,Telegram,English,CASE_006
+MSG_00330,2025-04-28 21:57:20,+919417275149,+919449172995,Mule account details shared on Telegram. Route the payment through UPI.,SMS,English,CASE_002
+MSG_00112,2025-04-28 23:28:03,+917086884584,+919771308842,Meeting postponed to tomorrow 3 PM.,SMS,English,CASE_005
+MSG_00605,2025-04-29 05:53:31,+919422960658,+919798145654,Mule account details shared on Telegram. Route the payment through UPI.,SMS,English,CASE_006
+MSG_00358,2025-04-29 08:16:04,+919999943797,+919822257687,Keep the safehouse room locked from outside until further instructions.,SMS,English,CASE_009
+MSG_00156,2025-04-29 08:27:45,+919934359060,+918888802305,Family is asking for location update. Give standard company excuse.,SMS,English,CASE_009
+MSG_00897,2025-04-29 12:30:19,+919754265498,+919934359060,Family is asking for location update. Give standard company excuse.,Signal,English,CASE_001
+MSG_00027,2025-04-29 17:17:34,+919453261270,+919420796722,Family is asking for location update. Give standard company excuse.,Signal,English,CASE_007
+MSG_00175,2025-04-29 20:06:32,+917021503440,+919851949529,Send grocery list on WhatsApp.,SMS,English,CASE_010
+MSG_00327,2025-04-30 02:27:43,+919746677730,+918037588517,Meeting postponed to tomorrow 3 PM.,SMS,English,CASE_008
+MSG_00930,2025-04-30 03:25:26,+918581059199,+919417275149,Meeting postponed to tomorrow 3 PM.,Telegram,English,CASE_002
+MSG_00217,2025-04-30 05:24:40,+919786745380,+919724754064,Vehicle will reach highway toll plaza by 04:30 AM.,Telegram,English,CASE_007
+MSG_00111,2025-04-30 05:54:28,+919720598952,+919828760553,Change SIM card tonight after crossing state border.,SMS,English,CASE_004
+MSG_00375,2025-04-30 06:48:25,+919794982908,+919960237832,Tickets confirmed for 3 persons on 12302 train coach S3.,WhatsApp,English,CASE_001
+MSG_00103,2025-04-30 08:29:42,+917276065552,+919794982908,Bhai recharge kar dena 299 wala.,Telegram,Hinglish,CASE_003
+MSG_00810,2025-04-30 13:48:46,+919971315464,+919492631441,Vehicle will reach highway toll plaza by 04:30 AM.,Signal,English,CASE_010
+MSG_00454,2025-04-30 19:35:16,+919416927215,+919433574011,Change SIM card tonight after crossing state border.,Telegram,English,CASE_005
+MSG_00727,2025-04-30 20:01:28,+919934359060,+919822257687,Do not call on this regular SIM. Call only via encrypted app.,Signal,English,CASE_009
+MSG_00815,2025-04-30 22:44:42,+918534814337,+919414968688,Send grocery list on WhatsApp.,Telegram,English,CASE_009
+MSG_00708,2025-05-01 06:48:59,+919474759996,+919751708177,Vehicle will reach highway toll plaza by 04:30 AM.,WhatsApp,English,CASE_002
+MSG_00644,2025-05-01 09:39:52,+919420796722,+917049581964,Meeting postponed to tomorrow 3 PM.,Telegram,English,CASE_007
+MSG_00972,2025-05-02 00:12:15,+919798145654,+919422960658,Vehicle will reach highway toll plaza by 04:30 AM.,WhatsApp,English,CASE_006
+MSG_00699,2025-05-02 02:14:21,+919911086890,+919761632653,Family is asking for location update. Give standard company excuse.,SMS,English,CASE_010
+MSG_00345,2025-05-02 02:17:39,+918595800828,+919841514326,Payment received for tea stall delivery.,WhatsApp,English,CASE_004
+MSG_00544,2025-05-02 06:43:16,+919968802946,+917058429638,Will reach home in 10 minutes.,Signal,English,CASE_008
+MSG_00081,2025-05-02 17:02:28,+919449172995,+919417275149,Driver reached destination border post. Awaiting clearance.,SMS,English,CASE_005
+MSG_00521,2025-05-02 17:36:48,+919822257687,+919435583290,Cash delivered to Kolkata agent. Token number verified.,Telegram,English,CASE_001
+MSG_00925,2025-05-02 19:34:30,+917049581964,+919773149551,Bhai recharge kar dena 299 wala.,Signal,Hinglish,CASE_007
+MSG_00035,2025-05-02 19:34:53,+918843638559,+919967805802,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",WhatsApp,Hinglish,CASE_010
+MSG_00625,2025-05-03 03:02:22,+919994127561,+919896934122,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",WhatsApp,Hinglish,CASE_005
+MSG_00701,2025-05-03 13:28:51,+919967805802,+918842323627,New placement registration slip ready. Tell family everything is legal.,Signal,English,CASE_004
+MSG_00267,2025-05-03 15:51:25,+919422960658,+919763339667,Send the photo and Aadhaar copy of the candidate immediately.,Telegram,English,CASE_006
+MSG_00562,2025-05-03 16:10:57,+919773149551,+918518184472,Bhai recharge kar dena 299 wala.,SMS,Hinglish,CASE_001
+MSG_00077,2025-05-03 17:21:33,+918850151803,+917099929175,Send grocery list on WhatsApp.,Telegram,English,CASE_006
+MSG_00508,2025-05-03 23:06:24,+919435583290,+919420796722,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,Telegram,English,CASE_001
+MSG_00947,2025-05-04 02:10:37,+919433574011,+919416927215,Keep the safehouse room locked from outside until further instructions.,WhatsApp,English,CASE_005
+MSG_00980,2025-05-04 10:22:45,+918830739712,+918876669607,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",Telegram,Hinglish,CASE_010
+MSG_00898,2025-05-04 13:01:56,+919433574011,+919416927215,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",Telegram,Hinglish,CASE_005
+MSG_00113,2025-05-04 18:10:27,+919822257687,+919999943797,New placement registration slip ready. Tell family everything is legal.,WhatsApp,English,CASE_009
+MSG_00048,2025-05-05 04:01:18,+917231831387,+919765133300,Call you back after lunch.,SMS,English,CASE_007
+MSG_00797,2025-05-05 04:14:08,+918515988382,+919847388792,Will reach home in 10 minutes.,Signal,English,CASE_010
+MSG_00522,2025-05-05 05:42:40,+918834166826,+918098870866,Send grocery list on WhatsApp.,SMS,English,CASE_004
+MSG_00821,2025-05-05 07:50:45,+919761632653,+919967805802,New placement registration slip ready. Tell family everything is legal.,Signal,English,CASE_006
+MSG_00247,2025-05-05 11:14:26,+919725228493,+919895060193,Driver reached destination border post. Awaiting clearance.,WhatsApp,English,CASE_008
+MSG_00558,2025-05-05 23:20:28,+919763339667,+918834166826,Keep the safehouse room locked from outside until further instructions.,Telegram,English,CASE_004
+MSG_00912,2025-05-05 23:21:29,+919453261270,+919773149551,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,Telegram,English,CASE_007
+MSG_00222,2025-05-06 17:44:48,+919862958901,+918017993466,Call you back after lunch.,SMS,English,CASE_003
+MSG_00608,2025-05-06 22:22:51,+919463904155,+919448605268,Cash delivered to Kolkata agent. Token number verified.,WhatsApp,English,CASE_010
+MSG_00075,2025-05-07 07:45:39,+917052799022,+919453261270,Payment received for tea stall delivery.,WhatsApp,English,CASE_001
+MSG_00224,2025-05-07 08:36:28,+918595800828,+919983076970,Will reach home in 10 minutes.,SMS,English,CASE_004
+MSG_00253,2025-05-07 12:30:44,+919474759996,+919725228493,Family is asking for location update. Give standard company excuse.,Telegram,English,CASE_008
+MSG_00030,2025-05-07 20:00:56,+919725228493,+919474759996,Send the photo and Aadhaar copy of the candidate immediately.,Telegram,English,CASE_008
+MSG_00580,2025-05-08 01:57:05,+919761632653,+918834166826,Vehicle will reach highway toll plaza by 04:30 AM.,Telegram,English,CASE_004
+MSG_00310,2025-05-08 11:15:24,+919417275149,+917295851936,Bhai recharge kar dena 299 wala.,WhatsApp,Hinglish,CASE_005
+MSG_00672,2025-05-08 18:59:23,+917246045780,+918861140376,Call you back after lunch.,SMS,English,CASE_010
+MSG_00726,2025-05-08 19:11:18,+919773149551,+918514159837,Send grocery list on WhatsApp.,Telegram,English,CASE_007
+MSG_00398,2025-05-08 23:56:19,+919798145654,+919869287967,Change SIM card tonight after crossing state border.,Telegram,English,CASE_006
+MSG_00347,2025-05-09 13:42:19,+919751708177,+919813874790,Keep the safehouse room locked from outside until further instructions.,WhatsApp,English,CASE_008
+MSG_00380,2025-05-10 00:45:58,+919789991301,+919414968688,Driver reached destination border post. Awaiting clearance.,Telegram,English,CASE_009
+MSG_00313,2025-05-10 02:10:27,+919822257687,+919934359060,Family is asking for location update. Give standard company excuse.,SMS,English,CASE_001
+MSG_00099,2025-05-10 18:27:49,+919453261270,+919773149551,Family is asking for location update. Give standard company excuse.,SMS,English,CASE_001
+MSG_00205,2025-05-10 18:38:33,+918864759583,+919854762841,Send the photo and Aadhaar copy of the candidate immediately.,Telegram,English,CASE_002
+MSG_00564,2025-05-10 19:27:06,+919869287967,+918069945655,Bhai recharge kar dena 299 wala.,Telegram,Hinglish,CASE_006
+MSG_00116,2025-05-11 06:56:31,+919432329103,+918858557203,Cash delivered to Kolkata agent. Token number verified.,SMS,English,CASE_008
+MSG_00382,2025-05-11 08:42:19,+919822257687,+919934359060,Do not call on this regular SIM. Call only via encrypted app.,Telegram,English,CASE_001
+MSG_00052,2025-05-11 10:31:47,+919934359060,+919446540265,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",SMS,Hinglish,CASE_001
+MSG_00383,2025-05-11 12:35:22,+919448605268,+918834166826,Cash delivered to Kolkata agent. Token number verified.,Signal,English,CASE_004
+MSG_00290,2025-05-11 14:11:16,+918888802305,+919852213778,Send the photo and Aadhaar copy of the candidate immediately.,Signal,English,CASE_007
+MSG_00619,2025-05-11 17:16:21,+918020997276,+919422246348,Call you back after lunch.,WhatsApp,English,CASE_009
+MSG_00755,2025-05-12 05:17:43,+919895060193,+918864759583,Cash delivered to Kolkata agent. Token number verified.,Signal,English,CASE_008
+MSG_00031,2025-05-12 17:50:18,+919967805802,+918834166826,Do not call on this regular SIM. Call only via encrypted app.,SMS,English,CASE_004
+MSG_00682,2025-05-13 03:35:49,+919851949529,+919971315464,Vehicle will reach highway toll plaza by 04:30 AM.,Telegram,English,CASE_010
+MSG_00259,2025-05-13 22:49:10,+919999943797,+919446540265,Keep the safehouse room locked from outside until further instructions.,WhatsApp,English,CASE_003
+MSG_00878,2025-05-14 00:12:32,+918888802305,+919934359060,Vehicle will reach highway toll plaza by 04:30 AM.,WhatsApp,English,CASE_009
+MSG_00998,2025-05-14 02:32:46,+919449172995,+919432329103,Mule account details shared on Telegram. Route the payment through UPI.,SMS,English,CASE_005
+MSG_00792,2025-05-14 06:24:44,+919754265498,+919420796722,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",WhatsApp,Hinglish,CASE_001
+MSG_00254,2025-05-14 16:16:02,+919469533928,+917290753812,Call you back after lunch.,WhatsApp,English,CASE_003
+MSG_00990,2025-05-14 17:35:33,+919987342561,+919847077298,Tickets confirmed for 3 persons on 12302 train coach S3.,WhatsApp,English,CASE_001
+MSG_00352,2025-05-14 22:11:53,+919822257687,+919999943797,Send the photo and Aadhaar copy of the candidate immediately.,Telegram,English,CASE_009
+MSG_00986,2025-05-15 02:51:22,+918814818295,+919751708177,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,SMS,English,CASE_005
+MSG_00207,2025-05-15 06:24:41,+919813874790,+918098663948,Will reach home in 10 minutes.,Signal,English,CASE_008
+MSG_00511,2025-05-15 06:40:29,+918069945655,+919422960658,Will reach home in 10 minutes.,SMS,English,CASE_006
+MSG_00823,2025-05-15 07:56:59,+917057201978,+918858557203,Bhai recharge kar dena 299 wala.,Telegram,Hinglish,CASE_002
+MSG_00871,2025-05-15 10:32:11,+917055172462,+918818050510,Payment received for tea stall delivery.,Signal,English,CASE_004
+MSG_00860,2025-05-15 13:01:04,+919446540265,+919999943797,Cash delivered to Kolkata agent. Token number verified.,SMS,English,CASE_001
+MSG_00446,2025-05-15 13:10:22,+918834166826,+919798145654,Tickets confirmed for 3 persons on 12302 train coach S3.,WhatsApp,English,CASE_004
+MSG_00607,2025-05-15 20:30:35,+919896934122,+919449172995,Family is asking for location update. Give standard company excuse.,Telegram,English,CASE_005
+MSG_00805,2025-05-15 20:40:53,+919786745380,+919724754064,Tickets confirmed for 3 persons on 12302 train coach S3.,Signal,English,CASE_007
+MSG_00058,2025-05-15 21:59:44,+919822257687,+919934359060,Family is asking for location update. Give standard company excuse.,SMS,English,CASE_001
+MSG_00432,2025-05-16 01:59:37,+919828760553,+919781291936,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",Telegram,Hinglish,CASE_004
+MSG_00275,2025-05-16 17:02:25,+919934359060,+919964807553,Send the photo and Aadhaar copy of the candidate immediately.,SMS,English,CASE_009
+MSG_00393,2025-05-16 17:17:11,+919789991301,+919786745380,New placement registration slip ready. Tell family everything is legal.,WhatsApp,English,CASE_007
+MSG_00430,2025-05-16 23:46:20,+919794982908,+919987342561,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Telegram,Hinglish,CASE_003
+MSG_00982,2025-05-16 23:51:14,+919441690501,+919828760553,Tickets confirmed for 3 persons on 12302 train coach S3.,Telegram,English,CASE_006
+MSG_00814,2025-05-17 01:00:51,+919934359060,+917213933043,Meeting postponed to tomorrow 3 PM.,Signal,English,CASE_001
+MSG_00256,2025-05-17 07:23:15,+919982017516,+917243492807,Bhai recharge kar dena 299 wala.,WhatsApp,Hinglish,CASE_006
+MSG_00104,2025-05-17 07:33:25,+919987342561,+919794982908,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Telegram,Hinglish,CASE_007
+MSG_00435,2025-05-17 09:34:09,+919967805802,+918834166826,Tickets confirmed for 3 persons on 12302 train coach S3.,Signal,English,CASE_004
+MSG_00660,2025-05-17 11:15:41,+919453261270,+919420796722,Driver reached destination border post. Awaiting clearance.,WhatsApp,English,CASE_001
+MSG_00599,2025-05-17 14:42:33,+919432329103,+918858557203,Driver reached destination border post. Awaiting clearance.,Telegram,English,CASE_008
+MSG_00883,2025-05-17 19:29:58,+919754265498,+919420796722,Change SIM card tonight after crossing state border.,SMS,English,CASE_007
+MSG_00144,2025-05-18 00:04:44,+919432329103,+918858557203,Advance 25000 transfer kar diya hai account me check karo.,Telegram,Hinglish,CASE_008
+MSG_00129,2025-05-18 06:21:52,+919934359060,+919964807553,Driver reached destination border post. Awaiting clearance.,Telegram,English,CASE_001
+MSG_00163,2025-05-18 10:16:58,+919453261270,+919773149551,Mule account details shared on Telegram. Route the payment through UPI.,Signal,English,CASE_007
+MSG_00070,2025-05-18 11:19:39,+917231424479,+919416927215,Will reach home in 10 minutes.,SMS,English,CASE_002
+MSG_00795,2025-05-18 15:41:50,+919987342561,+919422246348,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,SMS,English,CASE_003
+MSG_00365,2025-05-18 22:45:48,+918534814337,+919446540265,Will reach home in 10 minutes.,WhatsApp,English,CASE_009
+MSG_00572,2025-05-18 22:49:29,+919433574011,+919751708177,New placement registration slip ready. Tell family everything is legal.,SMS,English,CASE_002
+MSG_00417,2025-05-18 23:57:15,+919967805802,+918843638559,Cash delivered to Kolkata agent. Token number verified.,Telegram,English,CASE_010
+MSG_00231,2025-05-19 03:32:29,+919761632653,+918834166826,Cash delivered to Kolkata agent. Token number verified.,SMS,English,CASE_004
+MSG_00198,2025-05-19 07:46:28,+919934359060,+918888802305,Do not call on this regular SIM. Call only via encrypted app.,WhatsApp,English,CASE_009
+MSG_00246,2025-05-19 13:00:03,+917231139813,+919495618110,Call you back after lunch.,SMS,English,CASE_004
+MSG_00192,2025-05-20 01:44:50,+919725228493,+919895060193,Cash delivered to Kolkata agent. Token number verified.,WhatsApp,English,CASE_008
+MSG_00794,2025-05-20 03:09:26,+918839735904,+919789991301,Tickets confirmed for 3 persons on 12302 train coach S3.,Telegram,English,CASE_003
+MSG_00137,2025-05-20 04:32:52,+919761632653,+919791478884,Vehicle will reach highway toll plaza by 04:30 AM.,Signal,English,CASE_006
+MSG_00652,2025-05-20 14:43:37,+919725228493,+919895060193,Send the photo and Aadhaar copy of the candidate immediately.,WhatsApp,English,CASE_008
+MSG_00431,2025-05-20 14:48:40,+919828760553,+919470887034,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",Signal,Hinglish,CASE_006
+MSG_00474,2025-05-20 15:12:32,+918864759583,+919854762841,Driver reached destination border post. Awaiting clearance.,WhatsApp,English,CASE_002
+MSG_00690,2025-05-20 20:26:22,+919420796722,+919724754064,Do not call on this regular SIM. Call only via encrypted app.,WhatsApp,English,CASE_003
+MSG_00473,2025-05-21 03:38:03,+918058155056,+919417275149,Send grocery list on WhatsApp.,Signal,English,CASE_002
+MSG_00745,2025-05-21 03:55:03,+918834166826,+919448605268,Family is asking for location update. Give standard company excuse.,SMS,English,CASE_004
+MSG_00225,2025-05-21 14:12:08,+918834166826,+919448605268,Mule account details shared on Telegram. Route the payment through UPI.,Telegram,English,CASE_004
+MSG_00160,2025-05-21 16:37:48,+919414968688,+919773149551,Do not call on this regular SIM. Call only via encrypted app.,Signal,English,CASE_007
+MSG_00190,2025-05-21 23:02:21,+919453261270,+919420796722,New placement registration slip ready. Tell family everything is legal.,WhatsApp,English,CASE_009
+MSG_00530,2025-05-22 04:08:36,+919453261270,+919754265498,Send the photo and Aadhaar copy of the candidate immediately.,SMS,English,CASE_001
+MSG_00847,2025-05-22 04:11:09,+919822257687,+919999943797,Cash delivered to Kolkata agent. Token number verified.,WhatsApp,English,CASE_009
+MSG_00959,2025-05-22 05:14:03,+918839735904,+919789991301,Vehicle will reach highway toll plaza by 04:30 AM.,WhatsApp,English,CASE_003
+MSG_00444,2025-05-22 08:58:24,+919789991301,+918534814337,Meeting postponed to tomorrow 3 PM.,Signal,English,CASE_009
+MSG_00251,2025-05-22 14:49:14,+919895060193,+918864759583,Do not call on this regular SIM. Call only via encrypted app.,Signal,English,CASE_008
+MSG_00791,2025-05-22 19:43:05,+919769934576,+919422246348,Send the photo and Aadhaar copy of the candidate immediately.,WhatsApp,English,CASE_003
+MSG_00186,2025-05-23 00:08:43,+918020997276,+919744489940,Call you back after lunch.,SMS,English,CASE_009
+MSG_00212,2025-05-23 03:11:41,+919474759996,+919417275149,Keep the safehouse room locked from outside until further instructions.,Signal,English,CASE_008
+MSG_00988,2025-05-23 09:06:54,+919781291936,+919798145654,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",WhatsApp,Hinglish,CASE_010
+MSG_00578,2025-05-23 10:01:32,+919435583290,+919822257687,Advance 25000 transfer kar diya hai account me check karo.,WhatsApp,Hinglish,CASE_001
+MSG_00168,2025-05-23 11:30:27,+919422960658,+919761632653,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,Telegram,English,CASE_006
+MSG_00545,2025-05-23 18:36:45,+919786745380,+917231831387,Call you back after lunch.,WhatsApp,English,CASE_007
+MSG_00287,2025-05-23 22:01:08,+919895060193,+918864759583,Advance 25000 transfer kar diya hai account me check karo.,Telegram,Hinglish,CASE_008
+MSG_00907,2025-05-24 09:53:46,+919420796722,+919435583290,Family is asking for location update. Give standard company excuse.,SMS,English,CASE_001
+MSG_00592,2025-05-24 12:15:49,+918536770773,+919847962005,Send grocery list on WhatsApp.,SMS,English,CASE_001
+MSG_00749,2025-05-24 16:16:19,+918876669607,+918834166826,Vehicle will reach highway toll plaza by 04:30 AM.,Signal,English,CASE_004
+MSG_00145,2025-05-24 18:30:20,+919474759996,+919417275149,Advance 25000 transfer kar diya hai account me check karo.,Telegram,Hinglish,CASE_002
+MSG_00561,2025-05-24 23:35:31,+919854762841,+918864759583,Change SIM card tonight after crossing state border.,Telegram,English,CASE_002
+MSG_00864,2025-05-25 00:25:43,+917061956500,+919463904155,Bhai recharge kar dena 299 wala.,Telegram,Hinglish,CASE_010
+MSG_00289,2025-05-25 01:51:06,+919474759996,+919751708177,Tickets confirmed for 3 persons on 12302 train coach S3.,Signal,English,CASE_002
+MSG_00555,2025-05-25 02:27:07,+918814925405,+919453261270,Mule account details shared on Telegram. Route the payment through UPI.,WhatsApp,English,CASE_007
+MSG_00662,2025-05-25 03:32:06,+919751708177,+919433574011,Family is asking for location update. Give standard company excuse.,WhatsApp,English,CASE_002
+MSG_00928,2025-05-25 03:33:40,+919446540265,+919999943797,Cash delivered to Kolkata agent. Token number verified.,SMS,English,CASE_003
+MSG_00170,2025-05-25 07:09:54,+918858557203,+919896934122,Driver reached destination border post. Awaiting clearance.,Telegram,English,CASE_008
+MSG_00640,2025-05-25 09:46:48,+917290753812,+919954619335,Call you back after lunch.,Telegram,English,CASE_003
+MSG_00350,2025-05-25 10:47:41,+919769934576,+919496347724,Change SIM card tonight after crossing state border.,Signal,English,CASE_003
+MSG_00318,2025-05-25 11:37:47,+917284303190,+919851949529,Bhai recharge kar dena 299 wala.,Signal,Hinglish,CASE_010
+MSG_00051,2025-05-25 12:22:05,+918597131500,+918842323627,Meeting postponed to tomorrow 3 PM.,Telegram,English,CASE_004
+MSG_00571,2025-05-25 13:43:37,+919968802946,+919896934122,Family is asking for location update. Give standard company excuse.,SMS,English,CASE_008
+MSG_00540,2025-05-25 16:00:07,+918842323627,+919470887034,Do not call on this regular SIM. Call only via encrypted app.,WhatsApp,English,CASE_004
+MSG_00294,2025-05-25 20:24:56,+919724754064,+918514159837,Payment received for tea stall delivery.,WhatsApp,English,CASE_007
+MSG_00314,2025-05-26 15:00:53,+919794982908,+919987342561,Cash delivered to Kolkata agent. Token number verified.,WhatsApp,English,CASE_007
+MSG_00154,2025-05-26 21:06:22,+918597131500,+918829208935,Bhai recharge kar dena 299 wala.,WhatsApp,Hinglish,CASE_004
+MSG_00884,2025-05-27 13:34:15,+918074382155,+919446540265,Send grocery list on WhatsApp.,SMS,English,CASE_001
+MSG_00131,2025-05-27 19:52:00,+919999943797,+919446540265,Do not call on this regular SIM. Call only via encrypted app.,SMS,English,CASE_001
+MSG_00223,2025-05-28 21:49:17,+918814818295,+919417275149,Cash delivered to Kolkata agent. Token number verified.,WhatsApp,English,CASE_005
+MSG_00371,2025-05-29 07:57:02,+919761632653,+919791478884,New placement registration slip ready. Tell family everything is legal.,Signal,English,CASE_006
+MSG_00539,2025-05-29 10:25:12,+919422960658,+919761632653,Family is asking for location update. Give standard company excuse.,SMS,English,CASE_006
+MSG_00918,2025-05-29 12:42:50,+919987342561,+919422246348,Advance 25000 transfer kar diya hai account me check karo.,WhatsApp,Hinglish,CASE_003
+MSG_00479,2025-05-29 14:10:49,+919441690501,+919828760553,Family is asking for location update. Give standard company excuse.,Telegram,English,CASE_006
+MSG_00059,2025-05-29 23:54:34,+917276065552,+919496347724,Bhai recharge kar dena 299 wala.,SMS,Hinglish,CASE_003
+MSG_00078,2025-05-30 02:47:00,+919449172995,+919417275149,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,SMS,English,CASE_002
+MSG_00274,2025-05-30 10:13:58,+919934359060,+919754265498,Change SIM card tonight after crossing state border.,SMS,English,CASE_001
+MSG_00994,2025-05-30 14:40:12,+919422246348,+919822257687,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",SMS,Hinglish,CASE_009
+MSG_00105,2025-05-30 23:27:16,+919474759996,+919751708177,Send the photo and Aadhaar copy of the candidate immediately.,Telegram,English,CASE_008
+MSG_00767,2025-05-30 23:59:05,+919773149551,+919414968688,Driver reached destination border post. Awaiting clearance.,SMS,English,CASE_007
+MSG_00096,2025-05-31 01:21:51,+918069945655,+918850151803,Will reach home in 10 minutes.,WhatsApp,English,CASE_006
+MSG_00072,2025-05-31 03:52:37,+919720598952,+919828760553,Keep the safehouse room locked from outside until further instructions.,WhatsApp,English,CASE_004
+MSG_00756,2025-05-31 09:29:50,+918019735027,+919459470729,Payment received for tea stall delivery.,Signal,English,CASE_004
+MSG_00204,2025-05-31 10:24:38,+919854762841,+919896934122,Mule account details shared on Telegram. Route the payment through UPI.,Telegram,English,CASE_002
+MSG_00389,2025-05-31 19:01:47,+918830739712,+919463904155,Driver reached destination border post. Awaiting clearance.,Telegram,English,CASE_010
+MSG_00121,2025-06-01 00:56:56,+918864759583,+919854762841,Tickets confirmed for 3 persons on 12302 train coach S3.,WhatsApp,English,CASE_002
+MSG_00396,2025-06-01 05:04:20,+919781291936,+919470887034,Cash delivered to Kolkata agent. Token number verified.,Telegram,English,CASE_006
+MSG_00891,2025-06-01 07:03:07,+919724754064,+919420796722,Keep the safehouse room locked from outside until further instructions.,WhatsApp,English,CASE_003
+MSG_00085,2025-06-01 18:25:42,+918887835998,+919822257687,Cash delivered to Kolkata agent. Token number verified.,SMS,English,CASE_007
+MSG_00967,2025-06-01 23:04:55,+919781291936,+919798145654,Cash delivered to Kolkata agent. Token number verified.,Signal,English,CASE_010
+MSG_00050,2025-06-02 12:01:05,+919960237832,+919794982908,Advance 25000 transfer kar diya hai account me check karo.,Telegram,Hinglish,CASE_001
+MSG_00392,2025-06-02 13:38:47,+918814925405,+919446540265,Driver reached destination border post. Awaiting clearance.,SMS,English,CASE_003
+MSG_00213,2025-06-02 14:33:32,+917260785855,+919771308842,Will reach home in 10 minutes.,Signal,English,CASE_005
+MSG_00975,2025-06-02 15:03:15,+919896934122,+919416927215,Cash delivered to Kolkata agent. Token number verified.,Telegram,English,CASE_005
+MSG_00123,2025-06-02 15:16:58,+919416927215,+919433574011,Cash delivered to Kolkata agent. Token number verified.,Signal,English,CASE_005
+MSG_00634,2025-06-02 18:09:35,+919448605268,+919763339667,Advance 25000 transfer kar diya hai account me check karo.,SMS,Hinglish,CASE_010
+MSG_00300,2025-06-02 22:39:55,+918850151803,+919448605268,Change SIM card tonight after crossing state border.,Telegram,English,CASE_006
+MSG_00985,2025-06-02 23:04:20,+918834166826,+919967805802,Send the photo and Aadhaar copy of the candidate immediately.,WhatsApp,English,CASE_004
+MSG_00679,2025-06-02 23:49:06,+919453261270,+919754265498,Family is asking for location update. Give standard company excuse.,Signal,English,CASE_001
+MSG_00351,2025-06-02 23:53:30,+919934359060,+919822257687,Advance 25000 transfer kar diya hai account me check karo.,Signal,Hinglish,CASE_009
+MSG_00433,2025-06-03 06:44:59,+919896934122,+919433574011,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,SMS,English,CASE_005
+MSG_00057,2025-06-03 07:11:25,+917276065552,+919447028180,Payment received for tea stall delivery.,SMS,English,CASE_003
+MSG_00166,2025-06-03 12:05:37,+919446540265,+919934359060,Cash delivered to Kolkata agent. Token number verified.,Telegram,English,CASE_009
+MSG_00003,2025-06-04 10:37:46,+918088381665,+919416927215,Bhai recharge kar dena 299 wala.,SMS,Hinglish,CASE_002
+MSG_00384,2025-06-04 16:19:18,+919422246348,+918889212676,Send the photo and Aadhaar copy of the candidate immediately.,SMS,English,CASE_009
+MSG_00960,2025-06-04 17:06:45,+918049529438,+918858557203,Payment received for tea stall delivery.,WhatsApp,English,CASE_005
+MSG_00579,2025-06-04 20:38:29,+919446540265,+918814925405,Cash delivered to Kolkata agent. Token number verified.,Telegram,English,CASE_003
+MSG_00851,2025-06-05 02:21:25,+919446540265,+919934359060,New placement registration slip ready. Tell family everything is legal.,Signal,English,CASE_009
+MSG_00560,2025-06-05 08:30:21,+919968802946,+919896934122,Tickets confirmed for 3 persons on 12302 train coach S3.,WhatsApp,English,CASE_005
+MSG_00279,2025-06-05 08:38:23,+919794982908,+919987342561,Keep the safehouse room locked from outside until further instructions.,Telegram,English,CASE_003
+MSG_00336,2025-06-05 11:46:04,+918575645462,+919446540265,Call you back after lunch.,SMS,English,CASE_009
+MSG_00476,2025-06-05 20:55:09,+919786745380,+918839735904,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Telegram,Hinglish,CASE_003
+MSG_00730,2025-06-05 22:21:02,+918814818295,+919751708177,Cash delivered to Kolkata agent. Token number verified.,Signal,English,CASE_005
+MSG_00215,2025-06-05 22:25:08,+919763339667,+919911086890,Advance 25000 transfer kar diya hai account me check karo.,WhatsApp,Hinglish,CASE_010
+MSG_00872,2025-06-06 04:16:45,+919954619335,+917212674689,Meeting postponed to tomorrow 3 PM.,WhatsApp,English,CASE_003
+MSG_00952,2025-06-06 09:28:15,+919474759996,+919751708177,Family is asking for location update. Give standard company excuse.,SMS,English,CASE_002
+MSG_00504,2025-06-06 10:25:14,+919911086890,+919763339667,Vehicle will reach highway toll plaza by 04:30 AM.,Telegram,English,CASE_010
+MSG_00820,2025-06-06 20:09:05,+919896934122,+917062734442,Bhai recharge kar dena 299 wala.,Telegram,Hinglish,CASE_008
+MSG_00547,2025-06-06 21:50:57,+919765026398,+919449172995,Tickets confirmed for 3 persons on 12302 train coach S3.,WhatsApp,English,CASE_002
+MSG_00107,2025-06-06 23:44:08,+919763339667,+919422960658,Mule account details shared on Telegram. Route the payment through UPI.,Signal,English,CASE_006
+MSG_00193,2025-06-07 04:41:17,+919934359060,+918061196706,Send grocery list on WhatsApp.,WhatsApp,English,CASE_009
+MSG_00108,2025-06-07 05:03:26,+919795445405,+918842323627,Do not call on this regular SIM. Call only via encrypted app.,WhatsApp,English,CASE_010
+MSG_00448,2025-06-07 07:26:53,+918834166826,+919448605268,Vehicle will reach highway toll plaza by 04:30 AM.,SMS,English,CASE_004
+MSG_00803,2025-06-07 18:28:51,+919416927215,+919896934122,Change SIM card tonight after crossing state border.,SMS,English,CASE_005
+MSG_00164,2025-06-07 19:41:02,+919964807553,+918074382155,Will reach home in 10 minutes.,WhatsApp,English,CASE_001
+MSG_00576,2025-06-08 07:15:26,+918877349752,+918035042738,Call you back after lunch.,WhatsApp,English,CASE_010
+MSG_00910,2025-06-08 11:29:38,+919754265498,+919453261270,Advance 25000 transfer kar diya hai account me check karo.,Signal,Hinglish,CASE_007
+MSG_00656,2025-06-08 13:49:01,+919791478884,+919761632653,Family is asking for location update. Give standard company excuse.,Signal,English,CASE_006
+MSG_00142,2025-06-09 00:19:37,+919987342561,+919422246348,Tickets confirmed for 3 persons on 12302 train coach S3.,Signal,English,CASE_003
+MSG_00964,2025-06-09 01:51:59,+919791478884,+919761632653,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",WhatsApp,Hinglish,CASE_006
+MSG_00101,2025-06-09 03:41:48,+919896934122,+919854762841,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,Telegram,English,CASE_002
+MSG_00924,2025-06-09 08:53:03,+919463904155,+919448605268,Vehicle will reach highway toll plaza by 04:30 AM.,WhatsApp,English,CASE_010
+MSG_00507,2025-06-09 12:38:03,+918834166826,+919798145654,Keep the safehouse room locked from outside until further instructions.,WhatsApp,English,CASE_004
+MSG_00340,2025-06-09 14:53:17,+919474759996,+917289526622,Bhai recharge kar dena 299 wala.,Signal,Hinglish,CASE_002
+MSG_00935,2025-06-09 19:21:43,+919822257687,+919435583290,Do not call on this regular SIM. Call only via encrypted app.,WhatsApp,English,CASE_001
+MSG_00150,2025-06-10 04:29:40,+919968802946,+919417275149,Driver reached destination border post. Awaiting clearance.,Telegram,English,CASE_005
+MSG_00890,2025-06-10 06:00:14,+919773149551,+917220066654,Bhai recharge kar dena 299 wala.,Signal,Hinglish,CASE_007
+MSG_00324,2025-06-10 12:54:32,+919798145654,+919422960658,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",Telegram,Hinglish,CASE_006
+MSG_00628,2025-06-10 14:54:37,+918834166826,+919463904155,Change SIM card tonight after crossing state border.,Signal,English,CASE_010
+MSG_00862,2025-06-11 03:27:44,+919725228493,+919895060193,Send the photo and Aadhaar copy of the candidate immediately.,Telegram,English,CASE_008
+MSG_00184,2025-06-11 06:40:26,+919822257687,+919422246348,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",WhatsApp,Hinglish,CASE_009
+MSG_00127,2025-06-11 15:34:55,+919463904155,+918834166826,Family is asking for location update. Give standard company excuse.,WhatsApp,English,CASE_010
+MSG_00618,2025-06-11 18:03:46,+919416927215,+919896934122,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,SMS,English,CASE_005
+MSG_00281,2025-06-11 19:42:20,+919754265498,+919934359060,Cash delivered to Kolkata agent. Token number verified.,Signal,English,CASE_001
+MSG_00969,2025-06-12 05:09:46,+918898292612,+919433574011,Keep the safehouse room locked from outside until further instructions.,WhatsApp,English,CASE_005
+MSG_00407,2025-06-12 06:27:27,+919751708177,+918814818295,Driver reached destination border post. Awaiting clearance.,WhatsApp,English,CASE_005
+MSG_00859,2025-06-12 19:23:45,+919470887034,+919781291936,Vehicle will reach highway toll plaza by 04:30 AM.,SMS,English,CASE_006
+MSG_00094,2025-06-12 23:16:49,+919761632653,+919967805802,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Telegram,Hinglish,CASE_006
+MSG_00615,2025-06-13 06:12:01,+919934359060,+919446540265,Send the photo and Aadhaar copy of the candidate immediately.,Telegram,English,CASE_009
+MSG_00465,2025-06-13 09:19:57,+919441690501,+919828760553,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,WhatsApp,English,CASE_006
+MSG_00408,2025-06-13 11:03:06,+919934359060,+918888802305,New placement registration slip ready. Tell family everything is legal.,SMS,English,CASE_009
+MSG_00766,2025-06-13 16:47:28,+919765026398,+919417275149,New placement registration slip ready. Tell family everything is legal.,Signal,English,CASE_002
+MSG_00774,2025-06-13 20:10:16,+919789991301,+919414968688,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",SMS,Hinglish,CASE_009
+MSG_00989,2025-06-14 03:06:34,+918842323627,+918834166826,Do not call on this regular SIM. Call only via encrypted app.,Telegram,English,CASE_004
+MSG_00097,2025-06-14 13:21:23,+919852213778,+918888802305,Driver reached destination border post. Awaiting clearance.,Signal,English,CASE_003
+MSG_00028,2025-06-14 15:07:14,+919999943797,+919822257687,Send the photo and Aadhaar copy of the candidate immediately.,SMS,English,CASE_009
+MSG_00914,2025-06-14 18:43:24,+917086884584,+919417275149,Bhai recharge kar dena 299 wala.,Signal,Hinglish,CASE_005
+MSG_00194,2025-06-14 23:21:13,+919795445405,+918842323627,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,Signal,English,CASE_010
+MSG_00309,2025-06-15 08:02:25,+919967805802,+918830739712,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",SMS,Hinglish,CASE_004
+MSG_00209,2025-06-15 12:21:00,+918069020960,+919450559278,Meeting postponed to tomorrow 3 PM.,Telegram,English,CASE_010
+MSG_00680,2025-06-15 17:07:38,+919420796722,+919724754064,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",SMS,Hinglish,CASE_003
+MSG_00191,2025-06-15 17:13:01,+918588653825,+919856991504,Bhai recharge kar dena 299 wala.,SMS,Hinglish,CASE_004
+MSG_00460,2025-06-15 21:31:24,+917231424479,+919873013961,Send grocery list on WhatsApp.,Signal,English,CASE_002
+MSG_00806,2025-06-16 02:28:46,+917260393104,+919446540265,Bhai recharge kar dena 299 wala.,SMS,Hinglish,CASE_007
+MSG_00200,2025-06-16 05:05:43,+919968802946,+919896934122,Family is asking for location update. Give standard company excuse.,Telegram,English,CASE_008
+MSG_00754,2025-06-16 05:57:58,+919856991504,+918595800828,Will reach home in 10 minutes.,SMS,English,CASE_004
+MSG_00349,2025-06-16 18:06:36,+918842323627,+919795445405,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",SMS,Hinglish,CASE_010
+MSG_00778,2025-06-16 21:12:17,+919417275149,+919474759996,New placement registration slip ready. Tell family everything is legal.,SMS,English,CASE_002
+MSG_00387,2025-06-17 07:06:25,+918850151803,+919448605268,Tickets confirmed for 3 persons on 12302 train coach S3.,WhatsApp,English,CASE_006
+MSG_00023,2025-06-17 07:26:08,+919994127561,+919896934122,Change SIM card tonight after crossing state border.,Telegram,English,CASE_005
+MSG_00067,2025-06-17 18:37:51,+918536799898,+919470606674,Bhai recharge kar dena 299 wala.,SMS,Hinglish,CASE_009
+MSG_00552,2025-06-17 20:24:18,+919446540265,+919999943797,Mule account details shared on Telegram. Route the payment through UPI.,SMS,English,CASE_001
+MSG_00032,2025-06-18 02:36:49,+919432329103,+918858557203,Send the photo and Aadhaar copy of the candidate immediately.,WhatsApp,English,CASE_008
+MSG_00519,2025-06-18 09:18:41,+919448605268,+919463904155,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,Signal,English,CASE_010
+MSG_00926,2025-06-18 10:16:10,+919798145654,+918834166826,Family is asking for location update. Give standard company excuse.,Signal,English,CASE_004
+MSG_00556,2025-06-18 16:42:12,+919911086890,+919763339667,Keep the safehouse room locked from outside until further instructions.,Telegram,English,CASE_010
+MSG_00830,2025-06-18 18:27:41,+919751708177,+919474759996,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,WhatsApp,English,CASE_008
+MSG_00331,2025-06-18 22:20:20,+919420796722,+919453261270,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,Signal,English,CASE_009
+MSG_00996,2025-06-19 05:37:40,+919422246348,+918889212676,Change SIM card tonight after crossing state border.,Signal,English,CASE_009
+MSG_00362,2025-06-19 10:55:09,+919453261270,+919414968688,Vehicle will reach highway toll plaza by 04:30 AM.,WhatsApp,English,CASE_009
+MSG_00304,2025-06-19 14:56:38,+919485291541,+918033381086,Bhai recharge kar dena 299 wala.,WhatsApp,Hinglish,CASE_004
+MSG_00817,2025-06-19 16:09:15,+918575645462,+919897874085,Will reach home in 10 minutes.,Signal,English,CASE_009
+MSG_00024,2025-06-19 18:19:29,+919968802946,+919417275149,Do not call on this regular SIM. Call only via encrypted app.,Signal,English,CASE_008
+MSG_00748,2025-06-19 22:48:30,+919822257687,+918061196706,Call you back after lunch.,WhatsApp,English,CASE_009
+MSG_00779,2025-06-20 03:23:40,+919967805802,+919761632653,Keep the safehouse room locked from outside until further instructions.,Telegram,English,CASE_006
+MSG_00110,2025-06-20 05:49:09,+918842323627,+919869287967,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,SMS,English,CASE_004
+MSG_00590,2025-06-20 06:14:21,+918062127652,+919794982908,Payment received for tea stall delivery.,Signal,English,CASE_001
+MSG_00293,2025-06-20 06:36:34,+919725228493,+919474759996,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,SMS,English,CASE_008
+MSG_00333,2025-06-20 14:18:43,+919414968688,+919453261270,Mule account details shared on Telegram. Route the payment through UPI.,WhatsApp,English,CASE_009
+MSG_00167,2025-06-20 14:29:31,+919499078806,+918523613510,Will reach home in 10 minutes.,WhatsApp,English,CASE_007
+MSG_00796,2025-06-20 16:40:17,+919763339667,+919911086890,Send the photo and Aadhaar copy of the candidate immediately.,SMS,English,CASE_010
+MSG_00937,2025-06-21 01:39:08,+919869287967,+919798145654,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",WhatsApp,Hinglish,CASE_006
+MSG_00276,2025-06-21 06:05:41,+919967805802,+918834166826,Advance 25000 transfer kar diya hai account me check karo.,SMS,Hinglish,CASE_004
+MSG_00606,2025-06-21 10:20:01,+919433574011,+919416927215,New placement registration slip ready. Tell family everything is legal.,WhatsApp,English,CASE_005
+MSG_00782,2025-06-22 04:05:35,+918830739712,+919967805802,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",WhatsApp,Hinglish,CASE_004
+MSG_00270,2025-06-22 07:57:43,+917016462242,+919841837210,Will reach home in 10 minutes.,Telegram,English,CASE_006
+MSG_00866,2025-06-22 16:17:49,+919754265498,+919934359060,Do not call on this regular SIM. Call only via encrypted app.,WhatsApp,English,CASE_001
+MSG_00403,2025-06-22 17:36:00,+919446540265,+919934359060,Change SIM card tonight after crossing state border.,Signal,English,CASE_009
+MSG_00880,2025-06-22 18:55:31,+919432329103,+917222873617,Will reach home in 10 minutes.,WhatsApp,English,CASE_008
+MSG_00923,2025-06-22 22:20:49,+919448605268,+919463904155,Driver reached destination border post. Awaiting clearance.,Telegram,English,CASE_010
+MSG_00742,2025-06-23 04:10:57,+919999943797,+917276065552,Meeting postponed to tomorrow 3 PM.,Signal,English,CASE_003
+MSG_00565,2025-06-23 04:59:30,+918536770773,+919448683937,Will reach home in 10 minutes.,Telegram,English,CASE_001
+MSG_00733,2025-06-23 05:37:16,+919453261270,+919786745380,Keep the safehouse room locked from outside until further instructions.,SMS,English,CASE_007
+MSG_00523,2025-06-23 08:16:06,+919453261270,+919420796722,Family is asking for location update. Give standard company excuse.,SMS,English,CASE_007
+MSG_00818,2025-06-23 09:19:43,+919761632653,+918834166826,Mule account details shared on Telegram. Route the payment through UPI.,SMS,English,CASE_004
+MSG_00328,2025-06-23 17:00:54,+919911086890,+919763339667,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,SMS,English,CASE_010
+MSG_00903,2025-06-23 17:48:40,+919786745380,+919789991301,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Signal,Hinglish,CASE_007
+MSG_00364,2025-06-24 02:41:24,+918069945655,+918850151803,Meeting postponed to tomorrow 3 PM.,WhatsApp,English,CASE_006
+MSG_00357,2025-06-24 06:40:28,+917061338023,+919754265498,Meeting postponed to tomorrow 3 PM.,WhatsApp,English,CASE_001
+MSG_00542,2025-06-24 16:13:48,+919422246348,+919769934576,Cash delivered to Kolkata agent. Token number verified.,Telegram,English,CASE_003
+MSG_00899,2025-06-24 17:12:05,+919854762841,+919896934122,Advance 25000 transfer kar diya hai account me check karo.,Signal,Hinglish,CASE_002
+MSG_00325,2025-06-24 19:04:24,+919987342561,+919422246348,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,WhatsApp,English,CASE_003
+MSG_00664,2025-06-24 19:10:09,+919417275149,+918864759583,Tickets confirmed for 3 persons on 12302 train coach S3.,WhatsApp,English,CASE_002
+MSG_00686,2025-06-25 00:10:08,+917231831387,+919973481797,Will reach home in 10 minutes.,Telegram,English,CASE_007
+MSG_00436,2025-06-25 07:04:26,+918830739712,+918876669607,Family is asking for location update. Give standard company excuse.,WhatsApp,English,CASE_010
+MSG_00997,2025-06-25 16:26:29,+919449172995,+919765026398,Keep the safehouse room locked from outside until further instructions.,WhatsApp,English,CASE_002
+MSG_00126,2025-06-25 20:06:44,+919416927215,+919896934122,Keep the safehouse room locked from outside until further instructions.,Telegram,English,CASE_005
+MSG_00092,2025-06-25 22:44:18,+919751708177,+919433574011,Family is asking for location update. Give standard company excuse.,SMS,English,CASE_002
+MSG_00916,2025-06-26 01:02:39,+919449172995,+919417275149,Family is asking for location update. Give standard company excuse.,SMS,English,CASE_002
+MSG_00250,2025-06-26 05:00:49,+918586166246,+919449172995,Call you back after lunch.,Signal,English,CASE_005
+MSG_00425,2025-06-26 06:40:23,+919417275149,+918864759583,Keep the safehouse room locked from outside until further instructions.,Telegram,English,CASE_008
+MSG_00515,2025-06-26 12:52:44,+919754265498,+919420796722,Advance 25000 transfer kar diya hai account me check karo.,Signal,Hinglish,CASE_007
+MSG_00395,2025-06-26 17:57:26,+919983715012,+917057201978,Send grocery list on WhatsApp.,SMS,English,CASE_002
+MSG_00439,2025-06-27 08:01:35,+918062127652,+919496347724,Send grocery list on WhatsApp.,Telegram,English,CASE_001
+MSG_00025,2025-06-27 12:36:07,+919420796722,+919724754064,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,WhatsApp,English,CASE_001
+MSG_00483,2025-06-27 23:51:29,+919453261270,+918534814337,Send grocery list on WhatsApp.,Signal,English,CASE_009
+MSG_00904,2025-06-28 00:48:53,+918834166826,+918876669607,Tickets confirmed for 3 persons on 12302 train coach S3.,SMS,English,CASE_004
+MSG_00264,2025-06-28 01:02:38,+919852213778,+918888802305,Keep the safehouse room locked from outside until further instructions.,Telegram,English,CASE_007
+MSG_00757,2025-06-28 01:18:01,+919724754064,+918556175477,Send grocery list on WhatsApp.,Signal,English,CASE_001
+MSG_00934,2025-06-28 02:00:30,+919446540265,+918814925405,Do not call on this regular SIM. Call only via encrypted app.,WhatsApp,English,CASE_007
+MSG_00282,2025-06-28 05:18:44,+919968802946,+917260785855,Meeting postponed to tomorrow 3 PM.,Signal,English,CASE_005
+MSG_00631,2025-06-28 13:19:13,+919420796722,+919453261270,Advance 25000 transfer kar diya hai account me check karo.,Signal,Hinglish,CASE_001
+MSG_00670,2025-06-28 21:55:50,+919816172803,+917291512791,Call you back after lunch.,WhatsApp,English,CASE_008
+MSG_00485,2025-06-29 06:45:01,+919453261270,+919773149551,Change SIM card tonight after crossing state border.,Telegram,English,CASE_001
+MSG_00546,2025-06-29 16:23:03,+917043266810,+919416927215,Will reach home in 10 minutes.,WhatsApp,English,CASE_002
+MSG_00931,2025-06-30 02:49:30,+918069020960,+919450559278,Send grocery list on WhatsApp.,Telegram,English,CASE_010
+MSG_00604,2025-06-30 03:06:08,+919896934122,+919968802946,New placement registration slip ready. Tell family everything is legal.,Signal,English,CASE_008
+MSG_00900,2025-06-30 04:00:59,+919761632653,+919791478884,Driver reached destination border post. Awaiting clearance.,Telegram,English,CASE_006
+MSG_00228,2025-06-30 05:08:00,+919896934122,+919968802946,Mule account details shared on Telegram. Route the payment through UPI.,SMS,English,CASE_005
+MSG_00812,2025-06-30 09:03:23,+919896934122,+919854762841,Driver reached destination border post. Awaiting clearance.,Telegram,English,CASE_002
+MSG_00524,2025-06-30 12:56:21,+919822257687,+919422246348,New placement registration slip ready. Tell family everything is legal.,Telegram,English,CASE_009
+MSG_00875,2025-06-30 14:53:21,+918557621071,+919873013961,Bhai recharge kar dena 299 wala.,Signal,Hinglish,CASE_002
+MSG_00291,2025-06-30 18:03:45,+919751708177,+919449172995,Driver reached destination border post. Awaiting clearance.,SMS,English,CASE_002
+MSG_00869,2025-06-30 23:28:49,+918814925405,+919934359060,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",WhatsApp,Hinglish,CASE_007
+MSG_00765,2025-07-01 04:47:25,+919433574011,+919751708177,Do not call on this regular SIM. Call only via encrypted app.,Signal,English,CASE_002
+MSG_00489,2025-07-01 06:03:44,+917021503440,+919911086890,Send grocery list on WhatsApp.,Signal,English,CASE_010
+MSG_00694,2025-07-01 16:33:54,+919761632653,+918834166826,Tickets confirmed for 3 persons on 12302 train coach S3.,WhatsApp,English,CASE_004
+MSG_00970,2025-07-01 17:39:12,+918814925405,+919453261270,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Signal,Hinglish,CASE_007
+MSG_00760,2025-07-01 18:47:02,+919798145654,+919781291936,Send the photo and Aadhaar copy of the candidate immediately.,SMS,English,CASE_010
+MSG_00902,2025-07-01 19:04:08,+919960237832,+919794982908,Send the photo and Aadhaar copy of the candidate immediately.,Signal,English,CASE_001
+MSG_00195,2025-07-01 23:13:19,+918876669607,+917021503440,Payment received for tea stall delivery.,Telegram,English,CASE_010
+MSG_00147,2025-07-02 04:10:42,+919896934122,+919854762841,Send the photo and Aadhaar copy of the candidate immediately.,Signal,English,CASE_002
+MSG_00317,2025-07-02 07:31:47,+919474759996,+919417275149,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",Signal,Hinglish,CASE_002
+MSG_00302,2025-07-02 13:16:44,+919496347724,+919769934576,Send the photo and Aadhaar copy of the candidate immediately.,WhatsApp,English,CASE_003
+MSG_00887,2025-07-02 17:02:14,+919420796722,+919453261270,Mule account details shared on Telegram. Route the payment through UPI.,Telegram,English,CASE_009
+MSG_00165,2025-07-02 17:15:23,+918834166826,+919967805802,Tickets confirmed for 3 persons on 12302 train coach S3.,Telegram,English,CASE_004
+MSG_00529,2025-07-02 19:45:23,+919448605268,+919763339667,Family is asking for location update. Give standard company excuse.,WhatsApp,English,CASE_010
+MSG_00933,2025-07-02 22:19:19,+919420796722,+919724754064,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,WhatsApp,English,CASE_003
+MSG_00784,2025-07-03 00:47:53,+918052885071,+919983715012,Call you back after lunch.,Telegram,English,CASE_005
+MSG_00326,2025-07-03 06:23:25,+919446540265,+918814925405,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Signal,Hinglish,CASE_007
+MSG_00208,2025-07-03 11:06:24,+918842323627,+919869287967,Do not call on this regular SIM. Call only via encrypted app.,Signal,English,CASE_004
+MSG_00033,2025-07-03 12:24:36,+919474759996,+919765026398,Send the photo and Aadhaar copy of the candidate immediately.,Telegram,English,CASE_002
+MSG_00575,2025-07-03 12:48:16,+919495618110,+918039962391,Will reach home in 10 minutes.,Telegram,English,CASE_004
+MSG_00559,2025-07-04 06:37:49,+919934359060,+919964807553,Vehicle will reach highway toll plaza by 04:30 AM.,Telegram,English,CASE_009
+MSG_00034,2025-07-04 07:34:49,+918834166826,+918842323627,Driver reached destination border post. Awaiting clearance.,SMS,English,CASE_004
+MSG_00009,2025-07-04 10:00:21,+918888802305,+919852213778,Do not call on this regular SIM. Call only via encrypted app.,SMS,English,CASE_003
+MSG_00506,2025-07-04 11:06:36,+919446540265,+919999943797,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,Telegram,English,CASE_001
+MSG_00424,2025-07-04 21:15:27,+918888802305,+919420796722,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",SMS,Hinglish,CASE_007
+MSG_00229,2025-07-04 23:11:12,+919773149551,+919453261270,Keep the safehouse room locked from outside until further instructions.,Signal,English,CASE_007
+MSG_00768,2025-07-04 23:25:42,+919446540265,+919999943797,Driver reached destination border post. Awaiting clearance.,SMS,English,CASE_009
+MSG_00764,2025-07-05 07:23:52,+918035042738,+919492631441,Call you back after lunch.,SMS,English,CASE_010
+MSG_00277,2025-07-05 11:37:07,+919433574011,+917254448673,Payment received for tea stall delivery.,Telegram,English,CASE_005
+MSG_00130,2025-07-06 01:16:39,+919746677730,+918530614492,Payment received for tea stall delivery.,Signal,English,CASE_008
+MSG_00642,2025-07-06 05:59:03,+919744489940,+918063347164,Will reach home in 10 minutes.,SMS,English,CASE_009
+MSG_00929,2025-07-06 14:10:07,+919822257687,+919422246348,Vehicle will reach highway toll plaza by 04:30 AM.,Telegram,English,CASE_009
+MSG_00320,2025-07-06 18:57:24,+919420796722,+919453261270,Vehicle will reach highway toll plaza by 04:30 AM.,WhatsApp,English,CASE_007
+MSG_00992,2025-07-06 22:21:25,+917052777459,+919420796722,Meeting postponed to tomorrow 3 PM.,Telegram,English,CASE_007
+MSG_00451,2025-07-07 07:42:05,+918864759583,+919417275149,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",WhatsApp,Hinglish,CASE_002
+MSG_00915,2025-07-07 15:59:55,+919453261270,+919786745380,Keep the safehouse room locked from outside until further instructions.,SMS,English,CASE_007
+MSG_00919,2025-07-07 23:11:11,+919724754064,+917061338023,Bhai recharge kar dena 299 wala.,WhatsApp,Hinglish,CASE_001
+MSG_00316,2025-07-08 01:41:37,+919724754064,+917220066654,Call you back after lunch.,Telegram,English,CASE_007
+MSG_00234,2025-07-08 12:09:08,+919763339667,+919422960658,Family is asking for location update. Give standard company excuse.,SMS,English,CASE_006
+MSG_00951,2025-07-08 12:33:59,+919967805802,+918842323627,New placement registration slip ready. Tell family everything is legal.,Telegram,English,CASE_004
+MSG_00497,2025-07-08 13:20:34,+917231424479,+918864759583,Send grocery list on WhatsApp.,Signal,English,CASE_002
+MSG_00750,2025-07-08 22:47:47,+919448605268,+918834166826,Family is asking for location update. Give standard company excuse.,Telegram,English,CASE_004
+MSG_00098,2025-07-09 00:10:14,+919852213778,+919446540265,Family is asking for location update. Give standard company excuse.,SMS,English,CASE_003
+MSG_00141,2025-07-09 05:08:03,+917264932613,+919895060193,Bhai recharge kar dena 299 wala.,WhatsApp,Hinglish,CASE_008
+MSG_00954,2025-07-09 22:23:30,+919449172995,+919896934122,Advance 25000 transfer kar diya hai account me check karo.,WhatsApp,Hinglish,CASE_005
+MSG_00683,2025-07-10 06:14:25,+919960237832,+919794982908,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,Telegram,English,CASE_001
+MSG_00603,2025-07-10 07:57:45,+919496347724,+917231831387,Meeting postponed to tomorrow 3 PM.,WhatsApp,English,CASE_007
+MSG_00241,2025-07-10 13:39:16,+919934359060,+919754265498,Mule account details shared on Telegram. Route the payment through UPI.,SMS,English,CASE_001
+MSG_00306,2025-07-11 05:04:12,+919448683937,+917061338023,Meeting postponed to tomorrow 3 PM.,Telegram,English,CASE_001
+MSG_00341,2025-07-11 18:33:00,+919420796722,+919724754064,Mule account details shared on Telegram. Route the payment through UPI.,Signal,English,CASE_003
+MSG_00379,2025-07-11 20:30:13,+919446540265,+918587585294,Payment received for tea stall delivery.,SMS,English,CASE_007
+MSG_00624,2025-07-12 03:13:42,+918834166826,+919763339667,Family is asking for location update. Give standard company excuse.,Signal,English,CASE_004
+MSG_00747,2025-07-12 06:13:00,+919813874790,+919751708177,Tickets confirmed for 3 persons on 12302 train coach S3.,Signal,English,CASE_008
+MSG_00739,2025-07-12 06:27:36,+919828760553,+919781291936,New placement registration slip ready. Tell family everything is legal.,Signal,English,CASE_004
+MSG_00688,2025-07-12 09:50:53,+917061338023,+918810154493,Bhai recharge kar dena 299 wala.,Signal,Hinglish,CASE_001
+MSG_00344,2025-07-12 18:17:09,+919987342561,+918889212676,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",WhatsApp,Hinglish,CASE_003
+MSG_00888,2025-07-12 23:29:19,+917052777459,+919765133300,Call you back after lunch.,WhatsApp,English,CASE_007
+MSG_00834,2025-07-12 23:31:54,+918850151803,+919448605268,Send the photo and Aadhaar copy of the candidate immediately.,Signal,English,CASE_006
+MSG_00285,2025-07-13 01:03:20,+918888802305,+919852213778,Driver reached destination border post. Awaiting clearance.,SMS,English,CASE_003
+MSG_00981,2025-07-13 08:55:30,+919449172995,+919432329103,Tickets confirmed for 3 persons on 12302 train coach S3.,WhatsApp,English,CASE_005
+MSG_00376,2025-07-14 00:34:03,+919934359060,+919754265498,Driver reached destination border post. Awaiting clearance.,Telegram,English,CASE_001
+MSG_00853,2025-07-14 07:20:09,+919822257687,+919422246348,Vehicle will reach highway toll plaza by 04:30 AM.,Telegram,English,CASE_009
+MSG_00516,2025-07-14 11:09:08,+919813874790,+919751708177,Family is asking for location update. Give standard company excuse.,Telegram,English,CASE_008
+MSG_00706,2025-07-14 11:41:37,+919474759996,+919751708177,New placement registration slip ready. Tell family everything is legal.,SMS,English,CASE_008
+MSG_00216,2025-07-14 13:29:03,+919934359060,+919446540265,Vehicle will reach highway toll plaza by 04:30 AM.,Telegram,English,CASE_009
+MSG_00510,2025-07-14 14:14:00,+917295387542,+919841837210,Bhai recharge kar dena 299 wala.,Signal,Hinglish,CASE_006
+MSG_00226,2025-07-15 02:26:18,+918887835998,+919822257687,Keep the safehouse room locked from outside until further instructions.,WhatsApp,English,CASE_007
+MSG_00689,2025-07-15 05:03:20,+919761632653,+919911086890,Driver reached destination border post. Awaiting clearance.,Telegram,English,CASE_010
+MSG_00780,2025-07-15 05:03:51,+919751708177,+919449172995,Change SIM card tonight after crossing state border.,Signal,English,CASE_002
+MSG_00248,2025-07-15 09:53:37,+918830739712,+918035042738,Call you back after lunch.,WhatsApp,English,CASE_010
+MSG_00055,2025-07-15 16:46:19,+918876669607,+918830739712,Driver reached destination border post. Awaiting clearance.,SMS,English,CASE_010
+MSG_00361,2025-07-15 22:10:25,+919934359060,+919964807553,Keep the safehouse room locked from outside until further instructions.,Telegram,English,CASE_009
+MSG_00459,2025-07-16 19:20:08,+919433574011,+919417275149,Driver reached destination border post. Awaiting clearance.,SMS,English,CASE_005
+MSG_00835,2025-07-16 20:47:13,+919420796722,+919453261270,Send the photo and Aadhaar copy of the candidate immediately.,SMS,English,CASE_007
+MSG_00411,2025-07-17 02:20:27,+919999943797,+919446540265,Mule account details shared on Telegram. Route the payment through UPI.,Signal,English,CASE_009
+MSG_00283,2025-07-17 03:07:45,+919967805802,+919761632653,Send the photo and Aadhaar copy of the candidate immediately.,SMS,English,CASE_006
+MSG_00385,2025-07-17 04:22:34,+918531086112,+919895060193,Call you back after lunch.,Signal,English,CASE_008
+MSG_00876,2025-07-17 06:17:24,+919422304198,+917052777459,Call you back after lunch.,Signal,English,CASE_007
+MSG_00493,2025-07-17 10:32:17,+919417275149,+919968802946,Vehicle will reach highway toll plaza by 04:30 AM.,Telegram,English,CASE_005
+MSG_00153,2025-07-17 22:53:36,+919794712997,+917295851936,Send grocery list on WhatsApp.,Telegram,English,CASE_005
+MSG_00315,2025-07-17 22:56:50,+918595800828,+919495618110,Call you back after lunch.,Signal,English,CASE_004
+MSG_00076,2025-07-18 00:52:33,+919934359060,+919822257687,Cash delivered to Kolkata agent. Token number verified.,Signal,English,CASE_009
+MSG_00852,2025-07-18 01:19:06,+918864759583,+919417275149,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",SMS,Hinglish,CASE_002
+MSG_00718,2025-07-18 05:03:32,+919964807553,+919987342561,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,Telegram,English,CASE_003
+MSG_00400,2025-07-18 15:31:43,+919765133300,+917052777459,Payment received for tea stall delivery.,SMS,English,CASE_007
+MSG_00390,2025-07-18 17:12:49,+919795445405,+918589151743,Meeting postponed to tomorrow 3 PM.,WhatsApp,English,CASE_010
+MSG_00846,2025-07-18 19:14:49,+917041943272,+919896934122,Payment received for tea stall delivery.,SMS,English,CASE_005
+MSG_00666,2025-07-18 23:14:26,+917039448924,+919854762841,Meeting postponed to tomorrow 3 PM.,WhatsApp,English,CASE_002
+MSG_00063,2025-07-18 23:53:16,+919420796722,+919724754064,New placement registration slip ready. Tell family everything is legal.,Signal,English,CASE_007
+MSG_00548,2025-07-19 09:47:02,+918575645462,+919422246348,Bhai recharge kar dena 299 wala.,Signal,Hinglish,CASE_009
+MSG_00801,2025-07-19 10:45:59,+919781291936,+919470887034,Do not call on this regular SIM. Call only via encrypted app.,Telegram,English,CASE_006
+MSG_00734,2025-07-19 10:55:55,+919420796722,+919754265498,Cash delivered to Kolkata agent. Token number verified.,SMS,English,CASE_001
+MSG_00297,2025-07-19 13:36:11,+919968802946,+917222873617,Will reach home in 10 minutes.,Telegram,English,CASE_008
+MSG_00657,2025-07-19 19:22:54,+919987342561,+919794982908,Driver reached destination border post. Awaiting clearance.,WhatsApp,English,CASE_003
+MSG_00071,2025-07-20 02:24:03,+919724754064,+918556175477,Meeting postponed to tomorrow 3 PM.,WhatsApp,English,CASE_001
+MSG_00879,2025-07-20 03:06:44,+918838874646,+919441690501,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,Telegram,English,CASE_006
+MSG_00412,2025-07-20 03:41:53,+919794982908,+919987342561,Mule account details shared on Telegram. Route the payment through UPI.,WhatsApp,English,CASE_003
+MSG_00955,2025-07-20 11:53:10,+917045596211,+919841837210,Meeting postponed to tomorrow 3 PM.,WhatsApp,English,CASE_006
+MSG_00563,2025-07-20 17:16:20,+918888802305,+919769934576,Do not call on this regular SIM. Call only via encrypted app.,WhatsApp,English,CASE_003
+MSG_00740,2025-07-20 20:50:26,+917061338023,+919496347724,Will reach home in 10 minutes.,SMS,English,CASE_001
+MSG_00038,2025-07-20 21:44:16,+917049533757,+919925558733,Bhai recharge kar dena 299 wala.,Signal,Hinglish,CASE_009
+MSG_00668,2025-07-21 01:27:30,+918842323627,+919795445405,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Telegram,Hinglish,CASE_010
+MSG_00554,2025-07-21 08:13:30,+919449172995,+919751708177,Do not call on this regular SIM. Call only via encrypted app.,WhatsApp,English,CASE_002
+MSG_00587,2025-07-21 08:46:12,+919751708177,+919474759996,Send the photo and Aadhaar copy of the candidate immediately.,Telegram,English,CASE_002
+MSG_00083,2025-07-21 18:42:55,+919422960658,+919763339667,Advance 25000 transfer kar diya hai account me check karo.,Signal,Hinglish,CASE_006
+MSG_00242,2025-07-21 21:25:34,+918092427773,+919469533928,Will reach home in 10 minutes.,Telegram,English,CASE_003
+MSG_00019,2025-07-22 00:38:52,+919448605268,+918850151803,Tickets confirmed for 3 persons on 12302 train coach S3.,Signal,English,CASE_006
+MSG_00828,2025-07-22 06:09:11,+919822257687,+919435583290,Driver reached destination border post. Awaiting clearance.,Signal,English,CASE_001
+MSG_00236,2025-07-22 07:14:54,+919786745380,+919789991301,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",WhatsApp,Hinglish,CASE_007
+MSG_00667,2025-07-22 08:30:15,+919763339667,+918834166826,Tickets confirmed for 3 persons on 12302 train coach S3.,SMS,English,CASE_004
+MSG_00936,2025-07-22 10:05:46,+919987342561,+918033818260,Meeting postponed to tomorrow 3 PM.,SMS,English,CASE_003
+MSG_00419,2025-07-22 10:06:42,+919446540265,+919852213778,Advance 25000 transfer kar diya hai account me check karo.,WhatsApp,Hinglish,CASE_003
+MSG_00651,2025-07-22 15:42:37,+919763339667,+919781291936,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,SMS,English,CASE_010
+MSG_00917,2025-07-22 16:36:36,+919816172803,+917062734442,Will reach home in 10 minutes.,SMS,English,CASE_008
+MSG_00437,2025-07-22 16:44:29,+919490180577,+917099929175,Bhai recharge kar dena 299 wala.,WhatsApp,Hinglish,CASE_006
+MSG_00470,2025-07-22 21:25:23,+919765026398,+919474759996,Family is asking for location update. Give standard company excuse.,WhatsApp,English,CASE_002
+MSG_00885,2025-07-23 01:44:53,+919453261270,+918814925405,Mule account details shared on Telegram. Route the payment through UPI.,WhatsApp,English,CASE_007
+MSG_00230,2025-07-23 14:37:58,+919794982908,+919987342561,Keep the safehouse room locked from outside until further instructions.,Telegram,English,CASE_007
+MSG_00370,2025-07-23 16:06:20,+918536770773,+919448683937,Payment received for tea stall delivery.,Signal,English,CASE_001
+MSG_00710,2025-07-23 17:45:18,+919725228493,+919474759996,Driver reached destination border post. Awaiting clearance.,WhatsApp,English,CASE_008
+MSG_00984,2025-07-23 21:57:45,+918581059199,+919416927215,Bhai recharge kar dena 299 wala.,SMS,Hinglish,CASE_002
+MSG_00173,2025-07-23 22:33:23,+919983715012,+918557621071,Send grocery list on WhatsApp.,SMS,English,CASE_002
+MSG_00570,2025-07-24 01:54:52,+919895060193,+919725228493,New placement registration slip ready. Tell family everything is legal.,SMS,English,CASE_008
+MSG_00064,2025-07-24 08:17:51,+919420796722,+918888802305,Mule account details shared on Telegram. Route the payment through UPI.,Signal,English,CASE_003
+MSG_00849,2025-07-24 11:07:07,+918834166826,+918842323627,Send the photo and Aadhaar copy of the candidate immediately.,Signal,English,CASE_004
+MSG_00816,2025-07-24 15:55:56,+917061956500,+919969166287,Bhai recharge kar dena 299 wala.,Telegram,Hinglish,CASE_010
+MSG_00319,2025-07-24 16:09:52,+919798145654,+919869287967,Family is asking for location update. Give standard company excuse.,SMS,English,CASE_006
+MSG_00620,2025-07-24 23:22:59,+919994127561,+919896934122,Do not call on this regular SIM. Call only via encrypted app.,Telegram,English,CASE_005
+MSG_00943,2025-07-25 03:21:32,+918834166826,+918842323627,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",WhatsApp,Hinglish,CASE_004
+MSG_00844,2025-07-25 04:30:17,+918575645462,+918839735904,Call you back after lunch.,SMS,English,CASE_009
+MSG_00870,2025-07-25 10:42:03,+919417275149,+919416927215,Family is asking for location update. Give standard company excuse.,SMS,English,CASE_005
+MSG_00525,2025-07-25 10:52:24,+919789991301,+919414968688,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",Signal,Hinglish,CASE_009
+MSG_00021,2025-07-25 13:20:59,+919417275149,+919449172995,Keep the safehouse room locked from outside until further instructions.,WhatsApp,English,CASE_002
+MSG_00227,2025-07-25 15:08:47,+918839735904,+919786745380,Driver reached destination border post. Awaiting clearance.,WhatsApp,English,CASE_003
+MSG_00600,2025-07-25 21:01:05,+917260393104,+919448683937,Meeting postponed to tomorrow 3 PM.,SMS,English,CASE_007
+MSG_00480,2025-07-25 21:31:35,+919754265498,+917294658420,Meeting postponed to tomorrow 3 PM.,WhatsApp,English,CASE_001
+MSG_00597,2025-07-25 23:38:14,+919724754064,+919420796722,Advance 25000 transfer kar diya hai account me check karo.,SMS,Hinglish,CASE_003
+MSG_00585,2025-07-26 09:24:50,+919453261270,+919754265498,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",WhatsApp,Hinglish,CASE_001
+MSG_00339,2025-07-27 04:00:37,+919496347724,+917213933043,Call you back after lunch.,SMS,English,CASE_001
+MSG_00535,2025-07-27 09:44:00,+919474759996,+919725228493,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",Signal,Hinglish,CASE_008
+MSG_00531,2025-07-27 11:55:26,+919828760553,+919441690501,Advance 25000 transfer kar diya hai account me check karo.,Telegram,Hinglish,CASE_006
+MSG_00203,2025-07-27 17:20:19,+919496347724,+919769934576,Tickets confirmed for 3 persons on 12302 train coach S3.,WhatsApp,English,CASE_003
+MSG_00865,2025-07-27 21:45:33,+917016462242,+918898227303,Call you back after lunch.,SMS,English,CASE_006
+MSG_00753,2025-07-27 23:56:08,+917295851936,+918898292612,Payment received for tea stall delivery.,SMS,English,CASE_005
+MSG_00838,2025-07-28 01:29:21,+919422960658,+918568816911,Will reach home in 10 minutes.,Signal,English,CASE_006
+MSG_00484,2025-07-28 03:59:39,+919420796722,+918888802305,Do not call on this regular SIM. Call only via encrypted app.,Telegram,English,CASE_003
+MSG_00854,2025-07-28 09:37:50,+918888802305,+919852213778,Send the photo and Aadhaar copy of the candidate immediately.,Signal,English,CASE_003
+MSG_00269,2025-07-28 10:30:30,+919496347724,+919769934576,Driver reached destination border post. Awaiting clearance.,Signal,English,CASE_003
+MSG_00645,2025-07-28 13:11:48,+919910819505,+918017993466,Payment received for tea stall delivery.,Telegram,English,CASE_003
+MSG_00541,2025-07-29 02:18:32,+919420106509,+918033562830,Will reach home in 10 minutes.,Signal,English,CASE_003
+MSG_00842,2025-07-29 08:17:19,+919432329103,+919474759996,Keep the safehouse room locked from outside until further instructions.,WhatsApp,English,CASE_008
+MSG_00591,2025-07-29 11:39:47,+919449172995,+919751708177,Keep the safehouse room locked from outside until further instructions.,Telegram,English,CASE_002
+MSG_00363,2025-07-29 13:11:07,+919417275149,+919474759996,Mule account details shared on Telegram. Route the payment through UPI.,WhatsApp,English,CASE_008
+MSG_00517,2025-07-30 00:01:24,+919765026398,+919474759996,Do not call on this regular SIM. Call only via encrypted app.,SMS,English,CASE_002
+MSG_00913,2025-07-30 04:13:18,+919822257687,+919999943797,Mule account details shared on Telegram. Route the payment through UPI.,Signal,English,CASE_009
+MSG_00696,2025-07-30 08:10:07,+919751708177,+919983715012,Family is asking for location update. Give standard company excuse.,SMS,English,CASE_002
+MSG_00889,2025-07-30 17:38:43,+919911086890,+919763339667,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",WhatsApp,Hinglish,CASE_010
+MSG_00322,2025-07-31 00:27:47,+918834166826,+919967805802,Advance 25000 transfer kar diya hai account me check karo.,Telegram,Hinglish,CASE_004
+MSG_00518,2025-07-31 01:07:34,+918814925405,+919934359060,Vehicle will reach highway toll plaza by 04:30 AM.,Signal,English,CASE_007
+MSG_00677,2025-07-31 06:59:45,+917233851602,+918858557203,Payment received for tea stall delivery.,Signal,English,CASE_005
+MSG_00632,2025-07-31 07:43:14,+917231139813,+918842323627,Meeting postponed to tomorrow 3 PM.,Telegram,English,CASE_004
+MSG_00661,2025-08-01 00:43:22,+919416927215,+919433574011,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,Signal,English,CASE_005
+MSG_00342,2025-08-01 01:19:32,+919982017516,+917045596211,Send grocery list on WhatsApp.,WhatsApp,English,CASE_006
+MSG_00538,2025-08-01 11:59:36,+919763339667,+918834166826,Advance 25000 transfer kar diya hai account me check karo.,Signal,Hinglish,CASE_004
+MSG_00089,2025-08-01 13:39:34,+917232928708,+919934359060,Meeting postponed to tomorrow 3 PM.,Telegram,English,CASE_009
+MSG_00858,2025-08-01 17:18:07,+919983715012,+919751708177,Driver reached destination border post. Awaiting clearance.,Signal,English,CASE_002
+MSG_00338,2025-08-01 20:46:03,+919446540265,+919999943797,Family is asking for location update. Give standard company excuse.,Telegram,English,CASE_009
+MSG_00020,2025-08-01 21:37:34,+919822257687,+919422246348,New placement registration slip ready. Tell family everything is legal.,Signal,English,CASE_009
+MSG_00292,2025-08-02 00:37:03,+919991644298,+917086884584,Call you back after lunch.,Signal,English,CASE_005
+MSG_00005,2025-08-02 06:43:13,+919446540265,+919999943797,Change SIM card tonight after crossing state border.,Telegram,English,CASE_003
+MSG_00638,2025-08-02 11:59:48,+918858178682,+918576180344,Send grocery list on WhatsApp.,SMS,English,CASE_006
+MSG_00239,2025-08-02 14:18:58,+919970867592,+917243492807,Meeting postponed to tomorrow 3 PM.,WhatsApp,English,CASE_006
+MSG_00594,2025-08-02 18:49:29,+919822257687,+919934359060,Driver reached destination border post. Awaiting clearance.,WhatsApp,English,CASE_009
+MSG_00617,2025-08-02 20:31:56,+919791478884,+919761632653,Send the photo and Aadhaar copy of the candidate immediately.,WhatsApp,English,CASE_006
+MSG_00455,2025-08-03 01:36:42,+919420796722,+919724754064,Send the photo and Aadhaar copy of the candidate immediately.,WhatsApp,English,CASE_001
+MSG_00841,2025-08-03 04:06:38,+918530614492,+919968802946,Bhai recharge kar dena 299 wala.,WhatsApp,Hinglish,CASE_008
+MSG_00669,2025-08-03 08:06:49,+919420796722,+919453261270,"Ladki ko reception desk par handover karna hai, phone switch off rakho.",WhatsApp,Hinglish,CASE_001
+MSG_00513,2025-08-03 13:58:05,+919492631441,+918877349752,Keep the safehouse room locked from outside until further instructions.,SMS,English,CASE_010
+MSG_00047,2025-08-03 20:06:35,+919463904155,+918830739712,Do not call on this regular SIM. Call only via encrypted app.,WhatsApp,English,CASE_010
+MSG_00509,2025-08-04 01:04:32,+918017993466,+919964807553,Call you back after lunch.,Signal,English,CASE_003
+MSG_00468,2025-08-04 09:21:27,+919754265498,+919420796722,Interview scheduled in Delhi tomorrow morning. Ensure travel is on time.,SMS,English,CASE_001
+MSG_00793,2025-08-04 09:33:40,+919773149551,+919453261270,Cash delivered to Kolkata agent. Token number verified.,Telegram,English,CASE_001
+MSG_00457,2025-08-04 13:37:43,+918858557203,+918557621071,Payment received for tea stall delivery.,Signal,English,CASE_002
+MSG_00863,2025-08-04 14:07:47,+919822257687,+919422246348,Change SIM card tonight after crossing state border.,Signal,English,CASE_009
+MSG_00703,2025-08-04 16:25:51,+917291512791,+919751708177,Payment received for tea stall delivery.,WhatsApp,English,CASE_008
+MSG_00001,2025-08-04 18:06:36,+919822257687,+919435583290,Keep the safehouse room locked from outside until further instructions.,Telegram,English,CASE_001
+MSG_00968,2025-08-04 20:20:16,+919896934122,+919433574011,"Gadi Anand Vihar station ke bahar khadi hai, jaldi aao.",WhatsApp,Hinglish,CASE_005
+MSG_00367,2025-08-05 02:42:59,+919789991301,+918839735904,Change SIM card tonight after crossing state border.,SMS,English,CASE_009
+MSG_00684,2025-08-05 05:07:42,+918088381665,+919873013961,Payment received for tea stall delivery.,Telegram,English,CASE_002

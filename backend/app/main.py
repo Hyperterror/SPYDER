@@ -4,7 +4,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
 from app.core.database import Base, engine
 from app.core.neo4j import get_neo4j, close_neo4j
-from app.api import auth, cases, evidence, graph, audit
+from app.api import auth, cases, evidence, graph, audit, intelligence
+from app.intelligence.leads import LeadRepository
 import app.models  # noqa: F401 — registers all models with SQLAlchemy mapper
 
 
@@ -20,11 +21,18 @@ async def lifespan(app: FastAPI):
     # Startup: Neo4j constraints (best-effort)
     try:
         neo4j = get_neo4j()
-        neo4j.setup_constraints()
         neo4j.verify_connectivity()
+        neo4j.setup_constraints()
         print("[OK] Neo4j connected")
     except Exception as e:
         print(f"[WARN] Neo4j not reachable at startup: {e}")
+
+    # Startup: Intelligence Leads Pre-cache (best-effort)
+    try:
+        LeadRepository.get_instance().load_if_needed()
+        print("[OK] Phase 4 Intelligence Leads loaded into cache")
+    except Exception as e:
+        print(f"[WARN] Intelligence leads could not be pre-loaded at startup: {e}")
 
     yield
 
@@ -53,6 +61,7 @@ app.include_router(cases.router)
 app.include_router(evidence.router)
 app.include_router(graph.router)
 app.include_router(audit.router)
+app.include_router(intelligence.router)
 
 
 @app.get("/health")

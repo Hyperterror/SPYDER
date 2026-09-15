@@ -1,0 +1,101 @@
+account_id,username,platform,linked_phone,linked_email,created_date,location,case_id
+SOC_001,@vicky_475,Instagram,+919789991301,vicky525@yahoo.com,2024-07-05,Murshidabad,CASE_009
+SOC_002,@vicky_944,LinkedIn,+919789991301,vicky875@fastmail.com,2023-11-22,Murshidabad,CASE_001
+SOC_003,@sethji_831,LinkedIn,+919822257687,sethji880@outlook.com,2024-08-03,Jaipur,CASE_001
+SOC_004,@mamta_706,Instagram,+919987342561,mamta638@gmail.com,2023-07-04,Siliguri,CASE_003
+SOC_005,@ustad_550,Telegram,+919794982908,ustad179@yahoo.com,2023-12-11,Kolkata,CASE_001
+SOC_006,@gopal_124,LinkedIn,+919934359060,gopal948@gmail.com,2023-09-29,Delhi NCR,CASE_001
+SOC_007,@sethji_934,LinkedIn,+918839735904,sethji686@outlook.com,2023-09-10,Kolkata,CASE_009
+SOC_008,@ramu_163,LinkedIn,+919999943797,ramu435@outlook.com,2023-06-11,Siliguri,CASE_003
+SOC_009,@ramu_462,LinkedIn,+919999943797,ramu796@gmail.com,2024-03-18,Siliguri,CASE_001
+SOC_010,@captain_744,Instagram,+919448683937,captain193@fastmail.com,2024-01-04,Jaipur,CASE_007
+SOC_011,@captain_466,LinkedIn,+919448683937,captain564@gmail.com,2024-01-04,Jaipur,CASE_001
+SOC_012,@raju_535,Instagram,+918837542226,raju567@fastmail.com,2024-06-17,Jaipur,CASE_007
+SOC_013,@raju_69,LinkedIn,+918837542226,raju788@fastmail.com,2024-02-01,Jaipur,CASE_007
+SOC_014,@vicky_750,WhatsApp,+919469533928,vicky505@gmail.com,2024-09-22,Siliguri,CASE_003
+SOC_015,@vicky_846,WhatsApp,+919822243983,vicky863@gmail.com,2023-09-01,Jaipur,CASE_001
+SOC_016,@vicky_602,Instagram,+918858557203,vicky146@gmail.com,2024-03-18,Chandigarh,CASE_005
+SOC_017,@vicky_362,Telegram,+918858557203,vicky654@gmail.com,2023-10-10,Chandigarh,CASE_002
+SOC_018,@doctor_967,Facebook,+919983715012,doctor583@gmail.com,2024-04-29,Panipat,CASE_005
+SOC_019,@doctor_303,Facebook,+919983715012,doctor284@fastmail.com,2024-01-12,Panipat,CASE_005
+SOC_020,@agent_794,Instagram,+918889680504,agent483@fastmail.com,2023-07-23,Gurugram,CASE_008
+SOC_021,@agent_469,Telegram,+918889680504,agent484@fastmail.com,2023-07-18,Gurugram,CASE_008
+SOC_022,@tiger_709,Facebook,+918864759583,tiger769@outlook.com,2024-01-22,Patna,CASE_008
+SOC_023,@sunil_131,WhatsApp,+919896934122,sunil650@outlook.com,2023-11-18,Gurugram,CASE_005
+SOC_024,@usha_551,Telegram,+919449172995,usha845@outlook.com,2024-05-20,Panipat,CASE_005
+SOC_025,@netaji_864,Instagram,+919474759996,netaji874@gmail.com,2024-10-02,Chandigarh,CASE_002
+SOC_026,@sonu_315,Facebook,+919991644298,sonu789@fastmail.com,2024-04-01,Chandigarh,CASE_005
+SOC_027,@sethji_444,LinkedIn,+919960237832,sethji943@fastmail.com,2023-06-14,Murshidabad,CASE_001
+SOC_028,@sethji_263,Instagram,+919960237832,sethji454@fastmail.com,2023-10-28,Murshidabad,CASE_001
+SOC_029,@captain_292,Instagram,+919455754284,captain996@outlook.com,2024-07-02,Delhi NCR,CASE_001
+SOC_030,@doctor_42,Facebook,+919847962005,doctor729@fastmail.com,2023-10-07,Delhi NCR,CASE_001
+SOC_031,@pradhan_256,Facebook,+919769934576,pradhan168@outlook.com,2023-08-05,Murshidabad,CASE_003
+SOC_032,@pradhan_618,Facebook,+919769934576,pradhan557@gmail.com,2024-07-31,Murshidabad,CASE_003
+SOC_033,@guru_698,LinkedIn,+919910819505,guru350@gmail.com,2023-11-25,Siliguri,CASE_003
+SOC_034,@master_421,Facebook,+919447028180,master339@fastmail.com,2024-08-13,Murshidabad,CASE_003
+SOC_035,@vikram_232,LinkedIn,+919765133300,vikram243@gmail.com,2024-03-12,Siliguri,CASE_007
+SOC_036,@vikram_306,LinkedIn,+919765133300,vikram935@outlook.com,2023-07-14,Siliguri,CASE_007
+SOC_037,@agent_336,LinkedIn,+919973481797,agent342@yahoo.com,2024-07-05,Jaipur,CASE_007
+SOC_038,@kabir_907,WhatsApp,+919422304198,kabir776@outlook.com,2024-01-17,Murshidabad,CASE_007
+SOC_039,@sonu_236,LinkedIn,+918889212676,sonu407@fastmail.com,2024-01-20,Murshidabad,CASE_009
+SOC_040,@sonu_72,WhatsApp,+918889212676,sonu741@outlook.com,2024-10-12,Murshidabad,CASE_009
+SOC_041,@shooter_579,Telegram,+919470606674,shooter148@fastmail.com,2024-07-28,Siliguri,CASE_009
+SOC_042,@captain_974,WhatsApp,+919858082464,captain904@fastmail.com,2023-07-20,Siliguri,CASE_009
+SOC_043,@mama_336,LinkedIn,+919854762841,mama518@fastmail.com,2023-11-08,Ranchi,CASE_002
+SOC_044,@mama_317,Instagram,+919854762841,mama288@fastmail.com,2023-09-07,Ranchi,CASE_002
+SOC_045,@tiger_494,LinkedIn,+919993652460,tiger969@outlook.com,2023-08-22,Ranchi,CASE_002
+SOC_046,@vermaji_317,Instagram,+919833386929,vermaji925@outlook.com,2023-06-05,Panipat,CASE_002
+SOC_047,@doctor_946,Telegram,+918898292612,doctor675@gmail.com,2023-10-04,Panipat,CASE_005
+SOC_048,@doctor_436,Telegram,+918898292612,doctor497@outlook.com,2024-07-22,Panipat,CASE_005
+SOC_049,@captain_271,Instagram,+919794712997,captain438@outlook.com,2023-07-22,Panipat,CASE_005
+SOC_050,@vicky_954,Facebook,+919722130508,vicky967@fastmail.com,2024-09-28,Gurugram,CASE_005
+SOC_051,@tiger_104,WhatsApp,+919432329103,tiger152@outlook.com,2024-01-17,Panipat,CASE_008
+SOC_052,@tiger_396,WhatsApp,+919432329103,tiger994@gmail.com,2023-10-28,Panipat,CASE_008
+SOC_053,@neelam_202,Facebook,+919816172803,neelam590@outlook.com,2024-08-08,Patna,CASE_008
+SOC_054,@santosh_900,Instagram,+919746677730,santosh410@yahoo.com,2024-01-28,Patna,CASE_008
+SOC_055,@seema_226,Facebook,+919781291936,seema859@outlook.com,2023-07-19,Kanpur,CASE_004
+SOC_056,@seema_774,Facebook,+919781291936,seema348@fastmail.com,2023-12-02,Kanpur,CASE_004
+SOC_057,@kaka_730,LinkedIn,+919720598952,kaka506@outlook.com,2023-12-07,Gwalior,CASE_004
+SOC_058,@kaka_575,Instagram,+919720598952,kaka894@yahoo.com,2023-09-04,Gwalior,CASE_004
+SOC_059,@ustad_399,WhatsApp,+918842323627,ustad646@fastmail.com,2024-09-03,Gwalior,CASE_004
+SOC_060,@captain_325,WhatsApp,+918829208935,captain468@yahoo.com,2023-11-16,Agra,CASE_004
+SOC_061,@ramukaka_913,LinkedIn,+919495618110,ramukaka577@fastmail.com,2023-12-16,Agra,CASE_004
+SOC_062,@master_832,Facebook,+919865137801,master879@fastmail.com,2024-08-21,Kanpur,CASE_004
+SOC_063,@vicky_946,WhatsApp,+919441690501,vicky479@outlook.com,2024-01-10,Gwalior,CASE_006
+SOC_064,@vicky_433,WhatsApp,+919441690501,vicky676@gmail.com,2023-09-29,Gwalior,CASE_006
+SOC_065,@raju_769,Instagram,+919422960658,raju116@outlook.com,2024-05-08,Bhopal,CASE_006
+SOC_066,@raju_576,WhatsApp,+919422960658,raju402@fastmail.com,2024-09-02,Bhopal,CASE_006
+SOC_067,@guru_210,Instagram,+918838874646,guru335@yahoo.com,2023-06-16,Nagpur,CASE_006
+SOC_068,@agent_593,Telegram,+919841837210,agent611@outlook.com,2024-06-19,Kanpur,CASE_006
+SOC_069,@raju_680,LinkedIn,+918858178682,raju363@yahoo.com,2024-08-14,Kanpur,CASE_006
+SOC_070,@pradhan_999,Telegram,+918898227303,pradhan571@fastmail.com,2024-03-16,Nagpur,CASE_006
+SOC_071,@pooja_760,Instagram,+919492631441,pooja273@yahoo.com,2023-12-11,Kanpur,CASE_010
+SOC_072,@pooja_747,Instagram,+919492631441,pooja288@fastmail.com,2023-08-11,Kanpur,CASE_010
+SOC_073,@kaka_667,LinkedIn,+918830739712,kaka636@gmail.com,2023-08-15,Nagpur,CASE_010
+SOC_074,@kaka_869,Facebook,+918830739712,kaka937@gmail.com,2024-06-22,Nagpur,CASE_010
+SOC_075,@master_792,Facebook,+919851949529,master522@gmail.com,2024-04-10,Bhopal,CASE_010
+SOC_076,@harish_872,Instagram,+919477853916,harish169@outlook.com,2024-01-15,Nagpur,CASE_010
+SOC_077,@mama_19,Instagram,+919969166287,mama617@outlook.com,2024-04-24,Nagpur,CASE_010
+SOC_078,@guru_392,Telegram,+919873920651,guru732@gmail.com,2024-01-07,Bhopal,CASE_010
+SOC_079,@shooter_944,LinkedIn,+919849609054,shooter775@fastmail.com,2024-03-04,Delhi NCR,CASE_003
+SOC_080,@gopal_26,Telegram,+919433574011,gopal644@gmail.com,2024-03-21,Chandigarh,CASE_005
+SOC_081,@amit_431,LinkedIn,+919782398083,amit117@gmail.com,2024-02-13,Siliguri,CASE_009
+SOC_082,@shobha_749,LinkedIn,+919798145654,shobha648@yahoo.com,2024-08-21,Kanpur,CASE_010
+SOC_083,@amit_27,WhatsApp,+919744489940,amit925@fastmail.com,2023-08-10,Delhi NCR,CASE_009
+SOC_084,@pradhan_119,Instagram,+919850851122,pradhan636@gmail.com,2024-02-17,Agra,CASE_010
+SOC_085,@kavita_256,Instagram,+919887566910,kavita734@outlook.com,2024-03-27,Delhi NCR,CASE_003
+SOC_086,@bhaiya_268,LinkedIn,+919763339667,bhaiya373@yahoo.com,2023-07-24,Gwalior,CASE_010
+SOC_087,@doctor_90,Telegram,+919862958901,doctor515@yahoo.com,2024-07-04,Jaipur,CASE_003
+SOC_088,@pankaj_588,Telegram,+919490180577,pankaj813@outlook.com,2024-09-24,Bhopal,CASE_006
+SOC_089,@mamta_317,Instagram,+919841514326,mamta769@gmail.com,2024-01-05,Nagpur,CASE_004
+SOC_090,@kaka_105,Facebook,+919727447248,kaka488@fastmail.com,2024-03-13,Kanpur,CASE_010
+SOC_091,@geeta_575,Telegram,+919897874085,geeta157@fastmail.com,2024-02-18,Kolkata,CASE_009
+SOC_092,@sethji_729,Facebook,+919485291541,sethji184@outlook.com,2023-06-20,Bhopal,CASE_004
+SOC_093,@tiger_875,Telegram,+918839711402,tiger760@fastmail.com,2023-06-04,Delhi NCR,CASE_007
+SOC_094,@sethji_589,WhatsApp,+919847388792,sethji640@gmail.com,2024-08-19,Agra,CASE_010
+SOC_095,@shooter_245,Facebook,+919746912022,shooter988@outlook.com,2023-07-11,Nagpur,CASE_010
+SOC_096,@tiger_5441,Telegram,+918839711402,tiger2218@gmail.com,2024-07-24,Delhi NCR,CASE_007
+SOC_097,@captain_1539,LinkedIn,+919794712997,captain6152@gmail.com,2024-09-12,Panipat,CASE_005
+SOC_098,@mamta_3362,Instagram,+919987342561,mamta7525@yahoo.com,2023-06-01,Siliguri,CASE_007
+SOC_099,@vicky_3661,WhatsApp,+919469533928,vicky4939@yahoo.com,2023-10-13,Siliguri,CASE_009
+SOC_100,@tiger_9856,Telegram,+918839711402,tiger7288@outlook.com,2023-07-23,Delhi NCR,CASE_007

@@ -1,0 +1,30 @@
+{
+  "common_neighbors": {
+    "roc_auc": 0.78,
+    "pr_auc": 0.0615,
+    "precision": 0.0302,
+    "recall": 1.0,
+    "f1": 0.0586
+  },
+  "jaccard_similarity": {
+    "roc_auc": 0.8678,
+    "pr_auc": 0.208,
+    "precision": 0.034,
+    "recall": 1.0,
+    "f1": 0.0657
+  },
+  "adamic_adar": {
+    "roc_auc": 0.9871,
+    "pr_auc": 0.706,
+    "precision": 0.0583,
+    "recall": 1.0,
+    "f1": 0.1101
+  },
+  "preferential_attachment": {
+    "roc_auc": 0.4643,
+    "pr_auc": 0.0195,
+    "precision": 0.0243,
+    "recall": 0.3158,
+    "f1": 0.0451
+  }
+}

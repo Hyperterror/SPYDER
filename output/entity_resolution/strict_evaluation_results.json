@@ -1,0 +1,109 @@
+{
+  "case_holdout_audit": {
+    "train_entities_count": 43,
+    "val_entities_count": 20,
+    "test_entities_count": 31,
+    "shared_train_test_entities_count": 6,
+    "shared_train_test_entities": [
+      "GLOBAL_ENT_001",
+      "GLOBAL_ENT_002",
+      "GLOBAL_ENT_005",
+      "GLOBAL_ENT_006",
+      "GLOBAL_ENT_007",
+      "GLOBAL_ENT_010"
+    ],
+    "shared_val_test_entities_count": 2,
+    "shared_val_test_entities": [
+      "GLOBAL_ENT_001",
+      "GLOBAL_ENT_002"
+    ],
+    "train_syndicates": [
+      "INDEPENDENT",
+      "NETWORK_ALPHA",
+      "NETWORK_BETA"
+    ],
+    "val_syndicates": [
+      "NETWORK_ALPHA",
+      "NETWORK_BETA"
+    ],
+    "test_syndicates": [
+      "INDEPENDENT",
+      "NETWORK_ALPHA"
+    ]
+  },
+  "entity_disjoint_metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "false_merge_rate": 0.0,
+    "false_split_rate": 0.0,
+    "true_positives": 14,
+    "false_positives": 0,
+    "true_negatives": 33,
+    "false_negatives": 0,
+    "total_samples": 47
+  },
+  "entity_disjoint_hn_metrics": {
+    "accuracy": 1.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "roc_auc": 0.5,
+    "pr_auc": 0.0,
+    "false_merge_rate": 0.0,
+    "false_split_rate": 0.0,
+    "true_positives": 0,
+    "false_positives": 0,
+    "true_negatives": 3,
+    "false_negatives": 0,
+    "total_samples": 3
+  },
+  "syndicate_disjoint_metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "false_merge_rate": 0.0,
+    "false_split_rate": 0.0,
+    "true_positives": 10,
+    "false_positives": 0,
+    "true_negatives": 15,
+    "false_negatives": 0,
+    "total_samples": 25
+  },
+  "feature_importances": {
+    "device_id_match": 0.5096,
+    "imei_shared_count": 0.4122,
+    "shared_ip_count": 0.0782,
+    "context_embedding_cosine_sim": 0.0,
+    "address_token_sim": 0.0,
+    "shared_location_count": 0.0,
+    "shared_vehicle_count": 0.0,
+    "vehicle_reg_match": 0.0,
+    "email_match": 0.0,
+    "social_handle_match": 0.0,
+    "same_age_group": 0.0,
+    "shared_contacts_count": 0.0,
+    "imei_match": 0.0,
+    "shared_ip_is_public_infra": 0.0,
+    "phone_both_present": 0.0,
+    "phone_exact_match": 0.0,
+    "phone_shared_count": 0.0,
+    "name_alias_cross_match": 0.0,
+    "alias_token_jaccard": 0.0,
+    "alias_levenshtein_sim": 0.0,
+    "alias_exact_match": 0.0,
+    "alias_both_present": 0.0,
+    "name_length_diff": 0.0,
+    "name_initial_match": 0.0,
+    "name_token_jaccard": 0.0,
+    "name_jaro_winkler_sim": 0.0,
+    "name_levenshtein_sim": 0.0,
+    "name_exact_match": 0.0
+  }
+}

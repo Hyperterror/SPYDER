@@ -1,0 +1,32 @@
+{
+  "total_nodes": 1057,
+  "total_edges": 5670,
+  "nodes_by_type": {
+    "PERSON": 119,
+    "CASE": 10,
+    "VICTIM": 25,
+    "PHONE": 272,
+    "DEVICE": 166,
+    "VEHICLE": 40,
+    "BANK_ACCOUNT": 94,
+    "SOCIAL_ACCOUNT": 100,
+    "LOCATION": 31,
+    "EVIDENCE": 200
+  },
+  "edges_by_type": {
+    "ASSOCIATED_WITH_EVIDENCE": 200,
+    "APPEARS_IN": 125,
+    "OBSERVES_ENTITY": 44,
+    "USED_DEVICE": 167,
+    "USED_VEHICLE": 446,
+    "TRAVELLED_TO": 500,
+    "HAS_SOCIAL_ACCOUNT": 88,
+    "CALLED": 2000,
+    "MESSAGED": 1000,
+    "TRANSFERRED_MONEY": 1000,
+    "USED_PHONE": 100
+  },
+  "num_connected_components": 48,
+  "largest_component_size": 893,
+  "num_provisional_resolved_entities": 19
+}

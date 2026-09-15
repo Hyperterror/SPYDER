@@ -43,31 +43,31 @@ export default function NodeInspector({ node, onClose }: NodeInspectorProps) {
 
         {/* Properties */}
         <div className="space-y-1.5">
-          {node.first_seen_at && (
+          {Boolean(node.first_seen_at) && (
             <div className="flex justify-between">
               <span className="text-slate-500 text-[11px]">First Seen</span>
               <span className="text-slate-300 font-mono text-[11px]">{String(node.first_seen_at).slice(0,10)}</span>
             </div>
           )}
-          {node.last_seen_at && (
+          {Boolean(node.last_seen_at) && (
             <div className="flex justify-between">
               <span className="text-slate-500 text-[11px]">Last Seen</span>
               <span className="text-slate-300 font-mono text-[11px]">{String(node.last_seen_at).slice(0,10)}</span>
             </div>
           )}
-          {node.imei && (
+          {Boolean(node.imei) && (
             <div className="flex justify-between">
               <span className="text-slate-500 text-[11px]">IMEI</span>
               <span className="text-slate-300 font-mono text-[11px]">{String(node.imei)}</span>
             </div>
           )}
-          {node.tower_id && (
+          {Boolean(node.tower_id) && (
             <div className="flex justify-between">
               <span className="text-slate-500 text-[11px]">Tower ID</span>
               <span className="text-slate-300 font-mono text-[11px]">{String(node.tower_id)}</span>
             </div>
           )}
-          {node.account_type && (
+          {Boolean(node.account_type) && (
             <div className="flex justify-between">
               <span className="text-slate-500 text-[11px]">Account Type</span>
               <span className="text-slate-300 text-[11px]">{String(node.account_type)}</span>
@@ -76,7 +76,7 @@ export default function NodeInspector({ node, onClose }: NodeInspectorProps) {
         </div>
 
         {/* SHA if Document */}
-        {label === 'Document' && node.sha256_hash && (
+        {label === 'Document' && Boolean(node.sha256_hash) && (
           <div className="bg-[#070D14] rounded border border-brand-border px-3 py-2">
             <div className="text-[10px] text-slate-500 uppercase font-mono mb-0.5">SHA-256</div>
             <div className="font-mono text-brand-cyan text-[10px] break-all">{String(node.sha256_hash)}</div>

@@ -1,0 +1,501 @@
+movement_id,person_id,vehicle_id,timestamp,source,destination,transport_mode,evidence_source,case_id
+MOV_00430,CASE_002_PER_04,,2025-02-10 06:10:00,Bhopal,Gwalior,Interstate Train,CCTV Transit Terminal Log,CASE_002
+MOV_00101,CASE_007_PER_06,VEH_010,2025-02-10 21:08:00,Patna,Gurugram,Private SUV,Railway Reservation Chart,CASE_007
+MOV_00468,CASE_004_PER_06,VEH_025,2025-02-10 22:20:00,Siliguri,Patna,Sleeper Bus,Highway Toll RFID / FASTag Log,CASE_004
+MOV_00033,CASE_005_PER_05,VEH_024,2025-02-11 00:47:00,Agra,Kanpur,Interstate Bus,Bus Terminal Manifest,CASE_005
+MOV_00329,CASE_006_PER_07,VEH_028,2025-02-12 13:00:00,Chandigarh,Panipat,Interstate Bus,Highway Toll RFID / FASTag Log,CASE_006
+MOV_00382,CASE_004_PER_05,,2025-02-12 14:12:00,Murshidabad,Kolkata,Interstate Train,Bus Terminal Manifest,CASE_004
+MOV_00306,CASE_004_PER_01,VEH_030,2025-02-13 17:38:00,Jaipur,Delhi NCR,Private SUV,Highway Toll RFID / FASTag Log,CASE_004
+MOV_00040,CASE_007_PER_05,,2025-02-14 13:10:00,Kolkata,New Delhi,Interstate Train,Bus Terminal Manifest,CASE_007
+MOV_00257,CASE_003_PER_03,,2025-02-15 15:45:00,Bhopal,Gwalior,Interstate Train,Bus Terminal Manifest,CASE_003
+MOV_00411,CASE_008_PER_07,,2025-02-16 01:12:00,Murshidabad,Kolkata,Interstate Train,CCTV Transit Terminal Log,CASE_008
+MOV_00408,CASE_001_PER_05,,2025-02-16 05:28:00,Bhopal,Gwalior,Interstate Train,Bus Terminal Manifest,CASE_001
+MOV_00376,CASE_009_PER_04,,2025-02-16 07:46:00,Agra,Kanpur,Interstate Train,Hotel Guest Register Scan,CASE_009
+MOV_00291,CASE_004_PER_05,VEH_008,2025-02-16 11:39:00,Siliguri,Patna,Sleeper Bus,Railway Reservation Chart,CASE_004
+MOV_00281,CASE_003_PER_08,VEH_030,2025-02-16 22:46:00,Jaipur,Delhi NCR,Sleeper Bus,Railway Reservation Chart,CASE_003
+MOV_00042,CASE_006_PER_04,VEH_003,2025-02-16 23:38:00,Jaipur,Delhi NCR,Private SUV,Highway Toll RFID / FASTag Log,CASE_006
+MOV_00067,CASE_003_PER_06,VEH_004,2025-02-17 01:59:00,Chandigarh,Panipat,Interstate Bus,Interstate Border Checkpoint ANPR,CASE_003
+MOV_00266,CASE_005_PER_03,VEH_032,2025-02-17 02:35:00,Jaipur,Delhi NCR,Private SUV,Bus Terminal Manifest,CASE_005
+MOV_00006,CASE_001_PER_03,VEH_022,2025-02-17 03:03:00,Chandigarh,Panipat,Sleeper Bus,Interstate Border Checkpoint ANPR,CASE_001
+MOV_00394,CASE_006_PER_07,,2025-02-17 10:21:00,Chandigarh,Panipat,Interstate Train,CCTV Transit Terminal Log,CASE_006
+MOV_00308,CASE_003_PER_13,VEH_030,2025-02-17 21:06:00,Ranchi,Anand Vihar (Delhi),Private SUV,Highway Toll RFID / FASTag Log,CASE_003
+MOV_00167,CASE_010_PER_01,VEH_027,2025-02-17 22:11:00,Patna,Gurugram,Private SUV,Highway Toll RFID / FASTag Log,CASE_010
+MOV_00010,CASE_004_PER_05,VEH_004,2025-02-18 00:05:00,Ranchi,Anand Vihar (Delhi),Private SUV,Highway Toll RFID / FASTag Log,CASE_004
+MOV_00336,CASE_005_PER_09,VEH_031,2025-02-18 06:44:00,Patna,Gurugram,Private SUV,Bus Terminal Manifest,CASE_005
+MOV_00001,CASE_009_PER_01,VEH_010,2025-02-18 10:22:00,Agra,Kanpur,Interstate Bus,Highway Toll RFID / FASTag Log,CASE_009
+MOV_00422,CASE_002_PER_03,,2025-02-18 13:32:00,Kolkata,New Delhi,Interstate Train,Bus Terminal Manifest,CASE_002
+MOV_00373,CASE_004_PER_04,,2025-02-18 20:48:00,Murshidabad,Kolkata,Interstate Train,CCTV Transit Terminal Log,CASE_004
+MOV_00334,CASE_010_PER_10,,2025-02-18 23:07:00,Kolkata,New Delhi,Interstate Train,Interstate Border Checkpoint ANPR,CASE_010
+MOV_00364,CASE_007_PER_07,VEH_032,2025-02-19 00:56:00,Ranchi,Anand Vihar (Delhi),Private SUV,CCTV Transit Terminal Log,CASE_007
+MOV_00015,CASE_007_PER_01,,2025-02-19 10:14:00,Murshidabad,Kolkata,Interstate Train,Railway Reservation Chart,CASE_007
+MOV_00391,CASE_003_PER_09,,2025-02-19 13:38:00,Bhopal,Gwalior,Interstate Train,Hotel Guest Register Scan,CASE_003
+MOV_00259,CASE_007_PER_09,VEH_030,2025-02-19 15:06:00,Ranchi,Anand Vihar (Delhi),Sleeper Bus,CCTV Transit Terminal Log,CASE_007
+MOV_00007,CASE_006_PER_03,,2025-02-20 03:36:00,Murshidabad,Kolkata,Interstate Train,CCTV Transit Terminal Log,CASE_006
+MOV_00292,CASE_002_PER_04,,2025-02-20 08:18:00,Bhopal,Gwalior,Interstate Train,Railway Reservation Chart,CASE_002
+MOV_00097,CASE_003_PER_04,VEH_001,2025-02-20 17:25:00,Ranchi,Anand Vihar (Delhi),Private SUV,Hotel Guest Register Scan,CASE_003
+MOV_00158,CASE_006_PER_06,VEH_010,2025-02-20 19:07:00,Agra,Kanpur,Private SUV,Highway Toll RFID / FASTag Log,CASE_006
+MOV_00207,CASE_005_PER_02,VEH_029,2025-02-21 03:54:00,Chandigarh,Panipat,Private SUV,Interstate Border Checkpoint ANPR,CASE_005
+MOV_00450,CASE_006_PER_01,VEH_005,2025-02-22 12:50:00,Chandigarh,Panipat,Interstate Bus,Railway Reservation Chart,CASE_006
+MOV_00267,CASE_010_PER_06,VEH_009,2025-02-22 13:55:00,Ranchi,Anand Vihar (Delhi),Private SUV,CCTV Transit Terminal Log,CASE_010
+MOV_00444,CASE_002_PER_03,,2025-02-23 02:04:00,Kolkata,New Delhi,Interstate Train,Bus Terminal Manifest,CASE_002
+MOV_00177,CASE_004_PER_08,VEH_012,2025-02-23 16:18:00,Agra,Kanpur,Interstate Bus,Bus Terminal Manifest,CASE_004
+MOV_00212,CASE_002_PER_05,VEH_003,2025-02-24 12:52:00,Patna,Gurugram,Private SUV,Hotel Guest Register Scan,CASE_002
+MOV_00197,CASE_008_PER_02,,2025-02-24 15:14:00,Murshidabad,Kolkata,Interstate Train,Interstate Border Checkpoint ANPR,CASE_008
+MOV_00280,CASE_006_PER_04,VEH_021,2025-02-25 12:02:00,Patna,Gurugram,Private SUV,Railway Reservation Chart,CASE_006
+MOV_00073,CASE_009_PER_07,VEH_014,2025-02-25 14:42:00,Agra,Kanpur,Interstate Bus,Highway Toll RFID / FASTag Log,CASE_009
+MOV_00309,CASE_006_PER_05,,2025-02-26 14:41:00,Murshidabad,Kolkata,Interstate Train,Bus Terminal Manifest,CASE_006
+MOV_00466,CASE_003_PER_08,VEH_003,2025-02-26 17:52:00,Agra,Kanpur,Sleeper Bus,Railway Reservation Chart,CASE_003
+MOV_00199,CASE_008_PER_03,VEH_004,2025-02-27 08:02:00,Patna,Gurugram,Private SUV,Interstate Border Checkpoint ANPR,CASE_008
+MOV_00298,CASE_008_PER_01,,2025-02-27 21:05:00,Patna,Gurugram,Interstate Train,CCTV Transit Terminal Log,CASE_008
+MOV_00272,CASE_001_PER_03,VEH_033,2025-02-28 16:59:00,Agra,Kanpur,Interstate Bus,Bus Terminal Manifest,CASE_001
+MOV_00440,CASE_005_PER_01,VEH_031,2025-02-28 21:31:00,Murshidabad,Kolkata,Private SUV,CCTV Transit Terminal Log,CASE_005
+MOV_00304,CASE_001_PER_04,,2025-03-01 08:41:00,Agra,Kanpur,Interstate Train,CCTV Transit Terminal Log,CASE_001
+MOV_00085,CASE_009_PER_07,,2025-03-01 15:50:00,Bhopal,Gwalior,Interstate Train,Highway Toll RFID / FASTag Log,CASE_009
+MOV_00402,CASE_005_PER_07,VEH_024,2025-03-01 21:03:00,Chandigarh,Panipat,Interstate Bus,Railway Reservation Chart,CASE_005
+MOV_00068,CASE_003_PER_07,,2025-03-02 09:42:00,Murshidabad,Kolkata,Interstate Train,CCTV Transit Terminal Log,CASE_003
+MOV_00059,CASE_007_PER_09,VEH_017,2025-03-02 13:17:00,Agra,Kanpur,Interstate Bus,CCTV Transit Terminal Log,CASE_007
+MOV_00076,CASE_009_PER_09,VEH_027,2025-03-02 22:46:00,Siliguri,Patna,Private SUV,Railway Reservation Chart,CASE_009
+MOV_00392,CASE_008_PER_08,,2025-03-03 04:23:00,Bhopal,Gwalior,Interstate Train,Railway Reservation Chart,CASE_008
+MOV_00351,CASE_006_PER_04,VEH_031,2025-03-03 16:33:00,Patna,Gurugram,Private SUV,Highway Toll RFID / FASTag Log,CASE_006
+MOV_00194,CASE_005_PER_02,VEH_037,2025-03-04 01:35:00,Jaipur,Delhi NCR,Private SUV,Hotel Guest Register Scan,CASE_005
+MOV_00288,CASE_007_PER_01,,2025-03-04 09:13:00,Kolkata,New Delhi,Interstate Train,Hotel Guest Register Scan,CASE_007
+MOV_00319,CASE_008_PER_05,,2025-03-04 10:02:00,Kolkata,New Delhi,Interstate Train,Bus Terminal Manifest,CASE_008
+MOV_00186,CASE_007_PER_06,VEH_004,2025-03-04 10:57:00,Agra,Kanpur,Interstate Bus,Bus Terminal Manifest,CASE_007
+MOV_00290,CASE_004_PER_07,VEH_035,2025-03-04 11:31:00,Siliguri,Patna,Sleeper Bus,Bus Terminal Manifest,CASE_004
+MOV_00039,CASE_002_PER_04,VEH_040,2025-03-04 11:52:00,Jaipur,Delhi NCR,Private SUV,Interstate Border Checkpoint ANPR,CASE_002
+MOV_00403,CASE_009_PER_08,VEH_010,2025-03-05 06:42:00,Ranchi,Anand Vihar (Delhi),Private SUV,CCTV Transit Terminal Log,CASE_009
+MOV_00344,CASE_009_PER_10,VEH_003,2025-03-05 20:00:00,Agra,Kanpur,Interstate Bus,Highway Toll RFID / FASTag Log,CASE_009
+MOV_00460,CASE_007_PER_07,VEH_013,2025-03-06 18:54:00,Kolkata,New Delhi,Sleeper Bus,Highway Toll RFID / FASTag Log,CASE_007
+MOV_00115,CASE_009_PER_01,,2025-03-06 21:26:00,Kolkata,New Delhi,Interstate Train,CCTV Transit Terminal Log,CASE_009
+MOV_00016,CASE_005_PER_01,VEH_030,2025-03-08 11:23:00,Chandigarh,Panipat,Interstate Bus,Bus Terminal Manifest,CASE_005
+MOV_00031,CASE_002_PER_02,,2025-03-08 15:00:00,Kolkata,New Delhi,Interstate Train,CCTV Transit Terminal Log,CASE_002
+MOV_00451,CASE_007_PER_01,,2025-03-09 04:56:00,Bhopal,Gwalior,Interstate Train,Interstate Border Checkpoint ANPR,CASE_007
+MOV_00431,CASE_010_PER_06,VEH_034,2025-03-09 06:04:00,Agra,Kanpur,Interstate Bus,Highway Toll RFID / FASTag Log,CASE_010
+MOV_00200,CASE_010_PER_01,,2025-03-09 21:35:00,Murshidabad,Kolkata,Interstate Train,Highway Toll RFID / FASTag Log,CASE_010
+MOV_00099,CASE_009_PER_03,,2025-03-10 07:56:00,Bhopal,Gwalior,Interstate Train,Railway Reservation Chart,CASE_009
+MOV_00049,CASE_004_PER_04,,2025-03-10 08:28:00,Murshidabad,Kolkata,Interstate Train,Highway Toll RFID / FASTag Log,CASE_004
+MOV_00314,CASE_006_PER_05,VEH_023,2025-03-10 12:39:00,Chandigarh,Panipat,Interstate Bus,Interstate Border Checkpoint ANPR,CASE_006
+MOV_00025,CASE_005_PER_06,,2025-03-10 23:02:00,Murshidabad,Kolkata,Interstate Train,Highway Toll RFID / FASTag Log,CASE_005
+MOV_00132,CASE_001_PER_02,VEH_011,2025-03-11 12:12:00,Chandigarh,Panipat,Interstate Bus,Railway Reservation Chart,CASE_001
+MOV_00105,CASE_002_PER_01,VEH_003,2025-03-12 01:19:00,Murshidabad,Kolkata,Private SUV,Hotel Guest Register Scan,CASE_002
+MOV_00229,CASE_008_PER_05,,2025-03-12 01:59:00,Kolkata,New Delhi,Interstate Train,Highway Toll RFID / FASTag Log,CASE_008
+MOV_00135,CASE_004_PER_01,VEH_007,2025-03-12 05:15:00,Agra,Kanpur,Interstate Bus,CCTV Transit Terminal Log,CASE_004
+MOV_00434,CASE_004_PER_07,VEH_023,2025-03-13 00:06:00,Chandigarh,Panipat,Interstate Bus,Interstate Border Checkpoint ANPR,CASE_004
+MOV_00407,CASE_007_PER_11,VEH_007,2025-03-13 07:38:00,Jaipur,Delhi NCR,Private SUV,Hotel Guest Register Scan,CASE_007
+MOV_00375,CASE_003_PER_05,VEH_031,2025-03-13 10:21:00,Agra,Kanpur,Interstate Bus,Interstate Border Checkpoint ANPR,CASE_003
+MOV_00337,CASE_007_PER_03,VEH_037,2025-03-13 15:51:00,Agra,Kanpur,Sleeper Bus,Interstate Border Checkpoint ANPR,CASE_007
+MOV_00026,CASE_003_PER_07,VEH_008,2025-03-14 01:48:00,Jaipur,Delhi NCR,Private SUV,Interstate Border Checkpoint ANPR,CASE_003
+MOV_00176,CASE_002_PER_03,VEH_004,2025-03-14 10:32:00,Siliguri,Patna,Private SUV,Hotel Guest Register Scan,CASE_002
+MOV_00464,CASE_007_PER_07,VEH_039,2025-03-14 14:51:00,Murshidabad,Kolkata,Sleeper Bus,Hotel Guest Register Scan,CASE_007
+MOV_00480,CASE_006_PER_05,VEH_019,2025-03-14 19:13:00,Agra,Kanpur,Interstate Bus,Interstate Border Checkpoint ANPR,CASE_006
+MOV_00126,CASE_010_PER_08,VEH_005,2025-03-15 11:38:00,Kolkata,New Delhi,Sleeper Bus,Interstate Border Checkpoint ANPR,CASE_010
+MOV_00239,CASE_008_PER_06,VEH_005,2025-03-16 02:04:00,Jaipur,Delhi NCR,Private SUV,Highway Toll RFID / FASTag Log,CASE_008
+MOV_00442,CASE_001_PER_07,VEH_012,2025-03-16 05:02:00,Jaipur,Delhi NCR,Private SUV,Bus Terminal Manifest,CASE_001
+MOV_00439,CASE_003_PER_02,VEH_023,2025-03-16 07:36:00,Ranchi,Anand Vihar (Delhi),Private SUV,Railway Reservation Chart,CASE_003
+MOV_00489,CASE_010_PER_04,,2025-03-16 18:08:00,Kolkata,New Delhi,Interstate Train,CCTV Transit Terminal Log,CASE_010
+MOV_00075,CASE_007_PER_06,VEH_005,2025-03-17 10:04:00,Chandigarh,Panipat,Interstate Bus,Hotel Guest Register Scan,CASE_007
+MOV_00350,CASE_010_PER_09,,2025-03-17 19:56:00,Kolkata,New Delhi,Interstate Train,Highway Toll RFID / FASTag Log,CASE_010
+MOV_00102,CASE_001_PER_02,,2025-03-17 23:30:00,Agra,Kanpur,Interstate Train,Interstate Border Checkpoint ANPR,CASE_001
+MOV_00071,CASE_003_PER_02,VEH_036,2025-03-18 02:48:00,Ranchi,Anand Vihar (Delhi),Private SUV,Hotel Guest Register Scan,CASE_003
+MOV_00463,CASE_010_PER_08,VEH_025,2025-03-18 05:34:00,Jaipur,Delhi NCR,Private SUV,Bus Terminal Manifest,CASE_010
+MOV_00005,CASE_005_PER_09,VEH_001,2025-03-18 14:42:00,Agra,Kanpur,Interstate Bus,Highway Toll RFID / FASTag Log,CASE_005
+MOV_00467,CASE_008_PER_03,VEH_010,2025-03-19 14:11:00,Ranchi,Anand Vihar (Delhi),Private SUV,Interstate Border Checkpoint ANPR,CASE_008
+MOV_00389,CASE_003_PER_07,VEH_014,2025-03-20 02:52:00,Patna,Gurugram,Private SUV,CCTV Transit Terminal Log,CASE_003
+MOV_00472,CASE_010_PER_10,VEH_010,2025-03-20 10:46:00,Ranchi,Anand Vihar (Delhi),Private SUV,Railway Reservation Chart,CASE_010
+MOV_00419,CASE_004_PER_01,VEH_021,2025-03-20 13:02:00,Jaipur,Delhi NCR,Private SUV,Highway Toll RFID / FASTag Log,CASE_004
+MOV_00478,CASE_002_PER_01,,2025-03-20 15:10:00,Murshidabad,Kolkata,Interstate Train,Bus Terminal Manifest,CASE_002
+MOV_00378,CASE_008_PER_07,VEH_017,2025-03-20 23:22:00,Ranchi,Anand Vihar (Delhi),Private SUV,Railway Reservation Chart,CASE_008
+MOV_00246,CASE_009_PER_03,VEH_003,2025-03-21 07:15:00,Bhopal,Gwalior,Sleeper Bus,Interstate Border Checkpoint ANPR,CASE_009
+MOV_00155,CASE_004_PER_06,VEH_040,2025-03-21 14:38:00,Chandigarh,Panipat,Sleeper Bus,Bus Terminal Manifest,CASE_004
+MOV_00232,CASE_007_PER_04,,2025-03-21 14:53:00,Bhopal,Gwalior,Interstate Train,Highway Toll RFID / FASTag Log,CASE_007
+MOV_00287,CASE_005_PER_02,,2025-03-21 16:19:00,Siliguri,Patna,Interstate Train,Railway Reservation Chart,CASE_005
+MOV_00220,CASE_009_PER_01,VEH_027,2025-03-21 17:39:00,Murshidabad,Kolkata,Private SUV,Interstate Border Checkpoint ANPR,CASE_009
+MOV_00358,CASE_002_PER_03,VEH_022,2025-03-22 08:48:00,Chandigarh,Panipat,Interstate Bus,Highway Toll RFID / FASTag Log,CASE_002
+MOV_00122,CASE_004_PER_06,VEH_008,2025-03-22 16:20:00,Murshidabad,Kolkata,Private SUV,Interstate Border Checkpoint ANPR,CASE_004
+MOV_00179,CASE_009_PER_03,,2025-03-23 04:42:00,Murshidabad,Kolkata,Interstate Train,Railway Reservation Chart,CASE_009
+MOV_00278,CASE_001_PER_08,,2025-03-23 08:25:00,Bhopal,Gwalior,Interstate Train,Hotel Guest Register Scan,CASE_001
+MOV_00238,CASE_008_PER_02,,2025-03-23 15:19:00,Bhopal,Gwalior,Interstate Train,CCTV Transit Terminal Log,CASE_008
+MOV_00420,CASE_009_PER_10,VEH_039,2025-03-24 14:59:00,Jaipur,Delhi NCR,Private SUV,CCTV Transit Terminal Log,CASE_009
+MOV_00325,CASE_001_PER_04,VEH_034,2025-03-24 18:47:00,Jaipur,Delhi NCR,Private SUV,Hotel Guest Register Scan,CASE_001
+MOV_00098,CASE_004_PER_01,,2025-03-25 02:16:00,Bhopal,Gwalior,Interstate Train,Hotel Guest Register Scan,CASE_004
+MOV_00196,CASE_001_PER_09,VEH_007,2025-03-25 07:30:00,Jaipur,Delhi NCR,Private SUV,Interstate Border Checkpoint ANPR,CASE_001
+MOV_00050,CASE_002_PER_07,VEH_040,2025-03-25 08:17:00,Murshidabad,Kolkata,Sleeper Bus,Highway Toll RFID / FASTag Log,CASE_002
+MOV_00372,CASE_004_PER_03,VEH_017,2025-03-25 17:28:00,Jaipur,Delhi NCR,Private SUV,Interstate Border Checkpoint ANPR,CASE_004
+MOV_00320,CASE_007_PER_04,,2025-03-26 00:28:00,Kolkata,New Delhi,Interstate Train,Interstate Border Checkpoint ANPR,CASE_007
+MOV_00183,CASE_007_PER_05,VEH_017,2025-03-27 17:29:00,Agra,Kanpur,Interstate Bus,Interstate Border Checkpoint ANPR,CASE_007
+MOV_00366,CASE_007_PER_08,VEH_027,2025-03-28 01:26:00,Patna,Gurugram,Private SUV,CCTV Transit Terminal Log,CASE_007
+MOV_00237,CASE_005_PER_04,VEH_029,2025-03-28 02:45:00,Ranchi,Anand Vihar (Delhi),Private SUV,CCTV Transit Terminal Log,CASE_005
+MOV_00090,CASE_005_PER_07,VEH_008,2025-03-28 05:25:00,Ranchi,Anand Vihar (Delhi),Private SUV,Bus Terminal Manifest,CASE_005
+MOV_00127,CASE_004_PER_06,VEH_024,2025-03-28 07:20:00,Chandigarh,Panipat,Sleeper Bus,Hotel Guest Register Scan,CASE_004
+MOV_00469,CASE_009_PER_10,VEH_005,2025-03-28 09:23:00,Patna,Gurugram,Private SUV,Bus Terminal Manifest,CASE_009
+MOV_00019,CASE_007_PER_07,,2025-03-28 12:37:00,Murshidabad,Kolkata,Interstate Train,Highway Toll RFID / FASTag Log,CASE_007
+MOV_00226,CASE_006_PER_05,VEH_010,2025-03-28 19:28:00,Murshidabad,Kolkata,Sleeper Bus,Hotel Guest Register Scan,CASE_006
+MOV_00279,CASE_006_PER_01,,2025-03-29 08:19:00,Kolkata,New Delhi,Interstate Train,CCTV Transit Terminal Log,CASE_006
+MOV_00398,CASE_010_PER_02,,2025-03-29 15:09:00,Murshidabad,Kolkata,Interstate Train,Interstate Border Checkpoint ANPR,CASE_010
+MOV_00483,CASE_002_PER_02,,2025-03-29 23:01:00,Agra,Kanpur,Interstate Train,Hotel Guest Register Scan,CASE_002
+MOV_00083,CASE_010_PER_10,VEH_012,2025-03-30 01:26:00,Chandigarh,Panipat,Private SUV,Interstate Border Checkpoint ANPR,CASE_010
+MOV_00013,CASE_007_PER_07,VEH_032,2025-03-31 17:06:00,Siliguri,Patna,Sleeper Bus,CCTV Transit Terminal Log,CASE_007
+MOV_00166,CASE_005_PER_04,VEH_032,2025-04-01 00:46:00,Ranchi,Anand Vihar (Delhi),Private SUV,Bus Terminal Manifest,CASE_005
+MOV_00154,CASE_003_PER_04,VEH_026,2025-04-01 11:29:00,Kolkata,New Delhi,Private SUV,Interstate Border Checkpoint ANPR,CASE_003
+MOV_00300,CASE_001_PER_06,,2025-04-03 11:01:00,Murshidabad,Kolkata,Interstate Train,CCTV Transit Terminal Log,CASE_001
+MOV_00341,CASE_002_PER_07,,2025-04-03 14:19:00,Kolkata,New Delhi,Interstate Train,Bus Terminal Manifest,CASE_002
+MOV_00390,CASE_008_PER_04,VEH_024,2025-04-03 14:46:00,Jaipur,Delhi NCR,Private SUV,Hotel Guest Register Scan,CASE_008
+MOV_00109,CASE_003_PER_11,VEH_030,2025-04-04 00:07:00,Patna,Gurugram,Private SUV,Interstate Border Checkpoint ANPR,CASE_003
+MOV_00149,CASE_005_PER_04,VEH_032,2025-04-04 07:28:00,Patna,Gurugram,Private SUV,CCTV Transit Terminal Log,CASE_005
+MOV_00303,CASE_006_PER_06,VEH_005,2025-04-04 09:25:00,Agra,Kanpur,Interstate Bus,Bus Terminal Manifest,CASE_006
+MOV_00377,CASE_006_PER_07,VEH_027,2025-04-04 12:08:00,Ranchi,Anand Vihar (Delhi),Private SUV,Hotel Guest Register Scan,CASE_006
+MOV_00423,CASE_008_PER_02,,2025-04-04 16:55:00,Murshidabad,Kolkata,Interstate Train,Highway Toll RFID / FASTag Log,CASE_008
+MOV_00383,CASE_004_PER_04,VEH_035,2025-04-04 23:17:00,Ranchi,Anand Vihar (Delhi),Private SUV,Hotel Guest Register Scan,CASE_004
+MOV_00171,CASE_002_PER_06,,2025-04-05 00:54:00,Kolkata,New Delhi,Interstate Train,Highway Toll RFID / FASTag Log,CASE_002
+MOV_00037,CASE_005_PER_01,VEH_002,2025-04-05 20:16:00,Agra,Kanpur,Interstate Bus,Railway Reservation Chart,CASE_005
+MOV_00406,CASE_004_PER_05,,2025-04-06 01:04:00,Bhopal,Gwalior,Interstate Train,Hotel Guest Register Scan,CASE_004
+MOV_00323,CASE_008_PER_03,,2025-04-06 04:24:00,Bhopal,Gwalior,Interstate Train,Interstate Border Checkpoint ANPR,CASE_008
+MOV_00055,CASE_010_PER_10,VEH_026,2025-04-06 05:24:00,Siliguri,Patna,Sleeper Bus,Interstate Border Checkpoint ANPR,CASE_010
+MOV_00296,CASE_010_PER_01,,2025-04-06 12:20:00,Bhopal,Gwalior,Interstate Train,CCTV Transit Terminal Log,CASE_010
+MOV_00479,CASE_007_PER_06,VEH_040,2025-04-07 03:21:00,Agra,Kanpur,Interstate Bus,Bus Terminal Manifest,CASE_007
+MOV_00447,CASE_008_PER_03,,2025-04-07 09:50:00,Murshidabad,Kolkata,Interstate Train,Railway Reservation Chart,CASE_008
+MOV_00438,CASE_002_PER_07,,2025-04-07 12:52:00,Kolkata,New Delhi,Interstate Train,Hotel Guest Register Scan,CASE_002
+MOV_00379,CASE_007_PER_03,,2025-04-07 21:43:00,Bhopal,Gwalior,Interstate Train,Railway Reservation Chart,CASE_007
+MOV_00175,CASE_010_PER_03,,2025-04-08 06:30:00,Kolkata,New Delhi,Interstate Train,Interstate Border Checkpoint ANPR,CASE_010
+MOV_00011,CASE_005_PER_04,VEH_020,2025-04-08 06:31:00,Chandigarh,Panipat,Interstate Bus,Hotel Guest Register Scan,CASE_005
+MOV_00129,CASE_002_PER_02,,2025-04-08 06:45:00,Ranchi,Anand Vihar (Delhi),Interstate Train,Hotel Guest Register Scan,CASE_002
+MOV_00080,CASE_007_PER_08,VEH_016,2025-04-09 00:42:00,Jaipur,Delhi NCR,Private SUV,Railway Reservation Chart,CASE_007
+MOV_00038,CASE_005_PER_10,,2025-04-09 13:38:00,Bhopal,Gwalior,Interstate Train,Hotel Guest Register Scan,CASE_005
+MOV_00493,CASE_002_PER_08,,2025-04-09 13:52:00,Kolkata,New Delhi,Interstate Train,Interstate Border Checkpoint ANPR,CASE_002
+MOV_00470,CASE_001_PER_06,VEH_024,2025-04-09 16:12:00,Siliguri,Patna,Sleeper Bus,CCTV Transit Terminal Log,CASE_001
+MOV_00061,CASE_001_PER_06,VEH_007,2025-04-09 16:29:00,Chandigarh,Panipat,Interstate Bus,Bus Terminal Manifest,CASE_001
+MOV_00500,CASE_004_PER_04,,2025-04-10 01:20:00,Kolkata,New Delhi,Interstate Train,Railway Reservation Chart,CASE_004
+MOV_00204,CASE_010_PER_08,VEH_022,2025-04-10 01:27:00,Patna,Gurugram,Private SUV,CCTV Transit Terminal Log,CASE_010
+MOV_00380,CASE_003_PER_03,VEH_007,2025-04-10 13:45:00,Chandigarh,Panipat,Private SUV,Highway Toll RFID / FASTag Log,CASE_003
+MOV_00152,CASE_004_PER_04,,2025-04-11 12:26:00,Bhopal,Gwalior,Interstate Train,Highway Toll RFID / FASTag Log,CASE_004
+MOV_00453,CASE_010_PER_08,,2025-04-11 14:27:00,Kolkata,New Delhi,Interstate Train,Hotel Guest Register Scan,CASE_010
+MOV_00065,CASE_006_PER_04,VEH_039,2025-04-11 14:42:00,Murshidabad,Kolkata,Private SUV,CCTV Transit Terminal Log,CASE_006
+MOV_00315,CASE_002_PER_07,VEH_034,2025-04-11 19:31:00,Murshidabad,Kolkata,Sleeper Bus,Railway Reservation Chart,CASE_002
+MOV_00024,CASE_007_PER_04,,2025-04-11 20:04:00,Kolkata,New Delhi,Interstate Train,Bus Terminal Manifest,CASE_007
+MOV_00346,CASE_006_PER_04,,2025-04-12 07:54:00,Jaipur,Delhi NCR,Interstate Train,CCTV Transit Terminal Log,CASE_006
+MOV_00282,CASE_009_PER_03,VEH_024,2025-04-12 11:46:00,Patna,Gurugram,Private SUV,CCTV Transit Terminal Log,CASE_009
+MOV_00284,CASE_004_PER_07,VEH_002,2025-04-15 08:11:00,Ranchi,Anand Vihar (Delhi),Private SUV,Hotel Guest Register Scan,CASE_004
+MOV_00322,CASE_009_PER_02,,2025-04-15 08:23:00,Kolkata,New Delhi,Interstate Train,Interstate Border Checkpoint ANPR,CASE_009
+MOV_00130,CASE_005_PER_06,VEH_010,2025-04-15 16:49:00,Agra,Kanpur,Interstate Bus,Bus Terminal Manifest,CASE_005
+MOV_00023,CASE_001_PER_03,VEH_036,2025-04-15 23:34:00,Siliguri,Patna,Sleeper Bus,Railway Reservation Chart,CASE_001
+MOV_00490,CASE_002_PER_01,,2025-04-16 14:14:00,Agra,Kanpur,Interstate Train,Highway Toll RFID / FASTag Log,CASE_002
+MOV_00333,CASE_006_PER_07,VEH_038,2025-04-17 06:49:00,Agra,Kanpur,Interstate Bus,Railway Reservation Chart,CASE_006
+MOV_00139,CASE_010_PER_09,VEH_007,2025-04-17 13:36:00,Jaipur,Delhi NCR,Private SUV,Hotel Guest Register Scan,CASE_010
+MOV_00473,CASE_002_PER_01,,2025-04-18 05:14:00,Kolkata,New Delhi,Interstate Train,Interstate Border Checkpoint ANPR,CASE_002
+MOV_00017,CASE_002_PER_06,,2025-04-18 09:59:00,Bhopal,Gwalior,Interstate Train,Highway Toll RFID / FASTag Log,CASE_002
+MOV_00159,CASE_008_PER_05,,2025-04-18 17:36:00,Kolkata,New Delhi,Interstate Train,Interstate Border Checkpoint ANPR,CASE_008
+MOV_00027,CASE_004_PER_07,,2025-04-18 20:59:00,Murshidabad,Kolkata,Interstate Train,Highway Toll RFID / FASTag Log,CASE_004
+MOV_00492,CASE_010_PER_07,VEH_030,2025-04-20 12:13:00,Patna,Gurugram,Private SUV,Interstate Border Checkpoint ANPR,CASE_010
+MOV_00133,CASE_007_PER_09,VEH_033,2025-04-20 20:27:00,Jaipur,Delhi NCR,Private SUV,Railway Reservation Chart,CASE_007
+MOV_00369,CASE_010_PER_09,VEH_029,2025-04-20 21:30:00,Siliguri,Patna,Sleeper Bus,Hotel Guest Register Scan,CASE_010
+MOV_00368,CASE_008_PER_03,VEH_024,2025-04-21 08:49:00,Jaipur,Delhi NCR,Private SUV,CCTV Transit Terminal Log,CASE_008
+MOV_00142,CASE_005_PER_06,VEH_017,2025-04-21 09:54:00,Agra,Kanpur,Interstate Bus,Interstate Border Checkpoint ANPR,CASE_005
+MOV_00318,CASE_005_PER_08,VEH_027,2025-04-21 22:27:00,Chandigarh,Panipat,Interstate Bus,Bus Terminal Manifest,CASE_005
+MOV_00335,CASE_002_PER_04,VEH_002,2025-04-21 22:40:00,Jaipur,Delhi NCR,Sleeper Bus,Railway Reservation Chart,CASE_002
+MOV_00124,CASE_003_PER_07,,2025-04-21 23:37:00,Murshidabad,Kolkata,Interstate Train,Bus Terminal Manifest,CASE_003
+MOV_00219,CASE_004_PER_01,VEH_013,2025-04-22 04:59:00,Agra,Kanpur,Interstate Bus,CCTV Transit Terminal Log,CASE_004
+MOV_00030,CASE_004_PER_05,VEH_017,2025-04-22 08:12:00,Kolkata,New Delhi,Private SUV,Highway Toll RFID / FASTag Log,CASE_004
+MOV_00206,CASE_010_PER_12,VEH_011,2025-04-23 08:25:00,Patna,Gurugram,Private SUV,Highway Toll RFID / FASTag Log,CASE_010
+MOV_00276,CASE_002_PER_08,,2025-04-24 08:35:00,Kolkata,New Delhi,Interstate Train,Interstate Border Checkpoint ANPR,CASE_002
+MOV_00347,CASE_005_PER_10,VEH_006,2025-04-24 11:40:00,Patna,Gurugram,Private SUV,CCTV Transit Terminal Log,CASE_005
+MOV_00044,CASE_001_PER_07,VEH_018,2025-04-25 22:25:00,Patna,Gurugram,Private SUV,Bus Terminal Manifest,CASE_001
+MOV_00114,CASE_008_PER_01,,2025-04-26 05:21:00,Murshidabad,Kolkata,Interstate Train,Interstate Border Checkpoint ANPR,CASE_008
+MOV_00242,CASE_009_PER_07,VEH_028,2025-04-26 08:33:00,Jaipur,Delhi NCR,Private SUV,Interstate Border Checkpoint ANPR,CASE_009
+MOV_00221,CASE_008_PER_03,,2025-04-26 23:52:00,Murshidabad,Kolkata,Interstate Train,Interstate Border Checkpoint ANPR,CASE_008
+MOV_00091,CASE_007_PER_01,VEH_021,2025-04-27 08:34:00,Ranchi,Anand Vihar (Delhi),Private SUV,Hotel Guest Register Scan,CASE_007
+MOV_00310,CASE_001_PER_09,VEH_012,2025-04-27 12:54:00,Jaipur,Delhi NCR,Private SUV,Railway Reservation Chart,CASE_001
+MOV_00022,CASE_003_PER_08,VEH_036,2025-04-28 15:09:00,Jaipur,Delhi NCR,Private SUV,Interstate Border Checkpoint ANPR,CASE_003
+MOV_00063,CASE_010_PER_09,VEH_017,2025-04-28 18:13:00,Ranchi,Anand Vihar (Delhi),Sleeper Bus,Bus Terminal Manifest,CASE_010
+MOV_00355,CASE_001_PER_10,VEH_020,2025-04-28 21:13:00,Agra,Kanpur,Interstate Bus,Railway Reservation Chart,CASE_001
+MOV_00495,CASE_001_PER_01,VEH_015,2025-04-29 01:38:00,Ranchi,Anand Vihar (Delhi),Sleeper Bus,Interstate Border Checkpoint ANPR,CASE_001
+MOV_00210,CASE_001_PER_09,VEH_006,2025-04-29 01:42:00,Chandigarh,Panipat,Interstate Bus,Bus Terminal Manifest,CASE_001
+MOV_00387,CASE_009_PER_01,VEH_023,2025-04-29 05:53:00,Jaipur,Delhi NCR,Private SUV,Interstate Border Checkpoint ANPR,CASE_009
+MOV_00324,CASE_002_PER_02,VEH_008,2025-04-29 18:58:00,Jaipur,Delhi NCR,Private SUV,Highway Toll RFID / FASTag Log,CASE_002
+MOV_00381,CASE_008_PER_01,,2025-04-30 10:41:00,Murshidabad,Kolkata,Interstate Train,Hotel Guest Register Scan,CASE_008
+MOV_00245,CASE_006_PER_07,VEH_039,2025-04-30 11:34:00,Patna,Gurugram,Private SUV,Hotel Guest Register Scan,CASE_006
+MOV_00436,CASE_002_PER_08,,2025-05-01 01:09:00,Murshidabad,Kolkata,Interstate Train,CCTV Transit Terminal Log,CASE_002
+MOV_00054,CASE_004_PER_04,VEH_001,2025-05-01 01:44:00,Chandigarh,Panipat,Interstate Bus,Highway Toll RFID / FASTag Log,CASE_004
+MOV_00028,CASE_002_PER_02,,2025-05-01 18:42:00,Kolkata,New Delhi,Interstate Train,Railway Reservation Chart,CASE_002
+MOV_00107,CASE_004_PER_07,VEH_009,2025-05-03 07:09:00,Murshidabad,Kolkata,Private SUV,Railway Reservation Chart,CASE_004
+MOV_00482,CASE_006_PER_03,VEH_009,2025-05-03 12:20:00,Patna,Gurugram,Private SUV,CCTV Transit Terminal Log,CASE_006
+MOV_00043,CASE_007_PER_11,VEH_007,2025-05-03 13:25:00,Chandigarh,Panipat,Interstate Bus,Railway Reservation Chart,CASE_007
+MOV_00161,CASE_010_PER_02,VEH_001,2025-05-04 06:28:00,Siliguri,Patna,Sleeper Bus,Bus Terminal Manifest,CASE_010
+MOV_00104,CASE_004_PER_07,VEH_040,2025-05-04 17:21:00,Chandigarh,Panipat,Interstate Bus,CCTV Transit Terminal Log,CASE_004
+MOV_00271,CASE_006_PER_07,VEH_018,2025-05-04 18:29:00,Ranchi,Anand Vihar (Delhi),Private SUV,Railway Reservation Chart,CASE_006
+MOV_00118,CASE_010_PER_12,VEH_013,2025-05-05 11:45:00,Jaipur,Delhi NCR,Private SUV,Highway Toll RFID / FASTag Log,CASE_010
+MOV_00230,CASE_003_PER_12,VEH_001,2025-05-06 01:27:00,Ranchi,Anand Vihar (Delhi),Private SUV,CCTV Transit Terminal Log,CASE_003
+MOV_00164,CASE_001_PER_05,VEH_022,2025-05-06 07:08:00,Chandigarh,Panipat,Interstate Bus,Hotel Guest Register Scan,CASE_001
+MOV_00370,CASE_010_PER_06,VEH_013,2025-05-06 10:48:00,Murshidabad,Kolkata,Private SUV,Interstate Border Checkpoint ANPR,CASE_010
+MOV_00087,CASE_001_PER_06,,2025-05-06 16:44:00,Bhopal,Gwalior,Interstate Train,Highway Toll RFID / FASTag Log,CASE_001
+MOV_00062,CASE_010_PER_03,VEH_025,2025-05-07 06:25:00,Kolkata,New Delhi,Private SUV,Railway Reservation Chart,CASE_010
+MOV_00426,CASE_002_PER_07,,2025-05-07 07:48:00,Kolkata,New Delhi,Interstate Train,Highway Toll RFID / FASTag Log,CASE_002
+MOV_00018,CASE_009_PER_11,,2025-05-07 08:26:00,Siliguri,Patna,Interstate Train,Highway Toll RFID / FASTag Log,CASE_009
+MOV_00243,CASE_001_PER_03,,2025-05-07 10:04:00,Bhopal,Gwalior,Interstate Train,Railway Reservation Chart,CASE_001
+MOV_00169,CASE_003_PER_03,,2025-05-08 03:01:00,Murshidabad,Kolkata,Interstate Train,Interstate Border Checkpoint ANPR,CASE_003
+MOV_00189,CASE_002_PER_07,VEH_002,2025-05-08 12:55:00,Patna,Gurugram,Private SUV,Highway Toll RFID / FASTag Log,CASE_002
+MOV_00258,CASE_003_PER_13,VEH_010,2025-05-08 16:18:00,Patna,Gurugram,Private SUV,Interstate Border Checkpoint ANPR,CASE_003
+MOV_00367,CASE_006_PER_01,,2025-05-08 18:20:00,Agra,Kanpur,Interstate Train,Interstate Border Checkpoint ANPR,CASE_006
+MOV_00205,CASE_006_PER_05,VEH_017,2025-05-09 10:24:00,Agra,Kanpur,Interstate Bus,Railway Reservation Chart,CASE_006
+MOV_00302,CASE_009_PER_08,VEH_032,2025-05-10 04:09:00,Jaipur,Delhi NCR,Private SUV,Bus Terminal Manifest,CASE_009
+MOV_00326,CASE_001_PER_06,VEH_018,2025-05-10 14:11:00,Chandigarh,Panipat,Interstate Bus,Bus Terminal Manifest,CASE_001
+MOV_00401,CASE_010_PER_06,VEH_036,2025-05-10 16:50:00,Patna,Gurugram,Private SUV,Hotel Guest Register Scan,CASE_010
+MOV_00201,CASE_006_PER_01,VEH_004,2025-05-11 03:18:00,Siliguri,Patna,Sleeper Bus,Railway Reservation Chart,CASE_006
+MOV_00035,CASE_004_PER_02,,2025-05-11 18:17:00,Murshidabad,Kolkata,Interstate Train,Interstate Border Checkpoint ANPR,CASE_004
+MOV_00491,CASE_001_PER_02,VEH_018,2025-05-12 10:37:00,Murshidabad,Kolkata,Private SUV,Interstate Border Checkpoint ANPR,CASE_001
+MOV_00157,CASE_007_PER_10,,2025-05-12 16:23:00,Chandigarh,Panipat,Interstate Train,Railway Reservation Chart,CASE_007
+MOV_00213,CASE_006_PER_05,VEH_003,2025-05-12 20:16:00,Jaipur,Delhi NCR,Private SUV,CCTV Transit Terminal Log,CASE_006
+MOV_00255,CASE_001_PER_01,VEH_022,2025-05-13 04:37:00,Patna,Gurugram,Private SUV,Hotel Guest Register Scan,CASE_001
+MOV_00260,CASE_002_PER_07,,2025-05-14 00:26:00,Agra,Kanpur,Interstate Train,Highway Toll RFID / FASTag Log,CASE_002
+MOV_00437,CASE_010_PER_04,,2025-05-14 06:31:00,Siliguri,Patna,Interstate Train,CCTV Transit Terminal Log,CASE_010
+MOV_00096,CASE_006_PER_04,VEH_007,2025-05-14 23:18:00,Agra,Kanpur,Private SUV,Railway Reservation Chart,CASE_006
+MOV_00203,CASE_001_PER_02,VEH_040,2025-05-15 01:50:00,Murshidabad,Kolkata,Private SUV,Bus Terminal Manifest,CASE_001
+MOV_00253,CASE_004_PER_05,,2025-05-15 21:15:00,Chandigarh,Panipat,Interstate Train,CCTV Transit Terminal Log,CASE_004
+MOV_00112,CASE_005_PER_01,VEH_001,2025-05-16 14:58:00,Ranchi,Anand Vihar (Delhi),Private SUV,Interstate Border Checkpoint ANPR,CASE_005
+MOV_00432,CASE_003_PER_05,VEH_035,2025-05-16 23:03:00,Chandigarh,Panipat,Private SUV,Highway Toll RFID / FASTag Log,CASE_003
+MOV_00193,CASE_002_PER_03,VEH_024,2025-05-17 03:43:00,Patna,Gurugram,Private SUV,Railway Reservation Chart,CASE_002
+MOV_00148,CASE_008_PER_06,VEH_036,2025-05-17 21:33:00,Jaipur,Delhi NCR,Private SUV,Highway Toll RFID / FASTag Log,CASE_008
+MOV_00003,CASE_008_PER_04,,2025-05-17 21:44:00,Murshidabad,Kolkata,Interstate Train,Highway Toll RFID / FASTag Log,CASE_008
+MOV_00261,CASE_005_PER_07,VEH_026,2025-05-19 01:00:00,Agra,Kanpur,Interstate Bus,Interstate Border Checkpoint ANPR,CASE_005
+MOV_00294,CASE_009_PER_09,,2025-05-19 03:26:00,Bhopal,Gwalior,Interstate Train,Hotel Guest Register Scan,CASE_009
+MOV_00111,CASE_007_PER_07,VEH_028,2025-05-19 23:30:00,Ranchi,Anand Vihar (Delhi),Private SUV,Hotel Guest Register Scan,CASE_007
+MOV_00338,CASE_003_PER_10,VEH_040,2025-05-20 19:36:00,Chandigarh,Panipat,Interstate Bus,CCTV Transit Terminal Log,CASE_003
+MOV_00488,CASE_008_PER_06,VEH_014,2025-05-20 23:23:00,Ranchi,Anand Vihar (Delhi),Private SUV,CCTV Transit Terminal Log,CASE_008
+MOV_00009,CASE_009_PER_09,VEH_025,2025-05-21 12:00:00,Agra,Kanpur,Interstate Bus,Highway Toll RFID / FASTag Log,CASE_009
+MOV_00113,CASE_005_PER_02,,2025-05-21 14:37:00,Murshidabad,Kolkata,Interstate Train,Bus Terminal Manifest,CASE_005
+MOV_00211,CASE_001_PER_06,,2025-05-21 22:32:00,Bhopal,Gwalior,Interstate Train,CCTV Transit Terminal Log,CASE_001
+MOV_00465,CASE_007_PER_09,VEH_003,2025-05-22 17:24:00,Jaipur,Delhi NCR,Private SUV,Highway Toll RFID / FASTag Log,CASE_007
+MOV_00485,CASE_003_PER_09,VEH_017,2025-05-22 21:27:00,Agra,Kanpur,Interstate Bus,Bus Terminal Manifest,CASE_003
+MOV_00190,CASE_008_PER_02,VEH_022,2025-05-22 23:32:00,Bhopal,Gwalior,Private SUV,Bus Terminal Manifest,CASE_008
+MOV_00316,CASE_009_PER_09,VEH_032,2025-05-23 00:53:00,Ranchi,Anand Vihar (Delhi),Private SUV,Railway Reservation Chart,CASE_009
+MOV_00066,CASE_003_PER_08,,2025-05-23 05:37:00,Kolkata,New Delhi,Interstate Train,Bus Terminal Manifest,CASE_003
+MOV_00191,CASE_001_PER_04,,2025-05-23 18:19:00,Kolkata,New Delhi,Interstate Train,CCTV Transit Terminal Log,CASE_001
+MOV_00188,CASE_007_PER_09,VEH_033,2025-05-24 03:46:00,Murshidabad,Kolkata,Private SUV,Railway Reservation Chart,CASE_007
+MOV_00454,CASE_010_PER_06,VEH_023,2025-05-24 06:37:00,Patna,Gurugram,Private SUV,Highway Toll RFID / FASTag Log,CASE_010
+MOV_00121,CASE_004_PER_06,VEH_020,2025-05-24 11:21:00,Patna,Gurugram,Private SUV,Bus Terminal Manifest,CASE_004
+MOV_00349,CASE_003_PER_11,,2025-05-25 03:31:00,Bhopal,Gwalior,Interstate Train,Interstate Border Checkpoint ANPR,CASE_003
+MOV_00361,CASE_004_PER_04,VEH_027,2025-05-25 03:33:00,Chandigarh,Panipat,Interstate Bus,Interstate Border Checkpoint ANPR,CASE_004
+MOV_00471,CASE_002_PER_04,,2025-05-26 06:21:00,Kolkata,New Delhi,Interstate Train,Interstate Border Checkpoint ANPR,CASE_002
+MOV_00218,CASE_010_PER_04,VEH_023,2025-05-26 09:32:00,Siliguri,Patna,Sleeper Bus,Hotel Guest Register Scan,CASE_010
+MOV_00012,CASE_005_PER_02,,2025-05-26 16:17:00,Agra,Kanpur,Interstate Train,CCTV Transit Terminal Log,CASE_005
+MOV_00496,CASE_008_PER_06,,2025-05-27 02:04:00,Bhopal,Gwalior,Interstate Train,Hotel Guest Register Scan,CASE_008
+MOV_00021,CASE_001_PER_10,,2025-05-27 08:20:00,Bhopal,Gwalior,Interstate Train,Railway Reservation Chart,CASE_001
+MOV_00353,CASE_002_PER_01,VEH_008,2025-05-27 09:04:00,Agra,Kanpur,Interstate Bus,Highway Toll RFID / FASTag Log,CASE_002
+MOV_00004,CASE_009_PER_08,,2025-05-27 09:23:00,Kolkata,New Delhi,Interstate Train,Railway Reservation Chart,CASE_009
+MOV_00396,CASE_001_PER_07,VEH_020,2025-05-27 21:05:00,Agra,Kanpur,Interstate Bus,Bus Terminal Manifest,CASE_001
+MOV_00413,CASE_005_PER_06,,2025-05-28 19:36:00,Agra,Kanpur,Interstate Train,Interstate Border Checkpoint ANPR,CASE_005
+MOV_00343,CASE_007_PER_04,,2025-05-29 14:58:00,Bhopal,Gwalior,Interstate Train,Railway Reservation Chart,CASE_007
+MOV_00051,CASE_005_PER_05,VEH_022,2025-05-29 20:17:00,Kolkata,New Delhi,Sleeper Bus,Hotel Guest Register Scan,CASE_005
+MOV_00269,CASE_007_PER_03,,2025-05-29 23:39:00,Bhopal,Gwalior,Interstate Train,Interstate Border Checkpoint ANPR,CASE_007
+MOV_00143,CASE_001_PER_08,VEH_011,2025-05-30 10:24:00,Jaipur,Delhi NCR,Private SUV,CCTV Transit Terminal Log,CASE_001
+MOV_00443,CASE_004_PER_01,VEH_024,2025-05-30 16:31:00,Jaipur,Delhi NCR,Private SUV,Highway Toll RFID / FASTag Log,CASE_004
+MOV_00244,CASE_003_PER_11,,2025-06-01 00:02:00,Bhopal,Gwalior,Interstate Train,Bus Terminal Manifest,CASE_003
+MOV_00297,CASE_007_PER_09,VEH_010,2025-06-01 02:25:00,Ranchi,Anand Vihar (Delhi),Private SUV,Railway Reservation Chart,CASE_007
+MOV_00435,CASE_010_PER_04,VEH_006,2025-06-01 03:31:00,Jaipur,Delhi NCR,Private SUV,Hotel Guest Register Scan,CASE_010
+MOV_00264,CASE_009_PER_10,VEH_030,2025-06-02 06:00:00,Chandigarh,Panipat,Interstate Bus,CCTV Transit Terminal Log,CASE_009
+MOV_00060,CASE_010_PER_04,VEH_039,2025-06-02 07:27:00,Kolkata,New Delhi,Sleeper Bus,Bus Terminal Manifest,CASE_010
+MOV_00178,CASE_010_PER_09,VEH_035,2025-06-03 11:57:00,Chandigarh,Panipat,Interstate Bus,Hotel Guest Register Scan,CASE_010
+MOV_00208,CASE_006_PER_01,VEH_040,2025-06-03 19:50:00,Ranchi,Anand Vihar (Delhi),Private SUV,Railway Reservation Chart,CASE_006
+MOV_00198,CASE_004_PER_07,,2025-06-04 01:24:00,Bhopal,Gwalior,Interstate Train,CCTV Transit Terminal Log,CASE_004
+MOV_00120,CASE_001_PER_06,VEH_030,2025-06-04 02:19:00,Bhopal,Gwalior,Private SUV,CCTV Transit Terminal Log,CASE_001
+MOV_00441,CASE_006_PER_05,,2025-06-04 14:34:00,Bhopal,Gwalior,Interstate Train,Railway Reservation Chart,CASE_006
+MOV_00223,CASE_005_PER_08,VEH_035,2025-06-04 15:24:00,Patna,Gurugram,Private SUV,Interstate Border Checkpoint ANPR,CASE_005
+MOV_00014,CASE_009_PER_10,VEH_022,2025-06-05 16:40:00,Jaipur,Delhi NCR,Private SUV,Railway Reservation Chart,CASE_009
+MOV_00047,CASE_004_PER_07,,2025-06-06 20:00:00,Kolkata,New Delhi,Interstate Train,Highway Toll RFID / FASTag Log,CASE_004
+MOV_00227,CASE_007_PER_10,,2025-06-07 00:34:00,Bhopal,Gwalior,Interstate Train,Hotel Guest Register Scan,CASE_007
+MOV_00458,CASE_005_PER_03,,2025-06-07 02:28:00,Murshidabad,Kolkata,Interstate Train,Interstate Border Checkpoint ANPR,CASE_005
+MOV_00247,CASE_002_PER_04,,2025-06-07 08:50:00,Siliguri,Patna,Interstate Train,Hotel Guest Register Scan,CASE_002
+MOV_00225,CASE_005_PER_08,VEH_028,2025-06-07 11:31:00,Siliguri,Patna,Sleeper Bus,Highway Toll RFID / FASTag Log,CASE_005
+MOV_00170,CASE_007_PER_02,VEH_028,2025-06-08 06:58:00,Agra,Kanpur,Private SUV,CCTV Transit Terminal Log,CASE_007
+MOV_00082,CASE_008_PER_02,VEH_039,2025-06-09 00:16:00,Siliguri,Patna,Sleeper Bus,Railway Reservation Chart,CASE_008
+MOV_00388,CASE_003_PER_02,VEH_035,2025-06-09 01:42:00,Chandigarh,Panipat,Interstate Bus,Railway Reservation Chart,CASE_003
+MOV_00250,CASE_007_PER_09,VEH_010,2025-06-09 05:24:00,Chandigarh,Panipat,Interstate Bus,Hotel Guest Register Scan,CASE_007
+MOV_00494,CASE_004_PER_05,VEH_028,2025-06-09 06:05:00,Agra,Kanpur,Interstate Bus,Hotel Guest Register Scan,CASE_004
+MOV_00046,CASE_009_PER_10,VEH_034,2025-06-09 06:57:00,Patna,Gurugram,Private SUV,Highway Toll RFID / FASTag Log,CASE_009
+MOV_00136,CASE_010_PER_10,VEH_039,2025-06-09 09:40:00,Agra,Kanpur,Interstate Bus,Railway Reservation Chart,CASE_010
+MOV_00312,CASE_009_PER_09,VEH_011,2025-06-09 16:38:00,Ranchi,Anand Vihar (Delhi),Private SUV,Railway Reservation Chart,CASE_009
+MOV_00461,CASE_005_PER_08,VEH_026,2025-06-10 15:43:00,Siliguri,Patna,Sleeper Bus,Highway Toll RFID / FASTag Log,CASE_005
+MOV_00184,CASE_004_PER_08,,2025-06-10 21:35:00,Bhopal,Gwalior,Interstate Train,Interstate Border Checkpoint ANPR,CASE_004
+MOV_00002,CASE_009_PER_06,VEH_014,2025-06-11 04:30:00,Jaipur,Delhi NCR,Private SUV,Railway Reservation Chart,CASE_009
+MOV_00289,CASE_005_PER_04,,2025-06-11 08:12:00,Patna,Gurugram,Interstate Train,Interstate Border Checkpoint ANPR,CASE_005
+MOV_00339,CASE_006_PER_03,,2025-06-12 04:44:00,Siliguri,Patna,Interstate Train,CCTV Transit Terminal Log,CASE_006
+MOV_00285,CASE_002_PER_01,VEH_011,2025-06-13 00:20:00,Chandigarh,Panipat,Interstate Bus,Interstate Border Checkpoint ANPR,CASE_002
+MOV_00286,CASE_010_PER_10,,2025-06-13 01:58:00,Murshidabad,Kolkata,Interstate Train,Interstate Border Checkpoint ANPR,CASE_010
+MOV_00053,CASE_007_PER_06,VEH_037,2025-06-13 03:01:00,Chandigarh,Panipat,Private SUV,Highway Toll RFID / FASTag Log,CASE_007
+MOV_00058,CASE_009_PER_07,VEH_040,2025-06-13 03:51:00,Chandigarh,Panipat,Private SUV,Railway Reservation Chart,CASE_009
+MOV_00224,CASE_001_PER_05,VEH_030,2025-06-14 05:35:00,Siliguri,Patna,Sleeper Bus,Highway Toll RFID / FASTag Log,CASE_001
+MOV_00156,CASE_001_PER_04,VEH_018,2025-06-14 08:18:00,Siliguri,Patna,Private SUV,Bus Terminal Manifest,CASE_001
+MOV_00165,CASE_007_PER_04,VEH_032,2025-06-14 23:38:00,Chandigarh,Panipat,Interstate Bus,Bus Terminal Manifest,CASE_007
+MOV_00384,CASE_006_PER_04,,2025-06-14 23:40:00,Kolkata,New Delhi,Interstate Train,CCTV Transit Terminal Log,CASE_006
+MOV_00240,CASE_004_PER_01,VEH_012,2025-06-14 23:48:00,Agra,Kanpur,Interstate Bus,Hotel Guest Register Scan,CASE_004
+MOV_00020,CASE_003_PER_08,,2025-06-15 02:39:00,Bhopal,Gwalior,Interstate Train,Interstate Border Checkpoint ANPR,CASE_003
+MOV_00301,CASE_004_PER_05,VEH_028,2025-06-16 08:16:00,Patna,Gurugram,Private SUV,Highway Toll RFID / FASTag Log,CASE_004
+MOV_00481,CASE_005_PER_09,VEH_013,2025-06-17 02:09:00,Bhopal,Gwalior,Private SUV,CCTV Transit Terminal Log,CASE_005
+MOV_00268,CASE_004_PER_01,,2025-06-17 08:55:00,Kolkata,New Delhi,Interstate Train,Hotel Guest Register Scan,CASE_004
+MOV_00330,CASE_002_PER_02,VEH_009,2025-06-17 10:14:00,Jaipur,Delhi NCR,Private SUV,Railway Reservation Chart,CASE_002
+MOV_00327,CASE_007_PER_09,VEH_017,2025-06-17 20:05:00,Ranchi,Anand Vihar (Delhi),Private SUV,Railway Reservation Chart,CASE_007
+MOV_00254,CASE_006_PER_04,VEH_009,2025-06-18 02:45:00,Siliguri,Patna,Sleeper Bus,Bus Terminal Manifest,CASE_006
+MOV_00340,CASE_006_PER_07,VEH_022,2025-06-18 06:00:00,Jaipur,Delhi NCR,Private SUV,Railway Reservation Chart,CASE_006
+MOV_00417,CASE_008_PER_08,,2025-06-18 13:28:00,Kolkata,New Delhi,Interstate Train,Hotel Guest Register Scan,CASE_008
+MOV_00034,CASE_005_PER_01,VEH_019,2025-06-18 20:33:00,Jaipur,Delhi NCR,Private SUV,CCTV Transit Terminal Log,CASE_005
+MOV_00427,CASE_004_PER_07,,2025-06-19 04:59:00,Chandigarh,Panipat,Interstate Train,Bus Terminal Manifest,CASE_004
+MOV_00147,CASE_008_PER_07,VEH_021,2025-06-19 13:59:00,Chandigarh,Panipat,Interstate Bus,Bus Terminal Manifest,CASE_008
+MOV_00299,CASE_001_PER_04,VEH_040,2025-06-19 21:18:00,Bhopal,Gwalior,Private SUV,Highway Toll RFID / FASTag Log,CASE_001
+MOV_00418,CASE_005_PER_04,VEH_039,2025-06-20 16:39:00,Patna,Gurugram,Private SUV,Bus Terminal Manifest,CASE_005
+MOV_00145,CASE_007_PER_01,VEH_038,2025-06-21 12:58:00,Patna,Gurugram,Private SUV,CCTV Transit Terminal Log,CASE_007
+MOV_00228,CASE_009_PER_08,VEH_018,2025-06-21 14:56:00,Agra,Kanpur,Interstate Bus,Interstate Border Checkpoint ANPR,CASE_009
+MOV_00321,CASE_008_PER_07,,2025-06-21 15:00:00,Murshidabad,Kolkata,Interstate Train,Interstate Border Checkpoint ANPR,CASE_008
+MOV_00374,CASE_005_PER_01,VEH_006,2025-06-21 16:09:00,Jaipur,Delhi NCR,Private SUV,Bus Terminal Manifest,CASE_005
+MOV_00497,CASE_009_PER_09,,2025-06-21 18:03:00,Bhopal,Gwalior,Interstate Train,Bus Terminal Manifest,CASE_009
+MOV_00477,CASE_002_PER_04,VEH_037,2025-06-22 08:32:00,Agra,Kanpur,Interstate Bus,CCTV Transit Terminal Log,CASE_002
+MOV_00248,CASE_003_PER_04,VEH_028,2025-06-23 19:18:00,Siliguri,Patna,Private SUV,Bus Terminal Manifest,CASE_003
+MOV_00428,CASE_002_PER_01,VEH_008,2025-06-24 01:14:00,Murshidabad,Kolkata,Sleeper Bus,Interstate Border Checkpoint ANPR,CASE_002
+MOV_00352,CASE_009_PER_03,VEH_003,2025-06-24 01:17:00,Kolkata,New Delhi,Sleeper Bus,CCTV Transit Terminal Log,CASE_009
+MOV_00192,CASE_008_PER_06,,2025-06-24 12:57:00,Kolkata,New Delhi,Interstate Train,Hotel Guest Register Scan,CASE_008
+MOV_00293,CASE_010_PER_05,,2025-06-25 01:03:00,Bhopal,Gwalior,Interstate Train,Hotel Guest Register Scan,CASE_010
+MOV_00385,CASE_001_PER_05,VEH_007,2025-06-25 04:41:00,Agra,Kanpur,Interstate Bus,Hotel Guest Register Scan,CASE_001
+MOV_00476,CASE_005_PER_01,VEH_008,2025-06-25 10:14:00,Siliguri,Patna,Sleeper Bus,Bus Terminal Manifest,CASE_005
+MOV_00095,CASE_002_PER_08,VEH_001,2025-06-25 19:09:00,Ranchi,Anand Vihar (Delhi),Sleeper Bus,Railway Reservation Chart,CASE_002
+MOV_00088,CASE_006_PER_05,VEH_011,2025-06-25 21:59:00,Murshidabad,Kolkata,Sleeper Bus,Bus Terminal Manifest,CASE_006
+MOV_00131,CASE_002_PER_02,VEH_037,2025-06-26 00:29:00,Jaipur,Delhi NCR,Private SUV,Interstate Border Checkpoint ANPR,CASE_002
+MOV_00459,CASE_007_PER_03,,2025-06-26 15:29:00,Chandigarh,Panipat,Interstate Train,CCTV Transit Terminal Log,CASE_007
+MOV_00125,CASE_001_PER_04,,2025-06-26 22:00:00,Murshidabad,Kolkata,Interstate Train,Interstate Border Checkpoint ANPR,CASE_001
+MOV_00474,CASE_002_PER_05,,2025-06-27 21:32:00,Kolkata,New Delhi,Interstate Train,Highway Toll RFID / FASTag Log,CASE_002
+MOV_00416,CASE_007_PER_06,,2025-06-28 15:47:00,Kolkata,New Delhi,Interstate Train,Bus Terminal Manifest,CASE_007
+MOV_00360,CASE_010_PER_07,VEH_002,2025-06-28 19:23:00,Jaipur,Delhi NCR,Private SUV,Railway Reservation Chart,CASE_010
+MOV_00414,CASE_005_PER_05,,2025-06-28 20:49:00,Agra,Kanpur,Interstate Train,Railway Reservation Chart,CASE_005
+MOV_00452,CASE_009_PER_01,VEH_027,2025-06-29 04:04:00,Patna,Gurugram,Private SUV,Highway Toll RFID / FASTag Log,CASE_009
+MOV_00313,CASE_001_PER_10,VEH_034,2025-06-29 04:09:00,Agra,Kanpur,Interstate Bus,Interstate Border Checkpoint ANPR,CASE_001
+MOV_00187,CASE_010_PER_09,,2025-06-29 15:09:00,Bhopal,Gwalior,Interstate Train,Railway Reservation Chart,CASE_010
+MOV_00249,CASE_003_PER_13,,2025-06-29 18:08:00,Agra,Kanpur,Interstate Train,Bus Terminal Manifest,CASE_003
+MOV_00486,CASE_007_PER_07,,2025-06-29 21:19:00,Murshidabad,Kolkata,Interstate Train,Hotel Guest Register Scan,CASE_007
+MOV_00123,CASE_009_PER_11,VEH_029,2025-06-29 23:34:00,Jaipur,Delhi NCR,Sleeper Bus,CCTV Transit Terminal Log,CASE_009
+MOV_00449,CASE_001_PER_10,VEH_037,2025-06-30 07:18:00,Jaipur,Delhi NCR,Private SUV,Bus Terminal Manifest,CASE_001
+MOV_00180,CASE_009_PER_12,VEH_027,2025-07-01 07:57:00,Murshidabad,Kolkata,Private SUV,Hotel Guest Register Scan,CASE_009
+MOV_00160,CASE_005_PER_08,VEH_011,2025-07-02 00:15:00,Jaipur,Delhi NCR,Private SUV,Highway Toll RFID / FASTag Log,CASE_005
+MOV_00029,CASE_010_PER_03,VEH_027,2025-07-02 03:49:00,Patna,Gurugram,Private SUV,Hotel Guest Register Scan,CASE_010
+MOV_00484,CASE_006_PER_01,VEH_024,2025-07-02 05:33:00,Ranchi,Anand Vihar (Delhi),Private SUV,Railway Reservation Chart,CASE_006
+MOV_00214,CASE_005_PER_06,,2025-07-02 19:13:00,Murshidabad,Kolkata,Interstate Train,Hotel Guest Register Scan,CASE_005
+MOV_00412,CASE_008_PER_02,VEH_024,2025-07-03 09:00:00,Jaipur,Delhi NCR,Private SUV,CCTV Transit Terminal Log,CASE_008
+MOV_00251,CASE_001_PER_04,VEH_031,2025-07-03 13:53:00,Siliguri,Patna,Sleeper Bus,Bus Terminal Manifest,CASE_001
+MOV_00057,CASE_007_PER_03,VEH_010,2025-07-03 17:54:00,Patna,Gurugram,Private SUV,Railway Reservation Chart,CASE_007
+MOV_00357,CASE_009_PER_11,VEH_004,2025-07-03 23:56:00,Agra,Kanpur,Interstate Bus,Bus Terminal Manifest,CASE_009
+MOV_00397,CASE_005_PER_10,,2025-07-04 00:22:00,Bhopal,Gwalior,Interstate Train,Railway Reservation Chart,CASE_005
+MOV_00168,CASE_004_PER_07,VEH_010,2025-07-04 06:11:00,Jaipur,Delhi NCR,Private SUV,Bus Terminal Manifest,CASE_004
+MOV_00399,CASE_008_PER_07,VEH_021,2025-07-04 18:15:00,Siliguri,Patna,Sleeper Bus,Interstate Border Checkpoint ANPR,CASE_008
+MOV_00275,CASE_001_PER_06,VEH_025,2025-07-05 04:40:00,Chandigarh,Panipat,Private SUV,Railway Reservation Chart,CASE_001
+MOV_00144,CASE_006_PER_03,VEH_029,2025-07-05 09:44:00,Ranchi,Anand Vihar (Delhi),Private SUV,Interstate Border Checkpoint ANPR,CASE_006
+MOV_00056,CASE_002_PER_08,VEH_030,2025-07-05 15:48:00,Agra,Kanpur,Interstate Bus,Railway Reservation Chart,CASE_002
+MOV_00274,CASE_005_PER_06,VEH_022,2025-07-05 17:23:00,Agra,Kanpur,Interstate Bus,Hotel Guest Register Scan,CASE_005
+MOV_00092,CASE_001_PER_03,VEH_040,2025-07-05 21:29:00,Chandigarh,Panipat,Interstate Bus,Hotel Guest Register Scan,CASE_001
+MOV_00433,CASE_007_PER_11,,2025-07-06 00:07:00,Kolkata,New Delhi,Interstate Train,Hotel Guest Register Scan,CASE_007
+MOV_00146,CASE_010_PER_09,,2025-07-06 05:03:00,Chandigarh,Panipat,Interstate Train,CCTV Transit Terminal Log,CASE_010
+MOV_00048,CASE_002_PER_08,VEH_031,2025-07-06 15:38:00,Agra,Kanpur,Private SUV,Interstate Border Checkpoint ANPR,CASE_002
+MOV_00359,CASE_009_PER_01,VEH_026,2025-07-07 00:03:00,Bhopal,Gwalior,Private SUV,Bus Terminal Manifest,CASE_009
+MOV_00409,CASE_004_PER_03,VEH_029,2025-07-07 02:44:00,Jaipur,Delhi NCR,Private SUV,Hotel Guest Register Scan,CASE_004
+MOV_00386,CASE_006_PER_07,,2025-07-07 03:24:00,Kolkata,New Delhi,Interstate Train,Bus Terminal Manifest,CASE_006
+MOV_00174,CASE_004_PER_04,,2025-07-07 18:50:00,Kolkata,New Delhi,Interstate Train,Railway Reservation Chart,CASE_004
+MOV_00231,CASE_003_PER_12,VEH_005,2025-07-08 12:16:00,Agra,Kanpur,Interstate Bus,CCTV Transit Terminal Log,CASE_003
+MOV_00181,CASE_005_PER_05,VEH_024,2025-07-08 16:08:00,Jaipur,Delhi NCR,Private SUV,Hotel Guest Register Scan,CASE_005
+MOV_00093,CASE_004_PER_08,VEH_023,2025-07-08 16:48:00,Ranchi,Anand Vihar (Delhi),Private SUV,Bus Terminal Manifest,CASE_004
+MOV_00393,CASE_001_PER_04,VEH_033,2025-07-09 03:26:00,Siliguri,Patna,Sleeper Bus,Interstate Border Checkpoint ANPR,CASE_001
+MOV_00499,CASE_008_PER_07,VEH_032,2025-07-09 07:58:00,Ranchi,Anand Vihar (Delhi),Private SUV,Interstate Border Checkpoint ANPR,CASE_008
+MOV_00425,CASE_008_PER_07,VEH_030,2025-07-09 09:42:00,Patna,Gurugram,Private SUV,Bus Terminal Manifest,CASE_008
+MOV_00151,CASE_001_PER_08,,2025-07-09 11:09:00,Bhopal,Gwalior,Interstate Train,Bus Terminal Manifest,CASE_001
+MOV_00069,CASE_001_PER_02,VEH_027,2025-07-09 20:12:00,Chandigarh,Panipat,Interstate Bus,Highway Toll RFID / FASTag Log,CASE_001
+MOV_00354,CASE_005_PER_07,VEH_006,2025-07-09 22:15:00,Patna,Gurugram,Private SUV,Highway Toll RFID / FASTag Log,CASE_005
+MOV_00265,CASE_007_PER_03,VEH_017,2025-07-10 00:43:00,Ranchi,Anand Vihar (Delhi),Private SUV,Interstate Border Checkpoint ANPR,CASE_007
+MOV_00446,CASE_004_PER_04,VEH_021,2025-07-10 05:32:00,Ranchi,Anand Vihar (Delhi),Private SUV,Interstate Border Checkpoint ANPR,CASE_004
+MOV_00424,CASE_005_PER_07,VEH_001,2025-07-10 07:13:00,Patna,Gurugram,Private SUV,Interstate Border Checkpoint ANPR,CASE_005
+MOV_00116,CASE_005_PER_03,VEH_034,2025-07-10 10:18:00,Jaipur,Delhi NCR,Private SUV,Highway Toll RFID / FASTag Log,CASE_005
+MOV_00134,CASE_002_PER_03,,2025-07-11 01:46:00,Bhopal,Gwalior,Interstate Train,Hotel Guest Register Scan,CASE_002
+MOV_00032,CASE_006_PER_01,VEH_008,2025-07-11 03:00:00,Ranchi,Anand Vihar (Delhi),Private SUV,Bus Terminal Manifest,CASE_006
+MOV_00362,CASE_003_PER_02,VEH_031,2025-07-11 06:28:00,Murshidabad,Kolkata,Private SUV,Highway Toll RFID / FASTag Log,CASE_003
+MOV_00215,CASE_003_PER_05,VEH_010,2025-07-11 09:06:00,Chandigarh,Panipat,Sleeper Bus,Bus Terminal Manifest,CASE_003
+MOV_00475,CASE_004_PER_05,VEH_030,2025-07-11 23:09:00,Ranchi,Anand Vihar (Delhi),Private SUV,Bus Terminal Manifest,CASE_004
+MOV_00421,CASE_004_PER_05,VEH_034,2025-07-12 16:11:00,Ranchi,Anand Vihar (Delhi),Private SUV,Bus Terminal Manifest,CASE_004
+MOV_00400,CASE_008_PER_05,VEH_027,2025-07-13 01:16:00,Ranchi,Anand Vihar (Delhi),Private SUV,Railway Reservation Chart,CASE_008
+MOV_00172,CASE_004_PER_05,VEH_030,2025-07-13 21:57:00,Patna,Gurugram,Private SUV,Bus Terminal Manifest,CASE_004
+MOV_00128,CASE_006_PER_05,VEH_029,2025-07-14 01:54:00,Jaipur,Delhi NCR,Private SUV,Bus Terminal Manifest,CASE_006
+MOV_00448,CASE_005_PER_06,VEH_033,2025-07-14 09:54:00,Jaipur,Delhi NCR,Private SUV,CCTV Transit Terminal Log,CASE_005
+MOV_00307,CASE_010_PER_05,VEH_026,2025-07-14 13:55:00,Jaipur,Delhi NCR,Sleeper Bus,CCTV Transit Terminal Log,CASE_010
+MOV_00086,CASE_004_PER_04,,2025-07-15 04:33:00,Murshidabad,Kolkata,Interstate Train,Highway Toll RFID / FASTag Log,CASE_004
+MOV_00110,CASE_007_PER_10,,2025-07-15 09:55:00,Siliguri,Patna,Interstate Train,Highway Toll RFID / FASTag Log,CASE_007
+MOV_00457,CASE_006_PER_05,,2025-07-15 14:05:00,Murshidabad,Kolkata,Interstate Train,Railway Reservation Chart,CASE_006
+MOV_00498,CASE_003_PER_02,VEH_010,2025-07-15 14:13:00,Chandigarh,Panipat,Interstate Bus,Bus Terminal Manifest,CASE_003
+MOV_00222,CASE_003_PER_10,VEH_036,2025-07-16 10:04:00,Bhopal,Gwalior,Sleeper Bus,Highway Toll RFID / FASTag Log,CASE_003
+MOV_00371,CASE_003_PER_01,VEH_012,2025-07-16 13:03:00,Siliguri,Patna,Sleeper Bus,Bus Terminal Manifest,CASE_003
+MOV_00305,CASE_001_PER_06,VEH_013,2025-07-16 18:55:00,Agra,Kanpur,Private SUV,Hotel Guest Register Scan,CASE_001
+MOV_00117,CASE_002_PER_02,VEH_002,2025-07-16 19:39:00,Chandigarh,Panipat,Interstate Bus,CCTV Transit Terminal Log,CASE_002
+MOV_00079,CASE_010_PER_04,VEH_021,2025-07-17 00:04:00,Jaipur,Delhi NCR,Private SUV,CCTV Transit Terminal Log,CASE_010
+MOV_00103,CASE_005_PER_02,VEH_011,2025-07-17 04:27:00,Jaipur,Delhi NCR,Private SUV,Bus Terminal Manifest,CASE_005
+MOV_00235,CASE_004_PER_01,VEH_027,2025-07-17 14:33:00,Agra,Kanpur,Interstate Bus,Interstate Border Checkpoint ANPR,CASE_004
+MOV_00456,CASE_006_PER_04,VEH_015,2025-07-19 02:34:00,Jaipur,Delhi NCR,Private SUV,CCTV Transit Terminal Log,CASE_006
+MOV_00345,CASE_008_PER_09,,2025-07-19 15:40:00,Kolkata,New Delhi,Interstate Train,CCTV Transit Terminal Log,CASE_008
+MOV_00241,CASE_001_PER_07,VEH_020,2025-07-19 22:21:00,Jaipur,Delhi NCR,Private SUV,Interstate Border Checkpoint ANPR,CASE_001
+MOV_00074,CASE_005_PER_09,,2025-07-20 13:40:00,Kolkata,New Delhi,Interstate Train,Bus Terminal Manifest,CASE_005
+MOV_00070,CASE_009_PER_05,,2025-07-20 22:05:00,Patna,Gurugram,Interstate Train,Hotel Guest Register Scan,CASE_009
+MOV_00064,CASE_010_PER_09,VEH_019,2025-07-21 02:20:00,Agra,Kanpur,Interstate Bus,CCTV Transit Terminal Log,CASE_010
+MOV_00410,CASE_004_PER_08,,2025-07-21 14:05:00,Bhopal,Gwalior,Interstate Train,Interstate Border Checkpoint ANPR,CASE_004
+MOV_00084,CASE_005_PER_05,VEH_018,2025-07-21 19:49:00,Patna,Gurugram,Private SUV,Railway Reservation Chart,CASE_005
+MOV_00008,CASE_010_PER_09,VEH_032,2025-07-21 20:15:00,Ranchi,Anand Vihar (Delhi),Private SUV,Bus Terminal Manifest,CASE_010
+MOV_00363,CASE_001_PER_04,VEH_004,2025-07-21 22:48:00,Agra,Kanpur,Interstate Bus,Hotel Guest Register Scan,CASE_001
+MOV_00081,CASE_002_PER_04,VEH_035,2025-07-22 18:51:00,Siliguri,Patna,Private SUV,Railway Reservation Chart,CASE_002
+MOV_00100,CASE_008_PER_09,,2025-07-22 20:14:00,Bhopal,Gwalior,Interstate Train,Railway Reservation Chart,CASE_008
+MOV_00045,CASE_008_PER_05,,2025-07-23 00:52:00,Bhopal,Gwalior,Interstate Train,CCTV Transit Terminal Log,CASE_008
+MOV_00256,CASE_008_PER_04,VEH_015,2025-07-23 03:52:00,Murshidabad,Kolkata,Sleeper Bus,CCTV Transit Terminal Log,CASE_008
+MOV_00348,CASE_004_PER_06,,2025-07-23 12:30:00,Chandigarh,Panipat,Interstate Train,Railway Reservation Chart,CASE_004
+MOV_00077,CASE_007_PER_05,,2025-07-24 02:40:00,Kolkata,New Delhi,Interstate Train,Highway Toll RFID / FASTag Log,CASE_007
+MOV_00395,CASE_001_PER_07,VEH_034,2025-07-24 03:49:00,Jaipur,Delhi NCR,Private SUV,Bus Terminal Manifest,CASE_001
+MOV_00138,CASE_009_PER_09,VEH_033,2025-07-24 23:55:00,Chandigarh,Panipat,Private SUV,Interstate Border Checkpoint ANPR,CASE_009
+MOV_00140,CASE_008_PER_07,VEH_037,2025-07-25 06:30:00,Ranchi,Anand Vihar (Delhi),Private SUV,Highway Toll RFID / FASTag Log,CASE_008
+MOV_00041,CASE_007_PER_08,VEH_005,2025-07-25 23:02:00,Chandigarh,Panipat,Interstate Bus,CCTV Transit Terminal Log,CASE_007
+MOV_00173,CASE_003_PER_02,VEH_005,2025-07-26 12:43:00,Jaipur,Delhi NCR,Private SUV,Hotel Guest Register Scan,CASE_003
+MOV_00162,CASE_007_PER_02,VEH_010,2025-07-26 13:41:00,Siliguri,Patna,Sleeper Bus,Hotel Guest Register Scan,CASE_007
+MOV_00141,CASE_004_PER_08,VEH_040,2025-07-27 15:50:00,Patna,Gurugram,Private SUV,CCTV Transit Terminal Log,CASE_004
+MOV_00150,CASE_002_PER_08,VEH_013,2025-07-28 06:41:00,Agra,Kanpur,Private SUV,Interstate Border Checkpoint ANPR,CASE_002
+MOV_00332,CASE_008_PER_04,VEH_035,2025-07-28 07:37:00,Jaipur,Delhi NCR,Private SUV,Interstate Border Checkpoint ANPR,CASE_008
+MOV_00415,CASE_009_PER_01,VEH_037,2025-07-28 16:24:00,Chandigarh,Panipat,Interstate Bus,Highway Toll RFID / FASTag Log,CASE_009
+MOV_00277,CASE_004_PER_06,VEH_009,2025-07-29 17:09:00,Siliguri,Patna,Sleeper Bus,CCTV Transit Terminal Log,CASE_004
+MOV_00429,CASE_004_PER_04,VEH_035,2025-07-29 18:00:00,Chandigarh,Panipat,Interstate Bus,Bus Terminal Manifest,CASE_004
+MOV_00036,CASE_006_PER_04,VEH_030,2025-07-29 21:38:00,Siliguri,Patna,Private SUV,Interstate Border Checkpoint ANPR,CASE_006
+MOV_00119,CASE_006_PER_03,VEH_011,2025-07-29 23:59:00,Siliguri,Patna,Sleeper Bus,Railway Reservation Chart,CASE_006
+MOV_00052,CASE_004_PER_04,VEH_034,2025-07-30 00:46:00,Ranchi,Anand Vihar (Delhi),Private SUV,Interstate Border Checkpoint ANPR,CASE_004
+MOV_00487,CASE_006_PER_06,,2025-07-30 10:03:00,Bhopal,Gwalior,Interstate Train,CCTV Transit Terminal Log,CASE_006
+MOV_00252,CASE_005_PER_08,VEH_027,2025-07-30 23:14:00,Kolkata,New Delhi,Private SUV,Railway Reservation Chart,CASE_005
+MOV_00108,CASE_009_PER_04,,2025-07-31 14:43:00,Murshidabad,Kolkata,Interstate Train,Railway Reservation Chart,CASE_009
+MOV_00233,CASE_009_PER_05,VEH_016,2025-07-31 17:26:00,Patna,Gurugram,Private SUV,Bus Terminal Manifest,CASE_009
+MOV_00262,CASE_005_PER_05,,2025-07-31 19:31:00,Bhopal,Gwalior,Interstate Train,Interstate Border Checkpoint ANPR,CASE_005
+MOV_00356,CASE_009_PER_09,VEH_016,2025-07-31 21:18:00,Chandigarh,Panipat,Private SUV,Bus Terminal Manifest,CASE_009
+MOV_00445,CASE_009_PER_02,,2025-08-01 04:41:00,Kolkata,New Delhi,Interstate Train,Railway Reservation Chart,CASE_009
+MOV_00217,CASE_005_PER_07,,2025-08-01 05:20:00,Jaipur,Delhi NCR,Interstate Train,Hotel Guest Register Scan,CASE_005
+MOV_00270,CASE_001_PER_06,VEH_003,2025-08-01 06:07:00,Bhopal,Gwalior,Private SUV,Hotel Guest Register Scan,CASE_001
+MOV_00342,CASE_008_PER_05,VEH_015,2025-08-01 09:52:00,Chandigarh,Panipat,Interstate Bus,Interstate Border Checkpoint ANPR,CASE_008
+MOV_00365,CASE_009_PER_04,VEH_039,2025-08-02 04:44:00,Patna,Gurugram,Private SUV,Railway Reservation Chart,CASE_009
+MOV_00209,CASE_007_PER_10,VEH_008,2025-08-02 18:49:00,Agra,Kanpur,Interstate Bus,CCTV Transit Terminal Log,CASE_007
+MOV_00137,CASE_006_PER_06,VEH_014,2025-08-02 21:47:00,Jaipur,Delhi NCR,Private SUV,Hotel Guest Register Scan,CASE_006
+MOV_00295,CASE_005_PER_06,VEH_037,2025-08-03 00:55:00,Siliguri,Patna,Sleeper Bus,Highway Toll RFID / FASTag Log,CASE_005
+MOV_00153,CASE_010_PER_10,VEH_036,2025-08-03 07:46:00,Chandigarh,Panipat,Interstate Bus,Interstate Border Checkpoint ANPR,CASE_010
+MOV_00094,CASE_006_PER_01,VEH_029,2025-08-03 08:04:00,Siliguri,Patna,Sleeper Bus,Interstate Border Checkpoint ANPR,CASE_006
+MOV_00202,CASE_010_PER_08,VEH_015,2025-08-04 01:11:00,Siliguri,Patna,Sleeper Bus,CCTV Transit Terminal Log,CASE_010
+MOV_00072,CASE_004_PER_05,,2025-08-04 03:56:00,Jaipur,Delhi NCR,Interstate Train,Highway Toll RFID / FASTag Log,CASE_004
+MOV_00404,CASE_003_PER_12,VEH_025,2025-08-04 05:10:00,Agra,Kanpur,Sleeper Bus,Railway Reservation Chart,CASE_003
+MOV_00328,CASE_005_PER_01,VEH_018,2025-08-04 16:17:00,Ranchi,Anand Vihar (Delhi),Private SUV,CCTV Transit Terminal Log,CASE_005
+MOV_00462,CASE_007_PER_09,VEH_001,2025-08-04 18:08:00,Chandigarh,Panipat,Interstate Bus,Railway Reservation Chart,CASE_007
+MOV_00106,CASE_009_PER_05,VEH_012,2025-08-05 07:00:00,Siliguri,Patna,Sleeper Bus,Railway Reservation Chart,CASE_009
+MOV_00331,CASE_009_PER_07,,2025-08-05 09:41:00,Agra,Kanpur,Interstate Train,Railway Reservation Chart,CASE_009
+MOV_00089,CASE_010_PER_01,,2025-08-05 10:01:00,Siliguri,Patna,Interstate Train,Highway Toll RFID / FASTag Log,CASE_010
+MOV_00263,CASE_004_PER_04,VEH_040,2025-08-05 11:18:00,Siliguri,Patna,Sleeper Bus,Highway Toll RFID / FASTag Log,CASE_004
+MOV_00078,CASE_004_PER_01,VEH_017,2025-08-06 02:27:00,Siliguri,Patna,Sleeper Bus,Highway Toll RFID / FASTag Log,CASE_004
+MOV_00182,CASE_005_PER_08,VEH_037,2025-08-06 06:41:00,Jaipur,Delhi NCR,Private SUV,Bus Terminal Manifest,CASE_005
+MOV_00216,CASE_002_PER_02,,2025-08-06 08:34:00,Murshidabad,Kolkata,Interstate Train,Interstate Border Checkpoint ANPR,CASE_002
+MOV_00317,CASE_004_PER_03,VEH_003,2025-08-06 13:26:00,Ranchi,Anand Vihar (Delhi),Private SUV,Interstate Border Checkpoint ANPR,CASE_004
+MOV_00163,CASE_001_PER_06,VEH_027,2025-08-06 17:15:00,Jaipur,Delhi NCR,Private SUV,Hotel Guest Register Scan,CASE_001
+MOV_00455,CASE_006_PER_07,,2025-08-06 20:16:00,Bhopal,Gwalior,Interstate Train,Railway Reservation Chart,CASE_006
+MOV_00311,CASE_001_PER_07,VEH_019,2025-08-07 23:44:00,Chandigarh,Panipat,Sleeper Bus,Interstate Border Checkpoint ANPR,CASE_001
+MOV_00273,CASE_007_PER_06,VEH_024,2025-08-08 00:42:00,Jaipur,Delhi NCR,Private SUV,Bus Terminal Manifest,CASE_007
+MOV_00185,CASE_009_PER_05,,2025-08-08 01:17:00,Murshidabad,Kolkata,Interstate Train,CCTV Transit Terminal Log,CASE_009
+MOV_00195,CASE_005_PER_09,,2025-08-08 09:30:00,Murshidabad,Kolkata,Interstate Train,Highway Toll RFID / FASTag Log,CASE_005
+MOV_00283,CASE_002_PER_03,VEH_001,2025-08-08 11:37:00,Patna,Gurugram,Sleeper Bus,CCTV Transit Terminal Log,CASE_002
+MOV_00236,CASE_001_PER_06,VEH_003,2025-08-09 10:28:00,Ranchi,Anand Vihar (Delhi),Private SUV,Railway Reservation Chart,CASE_001
+MOV_00234,CASE_002_PER_02,VEH_026,2025-08-09 10:44:00,Chandigarh,Panipat,Interstate Bus,Railway Reservation Chart,CASE_002
+MOV_00405,CASE_006_PER_06,VEH_030,2025-08-09 11:10:00,Jaipur,Delhi NCR,Private SUV,Railway Reservation Chart,CASE_006

@@ -89,3 +89,61 @@ export interface ToastMessage {
   message: string
   type: 'info' | 'warn' | 'error'
 }
+
+// ─── Intelligence Integration Layer (Phase 5A / 5B) ──────────────────────────
+export type PriorityTier = 'HIGH' | 'REVIEW' | 'LOW'
+
+export interface StructuredEvidenceRecord {
+  reason: string
+  evidence_type: string
+  case_id?: string | null
+  record_id?: string | null
+  source_file?: string | null
+  source_row?: number | null
+  timestamp?: string | null
+}
+
+export interface InvestigationLead {
+  lead_id: string
+  source_entity: string
+  target_entity: string
+  source_case_ids: string[]
+  target_case_ids: string[]
+  is_cross_case: boolean
+  confidence: number
+  priority: PriorityTier
+  prediction_type: 'Potential Association' | 'Candidate Link'
+  evidence_strength: 'STRONG' | 'MODERATE' | 'WEAK'
+  explanation: string
+  supporting_modalities: string[]
+  common_intermediates_count: number
+  common_intermediates: string[]
+  caveats: string[]
+  supporting_records: StructuredEvidenceRecord[]
+  created_at: string
+}
+
+export interface LeadResponse {
+  total: number
+  limit: number
+  offset: number
+  leads: InvestigationLead[]
+}
+
+export interface CrossCaseLeadSummary {
+  lead_id: string
+  source_entity: string
+  target_entity: string
+  source_cases: string[]
+  target_cases: string[]
+  confidence: number
+  priority: PriorityTier
+  supporting_modalities: string[]
+  common_intermediates_count: number
+  caveats: string[]
+}
+
+export interface CrossCaseResponse {
+  total: number
+  cross_case_leads: CrossCaseLeadSummary[]
+}

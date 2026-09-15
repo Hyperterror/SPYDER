@@ -1,0 +1,1010 @@
+[
+  {
+    "source": "GLOBAL_ENT_001",
+    "target": "GLOBAL_ENT_007",
+    "type": "COORDINATES_WITH",
+    "weight": 0.9,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_001",
+    "target": "GLOBAL_ENT_008",
+    "type": "COORDINATES_WITH",
+    "weight": 0.9,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_001",
+    "target": "GLOBAL_ENT_009",
+    "type": "COORDINATES_WITH",
+    "weight": 0.9,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_001",
+    "target": "GLOBAL_ENT_020",
+    "type": "COORDINATES_WITH",
+    "weight": 0.9,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_001",
+    "target": "GLOBAL_ENT_023",
+    "type": "COORDINATES_WITH",
+    "weight": 0.9,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_001",
+    "target": "GLOBAL_ENT_026",
+    "type": "COORDINATES_WITH",
+    "weight": 0.9,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_001",
+    "target": "GLOBAL_ENT_029",
+    "type": "COORDINATES_WITH",
+    "weight": 0.9,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_001",
+    "target": "GLOBAL_ENT_004",
+    "type": "DIRECTS_TRANSPORT",
+    "weight": 0.85,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_001",
+    "target": "GLOBAL_ENT_005",
+    "type": "DIRECTS_TRANSPORT",
+    "weight": 0.85,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_001",
+    "target": "GLOBAL_ENT_006",
+    "type": "DIRECTS_TRANSPORT",
+    "weight": 0.85,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_001",
+    "target": "GLOBAL_ENT_002",
+    "type": "AUTHORIZES_FUNDS",
+    "weight": 0.95,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_001",
+    "target": "GLOBAL_ENT_003",
+    "type": "AUTHORIZES_FUNDS",
+    "weight": 0.95,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_007",
+    "target": "GLOBAL_ENT_005",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_008",
+    "target": "GLOBAL_ENT_005",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_009",
+    "target": "GLOBAL_ENT_004",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_009",
+    "target": "GLOBAL_ENT_005",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_020",
+    "target": "GLOBAL_ENT_004",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_023",
+    "target": "GLOBAL_ENT_004",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_023",
+    "target": "GLOBAL_ENT_006",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_026",
+    "target": "GLOBAL_ENT_004",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_026",
+    "target": "GLOBAL_ENT_006",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_029",
+    "target": "GLOBAL_ENT_004",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_029",
+    "target": "GLOBAL_ENT_006",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_002",
+    "target": "GLOBAL_ENT_007",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_002",
+    "target": "GLOBAL_ENT_008",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_002",
+    "target": "GLOBAL_ENT_009",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_002",
+    "target": "GLOBAL_ENT_020",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_002",
+    "target": "GLOBAL_ENT_023",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_002",
+    "target": "GLOBAL_ENT_026",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_002",
+    "target": "GLOBAL_ENT_029",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_002",
+    "target": "GLOBAL_ENT_004",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_002",
+    "target": "GLOBAL_ENT_005",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_002",
+    "target": "GLOBAL_ENT_006",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_003",
+    "target": "GLOBAL_ENT_007",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_003",
+    "target": "GLOBAL_ENT_008",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_003",
+    "target": "GLOBAL_ENT_009",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_003",
+    "target": "GLOBAL_ENT_020",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_003",
+    "target": "GLOBAL_ENT_023",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_003",
+    "target": "GLOBAL_ENT_026",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_003",
+    "target": "GLOBAL_ENT_029",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_003",
+    "target": "GLOBAL_ENT_004",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_003",
+    "target": "GLOBAL_ENT_005",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_003",
+    "target": "GLOBAL_ENT_006",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_012",
+    "target": "GLOBAL_ENT_013",
+    "type": "COORDINATES_WITH",
+    "weight": 0.9,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_012",
+    "target": "GLOBAL_ENT_014",
+    "type": "COORDINATES_WITH",
+    "weight": 0.9,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_012",
+    "target": "GLOBAL_ENT_032",
+    "type": "COORDINATES_WITH",
+    "weight": 0.9,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_012",
+    "target": "GLOBAL_ENT_035",
+    "type": "COORDINATES_WITH",
+    "weight": 0.9,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_012",
+    "target": "GLOBAL_ENT_038",
+    "type": "COORDINATES_WITH",
+    "weight": 0.9,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_012",
+    "target": "GLOBAL_ENT_017",
+    "type": "DIRECTS_TRANSPORT",
+    "weight": 0.85,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_012",
+    "target": "GLOBAL_ENT_018",
+    "type": "DIRECTS_TRANSPORT",
+    "weight": 0.85,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_012",
+    "target": "GLOBAL_ENT_060",
+    "type": "DIRECTS_TRANSPORT",
+    "weight": 0.85,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_012",
+    "target": "GLOBAL_ENT_015",
+    "type": "AUTHORIZES_FUNDS",
+    "weight": 0.95,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_012",
+    "target": "GLOBAL_ENT_016",
+    "type": "AUTHORIZES_FUNDS",
+    "weight": 0.95,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_013",
+    "target": "GLOBAL_ENT_060",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_032",
+    "target": "GLOBAL_ENT_017",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_032",
+    "target": "GLOBAL_ENT_018",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_035",
+    "target": "GLOBAL_ENT_060",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_038",
+    "target": "GLOBAL_ENT_017",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_038",
+    "target": "GLOBAL_ENT_018",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_038",
+    "target": "GLOBAL_ENT_060",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_015",
+    "target": "GLOBAL_ENT_013",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_015",
+    "target": "GLOBAL_ENT_014",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_015",
+    "target": "GLOBAL_ENT_032",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_015",
+    "target": "GLOBAL_ENT_035",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_015",
+    "target": "GLOBAL_ENT_038",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_015",
+    "target": "GLOBAL_ENT_017",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_015",
+    "target": "GLOBAL_ENT_018",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_015",
+    "target": "GLOBAL_ENT_060",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_016",
+    "target": "GLOBAL_ENT_013",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_016",
+    "target": "GLOBAL_ENT_014",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_016",
+    "target": "GLOBAL_ENT_032",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_016",
+    "target": "GLOBAL_ENT_035",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_016",
+    "target": "GLOBAL_ENT_038",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_016",
+    "target": "GLOBAL_ENT_017",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_016",
+    "target": "GLOBAL_ENT_018",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_016",
+    "target": "GLOBAL_ENT_060",
+    "type": "DISBURSES_PAYMENT",
+    "weight": 0.75,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_041",
+    "target": "GLOBAL_ENT_042",
+    "type": "COORDINATES_WITH",
+    "weight": 0.9,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_041",
+    "target": "GLOBAL_ENT_048",
+    "type": "COORDINATES_WITH",
+    "weight": 0.9,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_041",
+    "target": "GLOBAL_ENT_054",
+    "type": "COORDINATES_WITH",
+    "weight": 0.9,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_041",
+    "target": "GLOBAL_ENT_043",
+    "type": "DIRECTS_TRANSPORT",
+    "weight": 0.85,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_041",
+    "target": "GLOBAL_ENT_049",
+    "type": "DIRECTS_TRANSPORT",
+    "weight": 0.85,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_041",
+    "target": "GLOBAL_ENT_055",
+    "type": "DIRECTS_TRANSPORT",
+    "weight": 0.85,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_041",
+    "target": "GLOBAL_ENT_062",
+    "type": "DIRECTS_TRANSPORT",
+    "weight": 0.85,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_041",
+    "target": "GLOBAL_ENT_066",
+    "type": "DIRECTS_TRANSPORT",
+    "weight": 0.85,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_041",
+    "target": "GLOBAL_ENT_075",
+    "type": "DIRECTS_TRANSPORT",
+    "weight": 0.85,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_047",
+    "target": "GLOBAL_ENT_042",
+    "type": "COORDINATES_WITH",
+    "weight": 0.9,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_047",
+    "target": "GLOBAL_ENT_048",
+    "type": "COORDINATES_WITH",
+    "weight": 0.9,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_047",
+    "target": "GLOBAL_ENT_054",
+    "type": "COORDINATES_WITH",
+    "weight": 0.9,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_047",
+    "target": "GLOBAL_ENT_043",
+    "type": "DIRECTS_TRANSPORT",
+    "weight": 0.85,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_047",
+    "target": "GLOBAL_ENT_049",
+    "type": "DIRECTS_TRANSPORT",
+    "weight": 0.85,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_047",
+    "target": "GLOBAL_ENT_055",
+    "type": "DIRECTS_TRANSPORT",
+    "weight": 0.85,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_047",
+    "target": "GLOBAL_ENT_062",
+    "type": "DIRECTS_TRANSPORT",
+    "weight": 0.85,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_047",
+    "target": "GLOBAL_ENT_066",
+    "type": "DIRECTS_TRANSPORT",
+    "weight": 0.85,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_047",
+    "target": "GLOBAL_ENT_075",
+    "type": "DIRECTS_TRANSPORT",
+    "weight": 0.85,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_053",
+    "target": "GLOBAL_ENT_042",
+    "type": "COORDINATES_WITH",
+    "weight": 0.9,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_053",
+    "target": "GLOBAL_ENT_048",
+    "type": "COORDINATES_WITH",
+    "weight": 0.9,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_053",
+    "target": "GLOBAL_ENT_054",
+    "type": "COORDINATES_WITH",
+    "weight": 0.9,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_053",
+    "target": "GLOBAL_ENT_043",
+    "type": "DIRECTS_TRANSPORT",
+    "weight": 0.85,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_053",
+    "target": "GLOBAL_ENT_049",
+    "type": "DIRECTS_TRANSPORT",
+    "weight": 0.85,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_053",
+    "target": "GLOBAL_ENT_055",
+    "type": "DIRECTS_TRANSPORT",
+    "weight": 0.85,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_053",
+    "target": "GLOBAL_ENT_062",
+    "type": "DIRECTS_TRANSPORT",
+    "weight": 0.85,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_053",
+    "target": "GLOBAL_ENT_066",
+    "type": "DIRECTS_TRANSPORT",
+    "weight": 0.85,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_053",
+    "target": "GLOBAL_ENT_075",
+    "type": "DIRECTS_TRANSPORT",
+    "weight": 0.85,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_042",
+    "target": "GLOBAL_ENT_043",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_042",
+    "target": "GLOBAL_ENT_049",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_042",
+    "target": "GLOBAL_ENT_055",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_042",
+    "target": "GLOBAL_ENT_062",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_042",
+    "target": "GLOBAL_ENT_066",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_042",
+    "target": "GLOBAL_ENT_075",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_048",
+    "target": "GLOBAL_ENT_043",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_048",
+    "target": "GLOBAL_ENT_049",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_048",
+    "target": "GLOBAL_ENT_055",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_048",
+    "target": "GLOBAL_ENT_062",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_048",
+    "target": "GLOBAL_ENT_066",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_048",
+    "target": "GLOBAL_ENT_075",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_054",
+    "target": "GLOBAL_ENT_043",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_054",
+    "target": "GLOBAL_ENT_049",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_054",
+    "target": "GLOBAL_ENT_055",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_054",
+    "target": "GLOBAL_ENT_062",
+    "type": "HANDS_OVER_TRANSIT",
+    "weight": 0.8,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_014",
+    "target": "GLOBAL_VIC_001",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_038",
+    "target": "GLOBAL_VIC_002",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_023",
+    "target": "GLOBAL_VIC_003",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_008",
+    "target": "GLOBAL_VIC_004",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_054",
+    "target": "GLOBAL_VIC_005",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_035",
+    "target": "GLOBAL_VIC_006",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_014",
+    "target": "GLOBAL_VIC_007",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_008",
+    "target": "GLOBAL_VIC_008",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_009",
+    "target": "GLOBAL_VIC_009",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_032",
+    "target": "GLOBAL_VIC_010",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_009",
+    "target": "GLOBAL_VIC_011",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_020",
+    "target": "GLOBAL_VIC_012",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_042",
+    "target": "GLOBAL_VIC_013",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_042",
+    "target": "GLOBAL_VIC_014",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_042",
+    "target": "GLOBAL_VIC_015",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_048",
+    "target": "GLOBAL_VIC_016",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_009",
+    "target": "GLOBAL_VIC_017",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_048",
+    "target": "GLOBAL_VIC_018",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_048",
+    "target": "GLOBAL_VIC_019",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_035",
+    "target": "GLOBAL_VIC_020",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_042",
+    "target": "GLOBAL_VIC_021",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "INDEPENDENT"
+  },
+  {
+    "source": "GLOBAL_ENT_009",
+    "target": "GLOBAL_VIC_022",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_009",
+    "target": "GLOBAL_VIC_023",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "NETWORK_ALPHA"
+  },
+  {
+    "source": "GLOBAL_ENT_014",
+    "target": "GLOBAL_VIC_024",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "NETWORK_BETA"
+  },
+  {
+    "source": "GLOBAL_ENT_035",
+    "target": "GLOBAL_VIC_025",
+    "type": "RECRUITS_OR_LURES",
+    "weight": 1.0,
+    "cluster": "NETWORK_BETA"
+  }
+]

@@ -1,0 +1,5 @@
+# Synthetic Data Generator Dependencies (SIH26189)
+# The core generator runs entirely on the Python standard library (3.8+).
+# The following packages are recommended for advanced inspection and running pytest:
+pandas>=2.0.0
+pytest>=7.0.0
