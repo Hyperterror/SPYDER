@@ -21,6 +21,7 @@ class EvidenceItem(Base):
     object_storage_key = Column(String, nullable=False)
     source_label = Column(String, nullable=True)
     description = Column(Text, nullable=True)
+    extracted_text = Column(Text, nullable=True)
     sha256_hash = Column(String(64), nullable=False)
     hash_algorithm = Column(String, default="SHA-256", nullable=False)
     integrity_status = Column(String, default="UNVERIFIED", nullable=False)

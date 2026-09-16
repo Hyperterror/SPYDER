@@ -11,6 +11,7 @@ from app.models.case import Case, CaseMember
 from app.models.evidence import EvidenceItem, ParsingJob, ParsedRecord
 from app.services.storage import get_storage
 from app.services.hashing import calculate_sha256, verify_integrity
+from app.services.ocr import extract_text_from_image_bytes, extract_text_from_pdf_bytes
 from app.services.audit_svc import create_audit_event
 from app.services.graph_upsert import (
     upsert_phone_node, upsert_account_node, upsert_device_node,
@@ -24,8 +25,9 @@ from app.parsers.transaction import parse_transaction_csv
 
 router = APIRouter(prefix="/api/v1/cases", tags=["evidence"])
 
-ALLOWED_EXTENSIONS = {".csv", ".xlsx", ".json"}
+ALLOWED_EXTENSIONS = {".csv", ".xlsx", ".json", ".pdf", ".png", ".jpg", ".jpeg"}
 MAX_FILE_SIZE = 100 * 1024 * 1024  # 100 MB
+EXTRACTED_TEXT_PREVIEW_LENGTH = 500
 
 
 def _sanitize_filename(filename: str) -> str:
@@ -81,6 +83,15 @@ async def upload_evidence(
     if ext not in ALLOWED_EXTENSIONS:
         raise HTTPException(status_code=415, detail=f"Unsupported file type: {ext}")
 
+    # OCR is best-effort: failures never prevent original evidence from being
+    # preserved, hashed, and stored.
+    if ext == ".pdf":
+        extracted_text = extract_text_from_pdf_bytes(file_bytes)
+    elif ext in {".png", ".jpg", ".jpeg"}:
+        extracted_text = extract_text_from_image_bytes(file_bytes)
+    else:
+        extracted_text = None
+
     # Compute hash BEFORE storing
     sha256 = calculate_sha256(file_bytes)
 
@@ -116,6 +127,7 @@ async def upload_evidence(
         object_storage_key=object_key,
         source_label=source_label,
         description=description,
+        extracted_text=extracted_text,
         sha256_hash=sha256,
         integrity_status="UNVERIFIED",
         uploaded_by=current_user.id,
@@ -450,6 +462,12 @@ def _evidence_to_dict(ev: EvidenceItem) -> dict:
         "file_size_bytes": ev.file_size_bytes,
         "source_label": ev.source_label,
         "description": ev.description,
+        "extracted_text": ev.extracted_text,
+        "extracted_text_preview": (
+            ev.extracted_text[:EXTRACTED_TEXT_PREVIEW_LENGTH]
+            if ev.extracted_text is not None
+            else None
+        ),
         "sha256_hash": ev.sha256_hash,
         "hash_algorithm": ev.hash_algorithm,
         "integrity_status": ev.integrity_status,

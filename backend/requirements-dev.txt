@@ -1,0 +1,5 @@
+-r requirements.txt
+
+# Test runner and async HTTP integration client support
+pytest==9.0.2
+pytest-asyncio==1.3.0
