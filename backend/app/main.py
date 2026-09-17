@@ -59,6 +59,7 @@ app.add_middleware(
 app.include_router(auth.router)
 app.include_router(cases.router)
 app.include_router(evidence.router)
+app.include_router(evidence.direct_router)
 app.include_router(graph.router)
 app.include_router(audit.router)
 app.include_router(intelligence.router)

@@ -23,6 +23,15 @@ from app.intelligence.priority_models import (
     PersonInvestigationPriority,
     PriorityListResponse,
 )
+from app.intelligence.claim_models import (
+    AnalyzeStatementRequest,
+    AnalyzeStatementResponse,
+    ConsistencyAnalysisResult,
+    ConsistencyListResponse,
+    ConsistencyStatus,
+    StructuredClaim,
+)
+from app.intelligence.consistency_engine import ConsistencyEngine
 from app.models.case import Case, CaseMember
 from app.models.user import User
 
@@ -273,4 +282,135 @@ def get_person_evidence(
         )
 
     return evidence_resp
+
+
+# =============================================================================
+# Phase 6B: Statement-Evidence Consistency Verification Endpoints
+# =============================================================================
+
+@router.post("/consistency/analyze", response_model=AnalyzeStatementResponse)
+def analyze_statement(
+    request: AnalyzeStatementRequest,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    """
+    Extract structured investigative claims from statement text and evaluate each
+    against empirical case evidence. Enforces RBAC case access and non-prejudicial semantics.
+    """
+    allowed_cases = _get_user_allowed_cases(current_user, db)
+    if allowed_cases is not None and request.case_id not in allowed_cases:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail=f"Access denied to case dossier: {request.case_id}",
+        )
+
+    engine = ConsistencyEngine.get_instance()
+    auth_list = list(allowed_cases) if allowed_cases is not None else None
+    return engine.analyze_statement(request, authorized_cases=auth_list)
+
+
+@router.post("/consistency/claims", response_model=ConsistencyAnalysisResult)
+def evaluate_claim(
+    claim: StructuredClaim,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    """
+    Directly evaluate an already-structured investigative claim against case evidence.
+    """
+    allowed_cases = _get_user_allowed_cases(current_user, db)
+    if allowed_cases is not None and claim.case_id not in allowed_cases:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail=f"Access denied to case dossier: {claim.case_id}",
+        )
+
+    engine = ConsistencyEngine.get_instance()
+    auth_list = list(allowed_cases) if allowed_cases is not None else None
+    return engine.evaluate_claim(claim, authorized_cases=auth_list)
+
+
+@router.get("/consistency/{result_id}", response_model=ConsistencyAnalysisResult)
+def get_consistency_result(
+    result_id: str,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    """
+    Retrieve a specific statement-evidence consistency evaluation result.
+    """
+    allowed_cases = _get_user_allowed_cases(current_user, db)
+    auth_list = list(allowed_cases) if allowed_cases is not None else None
+    engine = ConsistencyEngine.get_instance()
+    result = engine.get_result(result_id, authorized_cases=auth_list)
+
+    if not result:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Consistency analysis result '{result_id}' not found or unauthorized.",
+        )
+    return result
+
+
+@router.get("/consistency/{result_id}/evidence")
+def get_consistency_evidence(
+    result_id: str,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    """
+    Retrieve complete supporting and conflicting evidence records with provenance.
+    """
+    allowed_cases = _get_user_allowed_cases(current_user, db)
+    auth_list = list(allowed_cases) if allowed_cases is not None else None
+    engine = ConsistencyEngine.get_instance()
+    result = engine.get_result(result_id, authorized_cases=auth_list)
+
+    if not result:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Consistency analysis result '{result_id}' not found or unauthorized.",
+        )
+    return {
+        "result_id": result.result_id,
+        "claim_id": result.claim.claim_id,
+        "case_id": result.claim.case_id,
+        "status": result.status,
+        "confidence": result.confidence,
+        "matched_evidence": result.matched_evidence,
+        "conflicting_evidence": result.conflicting_evidence,
+        "caveats": result.caveats,
+    }
+
+
+@router.get("/consistency", response_model=ConsistencyListResponse)
+def list_consistency_results(
+    case_id: Optional[str] = Query(None, description="Filter by case ID"),
+    status_filter: Optional[ConsistencyStatus] = Query(None, alias="status", description="Filter by consistency status"),
+    limit: int = Query(50, ge=1, le=200),
+    offset: int = Query(0, ge=0),
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    """
+    List and filter historical consistency evaluations with RBAC case isolation.
+    """
+    allowed_cases = _get_user_allowed_cases(current_user, db)
+    if case_id and allowed_cases is not None and case_id not in allowed_cases:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail=f"Access denied to case dossier: {case_id}",
+        )
+
+    auth_list = list(allowed_cases) if allowed_cases is not None else None
+    engine = ConsistencyEngine.get_instance()
+    return engine.list_results(
+        case_id=case_id,
+        status=status_filter,
+        limit=limit,
+        offset=offset,
+        authorized_cases=auth_list,
+    )
+
 

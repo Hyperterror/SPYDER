@@ -1,0 +1,69 @@
+{
+  "benchmark_summary": {
+    "total_statements_evaluated": 100,
+    "total_claims_extracted": 100,
+    "total_evidence_matches": 617,
+    "overall_accuracy": 0.78,
+    "macro_precision": 0.8396,
+    "macro_recall": 0.8166,
+    "macro_f1_score": 0.7937,
+    "execution_duration_sec": 0.065,
+    "throughput_statements_per_sec": 1536.2
+  },
+  "per_class_metrics": {
+    "SUPPORTED": {
+      "true_count": 30,
+      "predicted_count": 23,
+      "precision": 0.9565,
+      "recall": 0.7333,
+      "f1_score": 0.8302
+    },
+    "CONTRADICTED": {
+      "true_count": 30,
+      "predicted_count": 18,
+      "precision": 0.8889,
+      "recall": 0.5333,
+      "f1_score": 0.6667
+    },
+    "UNVERIFIABLE": {
+      "true_count": 20,
+      "predicted_count": 39,
+      "precision": 0.5128,
+      "recall": 1.0,
+      "f1_score": 0.678
+    },
+    "EVIDENCE_CONFLICT": {
+      "true_count": 20,
+      "predicted_count": 20,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    }
+  },
+  "confusion_matrix": {
+    "SUPPORTED": {
+      "SUPPORTED": 22,
+      "CONTRADICTED": 2,
+      "UNVERIFIABLE": 6,
+      "EVIDENCE_CONFLICT": 0
+    },
+    "CONTRADICTED": {
+      "SUPPORTED": 1,
+      "CONTRADICTED": 16,
+      "UNVERIFIABLE": 13,
+      "EVIDENCE_CONFLICT": 0
+    },
+    "UNVERIFIABLE": {
+      "SUPPORTED": 0,
+      "CONTRADICTED": 0,
+      "UNVERIFIABLE": 20,
+      "EVIDENCE_CONFLICT": 0
+    },
+    "EVIDENCE_CONFLICT": {
+      "SUPPORTED": 0,
+      "CONTRADICTED": 0,
+      "UNVERIFIABLE": 0,
+      "EVIDENCE_CONFLICT": 20
+    }
+  }
+}

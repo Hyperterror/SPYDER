@@ -1,0 +1,902 @@
+[
+  {
+    "statement_id": "STMT_SUP_001",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I called +911123010000 on February 1, 2025.",
+    "expected_predicate": "CALLED",
+    "expected_status": "SUPPORTED",
+    "category": "direct_cdr_call"
+  },
+  {
+    "statement_id": "STMT_SUP_002",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I placed a call to +911123010000 on 2025-02-01.",
+    "expected_predicate": "CALLED",
+    "expected_status": "SUPPORTED",
+    "category": "direct_cdr_call"
+  },
+  {
+    "statement_id": "STMT_SUP_003",
+    "case_id": "CASE_002",
+    "subject_entity_id": "CASE_002_PER_01",
+    "text": "I spoke to +911123010000 on 2025-02-01.",
+    "expected_predicate": "CALLED",
+    "expected_status": "SUPPORTED",
+    "category": "direct_cdr_call"
+  },
+  {
+    "statement_id": "STMT_SUP_004",
+    "case_id": "CASE_005",
+    "subject_entity_id": "CASE_005_PER_01",
+    "text": "I called +919896934122 on 2025-02-01.",
+    "expected_predicate": "CALLED",
+    "expected_status": "SUPPORTED",
+    "category": "direct_cdr_call"
+  },
+  {
+    "statement_id": "STMT_SUP_005",
+    "case_id": "CASE_004",
+    "subject_entity_id": "CASE_004_PER_01",
+    "text": "I called +919781291936 on 2025-02-01.",
+    "expected_predicate": "CALLED",
+    "expected_status": "SUPPORTED",
+    "category": "direct_cdr_call"
+  },
+  {
+    "statement_id": "STMT_SUP_006",
+    "case_id": "CASE_003",
+    "subject_entity_id": "CASE_003_PER_01",
+    "text": "I called +919769934576 on 2025-02-01.",
+    "expected_predicate": "CALLED",
+    "expected_status": "SUPPORTED",
+    "category": "direct_cdr_call"
+  },
+  {
+    "statement_id": "STMT_SUP_007",
+    "case_id": "CASE_002",
+    "subject_entity_id": "CASE_002_PER_02",
+    "text": "I transferred money to ACC_CAN_8256_028 in February 2025.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "SUPPORTED",
+    "category": "banking_transfer"
+  },
+  {
+    "statement_id": "STMT_SUP_008",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_03",
+    "text": "I transferred money to ACC_AXI_6065_032 on 2025-02-01.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "SUPPORTED",
+    "category": "banking_transfer"
+  },
+  {
+    "statement_id": "STMT_SUP_009",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "Transferred funds to ACC_BAN_1645_005 on 2025-02-01.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "SUPPORTED",
+    "category": "banking_transfer"
+  },
+  {
+    "statement_id": "STMT_SUP_010",
+    "case_id": "CASE_008",
+    "subject_entity_id": "CASE_008_PER_01",
+    "text": "I transferred money to ACC_BAN_2432_020 on 2025-02-02.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "SUPPORTED",
+    "category": "banking_transfer"
+  },
+  {
+    "statement_id": "STMT_SUP_011",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_04",
+    "text": "I transferred money to ACC_CAN_4246_004 on 2025-02-02.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "SUPPORTED",
+    "category": "banking_transfer"
+  },
+  {
+    "statement_id": "STMT_SUP_012",
+    "case_id": "CASE_002",
+    "subject_entity_id": "CASE_002_PER_04",
+    "text": "I travelled to Gwalior on 2025-02-10.",
+    "expected_predicate": "TRAVELLED_TO",
+    "expected_status": "SUPPORTED",
+    "category": "transit_cctv"
+  },
+  {
+    "statement_id": "STMT_SUP_013",
+    "case_id": "CASE_007",
+    "subject_entity_id": "CASE_007_PER_06",
+    "text": "I travelled to Patna on 2025-02-10.",
+    "expected_predicate": "TRAVELLED_TO",
+    "expected_status": "SUPPORTED",
+    "category": "railway_reservation"
+  },
+  {
+    "statement_id": "STMT_SUP_014",
+    "case_id": "CASE_004",
+    "subject_entity_id": "CASE_004_PER_06",
+    "text": "I travelled to Kanpur on 2025-02-10.",
+    "expected_predicate": "TRAVELLED_TO",
+    "expected_status": "SUPPORTED",
+    "category": "highway_fastag"
+  },
+  {
+    "statement_id": "STMT_SUP_015",
+    "case_id": "CASE_005",
+    "subject_entity_id": "CASE_005_PER_05",
+    "text": "I travelled to Delhi on 2025-02-10.",
+    "expected_predicate": "TRAVELLED_TO",
+    "expected_status": "SUPPORTED",
+    "category": "bus_manifest"
+  },
+  {
+    "statement_id": "STMT_SUP_016",
+    "case_id": "CASE_006",
+    "subject_entity_id": "CASE_006_PER_07",
+    "text": "I travelled to Agra on 2025-02-10.",
+    "expected_predicate": "TRAVELLED_TO",
+    "expected_status": "SUPPORTED",
+    "category": "highway_fastag"
+  },
+  {
+    "statement_id": "STMT_SUP_017",
+    "case_id": "CASE_002",
+    "subject_entity_id": "CASE_002_PER_04",
+    "text": "I was in Gwalior on 2025-02-10.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "SUPPORTED",
+    "category": "location_presence"
+  },
+  {
+    "statement_id": "STMT_SUP_018",
+    "case_id": "CASE_007",
+    "subject_entity_id": "CASE_007_PER_06",
+    "text": "I was present in Patna on 2025-02-10.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "SUPPORTED",
+    "category": "location_presence"
+  },
+  {
+    "statement_id": "STMT_SUP_019",
+    "case_id": "CASE_004",
+    "subject_entity_id": "CASE_004_PER_06",
+    "text": "I was in Kanpur on 2025-02-10.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "SUPPORTED",
+    "category": "location_presence"
+  },
+  {
+    "statement_id": "STMT_SUP_020",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I called +911123010000 on February 1, 2025.",
+    "expected_predicate": "CALLED",
+    "expected_status": "SUPPORTED",
+    "category": "corroborated_call"
+  },
+  {
+    "statement_id": "STMT_SUP_021",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I called +911123010000 on February 1, 2025.",
+    "expected_predicate": "CALLED",
+    "expected_status": "SUPPORTED",
+    "category": "corroborated_call"
+  },
+  {
+    "statement_id": "STMT_SUP_022",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I called +911123010000 on February 1, 2025.",
+    "expected_predicate": "CALLED",
+    "expected_status": "SUPPORTED",
+    "category": "corroborated_call"
+  },
+  {
+    "statement_id": "STMT_SUP_023",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I called +911123010000 on February 1, 2025.",
+    "expected_predicate": "CALLED",
+    "expected_status": "SUPPORTED",
+    "category": "corroborated_call"
+  },
+  {
+    "statement_id": "STMT_SUP_024",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I called +911123010000 on February 1, 2025.",
+    "expected_predicate": "CALLED",
+    "expected_status": "SUPPORTED",
+    "category": "corroborated_call"
+  },
+  {
+    "statement_id": "STMT_SUP_025",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I called +911123010000 on February 1, 2025.",
+    "expected_predicate": "CALLED",
+    "expected_status": "SUPPORTED",
+    "category": "corroborated_call"
+  },
+  {
+    "statement_id": "STMT_SUP_026",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I called +911123010000 on February 1, 2025.",
+    "expected_predicate": "CALLED",
+    "expected_status": "SUPPORTED",
+    "category": "corroborated_call"
+  },
+  {
+    "statement_id": "STMT_SUP_027",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I called +911123010000 on February 1, 2025.",
+    "expected_predicate": "CALLED",
+    "expected_status": "SUPPORTED",
+    "category": "corroborated_call"
+  },
+  {
+    "statement_id": "STMT_SUP_028",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I called +911123010000 on February 1, 2025.",
+    "expected_predicate": "CALLED",
+    "expected_status": "SUPPORTED",
+    "category": "corroborated_call"
+  },
+  {
+    "statement_id": "STMT_SUP_029",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I called +911123010000 on February 1, 2025.",
+    "expected_predicate": "CALLED",
+    "expected_status": "SUPPORTED",
+    "category": "corroborated_call"
+  },
+  {
+    "statement_id": "STMT_SUP_030",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I called +911123010000 on February 1, 2025.",
+    "expected_predicate": "CALLED",
+    "expected_status": "SUPPORTED",
+    "category": "corroborated_call"
+  },
+  {
+    "statement_id": "STMT_CON_001",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I never called +911123010000 on February 1, 2025.",
+    "expected_predicate": "CALLED",
+    "expected_status": "CONTRADICTED",
+    "category": "denial_of_proven_call"
+  },
+  {
+    "statement_id": "STMT_CON_002",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I did not call +911123010000 on 2025-02-01.",
+    "expected_predicate": "CALLED",
+    "expected_status": "CONTRADICTED",
+    "category": "denial_of_proven_call"
+  },
+  {
+    "statement_id": "STMT_CON_003",
+    "case_id": "CASE_002",
+    "subject_entity_id": "CASE_002_PER_01",
+    "text": "I did not call +911123010000 on 2025-02-01.",
+    "expected_predicate": "CALLED",
+    "expected_status": "CONTRADICTED",
+    "category": "denial_of_proven_call"
+  },
+  {
+    "statement_id": "STMT_CON_004",
+    "case_id": "CASE_005",
+    "subject_entity_id": "CASE_005_PER_01",
+    "text": "I never called +919896934122 on 2025-02-01.",
+    "expected_predicate": "CALLED",
+    "expected_status": "CONTRADICTED",
+    "category": "denial_of_proven_call"
+  },
+  {
+    "statement_id": "STMT_CON_005",
+    "case_id": "CASE_004",
+    "subject_entity_id": "CASE_004_PER_01",
+    "text": "I did not call +919781291936 on 2025-02-01.",
+    "expected_predicate": "CALLED",
+    "expected_status": "CONTRADICTED",
+    "category": "denial_of_proven_call"
+  },
+  {
+    "statement_id": "STMT_CON_006",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I never transferred money to ACC_BAN_1645_005 on 2025-02-01.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "denial_of_proven_transfer"
+  },
+  {
+    "statement_id": "STMT_CON_007",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_03",
+    "text": "I did not transfer funds to ACC_AXI_6065_032 on 2025-02-01.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "denial_of_proven_transfer"
+  },
+  {
+    "statement_id": "STMT_CON_008",
+    "case_id": "CASE_002",
+    "subject_entity_id": "CASE_002_PER_02",
+    "text": "I never transferred money to ACC_CAN_8256_028.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "denial_of_proven_transfer"
+  },
+  {
+    "statement_id": "STMT_CON_009",
+    "case_id": "CASE_008",
+    "subject_entity_id": "CASE_008_PER_01",
+    "text": "I did not transfer money to ACC_BAN_2432_020 on 2025-02-02.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "denial_of_proven_transfer"
+  },
+  {
+    "statement_id": "STMT_CON_010",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_04",
+    "text": "I never sent money to ACC_CAN_4246_004 on 2025-02-02.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "denial_of_proven_transfer"
+  },
+  {
+    "statement_id": "STMT_CON_011",
+    "case_id": "CASE_002",
+    "subject_entity_id": "CASE_002_PER_04",
+    "text": "I never travelled to Gwalior on 2025-02-10.",
+    "expected_predicate": "TRAVELLED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "denial_of_proven_travel"
+  },
+  {
+    "statement_id": "STMT_CON_012",
+    "case_id": "CASE_007",
+    "subject_entity_id": "CASE_007_PER_06",
+    "text": "I did not travel to Patna on 2025-02-10.",
+    "expected_predicate": "TRAVELLED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "denial_of_proven_travel"
+  },
+  {
+    "statement_id": "STMT_CON_013",
+    "case_id": "CASE_004",
+    "subject_entity_id": "CASE_004_PER_06",
+    "text": "I never travelled to Kanpur on 2025-02-10.",
+    "expected_predicate": "TRAVELLED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "denial_of_proven_travel"
+  },
+  {
+    "statement_id": "STMT_CON_014",
+    "case_id": "CASE_005",
+    "subject_entity_id": "CASE_005_PER_05",
+    "text": "I did not travel to Delhi on 2025-02-10.",
+    "expected_predicate": "TRAVELLED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "denial_of_proven_travel"
+  },
+  {
+    "statement_id": "STMT_CON_015",
+    "case_id": "CASE_002",
+    "subject_entity_id": "CASE_002_PER_02",
+    "text": "I never transferred money to ACC_CAN_8256_028.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "refuted_financial_denial"
+  },
+  {
+    "statement_id": "STMT_CON_016",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I did not transfer money to ACC_BAN_1645_005 on 2025-02-01.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "refuted_financial_denial"
+  },
+  {
+    "statement_id": "STMT_CON_017",
+    "case_id": "CASE_002",
+    "subject_entity_id": "CASE_002_PER_02",
+    "text": "I never transferred money to ACC_CAN_8256_028.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "refuted_financial_denial"
+  },
+  {
+    "statement_id": "STMT_CON_018",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I did not transfer money to ACC_BAN_1645_005 on 2025-02-01.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "refuted_financial_denial"
+  },
+  {
+    "statement_id": "STMT_CON_019",
+    "case_id": "CASE_002",
+    "subject_entity_id": "CASE_002_PER_02",
+    "text": "I never transferred money to ACC_CAN_8256_028.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "refuted_financial_denial"
+  },
+  {
+    "statement_id": "STMT_CON_020",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I did not transfer money to ACC_BAN_1645_005 on 2025-02-01.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "refuted_financial_denial"
+  },
+  {
+    "statement_id": "STMT_CON_021",
+    "case_id": "CASE_002",
+    "subject_entity_id": "CASE_002_PER_02",
+    "text": "I never transferred money to ACC_CAN_8256_028.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "refuted_financial_denial"
+  },
+  {
+    "statement_id": "STMT_CON_022",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I did not transfer money to ACC_BAN_1645_005 on 2025-02-01.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "refuted_financial_denial"
+  },
+  {
+    "statement_id": "STMT_CON_023",
+    "case_id": "CASE_002",
+    "subject_entity_id": "CASE_002_PER_02",
+    "text": "I never transferred money to ACC_CAN_8256_028.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "refuted_financial_denial"
+  },
+  {
+    "statement_id": "STMT_CON_024",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I did not transfer money to ACC_BAN_1645_005 on 2025-02-01.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "refuted_financial_denial"
+  },
+  {
+    "statement_id": "STMT_CON_025",
+    "case_id": "CASE_002",
+    "subject_entity_id": "CASE_002_PER_02",
+    "text": "I never transferred money to ACC_CAN_8256_028.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "refuted_financial_denial"
+  },
+  {
+    "statement_id": "STMT_CON_026",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I did not transfer money to ACC_BAN_1645_005 on 2025-02-01.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "refuted_financial_denial"
+  },
+  {
+    "statement_id": "STMT_CON_027",
+    "case_id": "CASE_002",
+    "subject_entity_id": "CASE_002_PER_02",
+    "text": "I never transferred money to ACC_CAN_8256_028.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "refuted_financial_denial"
+  },
+  {
+    "statement_id": "STMT_CON_028",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I did not transfer money to ACC_BAN_1645_005 on 2025-02-01.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "refuted_financial_denial"
+  },
+  {
+    "statement_id": "STMT_CON_029",
+    "case_id": "CASE_002",
+    "subject_entity_id": "CASE_002_PER_02",
+    "text": "I never transferred money to ACC_CAN_8256_028.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "refuted_financial_denial"
+  },
+  {
+    "statement_id": "STMT_CON_030",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I did not transfer money to ACC_BAN_1645_005 on 2025-02-01.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "CONTRADICTED",
+    "category": "refuted_financial_denial"
+  },
+  {
+    "statement_id": "STMT_UNV_001",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I was in Jaipur on 2025-02-15 11:24.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "UNVERIFIABLE",
+    "category": "device_telemetry_safeguard"
+  },
+  {
+    "statement_id": "STMT_UNV_002",
+    "case_id": "CASE_002",
+    "subject_entity_id": "CASE_002_PER_01",
+    "text": "I was in Chandigarh on 2025-02-09 04:03.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "UNVERIFIABLE",
+    "category": "device_telemetry_safeguard"
+  },
+  {
+    "statement_id": "STMT_UNV_003",
+    "case_id": "CASE_003",
+    "subject_entity_id": "CASE_003_PER_01",
+    "text": "I was in Patna when my phone connected to 103.21.244.18.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "UNVERIFIABLE",
+    "category": "public_ip_safeguard"
+  },
+  {
+    "statement_id": "STMT_UNV_004",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "Vicky met with Doctor in Delhi.",
+    "expected_predicate": "ASSOCIATED_WITH",
+    "expected_status": "UNVERIFIABLE",
+    "category": "ambiguous_alias_safeguard"
+  },
+  {
+    "statement_id": "STMT_UNV_005",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I called +919999999999 on 2025-03-01.",
+    "expected_predicate": "CALLED",
+    "expected_status": "UNVERIFIABLE",
+    "category": "missing_telecom_evidence"
+  },
+  {
+    "statement_id": "STMT_UNV_006",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I transferred money to ACC_XYZ_9999_999.",
+    "expected_predicate": "TRANSFERRED_TO",
+    "expected_status": "UNVERIFIABLE",
+    "category": "missing_financial_evidence"
+  },
+  {
+    "statement_id": "STMT_UNV_007",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "The weather was very pleasant during my trip.",
+    "expected_predicate": null,
+    "expected_status": "UNVERIFIABLE",
+    "category": "unparseable_predicate"
+  },
+  {
+    "statement_id": "STMT_UNV_008",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I saw VEH_026 passing through Anand Vihar.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "UNVERIFIABLE",
+    "category": "shared_commercial_vehicle_safeguard"
+  },
+  {
+    "statement_id": "STMT_UNV_009",
+    "case_id": "CASE_002",
+    "subject_entity_id": "CASE_002_PER_01",
+    "text": "I never met anyone at the train station.",
+    "expected_predicate": "ASSOCIATED_WITH",
+    "expected_status": "UNVERIFIABLE",
+    "category": "vague_denial"
+  },
+  {
+    "statement_id": "STMT_UNV_010",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I did not speak with any strangers in Patna.",
+    "expected_predicate": "CALLED",
+    "expected_status": "UNVERIFIABLE",
+    "category": "unidentifiable_counterpart"
+  },
+  {
+    "statement_id": "STMT_UNV_011",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I was in Jaipur on 2025-02-15 11:24.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "UNVERIFIABLE",
+    "category": "device_telemetry_safeguard"
+  },
+  {
+    "statement_id": "STMT_UNV_012",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I was in Jaipur on 2025-02-15 11:24.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "UNVERIFIABLE",
+    "category": "device_telemetry_safeguard"
+  },
+  {
+    "statement_id": "STMT_UNV_013",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I was in Jaipur on 2025-02-15 11:24.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "UNVERIFIABLE",
+    "category": "device_telemetry_safeguard"
+  },
+  {
+    "statement_id": "STMT_UNV_014",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I was in Jaipur on 2025-02-15 11:24.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "UNVERIFIABLE",
+    "category": "device_telemetry_safeguard"
+  },
+  {
+    "statement_id": "STMT_UNV_015",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I was in Jaipur on 2025-02-15 11:24.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "UNVERIFIABLE",
+    "category": "device_telemetry_safeguard"
+  },
+  {
+    "statement_id": "STMT_UNV_016",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I was in Jaipur on 2025-02-15 11:24.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "UNVERIFIABLE",
+    "category": "device_telemetry_safeguard"
+  },
+  {
+    "statement_id": "STMT_UNV_017",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I was in Jaipur on 2025-02-15 11:24.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "UNVERIFIABLE",
+    "category": "device_telemetry_safeguard"
+  },
+  {
+    "statement_id": "STMT_UNV_018",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I was in Jaipur on 2025-02-15 11:24.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "UNVERIFIABLE",
+    "category": "device_telemetry_safeguard"
+  },
+  {
+    "statement_id": "STMT_UNV_019",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I was in Jaipur on 2025-02-15 11:24.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "UNVERIFIABLE",
+    "category": "device_telemetry_safeguard"
+  },
+  {
+    "statement_id": "STMT_UNV_020",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_01",
+    "text": "I was in Jaipur on 2025-02-15 11:24.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "UNVERIFIABLE",
+    "category": "device_telemetry_safeguard"
+  },
+  {
+    "statement_id": "STMT_CNF_001",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_06",
+    "text": "I was in Siliguri on 2025-04-09.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "EVIDENCE_CONFLICT",
+    "category": "competing_transit_records"
+  },
+  {
+    "statement_id": "STMT_CNF_002",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_06",
+    "text": "I was in Siliguri on 2025-04-09.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "EVIDENCE_CONFLICT",
+    "category": "competing_transit_records"
+  },
+  {
+    "statement_id": "STMT_CNF_003",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_06",
+    "text": "I was in Siliguri on 2025-04-09.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "EVIDENCE_CONFLICT",
+    "category": "competing_transit_records"
+  },
+  {
+    "statement_id": "STMT_CNF_004",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_06",
+    "text": "I was in Siliguri on 2025-04-09.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "EVIDENCE_CONFLICT",
+    "category": "competing_transit_records"
+  },
+  {
+    "statement_id": "STMT_CNF_005",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_06",
+    "text": "I was in Siliguri on 2025-04-09.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "EVIDENCE_CONFLICT",
+    "category": "competing_transit_records"
+  },
+  {
+    "statement_id": "STMT_CNF_006",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_06",
+    "text": "I was in Siliguri on 2025-04-09.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "EVIDENCE_CONFLICT",
+    "category": "competing_transit_records"
+  },
+  {
+    "statement_id": "STMT_CNF_007",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_06",
+    "text": "I was in Siliguri on 2025-04-09.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "EVIDENCE_CONFLICT",
+    "category": "competing_transit_records"
+  },
+  {
+    "statement_id": "STMT_CNF_008",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_06",
+    "text": "I was in Siliguri on 2025-04-09.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "EVIDENCE_CONFLICT",
+    "category": "competing_transit_records"
+  },
+  {
+    "statement_id": "STMT_CNF_009",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_06",
+    "text": "I was in Siliguri on 2025-04-09.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "EVIDENCE_CONFLICT",
+    "category": "competing_transit_records"
+  },
+  {
+    "statement_id": "STMT_CNF_010",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_06",
+    "text": "I was in Siliguri on 2025-04-09.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "EVIDENCE_CONFLICT",
+    "category": "competing_transit_records"
+  },
+  {
+    "statement_id": "STMT_CNF_011",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_06",
+    "text": "I was in Siliguri on 2025-04-09.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "EVIDENCE_CONFLICT",
+    "category": "competing_transit_records"
+  },
+  {
+    "statement_id": "STMT_CNF_012",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_06",
+    "text": "I was in Siliguri on 2025-04-09.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "EVIDENCE_CONFLICT",
+    "category": "competing_transit_records"
+  },
+  {
+    "statement_id": "STMT_CNF_013",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_06",
+    "text": "I was in Siliguri on 2025-04-09.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "EVIDENCE_CONFLICT",
+    "category": "competing_transit_records"
+  },
+  {
+    "statement_id": "STMT_CNF_014",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_06",
+    "text": "I was in Siliguri on 2025-04-09.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "EVIDENCE_CONFLICT",
+    "category": "competing_transit_records"
+  },
+  {
+    "statement_id": "STMT_CNF_015",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_06",
+    "text": "I was in Siliguri on 2025-04-09.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "EVIDENCE_CONFLICT",
+    "category": "competing_transit_records"
+  },
+  {
+    "statement_id": "STMT_CNF_016",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_06",
+    "text": "I was in Siliguri on 2025-04-09.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "EVIDENCE_CONFLICT",
+    "category": "competing_transit_records"
+  },
+  {
+    "statement_id": "STMT_CNF_017",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_06",
+    "text": "I was in Siliguri on 2025-04-09.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "EVIDENCE_CONFLICT",
+    "category": "competing_transit_records"
+  },
+  {
+    "statement_id": "STMT_CNF_018",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_06",
+    "text": "I was in Siliguri on 2025-04-09.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "EVIDENCE_CONFLICT",
+    "category": "competing_transit_records"
+  },
+  {
+    "statement_id": "STMT_CNF_019",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_06",
+    "text": "I was in Siliguri on 2025-04-09.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "EVIDENCE_CONFLICT",
+    "category": "competing_transit_records"
+  },
+  {
+    "statement_id": "STMT_CNF_020",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_06",
+    "text": "I was in Siliguri on 2025-04-09.",
+    "expected_predicate": "LOCATED_AT",
+    "expected_status": "EVIDENCE_CONFLICT",
+    "category": "competing_transit_records"
+  }
+]

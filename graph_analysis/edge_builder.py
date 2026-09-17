@@ -407,8 +407,9 @@ class EdgeBuilder:
                     receiver = row["receiver"]
                     cid = row["case_id"]
                     ts = row.get("timestamp")
-                    dur = int(row.get("duration_sec", 0))
                     c_type = row.get("call_type")
+                    raw_dur = str(row.get("duration_sec") or "0").strip()
+                    dur = int(raw_dur) if raw_dur.isdigit() else 0
                     twr = row.get("cell_tower")
 
                     # Context-aware check: is it a public hotline?

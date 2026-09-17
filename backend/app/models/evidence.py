@@ -28,6 +28,7 @@ class EvidenceItem(Base):
     uploaded_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc), nullable=False)
     parsing_status = Column(String, default="PENDING", nullable=False)
     parsing_error = Column(Text, nullable=True)
+    processing_status = Column(String, default="UPLOADED", nullable=False)
     is_original = Column(Boolean, default=True, nullable=False)
     created_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc), nullable=False)
     updated_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc),
@@ -39,8 +40,33 @@ class EvidenceItem(Base):
     case = relationship("Case", back_populates="evidence_items")
     uploader = relationship("User", back_populates="uploaded_evidence", foreign_keys=[uploaded_by])
     parsing_jobs = relationship("ParsingJob", back_populates="evidence", cascade="all, delete-orphan")
+    processing_jobs = relationship("EvidenceProcessingJob", back_populates="evidence", cascade="all, delete-orphan")
     parsed_records = relationship("ParsedRecord", back_populates="evidence", cascade="all, delete-orphan")
     audit_events = relationship("AuditEvent", back_populates="evidence", foreign_keys="AuditEvent.evidence_id")
+
+
+class EvidenceProcessingJob(Base):
+    __tablename__ = "evidence_processing_jobs"
+
+    id = Column(UUIDType, primary_key=True, default=uuid.uuid4)
+    evidence_id = Column(UUIDType, ForeignKey("evidence_items.id"), nullable=False)
+    case_id = Column(UUIDType, ForeignKey("cases.id"), nullable=False)
+    job_type = Column(String, nullable=False, default="EVIDENCE_INGESTION")
+    status = Column(String, nullable=False, default="UPLOADED")  # UPLOADED, VALIDATING, PROCESSING, PROCESSED, FAILED
+    pipeline_version = Column(String, nullable=False, default="7A.1.0")
+    records_processed = Column(Integer, default=0, nullable=False)
+    started_at = Column(DateTime(timezone=True), nullable=True)
+    completed_at = Column(DateTime(timezone=True), nullable=True)
+    error_message = Column(Text, nullable=True)
+    result_summary = Column(JSONBType, nullable=True)
+    initiated_by = Column(UUIDType, ForeignKey("users.id"), nullable=True)
+    created_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc), nullable=False)
+    updated_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc),
+                        onupdate=lambda: datetime.now(timezone.utc), nullable=False)
+
+    # Relationships
+    evidence = relationship("EvidenceItem", back_populates="processing_jobs")
+    case = relationship("Case")
 
 
 class ParsingJob(Base):

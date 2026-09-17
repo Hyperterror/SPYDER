@@ -22,7 +22,12 @@ from app.services.graph_upsert import (
 from app.parsers.cdr import parse_cdr_csv
 from app.parsers.transaction import parse_transaction_csv
 
+from app.services.evidence_validator import validate_file_security, EvidenceValidationError
+from app.services.evidence_orchestrator import get_orchestrator
+from app.models.evidence import EvidenceProcessingJob
+
 router = APIRouter(prefix="/api/v1/cases", tags=["evidence"])
+direct_router = APIRouter(prefix="/api/v1/evidence", tags=["evidence"])
 
 ALLOWED_EXTENSIONS = {".csv", ".xlsx", ".json"}
 MAX_FILE_SIZE = 100 * 1024 * 1024  # 100 MB
@@ -71,15 +76,16 @@ async def upload_evidence(
 ):
     _require_case_access(case_id, current_user, db)
 
-    # Read and validate
     file_bytes = await file.read()
-    if len(file_bytes) > MAX_FILE_SIZE:
-        raise HTTPException(status_code=413, detail="File too large (max 100 MB)")
+    
+    # Rigorous file validation and path sanitization
+    try:
+        sanitized = validate_file_security(file.filename or "upload.csv", file_bytes, max_size=MAX_FILE_SIZE)
+    except EvidenceValidationError as ve:
+        raise HTTPException(status_code=422, detail=str(ve))
 
     import os
-    ext = os.path.splitext(file.filename or "")[1].lower()
-    if ext not in ALLOWED_EXTENSIONS:
-        raise HTTPException(status_code=415, detail=f"Unsupported file type: {ext}")
+    ext = os.path.splitext(sanitized)[1].lower()
 
     # Compute hash BEFORE storing
     sha256 = calculate_sha256(file_bytes)
@@ -94,11 +100,10 @@ async def upload_evidence(
             detail=f"Duplicate file: SHA-256 matches existing evidence {existing.evidence_code}",
         )
 
-    sanitized = _sanitize_filename(file.filename or "upload")
     evidence_id = uuid.uuid4()
     object_key = f"cases/{case_id}/evidence/{evidence_id}/original/{sanitized}"
 
-    # Upload to MinIO
+    # Upload to storage (MinIO or local filesystem)
     storage = get_storage()
     storage.upload(object_key, file_bytes, file.content_type or "application/octet-stream")
 
@@ -120,18 +125,35 @@ async def upload_evidence(
         integrity_status="UNVERIFIED",
         uploaded_by=current_user.id,
         parsing_status="PENDING",
+        processing_status="UPLOADED",
         is_original=True,
     )
     db.add(evidence)
+
+    # Initial processing job tracking
+    job = EvidenceProcessingJob(
+        evidence_id=evidence_id,
+        case_id=case_id,
+        job_type="EVIDENCE_INGESTION",
+        status="UPLOADED",
+        pipeline_version="7A.1.0",
+        initiated_by=current_user.id,
+        records_processed=0,
+    )
+    db.add(job)
+
     db.commit()
     db.refresh(evidence)
 
-    # Also upsert Document node in Neo4j
-    upsert_document_node(
-        case_id=case_id, evidence_id=str(evidence_id),
-        evidence_code=evidence.evidence_code, filename=sanitized,
-        sha256_hash=sha256, integrity_status="UNVERIFIED",
-    )
+    # Also upsert Document node in graph if service available
+    try:
+        upsert_document_node(
+            case_id=case_id, evidence_id=str(evidence_id),
+            evidence_code=evidence.evidence_code, filename=sanitized,
+            sha256_hash=sha256, integrity_status="UNVERIFIED",
+        )
+    except Exception:
+        pass
 
     create_audit_event(
         db=db, event_type="EVIDENCE_UPLOADED", case_id=case_id,
@@ -438,6 +460,132 @@ def get_evidence_audit(case_id: str, evidence_id: str,
     ]
 
 
+@router.post("/{case_id}/evidence/{evidence_id}/process")
+def process_evidence_case(
+    case_id: str,
+    evidence_id: str,
+    background_tasks: BackgroundTasks,
+    run_sync: bool = False,
+    db: Session = Depends(get_db),
+    current_user=Depends(get_current_user),
+):
+    """
+    Phase 7A: Trigger automated pipeline ingestion for an uploaded evidence item.
+    Performs validation, normalization, graph update, and cache refresh.
+    """
+    _require_case_access(case_id, current_user, db)
+    ev = db.query(EvidenceItem).filter(
+        EvidenceItem.id == evidence_id, EvidenceItem.case_id == case_id
+    ).first()
+    if not ev:
+        raise HTTPException(status_code=404, detail="Evidence not found")
+
+    orchestrator = get_orchestrator()
+    job = orchestrator.create_processing_job(
+        evidence_id=str(ev.id),
+        case_id=case_id,
+        user_id=str(current_user.id),
+        db=db,
+    )
+
+    if run_sync:
+        res = orchestrator.execute_pipeline(str(job.id), db=db)
+        return {
+            "job_id": str(job.id),
+            "evidence_id": str(ev.id),
+            "case_id": case_id,
+            "status": res.get("status", "COMPLETED"),
+            "records_processed": res.get("records_processed", 0),
+            "pipeline_version": job.pipeline_version,
+            "error_message": res.get("error"),
+        }
+    else:
+        background_tasks.add_task(orchestrator.execute_pipeline, str(job.id))
+        return {
+            "job_id": str(job.id),
+            "evidence_id": str(ev.id),
+            "case_id": case_id,
+            "status": "QUEUED",
+            "pipeline_version": job.pipeline_version,
+        }
+
+
+@router.get("/{case_id}/evidence/{evidence_id}/status")
+def get_evidence_case_status(
+    case_id: str,
+    evidence_id: str,
+    db: Session = Depends(get_db),
+    current_user=Depends(get_current_user),
+):
+    """
+    Phase 7A: Retrieve processing status and metadata for an evidence item.
+    """
+    _require_case_access(case_id, current_user, db)
+    ev = db.query(EvidenceItem).filter(
+        EvidenceItem.id == evidence_id, EvidenceItem.case_id == case_id
+    ).first()
+    if not ev:
+        raise HTTPException(status_code=404, detail="Evidence not found")
+
+    job = (
+        db.query(EvidenceProcessingJob)
+        .filter(EvidenceProcessingJob.evidence_id == evidence_id)
+        .order_by(EvidenceProcessingJob.created_at.desc())
+        .first()
+    )
+
+    return {
+        "evidence_id": str(ev.id),
+        "case_id": case_id,
+        "status": job.status if job else getattr(ev, "processing_status", "UPLOADED"),
+        "records_processed": job.records_processed if job else 0,
+        "started_at": job.started_at.isoformat() if job and job.started_at else None,
+        "completed_at": job.completed_at.isoformat() if job and job.completed_at else None,
+        "error_message": job.error_message if job else None,
+        "pipeline_version": job.pipeline_version if job else "7A.1.0",
+        "result_summary": job.result_summary if job else None,
+    }
+
+
+# Direct evidence endpoints for flexibility
+@direct_router.post("/{evidence_id}/process")
+def process_evidence_direct(
+    evidence_id: str,
+    background_tasks: BackgroundTasks,
+    run_sync: bool = False,
+    db: Session = Depends(get_db),
+    current_user=Depends(get_current_user),
+):
+    ev = db.query(EvidenceItem).filter(EvidenceItem.id == evidence_id).first()
+    if not ev:
+        raise HTTPException(status_code=404, detail="Evidence not found")
+    return process_evidence_case(
+        case_id=str(ev.case_id),
+        evidence_id=evidence_id,
+        background_tasks=background_tasks,
+        run_sync=run_sync,
+        db=db,
+        current_user=current_user,
+    )
+
+
+@direct_router.get("/{evidence_id}/status")
+def get_evidence_direct_status(
+    evidence_id: str,
+    db: Session = Depends(get_db),
+    current_user=Depends(get_current_user),
+):
+    ev = db.query(EvidenceItem).filter(EvidenceItem.id == evidence_id).first()
+    if not ev:
+        raise HTTPException(status_code=404, detail="Evidence not found")
+    return get_evidence_case_status(
+        case_id=str(ev.case_id),
+        evidence_id=evidence_id,
+        db=db,
+        current_user=current_user,
+    )
+
+
 def _evidence_to_dict(ev: EvidenceItem) -> dict:
     return {
         "id": str(ev.id),
@@ -456,6 +604,7 @@ def _evidence_to_dict(ev: EvidenceItem) -> dict:
         "uploaded_by": str(ev.uploaded_by) if ev.uploaded_by else None,
         "uploaded_at": ev.uploaded_at.isoformat(),
         "parsing_status": ev.parsing_status,
+        "processing_status": getattr(ev, "processing_status", "UPLOADED"),
         "parsing_error": ev.parsing_error,
         "is_original": ev.is_original,
     }
