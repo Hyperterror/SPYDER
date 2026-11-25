@@ -76,7 +76,9 @@ services:
       dockerfile: Dockerfile
     container_name: spyder_backend
     restart: unless-stopped
-    env_file: .env
+    env_file:
+      - path: .env
+        required: false
     environment:
       DATABASE_URL: postgresql://${POSTGRES_USER:-spyder}:${POSTGRES_PASSWORD:-spyder_secret}@postgres:5432/${POSTGRES_DB:-spyder}
       CELERY_BROKER_URL: redis://redis:6379/0
@@ -110,7 +112,9 @@ services:
       dockerfile: Dockerfile
     container_name: spyder_worker
     restart: unless-stopped
-    env_file: .env
+    env_file:
+      - path: .env
+        required: false
     environment:
       DATABASE_URL: postgresql://${POSTGRES_USER:-spyder}:${POSTGRES_PASSWORD:-spyder_secret}@postgres:5432/${POSTGRES_DB:-spyder}
       CELERY_BROKER_URL: redis://redis:6379/0
