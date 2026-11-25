@@ -1,34 +1,37 @@
-import { authApi } from './api'
+import { authApi, setInMemoryAccessToken, getInMemoryAccessToken } from './api'
 import type { User } from '@/types'
 
 export function getStoredUser(): User | null {
   if (typeof window === 'undefined') return null
   try {
-    const raw = localStorage.getItem('user')
+    const raw = sessionStorage.getItem('user') ?? localStorage.getItem('user')
+    if (localStorage.getItem('user')) {
+      localStorage.removeItem('user')
+      if (raw) sessionStorage.setItem('user', raw)
+    }
     return raw ? (JSON.parse(raw) as User) : null
   } catch {
     return null
   }
 }
 
-export function setStoredTokens(accessToken: string, refreshToken: string) {
-  localStorage.setItem('access_token', accessToken)
-  localStorage.setItem('refresh_token', refreshToken)
-}
-
 export function setStoredUser(user: User) {
-  localStorage.setItem('user', JSON.stringify(user))
+  if (typeof window !== 'undefined') {
+    sessionStorage.setItem('user', JSON.stringify(user))
+  }
 }
 
 export function clearAuth() {
-  localStorage.removeItem('access_token')
-  localStorage.removeItem('refresh_token')
-  localStorage.removeItem('user')
+  setInMemoryAccessToken(null)
+  if (typeof window !== 'undefined') {
+    sessionStorage.removeItem('user')
+    localStorage.removeItem('user')
+  }
 }
 
 export async function login(email: string, password: string): Promise<User> {
   const { data } = await authApi.login(email, password)
-  setStoredTokens(data.access_token, data.refresh_token)
+  setInMemoryAccessToken(data.access_token)
   setStoredUser(data.user as User)
   return data.user as User
 }
@@ -40,5 +43,5 @@ export async function logout() {
 
 export function isAuthenticated(): boolean {
   if (typeof window === 'undefined') return false
-  return !!localStorage.getItem('access_token')
+  return !!getInMemoryAccessToken()
 }

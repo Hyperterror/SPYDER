@@ -187,26 +187,56 @@ SCHEMA_SIGNATURES = {
 }
 
 
-def inspect_and_classify_schema(file_bytes: bytes) -> Tuple[str, List[str]]:
+def inspect_and_classify_schema(
+    file_bytes: bytes,
+    file_extension: str = ".csv",
+) -> Tuple[str, List[str]]:
     """
-    Inspects CSV headers to classify evidence modality and verify required columns.
+    Inspects uploaded evidence (CSV, XLSX, JSON, PDF, PNG/JPG) to classify modality
+    and verify required columns for structured data.
     Returns (modality, headers).
     Raises EvidenceValidationError if schema is unrecognized or malformed.
     """
-    try:
-        text = file_bytes.decode("utf-8", errors="replace")
-    except Exception as e:
-        raise EvidenceValidationError(f"Cannot decode CSV text: {e}")
+    ext = (file_extension or ".csv").lower()
+    if ext in {".pdf", ".png", ".jpg", ".jpeg"}:
+        return "DOCUMENT", ["extracted_text"]
 
-    stream = io.StringIO(text)
-    reader = csv.reader(stream)
-    try:
-        headers = next(reader, None)
-    except Exception as e:
-        raise EvidenceValidationError(f"Cannot parse CSV header row: {e}")
+    if ext == ".xlsx":
+        try:
+            import openpyxl
+            wb = openpyxl.load_workbook(io.BytesIO(file_bytes), read_only=True, data_only=True)
+            ws = wb.active
+            rows_iter = ws.iter_rows(values_only=True)
+            first_row = next(rows_iter, None)
+            wb.close()
+            headers = [str(c).strip() for c in (first_row or ()) if c is not None and str(c).strip()]
+        except Exception as e:
+            raise EvidenceValidationError(f"Cannot inspect XLSX header row: {e}")
+    elif ext == ".json":
+        try:
+            import json
+            payload = json.loads(file_bytes.decode("utf-8", errors="replace"))
+            items = payload.get("records", payload) if isinstance(payload, dict) else payload
+            if not isinstance(items, list) or not items or not isinstance(items[0], dict):
+                return "DOCUMENT", ["json_payload"]
+            headers = [str(k).strip() for k in items[0].keys() if str(k).strip()]
+        except Exception as e:
+            raise EvidenceValidationError(f"Cannot parse JSON evidence: {e}")
+    else:
+        try:
+            text = file_bytes.decode("utf-8", errors="replace")
+        except Exception as e:
+            raise EvidenceValidationError(f"Cannot decode CSV text: {e}")
+
+        stream = io.StringIO(text)
+        reader = csv.reader(stream)
+        try:
+            headers = next(reader, None)
+        except Exception as e:
+            raise EvidenceValidationError(f"Cannot parse CSV header row: {e}")
 
     if not headers or all(not h.strip() for h in headers):
-        raise EvidenceValidationError("CSV file does not contain a valid header row.")
+        raise EvidenceValidationError("Evidence file does not contain a valid header row.")
 
     normalized_headers = [h.strip().lower() for h in headers if h.strip()]
     header_set = set(normalized_headers)

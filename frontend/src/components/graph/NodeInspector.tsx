@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import type { GraphNode } from '@/types'
 
 const ENTITY_COLORS: Record<string, string> = {
@@ -82,6 +83,15 @@ export default function NodeInspector({ node, onClose }: NodeInspectorProps) {
             <div className="font-mono text-brand-cyan text-[10px] break-all">{String(node.sha256_hash)}</div>
           </div>
         )}
+
+        <div className="pt-1">
+          <Link
+            href={`/entities/${encodeURIComponent(String(identifier))}`}
+            className="block w-full text-center py-1.5 rounded bg-brand-cyan/15 hover:bg-brand-cyan/25 border border-brand-cyan/40 text-brand-cyan text-[11px] font-semibold transition"
+          >
+            Open Entity Profile →
+          </Link>
+        </div>
 
         <p className="text-[10px] text-slate-500 italic leading-relaxed border-t border-brand-border/40 pt-2">
           Node data is derived from evidence records. It does not establish identity or criminal conduct.

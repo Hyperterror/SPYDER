@@ -43,13 +43,42 @@ class FeatureExtractor:
                     "raw_degree": float(row.get("raw_degree") or 0.0)
                 }
 
+    def _compute_centrality_from_graph(self, undirected_g: nx.Graph) -> Dict[str, Dict[str, float]]:
+        """
+        Compute centrality metrics directly on the provided (masked) graph so no
+        held-out evaluation edge leaks through precomputed full-graph node_metrics.csv.
+        """
+        simple_g = nx.Graph(undirected_g)
+        deg_c = nx.degree_centrality(simple_g) if simple_g.number_of_nodes() > 1 else {}
+        try:
+            pr = nx.pagerank(simple_g, alpha=0.85, max_iter=100) if simple_g.number_of_edges() > 0 else {}
+        except Exception:
+            pr = {}
+        try:
+            k_sample = min(100, simple_g.number_of_nodes())
+            bt = nx.betweenness_centrality(simple_g, k=k_sample, seed=42) if simple_g.number_of_nodes() > 2 else {}
+        except Exception:
+            bt = {}
+
+        out: Dict[str, Dict[str, float]] = {}
+        for nid in simple_g.nodes():
+            out[nid] = {
+                "degree_centrality": float(deg_c.get(nid, 0.0)),
+                "betweenness_centrality": float(bt.get(nid, 0.0)),
+                "pagerank": float(pr.get(nid, 0.0)),
+            }
+        return out
+
     def extract_node_features(
         self,
         multi_graph: nx.MultiDiGraph,
-        node_to_idx: Dict[str, int]
+        node_to_idx: Dict[str, int],
+        recompute_centrality: bool = False,
     ) -> Tuple[torch.Tensor, List[str]]:
         """
         Extracts a normalized feature vector for each node in index order.
+        When recompute_centrality=True, computes PageRank/Betweenness/Degree strictly
+        from multi_graph rather than the full-graph CSV cache (anti-leakage mode).
         Returns: (feature_tensor, feature_names)
         """
         num_nodes = len(node_to_idx)
@@ -57,6 +86,11 @@ class FeatureExtractor:
 
         # Undirected projection for degree statistics
         undirected_g = multi_graph.to_undirected()
+        active_metrics = (
+            self._compute_centrality_from_graph(undirected_g)
+            if recompute_centrality or not self.metrics_cache
+            else self.metrics_cache
+        )
 
         for idx in range(num_nodes):
             nid = next(k for k, v in node_to_idx.items() if v == idx)
@@ -86,7 +120,7 @@ class FeatureExtractor:
             row_feats.append(math.log1p(w_in + w_out))
 
             # 3. Phase 3 Centrality Metrics
-            m = self.metrics_cache.get(nid, {})
+            m = active_metrics.get(nid, {})
             row_feats.append(m.get("pagerank", 0.0) * 1000.0)  # Scale up small pagerank
             row_feats.append(m.get("betweenness_centrality", 0.0) * 100.0)
             row_feats.append(m.get("degree_centrality", 0.0))

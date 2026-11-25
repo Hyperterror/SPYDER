@@ -5,11 +5,10 @@ plausible cross-case candidate pairs using conservative blocking rules.
 """
 
 import csv
-import json
 from pathlib import Path
-from typing import Dict, List, Any, Set, Tuple
+from typing import Dict, List, Any, Set, Tuple, Optional
 
-from entity_resolution.config import EVIDENCE_DIR, GROUND_TRUTH_DIR
+from entity_resolution.config import EVIDENCE_DIR
 from entity_resolution.normalize import (
     normalize_name, normalize_alias, normalize_phone, normalize_imei,
     normalize_vehicle_reg, normalize_account_id, normalize_ip,
@@ -17,9 +16,12 @@ from entity_resolution.normalize import (
 )
 
 class CandidateGenerator:
-    def __init__(self, evidence_dir: Path = EVIDENCE_DIR, ground_truth_dir: Path = GROUND_TRUTH_DIR):
+    def __init__(self, evidence_dir: Path = EVIDENCE_DIR, ground_truth_dir: Optional[Path] = None):
         self.evidence_dir = Path(evidence_dir)
-        self.ground_truth_dir = Path(ground_truth_dir)
+        # Note: ground_truth_dir is intentionally ignored in production candidate generation
+        # to enforce strict observable-evidence isolation. Evaluation label builders inject
+        # benchmark hard negatives solely inside entity_resolution/pair_generation.py.
+        self._unused_gt_dir = ground_truth_dir
         self.profiles: Dict[str, Dict[str, Any]] = {}
 
     def load_and_enrich_evidence(self) -> Dict[str, Dict[str, Any]]:
@@ -162,9 +164,6 @@ class CandidateGenerator:
         candidate_pairs = []
         seen_pairs: Set[Tuple[str, str]] = set()
 
-        # Load hard negatives to ensure they are explicitly captured for evaluation
-        hard_negative_pairs = self._load_hard_negative_pairs()
-
         for i in range(len(pids)):
             for j in range(i + 1, len(pids)):
                 p1_id, p2_id = pids[i], pids[j]
@@ -223,11 +222,6 @@ class CandidateGenerator:
                 if shared_soc:
                     reasons.append(f"shared_social:{list(shared_soc)[0]}")
 
-                # 7. Check if this is a ground-truth hard negative pair
-                is_hn = pair_key in hard_negative_pairs or (p2_id, p1_id) in hard_negative_pairs
-                if is_hn:
-                    reasons.append("ground_truth_hard_negative_evaluation")
-
                 # Candidate criteria: triggered by at least one strong observable reason
                 # (Note: Shared IP alone is NEVER used as a blocking reason!)
                 if reasons:
@@ -236,56 +230,9 @@ class CandidateGenerator:
                         p2_id,
                         {
                             "blocking_reasons": reasons,
-                            "is_hard_negative": is_hn
+                            "is_hard_negative": False
                         }
                     ))
                     seen_pairs.add(pair_key)
 
-        # Ensure all hard-negative pairs are present
-        for (hn1, hn2), meta in hard_negative_pairs.items():
-            if (hn1, hn2) not in seen_pairs and (hn2, hn1) not in seen_pairs:
-                if hn1 in self.profiles and hn2 in self.profiles:
-                    candidate_pairs.append((
-                        hn1,
-                        hn2,
-                        {
-                            "blocking_reasons": ["ground_truth_hard_negative_evaluation"],
-                            "is_hard_negative": True
-                        }
-                    ))
-                    seen_pairs.add((hn1, hn2))
-
         return candidate_pairs
-
-    def _load_hard_negative_pairs(self) -> Dict[Tuple[str, str], Dict[str, Any]]:
-        """Loads ground truth hard negatives and maps them to cross-case observational person IDs."""
-        gt_path = self.ground_truth_dir / "ground_truth.json"
-        if not gt_path.exists():
-            return {}
-
-        with open(gt_path, mode="r", encoding="utf-8") as f:
-            gt = json.load(f)
-
-        hn_list = gt.get("hard_negatives", [])
-        obs_mapping = gt.get("observational_mapping", {})
-
-        hn_by_group = {}
-        for hn in hn_list:
-            grp = hn["hard_negative_group"]
-            gid = hn["global_id"]
-            # get all observational IDs for this entity
-            instances = obs_mapping.get(gid, {}).get("case_instances", {})
-            p_ids = [inst["observational_person_id"] for inst in instances.values()]
-            hn_by_group.setdefault(grp, []).extend(p_ids)
-
-        hn_pairs = {}
-        for grp, pids in hn_by_group.items():
-            for i in range(len(pids)):
-                for j in range(i + 1, len(pids)):
-                    id1, id2 = pids[i], pids[j]
-                    # verify cross-case
-                    c1 = id1.split("_PER_")[0]
-                    c2 = id2.split("_PER_")[0]
-                    if c1 != c2:
-                        hn_pairs[(id1, id2)] = {"group": grp}
-        return hn_pairs

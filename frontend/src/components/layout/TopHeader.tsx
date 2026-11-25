@@ -76,18 +76,18 @@ export default function TopHeader() {
           {bellOpen && (
             <div className="absolute right-0 mt-2 w-80 bg-brand-panel border border-brand-borderLight rounded-lg shadow-2xl p-3 z-50">
               <div className="flex items-center justify-between pb-2 border-b border-brand-border">
-                <span className="text-xs font-semibold text-white">System Alerts</span>
-                <span className="text-[10px] text-brand-cyan hover:underline cursor-pointer">Mark all read</span>
+                <span className="text-xs font-semibold text-white">Intelligence Queue</span>
+                <Link href="/decisions" className="text-[10px] text-brand-cyan hover:underline">Decision Log →</Link>
               </div>
               <div className="mt-2 space-y-2 text-xs">
-                <div className="p-2 rounded bg-brand-surface/70 border border-brand-border">
-                  <div className="text-brand-amber font-medium">Contradiction Flagged</div>
-                  <div className="text-slate-400 text-[11px] mt-0.5">Cell tower ping mismatch detected.</div>
-                </div>
-                <div className="p-2 rounded bg-brand-surface/70 border border-brand-border">
-                  <div className="text-brand-cyan font-medium">Hash Integrity Verified</div>
-                  <div className="text-slate-400 text-[11px] mt-0.5">Bank_Statements.xlsx signed &amp; stamped.</div>
-                </div>
+                <Link href="/leads" className="block p-2 rounded bg-brand-surface/70 border border-brand-border hover:border-brand-cyan/40 transition">
+                  <div className="text-brand-amber font-medium">Review Investigation Leads</div>
+                  <div className="text-slate-400 text-[11px] mt-0.5">Inspect hypothesis candidates with provenance.</div>
+                </Link>
+                <Link href="/entity-resolution" className="block p-2 rounded bg-brand-surface/70 border border-brand-border hover:border-brand-cyan/40 transition">
+                  <div className="text-brand-cyan font-medium">Cross-Case Identity Hypotheses</div>
+                  <div className="text-slate-400 text-[11px] mt-0.5">Adjudicate side-by-side person matches.</div>
+                </Link>
               </div>
             </div>
           )}
@@ -118,8 +118,8 @@ export default function TopHeader() {
               <div className="px-3 py-2 border-b border-brand-border text-slate-400">
                 Role: <span className="font-mono text-slate-200">{user?.role}</span>
               </div>
-              <a href="#" className="block px-3 py-2 hover:bg-brand-surface text-slate-200">Security Clearance</a>
-              <a href="#" className="block px-3 py-2 hover:bg-brand-surface text-slate-200">Audit Logs</a>
+              <Link href="/decisions" className="block px-3 py-2 hover:bg-brand-surface text-slate-200">Decision History</Link>
+              <Link href="/leads" className="block px-3 py-2 hover:bg-brand-surface text-slate-200">Lead Queue</Link>
               <div className="border-t border-brand-border" />
               <button
                 onClick={handleLogout}

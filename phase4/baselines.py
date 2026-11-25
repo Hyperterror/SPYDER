@@ -84,12 +84,24 @@ class BaselineEvaluator:
             y_pred = [1 if s >= 0.2 else 0 for s in norm_scores]
             prec, rec, f1, _ = precision_recall_fscore_support(y_true, y_pred, average="binary", zero_division=0)
 
+            ranked_idx = sorted(range(len(candidates)), key=lambda i: norm_scores[i], reverse=True)
+            total_pos = max(sum(y_true), 1)
+            k10 = min(10, len(ranked_idx))
+            k20 = min(20, len(ranked_idx))
+            p_at_10 = sum(y_true[i] for i in ranked_idx[:k10]) / k10 if k10 else 0.0
+            r_at_20 = sum(y_true[i] for i in ranked_idx[:k20]) / total_pos
+            rr_scores = [1.0 / (rank + 1) for rank, idx in enumerate(ranked_idx) if y_true[idx] == 1]
+            mrr = rr_scores[0] if rr_scores else 0.0
+
             results[method_name] = {
                 "roc_auc": round(float(roc_auc), 4),
                 "pr_auc": round(float(pr_auc), 4),
                 "precision": round(float(prec), 4),
                 "recall": round(float(rec), 4),
-                "f1": round(float(f1), 4)
+                "f1": round(float(f1), 4),
+                "precision_at_10": round(float(p_at_10), 4),
+                "recall_at_20": round(float(r_at_20), 4),
+                "mrr": round(float(mrr), 4),
             }
 
         return results

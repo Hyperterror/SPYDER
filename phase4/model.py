@@ -72,24 +72,27 @@ class GraphSAGEEncoder(nn.Module):
 # ----------------- Link Decoders -----------------
 
 class DotProductDecoder(nn.Module):
-    """Computes sigmoid of dot product between node embeddings."""
+    """Computes calibrated sigmoid of dot product between node embeddings."""
     def __init__(self):
         super().__init__()
+        self.logit_scale = nn.Parameter(torch.tensor(2.0))
+        self.logit_bias = nn.Parameter(torch.tensor(-1.5))
 
     def forward(self, z_u: torch.Tensor, z_v: torch.Tensor) -> torch.Tensor:
         # z_u, z_v: [B, embed_dim]
         dot = (z_u * z_v).sum(dim=-1)
-        return torch.sigmoid(dot)
+        return torch.sigmoid(dot * self.logit_scale + self.logit_bias)
 
 class CosineDecoder(nn.Module):
-    """Computes scaled cosine similarity between embeddings."""
-    def __init__(self, scale: float = 3.0):
+    """Computes calibrated scaled cosine similarity between embeddings."""
+    def __init__(self, scale: float = 4.0):
         super().__init__()
-        self.scale = scale
+        self.logit_scale = nn.Parameter(torch.tensor(float(scale)))
+        self.logit_bias = nn.Parameter(torch.tensor(-2.0))
 
     def forward(self, z_u: torch.Tensor, z_v: torch.Tensor) -> torch.Tensor:
         cos = F.cosine_similarity(z_u, z_v, dim=-1)
-        return torch.sigmoid(cos * self.scale)
+        return torch.sigmoid(cos * self.logit_scale + self.logit_bias)
 
 class MLPDecoder(nn.Module):
     """Multi-Layer Perceptron link decoder over concatenated and Hadamard representations."""

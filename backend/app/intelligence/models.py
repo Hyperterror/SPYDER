@@ -79,6 +79,14 @@ class InvestigationLead(BaseModel):
         default_factory=list,
         description="Direct observable evidence records supporting the lead"
     )
+    conflicting_records: List[StructuredEvidenceRecord] = Field(
+        default_factory=list,
+        description="Observable evidence records that conflict with or qualify the lead"
+    )
+    status: str = Field(default="NEW", description="Investigator review status")
+    model_version: str = Field(default="graphsage-1.0.0", description="Model version that generated this lead")
+    reviewed_by: Optional[str] = Field(default=None, description="ID of last reviewing investigator")
+    decision_rationale: Optional[str] = Field(default=None, description="Investigator review rationale")
     created_at: str = Field(..., description="Timestamp when lead was produced")
 
 
@@ -103,6 +111,7 @@ class CrossCaseLeadSummary(BaseModel):
     supporting_modalities: List[str]
     common_intermediates_count: int
     caveats: List[str]
+    status: str = "NEW"
 
 
 class CrossCaseResponse(BaseModel):

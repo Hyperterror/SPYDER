@@ -11,16 +11,19 @@ class Case(Base):
 
     id = Column(UUIDType, primary_key=True, default=uuid.uuid4)
     case_code = Column(String, unique=True, nullable=False, index=True)
+    external_case_ref = Column(String, unique=True, nullable=True, index=True)
     title = Column(String, nullable=False)
     case_type = Column(String, nullable=False, default="HUMAN_TRAFFICKING")
     description = Column(Text, nullable=True)
     status = Column(String, nullable=False, default="ACTIVE")
+    organization_id = Column(UUIDType, ForeignKey("organizations.id"), nullable=True, index=True)
     created_by = Column(UUIDType, ForeignKey("users.id"), nullable=True)
     created_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc), nullable=False)
     updated_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc),
                         onupdate=lambda: datetime.now(timezone.utc), nullable=False)
 
     # Relationships
+    organization = relationship("Organization", back_populates="cases")
     members = relationship("CaseMember", back_populates="case", cascade="all, delete-orphan")
     evidence_items = relationship("EvidenceItem", back_populates="case", cascade="all, delete-orphan")
     audit_events = relationship("AuditEvent", back_populates="case")

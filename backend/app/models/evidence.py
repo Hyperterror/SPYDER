@@ -33,6 +33,13 @@ class EvidenceItem(Base):
     parsing_error = Column(Text, nullable=True)
     processing_status = Column(String, default="UPLOADED", nullable=False)
     is_original = Column(Boolean, default=True, nullable=False)
+    version_number = Column(Integer, default=1, nullable=False)
+    supersedes_evidence_id = Column(UUIDType, ForeignKey("evidence_items.id"), nullable=True)
+    lifecycle_status = Column(String, default="ACTIVE", nullable=False)  # ACTIVE, SUPERSEDED, WITHDRAWN
+    withdrawn_reason = Column(Text, nullable=True)
+    withdrawn_by = Column(UUIDType, ForeignKey("users.id"), nullable=True)
+    withdrawn_at = Column(DateTime(timezone=True), nullable=True)
+    acquisition_metadata = Column(JSONBType, nullable=True)
     created_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc), nullable=False)
     updated_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc),
                         onupdate=lambda: datetime.now(timezone.utc), nullable=False)
@@ -55,11 +62,18 @@ class EvidenceProcessingJob(Base):
     evidence_id = Column(UUIDType, ForeignKey("evidence_items.id"), nullable=False)
     case_id = Column(UUIDType, ForeignKey("cases.id"), nullable=False)
     job_type = Column(String, nullable=False, default="EVIDENCE_INGESTION")
-    status = Column(String, nullable=False, default="UPLOADED")  # UPLOADED, VALIDATING, PROCESSING, PROCESSED, FAILED
-    pipeline_version = Column(String, nullable=False, default="7A.1.0")
+    status = Column(String, nullable=False, default="QUEUED")  # QUEUED, VALIDATING, PROCESSING, COMPLETED, PARTIALLY_COMPLETED, FAILED, RETRYING, CANCELLED
+    stage = Column(String, nullable=False, default="QUEUED")
+    pipeline_version = Column(String, nullable=False, default="2.0.0")
     records_processed = Column(Integer, default=0, nullable=False)
+    retry_count = Column(Integer, default=0, nullable=False)
+    max_retries = Column(Integer, default=3, nullable=False)
+    celery_task_id = Column(String, nullable=True)
+    idempotency_key = Column(String(128), nullable=True, index=True)
     started_at = Column(DateTime(timezone=True), nullable=True)
     completed_at = Column(DateTime(timezone=True), nullable=True)
+    cancelled_at = Column(DateTime(timezone=True), nullable=True)
+    cancelled_by = Column(UUIDType, ForeignKey("users.id"), nullable=True)
     error_message = Column(Text, nullable=True)
     result_summary = Column(JSONBType, nullable=True)
     initiated_by = Column(UUIDType, ForeignKey("users.id"), nullable=True)
@@ -105,6 +119,11 @@ class ParsedRecord(Base):
     normalized_record = Column(JSONBType, nullable=False)
     parse_status = Column(String, nullable=False)
     parse_error = Column(Text, nullable=True)
+    evidence_version = Column(Integer, default=1, nullable=False)
+    extraction_method = Column(String, nullable=True)
+    parser_version = Column(String, nullable=True)
+    extracted_at = Column(DateTime(timezone=True), nullable=True)
+    extraction_confidence = Column(String, nullable=True)
     created_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc), nullable=False)
 
     __table_args__ = (

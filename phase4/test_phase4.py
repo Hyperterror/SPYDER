@@ -218,6 +218,48 @@ class TestPhase4(unittest.TestCase):
         self.assertIn("common_neighbors", results)
         self.assertIn("jaccard_similarity", results)
         self.assertIn("adamic_adar", results)
+        self.assertIn("mrr", results["adamic_adar"])
+
+    def test_16_edge_disjoint_and_temporal_splits_and_target_leakage_audit(self):
+        """Verifies masked training graph removes held-out target edges with zero target-edge leakage."""
+        edge_split = self.splitter.create_edge_disjoint_split()
+        temporal_split = self.splitter.create_temporal_split(self.multi_graph)
+
+        self.assertGreater(edge_split["held_out_edges_count"], 0)
+        self.assertGreater(edge_split["test_count"], 0)
+        self.assertGreater(temporal_split["test_count"], 0)
+
+        held_out = edge_split["held_out_edges"]
+        masked_g = self.loader.build_masked_graph(held_out)
+        norm_adj_masked = self.loader.build_normalized_adj(excluded_edges=held_out, graph=masked_g)
+        x_masked, _ = self.extractor.extract_node_features(
+            masked_g, self.loader.node_to_idx, recompute_centrality=True
+        )
+
+        self.assertEqual(x_masked.shape, self.x.shape)
+        self.assertFalse(torch.isnan(x_masked).any())
+
+        leak_report = LeakageAuditor().audit_target_edge_leakage(
+            norm_adj_masked, self.loader.node_to_idx, held_out
+        )
+        self.assertTrue(leak_report["zero_target_edge_leakage"])
+        self.assertEqual(leak_report["leaked_count"], 0)
+
+    def test_17_ranking_and_calibration_metrics_and_fair_baselines(self):
+        """Verifies ranking (P@10, R@20, MRR) and calibration (Brier, ECE) metrics on masked split."""
+        from phase4.evaluate import Phase4Evaluator
+        evaluator = Phase4Evaluator(
+            model=self.model,
+            x=self.x,
+            norm_adj=self.norm_adj,
+            node_to_idx=self.loader.node_to_idx,
+            multi_graph=self.multi_graph,
+        )
+        metrics = evaluator.evaluate_split(self.case_split["test_pairs"], split_name="UnitTest")
+        for key in ["precision_at_10", "recall_at_20", "mrr", "brier_score", "ece"]:
+            self.assertIn(key, metrics)
+            self.assertGreaterEqual(metrics[key], 0.0)
+            self.assertLessEqual(metrics[key], 1.0)
 
 if __name__ == "__main__":
     unittest.main()

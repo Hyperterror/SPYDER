@@ -71,6 +71,20 @@ class PairDatasetBuilder:
         candidate_pairs = self.candidate_gen.generate_candidate_pairs()
         obs_to_global, hard_neg_pairs = self.load_ground_truth_mapping()
 
+        # Evaluation-only augmentation: inject any benchmark hard-negative pairs not captured by observable blocking
+        seen_canon = {tuple(sorted([a, b])) for a, b, _ in candidate_pairs}
+        for p1_id, p2_id in sorted(hard_neg_pairs):
+            canon = tuple(sorted([p1_id, p2_id]))
+            if canon in seen_canon:
+                continue
+            if p1_id in profiles and p2_id in profiles and profiles[p1_id]["case_id"] != profiles[p2_id]["case_id"]:
+                seen_canon.add(canon)
+                candidate_pairs.append((
+                    canon[0],
+                    canon[1],
+                    {"blocking_reasons": ["ground_truth_hard_negative_evaluation"], "is_hard_negative": True},
+                ))
+
         rows = []
         pos_count = 0
         neg_count = 0

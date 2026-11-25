@@ -30,17 +30,27 @@ class CandidateGenerator:
             for p in self.person_nodes
         }
 
-        # Track existing observed positive ties
+        # Track existing observed positive ties and their supporting graph edges
         self.observed_positive_pairs: Set[Tuple[str, str]] = set()
+        self.positive_supporting_edges: Dict[Tuple[str, str], Set[Tuple[str, str]]] = {}
+        self.positive_max_timestamp: Dict[Tuple[str, str], str] = {}
         self._extract_observed_positives()
+
+    def _canonical_edge(self, u: str, v: str) -> Tuple[str, str]:
+        return (u, v) if u <= v else (v, u)
+
+    def _record_edge_timestamp(self, pair: Tuple[str, str], ts: Any) -> None:
+        if ts:
+            ts_str = str(ts).strip()
+            if ts_str and ts_str > self.positive_max_timestamp.get(pair, ""):
+                self.positive_max_timestamp[pair] = ts_str
 
     def _extract_observed_positives(self):
         """
-        Extracts evidence-backed person-to-person connections:
-        - Direct call/chat between their phones
-        - Financial transfer between accounts
-        - Shared personal device or IMEI
-        - Co-membership in same provisional resolved entity (PROV_RES_ENT)
+        Extracts evidence-backed person-to-person connections and records exact supporting edges
+        so split evaluation can mask out held-out target edges cleanly:
+        - Direct call/chat between their phones (records the CALLED/MESSAGED edge)
+        - Financial transfer or shared personal entity / provisional node (records incident edges)
         """
         # Map phone/device/account to persons
         entity_to_persons: Dict[str, Set[str]] = {}
@@ -65,6 +75,13 @@ class CandidateGenerator:
                     for j in range(i + 1, len(p_list)):
                         pair = (p_list[i], p_list[j])
                         self.observed_positive_pairs.add(pair)
+                        edges_set = self.positive_supporting_edges.setdefault(pair, set())
+                        edges_set.add(self._canonical_edge(p_list[i], ent))
+                        edges_set.add(self._canonical_edge(p_list[j], ent))
+                        for node_end in (p_list[i], p_list[j]):
+                            if self.multi_graph.has_edge(node_end, ent):
+                                for _, d in self.multi_graph[node_end][ent].items():
+                                    self._record_edge_timestamp(pair, d.get("timestamp"))
 
         # Also add direct phone communication (calls/chats)
         phone_to_persons: Dict[str, Set[str]] = {}
@@ -82,6 +99,8 @@ class CandidateGenerator:
                         if pu != pv:
                             pair = tuple(sorted([pu, pv]))
                             self.observed_positive_pairs.add(pair)
+                            self.positive_supporting_edges.setdefault(pair, set()).add(self._canonical_edge(u, v))
+                            self._record_edge_timestamp(pair, d.get("timestamp"))
 
     def generate_all_candidates(self) -> List[Dict[str, Any]]:
         """
@@ -103,6 +122,7 @@ class CandidateGenerator:
         for p1, p2 in pos_list:
             c1 = self.person_cases.get(p1, set())
             c2 = self.person_cases.get(p2, set())
+            sup_edges = sorted([list(e) for e in self.positive_supporting_edges.get((p1, p2), set())])
             candidates.append({
                 "source": p1,
                 "target": p2,
@@ -110,7 +130,9 @@ class CandidateGenerator:
                 "category": "POSITIVE",
                 "source_cases": "; ".join(sorted(list(c1))),
                 "target_cases": "; ".join(sorted(list(c2))),
-                "is_cross_case": len(c1 & c2) == 0
+                "is_cross_case": len(c1 & c2) == 0,
+                "supporting_edge_keys": sup_edges,
+                "max_timestamp": self.positive_max_timestamp.get((p1, p2), ""),
             })
 
         num_positives = len(candidates)
@@ -290,3 +312,15 @@ class CandidateGenerator:
                 a_count += 1
 
         return candidates
+
+    @staticmethod
+    def collect_supporting_edges(pairs: List[Dict[str, Any]]) -> Set[Tuple[str, str]]:
+        """Collect canonical undirected edge tuples supporting the given positive pairs."""
+        excluded: Set[Tuple[str, str]] = set()
+        for p in pairs:
+            if p.get("label") == 1:
+                for edge_pair in p.get("supporting_edge_keys", []) or []:
+                    if len(edge_pair) == 2:
+                        u, v = edge_pair
+                        excluded.add((u, v) if u <= v else (v, u))
+        return excluded

@@ -11,10 +11,14 @@ from app.core.config import settings
 from app.core.database import Base
 
 # Import all models so Alembic detects them
-import app.models.user       # noqa
-import app.models.case       # noqa
-import app.models.evidence   # noqa
-import app.models.audit      # noqa
+import app.models.organization  # noqa
+import app.models.user          # noqa
+import app.models.auth          # noqa
+import app.models.case          # noqa
+import app.models.evidence      # noqa
+import app.models.graph         # noqa
+import app.models.intelligence  # noqa
+import app.models.audit         # noqa
 
 config = context.config
 

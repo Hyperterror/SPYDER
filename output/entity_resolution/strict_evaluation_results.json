@@ -72,25 +72,116 @@
     "false_split_rate": 0.0,
     "true_positives": 10,
     "false_positives": 0,
-    "true_negatives": 15,
+    "true_negatives": 12,
     "false_negatives": 0,
-    "total_samples": 25
+    "total_samples": 22
+  },
+  "entity_disjoint_calibration": {
+    "brier_score": 0.0027,
+    "ece": 0.0522,
+    "sample_count": 47
+  },
+  "entity_disjoint_bootstrap_ci": {
+    "precision": {
+      "mean": 1.0,
+      "ci95_low": 1.0,
+      "ci95_high": 1.0
+    },
+    "recall": {
+      "mean": 1.0,
+      "ci95_low": 1.0,
+      "ci95_high": 1.0
+    },
+    "f1": {
+      "mean": 1.0,
+      "ci95_low": 1.0,
+      "ci95_high": 1.0
+    }
+  },
+  "multi_seed_validation": {
+    "seeds_evaluated": 5,
+    "mean_f1": 1.0,
+    "std_f1": 0.0,
+    "mean_roc_auc": 1.0,
+    "mean_false_merge_rate": 0.0,
+    "runs": [
+      {
+        "seed": 42,
+        "test_pairs": 47,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "false_merge_rate": 0.0,
+        "roc_auc": 1.0,
+        "ece": 0.0738
+      },
+      {
+        "seed": 101,
+        "test_pairs": 26,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "false_merge_rate": 0.0,
+        "roc_auc": 1.0,
+        "ece": 0.085
+      },
+      {
+        "seed": 202,
+        "test_pairs": 9,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "false_merge_rate": 0.0,
+        "roc_auc": 1.0,
+        "ece": 0.0611
+      },
+      {
+        "seed": 303,
+        "test_pairs": 29,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "false_merge_rate": 0.0,
+        "roc_auc": 1.0,
+        "ece": 0.0685
+      },
+      {
+        "seed": 404,
+        "test_pairs": 33,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "false_merge_rate": 0.0,
+        "roc_auc": 1.0,
+        "ece": 0.0665
+      }
+    ]
+  },
+  "noisy_stress_validation": {
+    "stress_pairs_count": 1200,
+    "precision": 1.0,
+    "recall": 0.4175,
+    "f1": 0.5891,
+    "false_merge_rate": 0.0,
+    "roc_auc": 0.915,
+    "brier_score": 0.1763,
+    "ece": 0.1661
   },
   "feature_importances": {
-    "device_id_match": 0.5096,
-    "imei_shared_count": 0.4122,
-    "shared_ip_count": 0.0782,
-    "context_embedding_cosine_sim": 0.0,
-    "address_token_sim": 0.0,
+    "device_id_match": 0.5194,
+    "imei_shared_count": 0.425,
+    "context_embedding_cosine_sim": 0.0556,
+    "shared_contacts_count": 0.0,
     "shared_location_count": 0.0,
-    "shared_vehicle_count": 0.0,
     "vehicle_reg_match": 0.0,
+    "shared_vehicle_count": 0.0,
     "email_match": 0.0,
     "social_handle_match": 0.0,
-    "same_age_group": 0.0,
-    "shared_contacts_count": 0.0,
-    "imei_match": 0.0,
     "shared_ip_is_public_infra": 0.0,
+    "same_age_group": 0.0,
+    "address_token_sim": 0.0,
+    "imei_match": 0.0,
+    "shared_ip_count": 0.0,
     "phone_both_present": 0.0,
     "phone_exact_match": 0.0,
     "phone_shared_count": 0.0,

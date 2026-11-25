@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState, useCallback } from 'react'
+import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import AppShell from '@/components/layout/AppShell'
@@ -8,9 +8,9 @@ import KpiCard from '@/components/ui/KpiCard'
 import StatusBadge from '@/components/ui/StatusBadge'
 import ActionQueueItem from '@/components/ui/ActionQueueItem'
 import Modal from '@/components/ui/Modal'
-import { casesApi, intelligenceApi } from '@/lib/api'
+import { casesApi, evidenceApi, intelligenceApi } from '@/lib/api'
 import { isAuthenticated } from '@/lib/auth'
-import type { Case, InvestigationLead } from '@/types'
+import type { Case, EvidenceItem, InvestigationLead } from '@/types'
 
 /* ─── KPI Icons ─────────────────────────────────────────────────────────── */
 const CasesIcon = () => (
@@ -52,8 +52,10 @@ function formatDate(iso: string) {
 export default function DashboardPage() {
   const router = useRouter()
   const [cases, setCases]                   = useState<Case[]>([])
+  const [recentEvidence, setRecentEvidence] = useState<(EvidenceItem & { case_code?: string })[]>([])
   const [leads, setLeads]                   = useState<InvestigationLead[]>([])
   const [leadsTotal, setLeadsTotal]         = useState<number>(0)
+  const [contradictionsTotal, setContradictionsTotal] = useState<number>(0)
   const [crossCaseTotal, setCrossCaseTotal] = useState<number>(0)
   const [loading, setLoading]               = useState(true)
   const [selectedCase, setSelected]         = useState<Case | null>(null)
@@ -61,7 +63,21 @@ export default function DashboardPage() {
   useEffect(() => {
     if (!isAuthenticated()) { router.replace('/login'); return }
     casesApi.list()
-      .then(({ data }) => setCases(data))
+      .then(async ({ data }) => {
+        setCases(data)
+        const evLists = await Promise.all(
+          data.slice(0, 4).map(async (c: Case) => {
+            try {
+              const evRes = await evidenceApi.list(c.id)
+              return (evRes.data as EvidenceItem[]).map((ev) => ({ ...ev, case_code: c.case_code }))
+            } catch {
+              return []
+            }
+          })
+        )
+        const flat = evLists.flat().sort((a, b) => b.uploaded_at.localeCompare(a.uploaded_at))
+        setRecentEvidence(flat.slice(0, 6))
+      })
       .catch(() => {})
       .finally(() => setLoading(false))
 
@@ -77,10 +93,15 @@ export default function DashboardPage() {
         setCrossCaseTotal(data.total ?? 0)
       })
       .catch(() => {})
+
+    intelligenceApi.listConsistency({ status: 'CONTRADICTED', limit: 1 })
+      .then(({ data }) => {
+        setContradictionsTotal(data.total ?? 0)
+      })
+      .catch(() => {})
   }, [router])
 
-  const activeCases     = cases.filter((c) => c.status === 'ACTIVE').length
-  const totalCases      = cases.length
+  const activeCases = cases.filter((c) => c.status === 'ACTIVE').length
 
   return (
     <AppShell>
@@ -104,10 +125,10 @@ export default function DashboardPage() {
 
         {/* KPI Cards */}
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <KpiCard icon={<CasesIcon />}         label="Active Cases"    value={activeCases || (cases.length ? cases.length : 14)}  trendDelta={2}  color="cyan"   />
-          <KpiCard icon={<ReviewsIcon />}        label="Pending Reviews" value={leadsTotal || 37}                 trendDelta={12} color="red"    />
-          <KpiCard icon={<ContradictionsIcon />} label="Contradictions"  value={6}                  trendDelta={3}  color="amber"  />
-          <KpiCard icon={<LinksIcon />}          label="Cross-Case Links" value={crossCaseTotal || 3}                 trendDelta={1}  color="purple" />
+          <KpiCard icon={<CasesIcon />}         label="Active Cases"     value={activeCases}         trendDelta={cases.length} color="cyan"   />
+          <KpiCard icon={<ReviewsIcon />}        label="Active Leads"     value={leadsTotal}          trendDelta={0}            color="red"    />
+          <KpiCard icon={<ContradictionsIcon />} label="Contradictions"   value={contradictionsTotal} trendDelta={0}            color="amber"  />
+          <KpiCard icon={<LinksIcon />}          label="Cross-Case Links" value={crossCaseTotal}      trendDelta={0}            color="purple" />
         </section>
 
         {/* Middle: Investigations + Priority Queue */}
@@ -143,7 +164,13 @@ export default function DashboardPage() {
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-brand-border/40">
-                    {(cases.length > 0 ? cases : MOCK_CASES).map((c) => (
+                    {cases.length === 0 ? (
+                      <tr>
+                        <td colSpan={6} className="py-6 text-center text-slate-400">
+                          No authorized cases found. <Link href="/cases" className="text-brand-cyan hover:underline">Create Case →</Link>
+                        </td>
+                      </tr>
+                    ) : cases.map((c) => (
                       <tr
                         key={c.id}
                         onClick={() => setSelected(c)}
@@ -212,45 +239,15 @@ export default function DashboardPage() {
                           <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
                         </svg>
                       }
-                      onReview={targetCase ? () => router.push(`/cases/${targetCase}/graph`) : undefined}
+                      onReview={() => router.push(`/leads/${encodeURIComponent(lead.lead_id)}`)}
                     />
                   )
                 })
               ) : (
-                <>
-                  <ActionQueueItem
-                    title="Candidate Entity Match"
-                    badge="High Priority"
-                    color="red"
-                    description={<>Possible match for <span className="font-mono text-brand-cyan">+91 98XXXXXX12</span> with existing suspect in Case #25998.</>}
-                    timeAgo="3h ago"
-                    icon={<svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" /></svg>}
-                  />
-                  <ActionQueueItem
-                    title="Contradiction Detected"
-                    badge="Needs Review"
-                    color="amber"
-                    description="Location data conflicts with witness statement for Case #26189."
-                    timeAgo="5h ago"
-                    icon={<svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" /></svg>}
-                  />
-                  <ActionQueueItem
-                    title="Cross-Case Link"
-                    badge="Medium"
-                    color="cyan"
-                    description={<>Vehicle <span className="font-mono text-white">DL01AB1234</span> appears in 2 cases.</>}
-                    timeAgo="1d ago"
-                    icon={<svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" /></svg>}
-                  />
-                  <ActionQueueItem
-                    title="Unusual Financial Activity"
-                    badge="Medium"
-                    color="purple"
-                    description="Multiple transfers from A/C XXXX4021 to high-risk entities."
-                    timeAgo="1d ago"
-                    icon={<svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" /></svg>}
-                  />
-                </>
+                <div className="p-6 text-center text-xs text-slate-400 border border-dashed border-brand-border rounded-lg">
+                  No authorized leads queued. Ingest evidence or inspect{' '}
+                  <Link href="/leads" className="text-brand-cyan hover:underline">Lead Queue</Link>.
+                </div>
               )}
             </div>
           </div>
@@ -261,7 +258,7 @@ export default function DashboardPage() {
           <div className="flex items-center justify-between mb-3">
             <h2 className="text-sm font-bold text-white tracking-wide">Recent Evidence Ingestion</h2>
             <Link href="/import" className="text-xs text-brand-cyan hover:underline flex items-center gap-1 font-medium">
-              View All <span>→</span>
+              Import Evidence <span>→</span>
             </Link>
           </div>
           <div className="overflow-x-auto">
@@ -269,27 +266,37 @@ export default function DashboardPage() {
               <thead>
                 <tr className="border-b border-brand-border text-[11px] font-mono uppercase text-slate-400">
                   <th className="pb-2.5 font-medium">File Name</th>
-                  <th className="pb-2.5 font-medium">Type</th>
+                  <th className="pb-2.5 font-medium">Case</th>
                   <th className="pb-2.5 font-medium">Source</th>
                   <th className="pb-2.5 font-medium">Ingested On</th>
-                  <th className="pb-2.5 font-medium">Status</th>
-                  <th className="pb-2.5 font-medium text-right">Records</th>
+                  <th className="pb-2.5 font-medium">Integrity</th>
+                  <th className="pb-2.5 font-medium text-right">Status</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-brand-border/40">
-                {MOCK_EVIDENCE.map((e, i) => (
-                  <tr key={i} className="hover:bg-brand-surface/70 cursor-pointer transition-colors group">
+                {recentEvidence.length === 0 ? (
+                  <tr>
+                    <td colSpan={6} className="py-6 text-center text-slate-400">
+                      No uploaded evidence items in authorized cases yet.
+                    </td>
+                  </tr>
+                ) : recentEvidence.map((e) => (
+                  <tr
+                    key={e.id}
+                    onClick={() => router.push(`/cases/${e.case_id}/evidence`)}
+                    className="hover:bg-brand-surface/70 cursor-pointer transition-colors group"
+                  >
                     <td className="py-3 font-mono text-white flex items-center space-x-2">
                       <svg className="w-4 h-4 text-slate-400 group-hover:text-brand-cyan shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
                       </svg>
-                      <span className="group-hover:text-brand-cyan transition-colors">{e.name}</span>
+                      <span className="group-hover:text-brand-cyan transition-colors">{e.original_filename}</span>
                     </td>
-                    <td className="py-3 text-slate-300">{e.type}</td>
-                    <td className="py-3 text-slate-400">{e.source}</td>
-                    <td className="py-3 font-mono text-[11px] text-slate-400">{e.date}</td>
-                    <td className="py-3"><StatusBadge status={e.status.toLowerCase()} /></td>
-                    <td className="py-3 font-mono text-slate-200 text-right">{e.records}</td>
+                    <td className="py-3 font-mono text-brand-cyan">{e.case_code ?? e.case_id.slice(0, 8)}</td>
+                    <td className="py-3 text-slate-400">{e.source_label ?? 'Evidence'}</td>
+                    <td className="py-3 font-mono text-[11px] text-slate-400">{formatDate(e.uploaded_at)}</td>
+                    <td className="py-3"><StatusBadge status={e.integrity_status.toLowerCase().replace('_', '-')} /></td>
+                    <td className="py-3 text-right"><StatusBadge status={e.parsing_status.toLowerCase().replace('_', '-')} /></td>
                   </tr>
                 ))}
               </tbody>
@@ -358,17 +365,3 @@ export default function DashboardPage() {
     </AppShell>
   )
 }
-
-// ─── Mock fallback data ────────────────────────────────────────────────────
-const MOCK_CASES: Case[] = [
-  { id: '1', case_code: 'HT-2026-001', title: 'Operation Falcon',    case_type: 'CYBER_CRIME',        status: 'ACTIVE',  created_by: '', created_at: '2026-08-01T00:00:00Z', updated_at: '2026-08-12T10:24:00Z', members: [] },
-  { id: '2', case_code: 'HT-2026-002', title: 'Financial Fraud',     case_type: 'FINANCIAL_CRIME',    status: 'ACTIVE',  created_by: '', created_at: '2026-07-15T00:00:00Z', updated_at: '2026-08-10T16:17:00Z', members: [] },
-  { id: '3', case_code: 'HT-2026-003', title: 'Human Trafficking',   case_type: 'HUMAN_TRAFFICKING',  status: 'ON_HOLD', created_by: '', created_at: '2026-07-01T00:00:00Z', updated_at: '2026-08-08T11:03:00Z', members: [] },
-  { id: '4', case_code: 'HT-2026-004', title: 'Operation Nexus',     case_type: 'ORGANIZED_CRIME',    status: 'ACTIVE',  created_by: '', created_at: '2026-06-20T00:00:00Z', updated_at: '2026-08-05T14:41:00Z', members: [] },
-]
-
-const MOCK_EVIDENCE = [
-  { name: 'CDR_Aug2026.csv',       type: 'CDR',            source: 'Telecom Provider', date: '12 Aug 2026, 10:24 AM', status: 'completed', records: '30' },
-  { name: 'Bank_Statements.xlsx',  type: 'Bank Statement', source: 'Bank (LEA)',       date: '12 Aug 2026, 09:18 AM', status: 'completed', records: '26' },
-  { name: 'UPI_Transactions.csv',  type: 'UPI',            source: 'NPCI Data',        date: '11 Aug 2026, 06:11 PM', status: 'processing', records: '25' },
-]

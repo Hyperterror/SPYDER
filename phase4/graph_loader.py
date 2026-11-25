@@ -125,15 +125,46 @@ class GraphLoader:
             if d.get("node_type") == "PERSON"
         ]
 
-    def build_normalized_adj(self) -> torch.Tensor:
+    def build_masked_graph(
+        self,
+        excluded_edges: Optional[Set[Tuple[str, str]]] = None,
+    ) -> nx.MultiDiGraph:
         """
-        Builds a sparse/dense row-normalized adjacency matrix for GraphSAGE neighborhood aggregation.
-        Includes self-loops and scales by edge weights.
+        Constructs a copy of multi_graph with all excluded_edges removed (treated as undirected pairs).
+        Used to guarantee zero held-out target-edge leakage during message passing & baseline scoring.
+        """
+        if not excluded_edges:
+            return self.multi_graph.copy()
+
+        masked = nx.MultiDiGraph()
+        for n, d in self.multi_graph.nodes(data=True):
+            masked.add_node(n, **dict(d))
+
+        for u, v, d in self.multi_graph.edges(data=True):
+            canon = (u, v) if u <= v else (v, u)
+            if canon in excluded_edges or (u, v) in excluded_edges or (v, u) in excluded_edges:
+                continue
+            masked.add_edge(u, v, **dict(d))
+        return masked
+
+    def build_normalized_adj(
+        self,
+        excluded_edges: Optional[Set[Tuple[str, str]]] = None,
+        graph: Optional[nx.MultiDiGraph] = None,
+    ) -> torch.Tensor:
+        """
+        Builds a row-normalized adjacency matrix for GraphSAGE neighborhood aggregation.
+        When excluded_edges is provided, masks those target edges to prevent evaluation leakage.
         """
         num_nodes = len(self.node_to_idx)
         adj = torch.zeros((num_nodes, num_nodes), dtype=torch.float32)
+        src_graph = graph if graph is not None else self.multi_graph
 
-        for u, v, d in self.multi_graph.edges(data=True):
+        for u, v, d in src_graph.edges(data=True):
+            if excluded_edges:
+                canon = (u, v) if u <= v else (v, u)
+                if canon in excluded_edges or (u, v) in excluded_edges or (v, u) in excluded_edges:
+                    continue
             uidx = self.node_to_idx[u]
             vidx = self.node_to_idx[v]
             w = float(d.get("weight", 1.0))

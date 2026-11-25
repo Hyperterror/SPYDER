@@ -4,12 +4,48 @@ Computes contextual text embeddings strictly from observable person attributes
 using sentence-transformers/all-MiniLM-L6-v2.
 """
 
+import hashlib
 import pickle
+import re
 from pathlib import Path
 from typing import Dict, Any, List, Optional
 import numpy as np
 
 from entity_resolution.config import EMBEDDING_MODEL_NAME, EMBEDDING_CACHE_FILE
+
+
+class _DeterministicHashEncoder:
+    """
+    Deterministic pure-NumPy fallback encoder when sentence_transformers or local
+    HF weights are unavailable (e.g., airgapped or lightweight worker environments).
+    Produces normalized 384-d n-gram + token projections compatible with MiniLM dim.
+    """
+
+    def __init__(self, dim: int = 384):
+        self.dim = dim
+
+    def encode(self, text: str, normalize_embeddings: bool = True) -> np.ndarray:
+        vec = np.zeros(self.dim, dtype=np.float32)
+        clean = re.sub(r"[^a-z0-9\s]", " ", (text or "").lower())
+        tokens = clean.split()
+        grams: List[str] = list(tokens)
+        for tok in tokens:
+            for n in (3, 4):
+                if len(tok) >= n:
+                    for i in range(len(tok) - n + 1):
+                        grams.append(tok[i : i + n])
+        for g in grams:
+            digest = hashlib.blake2b(g.encode("utf-8"), digest_size=8).digest()
+            idx = int.from_bytes(digest[:4], "little") % self.dim
+            sign = 1.0 if (digest[4] & 1) == 0 else -1.0
+            weight = 2.0 if g in tokens else 1.0
+            vec[idx] += sign * weight
+        if normalize_embeddings:
+            norm = float(np.linalg.norm(vec))
+            if norm > 0.0:
+                vec = vec / norm
+        return vec
+
 
 class EmbeddingManager:
     def __init__(self, model_name: str = EMBEDDING_MODEL_NAME, cache_path: Path = EMBEDDING_CACHE_FILE):
@@ -35,10 +71,13 @@ class EmbeddingManager:
             pickle.dump(self.cache, f)
 
     def _get_model(self):
-        """Lazy loader for SentenceTransformer model."""
+        """Lazy loader for SentenceTransformer model with offline deterministic fallback."""
         if self.model is None:
-            from sentence_transformers import SentenceTransformer
-            self.model = SentenceTransformer(self.model_name)
+            try:
+                from sentence_transformers import SentenceTransformer
+                self.model = SentenceTransformer(self.model_name)
+            except Exception:
+                self.model = _DeterministicHashEncoder(dim=384)
         return self.model
 
     def build_text_payload(self, profile: Dict[str, Any]) -> str:
@@ -61,7 +100,11 @@ class EmbeddingManager:
 
         text = self.build_text_payload(profile)
         model = self._get_model()
-        vec = model.encode(text, normalize_embeddings=True)
+        try:
+            vec = model.encode(text, normalize_embeddings=True)
+        except Exception:
+            self.model = _DeterministicHashEncoder(dim=384)
+            vec = self.model.encode(text, normalize_embeddings=True)
         self.cache[person_id] = np.array(vec, dtype=np.float32)
         return self.cache[person_id]
 

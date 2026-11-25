@@ -4,27 +4,209 @@
     "pr_auc": 0.0763,
     "precision": 0.0293,
     "recall": 1.0,
-    "f1": 0.057
+    "f1": 0.057,
+    "precision_at_10": 0.2,
+    "recall_at_20": 0.1053,
+    "mrr": 0.5
   },
   "jaccard_similarity": {
     "roc_auc": 0.9127,
     "pr_auc": 0.4322,
     "precision": 0.0335,
     "recall": 1.0,
-    "f1": 0.0648
+    "f1": 0.0648,
+    "precision_at_10": 0.6,
+    "recall_at_20": 0.3684,
+    "mrr": 1.0
   },
   "adamic_adar": {
     "roc_auc": 0.9949,
     "pr_auc": 0.8471,
     "precision": 0.0567,
     "recall": 1.0,
-    "f1": 0.1073
+    "f1": 0.1073,
+    "precision_at_10": 1.0,
+    "recall_at_20": 0.7368,
+    "mrr": 1.0
   },
   "preferential_attachment": {
     "roc_auc": 0.4596,
     "pr_auc": 0.0195,
     "precision": 0.0222,
     "recall": 0.3684,
-    "f1": 0.0418
+    "f1": 0.0418,
+    "precision_at_10": 0.0,
+    "recall_at_20": 0.0,
+    "mrr": 0.0116
+  },
+  "by_split": {
+    "case_aware": {
+      "common_neighbors": {
+        "roc_auc": 0.8422,
+        "pr_auc": 0.0763,
+        "precision": 0.0293,
+        "recall": 1.0,
+        "f1": 0.057,
+        "precision_at_10": 0.2,
+        "recall_at_20": 0.1053,
+        "mrr": 0.5
+      },
+      "jaccard_similarity": {
+        "roc_auc": 0.9127,
+        "pr_auc": 0.4322,
+        "precision": 0.0335,
+        "recall": 1.0,
+        "f1": 0.0648,
+        "precision_at_10": 0.6,
+        "recall_at_20": 0.3684,
+        "mrr": 1.0
+      },
+      "adamic_adar": {
+        "roc_auc": 0.9949,
+        "pr_auc": 0.8471,
+        "precision": 0.0567,
+        "recall": 1.0,
+        "f1": 0.1073,
+        "precision_at_10": 1.0,
+        "recall_at_20": 0.7368,
+        "mrr": 1.0
+      },
+      "preferential_attachment": {
+        "roc_auc": 0.4596,
+        "pr_auc": 0.0195,
+        "precision": 0.0222,
+        "recall": 0.3684,
+        "f1": 0.0418,
+        "precision_at_10": 0.0,
+        "recall_at_20": 0.0,
+        "mrr": 0.0116
+      }
+    },
+    "entity_disjoint": {
+      "common_neighbors": {
+        "roc_auc": 0.8652,
+        "pr_auc": 0.037,
+        "precision": 0.0104,
+        "recall": 1.0,
+        "f1": 0.0206,
+        "precision_at_10": 0.0,
+        "recall_at_20": 1.0,
+        "mrr": 0.0769
+      },
+      "jaccard_similarity": {
+        "roc_auc": 0.9929,
+        "pr_auc": 0.5,
+        "precision": 0.008,
+        "recall": 1.0,
+        "f1": 0.0159,
+        "precision_at_10": 0.1,
+        "recall_at_20": 1.0,
+        "mrr": 0.5
+      },
+      "adamic_adar": {
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "precision": 0.0196,
+        "recall": 1.0,
+        "f1": 0.0385,
+        "precision_at_10": 0.1,
+        "recall_at_20": 1.0,
+        "mrr": 1.0
+      },
+      "preferential_attachment": {
+        "roc_auc": 0.5709,
+        "pr_auc": 0.0161,
+        "precision": 0.0105,
+        "recall": 1.0,
+        "f1": 0.0208,
+        "precision_at_10": 0.0,
+        "recall_at_20": 0.0,
+        "mrr": 0.0164
+      }
+    },
+    "edge_disjoint": {
+      "common_neighbors": {
+        "roc_auc": 0.6873,
+        "pr_auc": 0.0419,
+        "precision": 0.0162,
+        "recall": 0.875,
+        "f1": 0.0319,
+        "precision_at_10": 0.1,
+        "recall_at_20": 0.125,
+        "mrr": 0.25
+      },
+      "jaccard_similarity": {
+        "roc_auc": 0.7295,
+        "pr_auc": 0.1024,
+        "precision": 0.0164,
+        "recall": 0.875,
+        "f1": 0.0322,
+        "precision_at_10": 0.1,
+        "recall_at_20": 0.25,
+        "mrr": 0.5
+      },
+      "adamic_adar": {
+        "roc_auc": 0.8418,
+        "pr_auc": 0.1569,
+        "precision": 0.0255,
+        "recall": 0.875,
+        "f1": 0.0495,
+        "precision_at_10": 0.1,
+        "recall_at_20": 0.25,
+        "mrr": 0.5
+      },
+      "preferential_attachment": {
+        "roc_auc": 0.5808,
+        "pr_auc": 0.0279,
+        "precision": 0.0215,
+        "recall": 0.625,
+        "f1": 0.0415,
+        "precision_at_10": 0.0,
+        "recall_at_20": 0.125,
+        "mrr": 0.0714
+      }
+    },
+    "temporal": {
+      "common_neighbors": {
+        "roc_auc": 0.6721,
+        "pr_auc": 0.0236,
+        "precision": 0.0199,
+        "recall": 1.0,
+        "f1": 0.0391,
+        "precision_at_10": 0.0,
+        "recall_at_20": 0.0,
+        "mrr": 0.0435
+      },
+      "jaccard_similarity": {
+        "roc_auc": 0.7667,
+        "pr_auc": 0.1407,
+        "precision": 0.0185,
+        "recall": 1.0,
+        "f1": 0.0362,
+        "precision_at_10": 0.1,
+        "recall_at_20": 0.2,
+        "mrr": 1.0
+      },
+      "adamic_adar": {
+        "roc_auc": 0.9113,
+        "pr_auc": 0.0923,
+        "precision": 0.0207,
+        "recall": 1.0,
+        "f1": 0.0405,
+        "precision_at_10": 0.0,
+        "recall_at_20": 0.1,
+        "mrr": 0.0909
+      },
+      "preferential_attachment": {
+        "roc_auc": 0.4579,
+        "pr_auc": 0.0165,
+        "precision": 0.0198,
+        "recall": 0.5,
+        "f1": 0.0382,
+        "precision_at_10": 0.0,
+        "recall_at_20": 0.0,
+        "mrr": 0.0167
+      }
+    }
   }
 }

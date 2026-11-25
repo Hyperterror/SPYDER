@@ -477,7 +477,7 @@ class InvestigationPriorityEngine:
         masked_p.associated_cases = visible_cases
         masked_p.cases_count = len(visible_cases)
 
-        # Sanitize reasons: avoid disclosing unauthorized case counts
+        # Sanitize reasons: avoid disclosing unauthorized case counts or cross-case candidates
         sanitized_reasons = []
         for r in masked_p.reasons:
             if "case dossiers" in r:
@@ -485,9 +485,13 @@ class InvestigationPriorityEngine:
                     sanitized_reasons.append(f"Cross-case presence spanning {len(visible_cases)} authorized case dossiers")
                 else:
                     sanitized_reasons.append("Associated with authorized case dossier")
+            elif "cross-case candidate" in r and len(visible_cases) < 2:
+                continue
             else:
                 sanitized_reasons.append(r)
         masked_p.reasons = sanitized_reasons
+        if len(visible_cases) < 2:
+            masked_p.cross_case_candidates_count = 0
 
         return masked_p
 

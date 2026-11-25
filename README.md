@@ -387,3 +387,21 @@ Each module has its own README with methodology, guardrails and metrics.
 | `backend/app/intelligence/` | Serves Phase 4 leads, priorities and statement consistency via `/api/v1/intelligence/*` | — |
 
 All model outputs are **investigative leads**, not determinations of identity or guilt.
+
+---
+
+## Production Evolution & Documentation (`docs/`)
+
+See detailed technical documentation under [`docs/`](docs/):
+- [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — Source-of-truth ownership across PostgreSQL, MinIO, Neo4j, and Celery workers
+- [`docs/SECURITY.md`](docs/SECURITY.md) — Session/CSRF JWT auth, strict cross-case isolation (`all_cases_authorized`), audit hash verification
+- [`docs/DATA_MODEL.md`](docs/DATA_MODEL.md) — Alembic migrations `0001`–`0005` and relational schema
+- [`docs/EVIDENCE_PIPELINE.md`](docs/EVIDENCE_PIPELINE.md) — Canonical ingestion, supersede/withdraw lifecycle, and Celery queues
+- [`docs/ENTITY_RESOLUTION.md`](docs/ENTITY_RESOLUTION.md) — Observable cross-case identity hypotheses & human adjudication
+- [`docs/KNOWLEDGE_GRAPH.md`](docs/KNOWLEDGE_GRAPH.md) — Atomic versioned `GraphSnapshot` publishing & Neo4j projection
+- [`docs/ML_EVALUATION.md`](docs/ML_EVALUATION.md) — Anti-leakage splits, ranking/calibration metrics, multi-seed & stress validation
+- [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) — Production `docker-compose.prod.yml` & fail-fast configuration
+- [`docs/BACKUP_AND_RECOVERY.md`](docs/BACKUP_AND_RECOVERY.md) — PostgreSQL + MinIO backup manifests & restore verification
+- [`docs/API.md`](docs/API.md) — Complete REST endpoint catalog
+- [`docs/CHANGELOG.md`](docs/CHANGELOG.md) — Release history (v2.0.0)
+

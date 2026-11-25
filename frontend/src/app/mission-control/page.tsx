@@ -6,7 +6,7 @@ import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import AppShell from '@/components/layout/AppShell'
 import StatusBadge from '@/components/ui/StatusBadge'
-import { casesApi } from '@/lib/api'
+import { casesApi, intelligenceApi } from '@/lib/api'
 import { isAuthenticated } from '@/lib/auth'
 import type { Case } from '@/types'
 
@@ -22,32 +22,37 @@ function caseVariant(s: string) {
   return m[s] ?? 'active'
 }
 
-const STAT_CARDS = [
-  { label: 'Monitored Entities',  value: '8,420',  color: 'text-brand-cyan',   border: 'border-brand-cyan/20' },
-  { label: 'Graph Relationships', value: '31,240',  color: 'text-brand-purple', border: 'border-brand-purple/20' },
-  { label: 'Evidence Files',      value: '3',       color: 'text-brand-green',  border: 'border-brand-green/20' },
-  { label: 'Active Alerts',       value: '12',      color: 'text-brand-red',    border: 'border-brand-red/20' },
-]
-
 const CAPABILITIES = [
-  { label: 'Knowledge Graph',   desc: 'Visualise connections',       href: '#', icon: '⬡' },
-  { label: 'Advanced Analytics', desc: 'Find patterns & anomalies',  href: '#', icon: '◈' },
-  { label: 'Case Management',   desc: 'Organise investigations',      href: '/cases', icon: '⬜' },
-  { label: 'Generate Reports',  desc: 'Create actionable insights',   href: '#', icon: '⬛' },
+  { label: 'Investigation Leads', desc: 'Review ranked hypotheses', href: '/leads', icon: '⚡' },
+  { label: 'Entity Resolution', desc: 'Adjudicate identity matches', href: '/entity-resolution', icon: '◈' },
+  { label: 'Case Management', desc: 'Organise investigations', href: '/cases', icon: '⬜' },
+  { label: 'Statement Lab', desc: 'Verify claims vs evidence', href: '/consistency', icon: '⬛' },
 ]
 
 export default function MissionControlPage() {
   const router = useRouter()
-  const [cases, setCases]     = useState<Case[]>([])
+  const [cases, setCases] = useState<Case[]>([])
+  const [leadTotal, setLeadTotal] = useState<number>(0)
+  const [hypTotal, setHypTotal] = useState<number>(0)
+  const [crossTotal, setCrossTotal] = useState<number>(0)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     if (!isAuthenticated()) { router.replace('/login'); return }
-    casesApi.list()
-      .then(({ data }) => setCases(data))
-      .catch(() => {})
-      .finally(() => setLoading(false))
+    Promise.all([
+      casesApi.list().then(({ data }) => setCases(data)).catch(() => {}),
+      intelligenceApi.getLeads({ limit: 1 }).then(({ data }) => setLeadTotal(data.total ?? 0)).catch(() => {}),
+      intelligenceApi.listIdentityHypotheses({ limit: 1 }).then(({ data }) => setHypTotal(data.total ?? 0)).catch(() => {}),
+      intelligenceApi.getCrossCase({ limit: 1 }).then(({ data }) => setCrossTotal(data.total ?? 0)).catch(() => {}),
+    ]).finally(() => setLoading(false))
   }, [router])
+
+  const STAT_CARDS = [
+    { label: 'Authorized Cases', value: String(cases.length), color: 'text-brand-cyan', border: 'border-brand-cyan/20' },
+    { label: 'Active Leads', value: String(leadTotal), color: 'text-brand-purple', border: 'border-brand-purple/20' },
+    { label: 'Identity Hypotheses', value: String(hypTotal), color: 'text-brand-green', border: 'border-brand-green/20' },
+    { label: 'Cross-Case Bridges', value: String(crossTotal), color: 'text-brand-red', border: 'border-brand-red/20' },
+  ]
 
   return (
     <>
@@ -172,9 +177,13 @@ export default function MissionControlPage() {
                 </svg>
                 Loading…
               </div>
+            ) : cases.length === 0 ? (
+              <div className="bg-brand-panel/80 border border-brand-border rounded-xl p-8 text-center text-xs text-slate-400">
+                No authorized cases yet. <Link href="/cases" className="text-brand-cyan hover:underline">Create a Case →</Link>
+              </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {(cases.length > 0 ? cases : MOCK_CASES).map((c) => (
+                {cases.map((c) => (
                   <div
                     key={c.id}
                     className="bg-brand-panel/80 backdrop-blur border border-brand-border hover:border-brand-cyan/40 rounded-xl p-4 transition group"
@@ -231,9 +240,3 @@ export default function MissionControlPage() {
     </>
   )
 }
-
-const MOCK_CASES: Case[] = [
-  { id: '1', case_code: 'HT-2026-001', title: 'Operation Falcon',  case_type: 'CYBER_CRIME',       status: 'ACTIVE',  description: 'Cyber fraud network — phishing, money mule accounts.',          created_by: '', created_at: '2026-08-01T00:00:00Z', updated_at: '2026-08-12T10:24:00Z', members: [] },
-  { id: '2', case_code: 'HT-2026-002', title: 'Financial Fraud',   case_type: 'FINANCIAL_CRIME',   status: 'ACTIVE',  description: 'Fake investment scheme with cross-border SWIFT flows.',           created_by: '', created_at: '2026-07-15T00:00:00Z', updated_at: '2026-08-10T16:17:00Z', members: [] },
-  { id: '3', case_code: 'HT-2026-003', title: 'Human Trafficking', case_type: 'HUMAN_TRAFFICKING', status: 'ON_HOLD', description: 'Inter-state syndicate with CDR-corroborated movement patterns.', created_by: '', created_at: '2026-07-01T00:00:00Z', updated_at: '2026-08-08T11:03:00Z', members: [] },
-]

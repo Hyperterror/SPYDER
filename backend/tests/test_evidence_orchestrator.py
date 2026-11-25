@@ -402,7 +402,7 @@ def test_orchestrator_successful_execution(test_case, auth_headers, db_session: 
     )
     assert proc_resp.status_code == 200
     res_data = proc_resp.json()
-    assert res_data["status"] == "PROCESSED", f"Processing failed: {res_data.get('error_message')}"
+    assert res_data["status"] == "COMPLETED", f"Processing failed: {res_data.get('error_message')}"
     assert res_data["records_processed"] == 2
 
     # Check status endpoint
@@ -412,7 +412,7 @@ def test_orchestrator_successful_execution(test_case, auth_headers, db_session: 
     )
     assert status_resp.status_code == 200
     s_data = status_resp.json()
-    assert s_data["status"] == "PROCESSED"
+    assert s_data["status"] == "COMPLETED"
     assert s_data["records_processed"] == 2
     assert s_data["error_message"] is None
 
@@ -482,7 +482,7 @@ def test_direct_evidence_endpoints(test_case, auth_headers):
         headers=auth_headers,
     )
     assert direct_proc.status_code == 200
-    assert direct_proc.json()["status"] == "PROCESSED"
+    assert direct_proc.json()["status"] == "COMPLETED"
     assert direct_proc.json()["records_processed"] == 1
 
     # Call direct status endpoint: /api/v1/evidence/{id}/status
@@ -491,7 +491,7 @@ def test_direct_evidence_endpoints(test_case, auth_headers):
         headers=auth_headers,
     )
     assert direct_status.status_code == 200
-    assert direct_status.json()["status"] == "PROCESSED"
+    assert direct_status.json()["status"] == "COMPLETED"
 
 
 # =========================================================================

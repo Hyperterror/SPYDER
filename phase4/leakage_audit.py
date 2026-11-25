@@ -6,7 +6,7 @@ and audits feature tensors to guarantee zero latent contamination.
 
 import json
 from pathlib import Path
-from typing import Dict, List, Set, Any
+from typing import Dict, List, Set, Any, Tuple
 
 from phase4.config import BASE_DIR, OUTPUT_DIR
 
@@ -89,6 +89,29 @@ class LeakageAuditor:
             "feature_count": len(feature_names),
             "feature_violations": violations,
             "features_leakage_free": len(violations) == 0
+        }
+
+    def audit_target_edge_leakage(
+        self,
+        norm_adj: Any,
+        node_to_idx: Dict[str, int],
+        excluded_edges: Set[Tuple[str, str]],
+    ) -> Dict[str, Any]:
+        """
+        Verifies that zero held-out target edges exist in the normalized training adjacency matrix.
+        """
+        leaked: List[Tuple[str, str]] = []
+        for u, v in excluded_edges:
+            if u in node_to_idx and v in node_to_idx:
+                ui, vi = node_to_idx[u], node_to_idx[v]
+                if float(norm_adj[ui, vi]) > 0.0 or float(norm_adj[vi, ui]) > 0.0:
+                    leaked.append((u, v))
+
+        return {
+            "checked_edges": len(excluded_edges),
+            "leaked_edges": leaked,
+            "leaked_count": len(leaked),
+            "zero_target_edge_leakage": len(leaked) == 0,
         }
 
     def run_full_audit(self, feature_names: List[str]) -> Dict[str, Any]:

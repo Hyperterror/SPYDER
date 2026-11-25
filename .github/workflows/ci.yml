@@ -1,0 +1,77 @@
+name: SPYDER CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  backend-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install backend dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r backend/requirements.txt
+      - name: Run Backend & Security Test Suite
+        run: python -m pytest backend/tests -v
+
+  ml-and-graph-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install ML & backend dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r backend/requirements.txt torch networkx xgboost scikit-learn numpy pandas
+      - name: Run Entity Resolution, Graph Analysis & GraphSAGE Leakage Tests
+        run: >
+          python -m pytest
+          entity_resolution/test_entity_resolution.py
+          graph_analysis/test_graph_analysis.py
+          phase4/test_phase4.py
+          synthetic_data_generator/tests/test_dataset.py
+          -v
+
+  frontend-checks:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: npm ci
+      - name: TypeScript typecheck
+        run: npx tsc --noEmit
+      - name: ESLint check
+        run: npm run lint
+      - name: Production build
+        run: npm run build
+
+  compose-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate dev & production Docker Compose configurations
+        run: |
+          docker compose -f docker-compose.yml config -q
+          POSTGRES_DB=spyder POSTGRES_USER=spyder POSTGRES_PASSWORD=ci_pw \
+          NEO4J_USER=neo4j NEO4J_PASSWORD=ci_pw \
+          MINIO_ACCESS_KEY=ci_minio MINIO_SECRET_KEY=ci_minio_sec \
+          JWT_SECRET_KEY=ci_jwt_secret_key_32_characters_minimum \
+          AUDIT_SIGNING_KEY=ci_audit_signing_key_32_chars_min \
+          CORS_ORIGINS=https://spyder.internal \
+          NEXT_PUBLIC_API_URL=https://api.spyder.internal \
+          docker compose -f docker-compose.prod.yml config -q

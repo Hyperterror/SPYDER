@@ -4,27 +4,87 @@
     "sample_count": 935,
     "positives": 19,
     "negatives": 916,
-    "roc_auc": 0.8429,
-    "pr_auc": 0.1799,
-    "precision": 0.0,
-    "recall": 0.0,
-    "f1_score": 0.0,
-    "false_positive_rate": 0.0
+    "roc_auc": 0.7167,
+    "pr_auc": 0.0452,
+    "precision": 0.038,
+    "recall": 0.1579,
+    "f1_score": 0.0612,
+    "false_positive_rate": 0.083,
+    "precision_at_10": 0.0,
+    "recall_at_20": 0.0,
+    "mrr": 0.037,
+    "brier_score": 0.0781,
+    "ece": 0.1897
   },
   "entity_disjoint_test": {
     "split_name": "Strict Entity-Disjoint Test",
     "sample_count": 142,
     "positives": 1,
     "negatives": 141,
-    "roc_auc": 0.4752,
-    "pr_auc": 0.0133,
+    "roc_auc": 0.8369,
+    "pr_auc": 0.0417,
     "precision": 0.0,
     "recall": 0.0,
     "f1_score": 0.0,
-    "false_positive_rate": 0.0
+    "false_positive_rate": 0.0496,
+    "precision_at_10": 0.0,
+    "recall_at_20": 0.0,
+    "mrr": 0.0417,
+    "brier_score": 0.0615,
+    "ece": 0.1862
+  },
+  "edge_disjoint_test": {
+    "split_name": "Edge-Disjoint Holdout Test",
+    "sample_count": 577,
+    "positives": 8,
+    "negatives": 569,
+    "roc_auc": 0.6522,
+    "pr_auc": 0.0803,
+    "precision": 0.0638,
+    "recall": 0.375,
+    "f1_score": 0.1091,
+    "false_positive_rate": 0.0773,
+    "precision_at_10": 0.1,
+    "recall_at_20": 0.25,
+    "mrr": 0.3333,
+    "brier_score": 0.0713,
+    "ece": 0.1893
+  },
+  "temporal_test": {
+    "split_name": "Temporal Holdout Test",
+    "sample_count": 694,
+    "positives": 10,
+    "negatives": 684,
+    "roc_auc": 0.564,
+    "pr_auc": 0.0378,
+    "precision": 0.0253,
+    "recall": 0.2,
+    "f1_score": 0.0449,
+    "false_positive_rate": 0.1126,
+    "precision_at_10": 0.1,
+    "recall_at_20": 0.1,
+    "mrr": 0.2,
+    "brier_score": 0.0832,
+    "ece": 0.1946
+  },
+  "target_edge_leakage_audits": {
+    "edge_disjoint": {
+      "checked_edges": 23,
+      "leaked_edges": [],
+      "leaked_count": 0,
+      "zero_target_edge_leakage": true
+    },
+    "temporal": {
+      "checked_edges": 19,
+      "leaked_edges": [],
+      "leaked_count": 0,
+      "zero_target_edge_leakage": true
+    }
   },
   "split_disclosures": {
-    "case_aware": "Case-aware split contains 61 overlapping entities across cross-case boundaries.",
-    "entity_disjoint": "Strictly entity-disjoint: exactly zero person entity overlap between train and test."
+    "case_aware": "Case-aware split contains 68 overlapping entities across cross-case boundaries.",
+    "entity_disjoint": "Strictly entity-disjoint: exactly zero person entity overlap between train and test.",
+    "edge_disjoint": "Edge-disjoint split holds out 23 supporting graph edges for 11 validation/test positive pairs.",
+    "temporal": "Temporal cutoff at '2025-08-17 11:30:00' holds out 19 future supporting edges."
   }
 }

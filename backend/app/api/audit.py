@@ -1,27 +1,15 @@
-from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi import APIRouter, Depends, Query
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 from typing import Optional
+import uuid
 from app.core.database import get_db
 from app.core.security import get_current_user
-from app.models.case import Case, CaseMember
+from app.core.authz import require_case_access, require_evidence_access
 from app.models.audit import AuditEvent, CaseNote
-from app.services.audit_svc import create_audit_event
+from app.services.audit_svc import create_audit_event, verify_audit_chain
 
 router = APIRouter(prefix="/api/v1/cases", tags=["audit"])
-
-
-def _require_case_access(case_id: str, user, db: Session) -> Case:
-    case = db.query(Case).filter(Case.id == case_id).first()
-    if not case:
-        raise HTTPException(status_code=404, detail="Case not found")
-    if user.role not in ("ADMIN", "SUPERVISOR"):
-        member = db.query(CaseMember).filter(
-            CaseMember.case_id == case_id, CaseMember.user_id == user.id
-        ).first()
-        if not member:
-            raise HTTPException(status_code=403, detail="Access denied")
-    return case
 
 
 @router.get("/{case_id}/audit")
@@ -33,12 +21,12 @@ def get_audit_log(
     db: Session = Depends(get_db),
     current_user=Depends(get_current_user),
 ):
-    _require_case_access(case_id, current_user, db)
-    q = db.query(AuditEvent).filter(AuditEvent.case_id == case_id)
+    case = require_case_access(case_id, current_user, db)
+    q = db.query(AuditEvent).filter(AuditEvent.case_id == case.id)
     if event_type:
         q = q.filter(AuditEvent.event_type == event_type.upper())
     total = q.count()
-    events = q.order_by(AuditEvent.event_timestamp.desc()).offset(offset).limit(limit).all()
+    events = q.order_by(AuditEvent.event_timestamp.desc(), AuditEvent.sequence_number.desc()).offset(offset).limit(limit).all()
     return {
         "total": total,
         "limit": limit,
@@ -46,6 +34,7 @@ def get_audit_log(
         "events": [
             {
                 "id": str(e.id),
+                "sequence_number": e.sequence_number,
                 "event_type": e.event_type,
                 "event_timestamp": e.event_timestamp.isoformat(),
                 "actor_user_id": str(e.actor_user_id) if e.actor_user_id else None,
@@ -57,6 +46,24 @@ def get_audit_log(
             for e in events
         ],
     }
+
+
+@router.get("/{case_id}/audit/verify")
+def verify_case_audit_chain(
+    case_id: str,
+    db: Session = Depends(get_db),
+    current_user=Depends(get_current_user),
+):
+    case = require_case_access(case_id, current_user, db)
+    result = verify_audit_chain(db, case_id=str(case.id))
+    create_audit_event(
+        db=db,
+        event_type="AUDIT_CHAIN_VERIFIED",
+        case_id=str(case.id),
+        actor_user_id=str(current_user.id),
+        metadata={"valid": result["valid"], "checked_events": result["checked_events"]},
+    )
+    return result
 
 
 class CreateNoteRequest(BaseModel):
@@ -73,8 +80,8 @@ def get_notes(
     db: Session = Depends(get_db),
     current_user=Depends(get_current_user),
 ):
-    _require_case_access(case_id, current_user, db)
-    q = db.query(CaseNote).filter(CaseNote.case_id == case_id)
+    case = require_case_access(case_id, current_user, db)
+    q = db.query(CaseNote).filter(CaseNote.case_id == case.id)
     total = q.count()
     notes = q.order_by(CaseNote.created_at.desc()).offset(offset).limit(limit).all()
     return {
@@ -99,10 +106,15 @@ def create_note(
     db: Session = Depends(get_db),
     current_user=Depends(get_current_user),
 ):
-    _require_case_access(case_id, current_user, db)
+    case = require_case_access(case_id, current_user, db)
+    ev_uuid = None
+    if body.evidence_id:
+        _, ev = require_evidence_access(str(case.id), body.evidence_id, current_user, db)
+        ev_uuid = ev.id
+
     note = CaseNote(
-        case_id=case_id,
-        evidence_id=body.evidence_id,
+        case_id=case.id,
+        evidence_id=ev_uuid,
         graph_reference=body.graph_reference,
         note_text=body.note_text,
         created_by=current_user.id,
@@ -112,8 +124,8 @@ def create_note(
     db.refresh(note)
 
     create_audit_event(
-        db=db, event_type="NOTE_ADDED", case_id=case_id,
-        evidence_id=body.evidence_id, actor_user_id=str(current_user.id),
+        db=db, event_type="NOTE_ADDED", case_id=str(case.id),
+        evidence_id=str(ev_uuid) if ev_uuid else None, actor_user_id=str(current_user.id),
         metadata={"note_id": str(note.id), "graph_reference": body.graph_reference},
     )
     return {"id": str(note.id), "note_text": note.note_text, "created_at": note.created_at.isoformat()}

@@ -7,7 +7,7 @@ network-disjoint evaluation, feature importance analysis, and generates the Vali
 import json
 import csv
 from pathlib import Path
-from typing import Dict, List, Any, Tuple, Set
+from typing import Dict, List, Any, Tuple, Set, Optional
 from collections import defaultdict
 import numpy as np
 import xgboost as xgb
@@ -91,13 +91,16 @@ def audit_case_holdout_split(rows: List[Dict[str, Any]], obs_to_gid: Dict[str, s
     return audit_res
 
 def build_strict_entity_disjoint_split(
-    rows: List[Dict[str, Any]], obs_to_gid: Dict[str, str], test_entity_ratio: float = 0.30
+    rows: List[Dict[str, Any]],
+    obs_to_gid: Dict[str, str],
+    test_entity_ratio: float = 0.30,
+    seed: int = RANDOM_SEED,
 ) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]], List[Dict[str, Any]]]:
     """
     Constructs a strictly ENTITY-DISJOINT train/test split:
     E_train ∩ E_test = ∅.
     """
-    rng = np.random.RandomState(RANDOM_SEED)
+    rng = np.random.RandomState(seed)
     
     # Identify unique global entities with appearances in candidate pairs
     all_gids = sorted(list({obs_to_gid[r["person_id_a"]] for r in rows if r["person_id_a"] in obs_to_gid}))
@@ -167,6 +170,177 @@ def build_network_disjoint_split(
             train_rows.append(r)
 
     return train_rows, test_rows, hn_test_rows
+
+def compute_calibration_metrics(y_true: np.ndarray, y_prob: np.ndarray, n_bins: int = 10) -> Dict[str, Any]:
+    """Computes Brier score and Expected Calibration Error (ECE)."""
+    if len(y_true) == 0:
+        return {"brier_score": 0.0, "ece": 0.0, "sample_count": 0}
+    yt = np.asarray(y_true, dtype=np.float64)
+    yp = np.clip(np.asarray(y_prob, dtype=np.float64), 0.0, 1.0)
+    brier = float(np.mean((yp - yt) ** 2))
+    bins = np.linspace(0.0, 1.0, n_bins + 1)
+    ece = 0.0
+    for i in range(n_bins):
+        lo, hi = bins[i], bins[i + 1]
+        mask = (yp >= lo) & (yp <= hi if i == n_bins - 1 else yp < hi)
+        if np.any(mask):
+            ece += (float(np.sum(mask)) / len(yt)) * abs(float(np.mean(yt[mask])) - float(np.mean(yp[mask])))
+    return {
+        "brier_score": round(brier, 4),
+        "ece": round(float(ece), 4),
+        "sample_count": int(len(yt)),
+    }
+
+
+def bootstrap_confidence_interval(
+    y_true: np.ndarray,
+    y_prob: np.ndarray,
+    y_pred: List[int],
+    n_bootstrap: int = 300,
+    seed: int = RANDOM_SEED,
+) -> Dict[str, Dict[str, float]]:
+    """Computes 95% bootstrap confidence intervals for precision, recall, f1, and roc_auc."""
+    rng = np.random.RandomState(seed)
+    n = len(y_true)
+    if n < 2:
+        return {}
+    yt = np.asarray(y_true, dtype=np.int32)
+    yp = np.asarray(y_prob, dtype=np.float64)
+    yhat = np.asarray(y_pred, dtype=np.int32)
+
+    precs, recs, f1s = [], [], []
+    for _ in range(n_bootstrap):
+        idx = rng.randint(0, n, size=n)
+        yt_s, yp_s, yh_s = yt[idx], yp[idx], yhat[idx]
+        if len(np.unique(yt_s)) < 2:
+            continue
+        m = compute_metrics(yt_s.tolist(), yh_s.tolist(), yp_s.tolist())
+        precs.append(m["precision"])
+        recs.append(m["recall"])
+        f1s.append(m["f1"])
+
+    def _ci(arr: List[float]) -> Dict[str, float]:
+        if not arr:
+            return {"mean": 0.0, "ci95_low": 0.0, "ci95_high": 0.0}
+        return {
+            "mean": round(float(np.mean(arr)), 4),
+            "ci95_low": round(float(np.percentile(arr, 2.5)), 4),
+            "ci95_high": round(float(np.percentile(arr, 97.5)), 4),
+        }
+
+    return {"precision": _ci(precs), "recall": _ci(recs), "f1": _ci(f1s)}
+
+
+def run_multi_seed_validation(
+    rows: List[Dict[str, Any]],
+    obs_to_gid: Dict[str, str],
+    obs_to_cluster: Dict[str, str],
+    feature_names: List[str],
+    seeds: Optional[List[int]] = None,
+) -> Dict[str, Any]:
+    """Evaluates Entity-Disjoint generalization across multiple random entity splits."""
+    seed_list = seeds or [42, 101, 202, 303, 404]
+    per_seed: List[Dict[str, Any]] = []
+    for sd in seed_list:
+        tr, te, _ = build_strict_entity_disjoint_split(rows, obs_to_gid, seed=sd)
+        if not tr or not te:
+            continue
+        X_tr, y_tr = get_feature_matrix(tr, feature_names)
+        X_te, y_te = get_feature_matrix(te, feature_names)
+        if len(np.unique(y_tr)) < 2 or len(np.unique(y_te)) < 2:
+            continue
+        params = dict(XGBOOST_PARAMS)
+        params["random_state"] = sd
+        clf = xgb.XGBClassifier(**params)
+        clf.fit(X_tr, y_tr, verbose=False)
+        probs = clf.predict_proba(X_te)[:, 1]
+        preds = [1 if p >= 0.50 else 0 for p in probs]
+        m = compute_metrics(y_te, preds, probs)
+        cal = compute_calibration_metrics(y_te, probs)
+        per_seed.append({
+            "seed": sd,
+            "test_pairs": len(te),
+            "precision": m["precision"],
+            "recall": m["recall"],
+            "f1": m["f1"],
+            "false_merge_rate": m["false_merge_rate"],
+            "roc_auc": m["roc_auc"],
+            "ece": cal["ece"],
+        })
+
+    if not per_seed:
+        return {"seeds_evaluated": 0, "runs": []}
+
+    return {
+        "seeds_evaluated": len(per_seed),
+        "mean_f1": round(float(np.mean([r["f1"] for r in per_seed])), 4),
+        "std_f1": round(float(np.std([r["f1"] for r in per_seed])), 4),
+        "mean_roc_auc": round(float(np.mean([r["roc_auc"] for r in per_seed])), 4),
+        "mean_false_merge_rate": round(float(np.mean([r["false_merge_rate"] for r in per_seed])), 4),
+        "runs": per_seed,
+    }
+
+
+def run_noisy_stress_validation(
+    model: xgb.XGBClassifier,
+    feature_names: List[str],
+    n_pairs: int = 1200,
+    seed: int = RANDOM_SEED,
+) -> Dict[str, Any]:
+    """
+    Generates an expanded noisy synthetic stress benchmark (OCR typos, dropped phones,
+    shared public Wi-Fi, ambiguous aliases) to stress-test Entity Resolution beyond
+    clean 100-person prototype pairs.
+    """
+    rng = np.random.RandomState(seed)
+    X_stress = []
+    y_stress = []
+    fn_idx = {fn: i for i, fn in enumerate(feature_names)}
+
+    for i in range(n_pairs):
+        vec = np.zeros(len(feature_names), dtype=np.float32)
+        is_pos = (i % 3 == 0)
+        if is_pos:
+            # Noisy true entity: orthographic typo, sometimes missing phone or device
+            vec[fn_idx.get("name_exact_match", 0)] = float(rng.rand() < 0.35)
+            vec[fn_idx.get("name_levenshtein_sim", 1)] = float(rng.uniform(0.68, 0.98))
+            vec[fn_idx.get("name_jaro_winkler_sim", 2)] = float(rng.uniform(0.75, 0.99))
+            vec[fn_idx.get("name_token_jaccard", 3)] = float(rng.uniform(0.50, 1.0))
+            vec[fn_idx.get("phone_shared_count", 11)] = float(1.0 if rng.rand() < 0.60 else 0.0)
+            vec[fn_idx.get("phone_exact_match", 12)] = vec[fn_idx.get("phone_shared_count", 11)]
+            vec[fn_idx.get("device_id_match", 14)] = float(1.0 if rng.rand() < 0.45 else 0.0)
+            vec[fn_idx.get("imei_match", 16)] = float(1.0 if rng.rand() < 0.35 else 0.0)
+            vec[fn_idx.get("context_embedding_cosine_sim", len(feature_names) - 1)] = float(rng.uniform(0.65, 0.96))
+            y_stress.append(1)
+        else:
+            # Noisy hard negative: similar/homonym name + shared public IP or alias collision
+            vec[fn_idx.get("name_exact_match", 0)] = float(rng.rand() < 0.25)
+            vec[fn_idx.get("name_levenshtein_sim", 1)] = float(rng.uniform(0.45, 0.92))
+            vec[fn_idx.get("name_jaro_winkler_sim", 2)] = float(rng.uniform(0.55, 0.95))
+            vec[fn_idx.get("alias_exact_match", 7)] = float(rng.rand() < 0.20)
+            vec[fn_idx.get("shared_ip_count", 17)] = float(1.0 if rng.rand() < 0.45 else 0.0)
+            vec[fn_idx.get("shared_ip_is_public_infra", 18)] = vec[fn_idx.get("shared_ip_count", 17)]
+            vec[fn_idx.get("context_embedding_cosine_sim", len(feature_names) - 1)] = float(rng.uniform(0.25, 0.78))
+            y_stress.append(0)
+        X_stress.append(vec)
+
+    X_arr = np.vstack(X_stress)
+    y_arr = np.array(y_stress, dtype=np.int32)
+    probs = model.predict_proba(X_arr)[:, 1]
+    preds = [1 if p >= 0.50 else 0 for p in probs]
+    metrics = compute_metrics(y_arr, preds, probs)
+    cal = compute_calibration_metrics(y_arr, probs)
+    return {
+        "stress_pairs_count": n_pairs,
+        "precision": metrics["precision"],
+        "recall": metrics["recall"],
+        "f1": metrics["f1"],
+        "false_merge_rate": metrics["false_merge_rate"],
+        "roc_auc": metrics["roc_auc"],
+        "brier_score": cal["brier_score"],
+        "ece": cal["ece"],
+    }
+
 
 def run_strict_evaluation():
     out_dir = OUTPUT_DIR
@@ -269,11 +443,20 @@ def run_strict_evaluation():
             print(f"  {rank}. {fn}: {imp:.4f}")
 
     # Save detailed strict evaluation results
+    ed_calibration = compute_calibration_metrics(y_test_ed, probs_ed)
+    ed_bootstrap_ci = bootstrap_confidence_interval(y_test_ed, probs_ed, preds_ed, n_bootstrap=300, seed=RANDOM_SEED)
+    multi_seed_summary = run_multi_seed_validation(rows, obs_to_gid, obs_to_cluster, feature_names)
+    noisy_stress = run_noisy_stress_validation(model_ed, feature_names, n_pairs=1200, seed=RANDOM_SEED)
+
     strict_results = {
         "case_holdout_audit": ch_audit,
         "entity_disjoint_metrics": ed_metrics,
         "entity_disjoint_hn_metrics": ed_hn_metrics,
         "syndicate_disjoint_metrics": net_metrics,
+        "entity_disjoint_calibration": ed_calibration,
+        "entity_disjoint_bootstrap_ci": ed_bootstrap_ci,
+        "multi_seed_validation": multi_seed_summary,
+        "noisy_stress_validation": noisy_stress,
         "feature_importances": {fn: round(imp, 4) for fn, imp in top_features},
     }
     with open(out_dir / "strict_evaluation_results.json", "w", encoding="utf-8") as f:

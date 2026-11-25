@@ -6,7 +6,8 @@ import { login, isAuthenticated } from '@/lib/auth'
 
 export default function LoginPage() {
   const router = useRouter()
-  const [email, setEmail]       = useState('investigator@spyder.gov')
+  const showDemoHint = process.env.NEXT_PUBLIC_SHOW_DEMO_HINT === 'true'
+  const [email, setEmail]       = useState(showDemoHint ? 'investigator@spyder.gov' : '')
   const [password, setPassword] = useState('')
   const [error, setError]       = useState('')
   const [loading, setLoading]   = useState(false)
@@ -110,9 +111,11 @@ export default function LoginPage() {
             </button>
           </form>
 
-          <div className="mt-4 text-center text-[10px] text-slate-500 font-mono">
-            Demo: investigator@spyder.gov / Invest@1234
-          </div>
+          {showDemoHint && (
+            <div className="mt-4 text-center text-[10px] text-slate-500 font-mono">
+              Demo: investigator@spyder.gov / Invest@1234
+            </div>
+          )}
         </div>
 
         <p className="text-center text-[10px] text-slate-600 font-mono mt-4 tracking-widest uppercase">

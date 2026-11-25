@@ -39,7 +39,7 @@ export default function ImportPage() {
 
   const handleFiles = useCallback((files: FileList | null) => {
     if (!files || !caseId) return
-    const allowed = ['.csv', '.xlsx', '.json']
+    const allowed = ['.csv', '.xlsx', '.json', '.pdf', '.png', '.jpg', '.jpeg', '.txt']
     Array.from(files).forEach((file) => {
       const ext = file.name.slice(file.name.lastIndexOf('.')).toLowerCase()
       if (!allowed.includes(ext)) {
@@ -78,10 +78,10 @@ export default function ImportPage() {
   }
 
   const CAPABILITY_CARDS = [
-    { icon: '📄', title: 'Multiple Formats', desc: 'CSV, XLSX, JSON supported' },
+    { icon: '📄', title: 'Multiple Formats', desc: 'CSV, XLSX, JSON, PDF, PNG/JPG supported' },
     { icon: '🔐', title: 'SHA-256 Auto-Hash', desc: 'Cryptographic fingerprint on upload' },
     { icon: '⛓️', title: 'Chain of Custody', desc: 'Immutable audit trail per file' },
-    { icon: '⚡', title: 'Parse Engine', desc: 'CDR & transaction auto-parsing' },
+    { icon: '⚡', title: 'Canonical Pipeline', desc: 'Parse, ER check & Graph snapshot publish' },
   ]
 
   return (
@@ -124,7 +124,7 @@ export default function ImportPage() {
               dragging ? 'dropzone-active' : 'border-brand-borderLight hover:border-brand-cyan/60'
             }`}
           >
-            <input ref={inputRef} type="file" multiple accept=".csv,.xlsx,.json" className="hidden" onChange={(e) => handleFiles(e.target.files)} />
+            <input ref={inputRef} type="file" multiple accept=".csv,.xlsx,.json,.pdf,.png,.jpg,.jpeg,.txt" className="hidden" onChange={(e) => handleFiles(e.target.files)} />
 
             <div className="w-16 h-16 rounded-full bg-[#0E2235]/70 border border-brand-borderLight flex items-center justify-center mb-4 group-hover:scale-105 transition">
               <svg className="w-8 h-8 text-brand-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -141,8 +141,8 @@ export default function ImportPage() {
               Browse Files
             </button>
             <div className="mt-7 text-center">
-              <p className="text-[11px] text-slate-400 mb-1.5">Supported formats: CSV, XLSX, JSON</p>
-              <p className="text-[11px] text-slate-400">CDR Records • Bank Statements • UPI Transactions</p>
+              <p className="text-[11px] text-slate-400 mb-1.5">Supported formats: CSV, XLSX, JSON, PDF, PNG, JPG, TXT</p>
+              <p className="text-[11px] text-slate-400">CDR • Financial Transactions • Persons • Travel • Scanned Documents</p>
             </div>
 
             {dragging && (
@@ -215,14 +215,33 @@ export default function ImportPage() {
                           <div className="progress-bar-fill" style={{ width: `${u.progress}%` }} />
                         </div>
                       </td>
-                      <td className="py-3 px-5">
+                      <td className="py-3 px-5 space-x-3">
                         {u.evidenceItem && (
-                          <button
-                            onClick={() => evidenceApi.parse(caseId, u.evidenceItem!.id).then(() => toast(`Parse job started for ${u.file.name}`))}
-                            className="text-[11px] text-brand-cyan hover:underline"
-                          >
-                            Parse
-                          </button>
+                          <>
+                            <button
+                              onClick={async () => {
+                                try {
+                                  const { data } = await evidenceApi.process(caseId, u.evidenceItem!.id, true)
+                                  toast(`Pipeline ${data.status} (${data.records_processed ?? 0} records)`, data.status === 'FAILED' ? 'error' : 'info')
+                                  setUploads((prev) => prev.map((x) => x.id === u.id ? {
+                                    ...x,
+                                    evidenceItem: { ...x.evidenceItem!, parsing_status: data.status }
+                                  } : x))
+                                } catch {
+                                  toast(`Failed to trigger processing for ${u.file.name}`, 'error')
+                                }
+                              }}
+                              className="text-[11px] text-brand-cyan hover:underline font-medium"
+                            >
+                              Run Pipeline
+                            </button>
+                            <button
+                              onClick={() => router.push(`/cases/${caseId}/evidence`)}
+                              className="text-[11px] text-slate-400 hover:text-white"
+                            >
+                              Locker →
+                            </button>
+                          </>
                         )}
                         {u.status === 'error' && (
                           <span className="text-[11px] text-brand-red">{u.error}</span>

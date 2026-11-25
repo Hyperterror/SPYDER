@@ -1,35 +1,35 @@
 {
   "NEG_D_SHARED_LOCATION": {
     "count": 1975,
-    "false_positives": 0,
-    "false_positive_rate": 0.0,
-    "mean_prediction_score": 0.0097,
-    "max_prediction_score": 0.3893
+    "false_positives": 143,
+    "false_positive_rate": 0.0724,
+    "mean_prediction_score": 0.1934,
+    "max_prediction_score": 0.7578
   },
   "NEG_E_SHARED_COMMERCIAL_VEHICLE": {
     "count": 16,
-    "false_positives": 0,
-    "false_positive_rate": 0.0,
-    "mean_prediction_score": 0.002,
-    "max_prediction_score": 0.0028
+    "false_positives": 1,
+    "false_positive_rate": 0.0625,
+    "mean_prediction_score": 0.191,
+    "max_prediction_score": 0.5083
   },
   "NEG_F_SHARED_PUBLIC_IP": {
     "count": 105,
-    "false_positives": 0,
-    "false_positive_rate": 0.0,
-    "mean_prediction_score": 0.0075,
-    "max_prediction_score": 0.2243
+    "false_positives": 8,
+    "false_positive_rate": 0.0762,
+    "mean_prediction_score": 0.203,
+    "max_prediction_score": 0.7558
   },
   "NEG_G_HIGH_DEGREE_HUB": {
     "count": 33,
-    "false_positives": 0,
-    "false_positive_rate": 0.0,
-    "mean_prediction_score": 0.0045,
-    "max_prediction_score": 0.0151
+    "false_positives": 6,
+    "false_positive_rate": 0.1818,
+    "mean_prediction_score": 0.2859,
+    "max_prediction_score": 0.6881
   },
   "summary": {
-    "public_infrastructure_false_positive_rate": 0.0,
-    "hub_negative_false_positive_rate": 0.0,
+    "public_infrastructure_false_positive_rate": 0.0725,
+    "hub_negative_false_positive_rate": 0.1818,
     "total_hard_negatives": 2129
   }
 }

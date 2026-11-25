@@ -12,8 +12,46 @@ Provides standardized parsing and normalization across all supported evidence mo
 
 import csv
 import io
+import json
 from typing import Any, Dict, List, Optional, Tuple
 from app.parsers.cdr import normalize_phone, normalize_timestamp
+from app.services.ocr import extract_text_for_upload
+
+
+PARSER_VERSION = "2.0.0"
+
+
+def _rows_from_bytes(file_bytes: bytes, file_extension: str, source_file_name: str) -> tuple[List[Tuple[int, Dict[str, Any]]], str]:
+    """Convert CSV, XLSX, JSON, or PDF/image bytes into (row_number, raw_dict) tuples and extraction_method."""
+    ext = (file_extension or ".csv").lower()
+    if ext == ".xlsx":
+        import openpyxl
+        wb = openpyxl.load_workbook(io.BytesIO(file_bytes), read_only=True, data_only=True)
+        ws = wb.active
+        row_iter = ws.iter_rows(values_only=True)
+        headers = [str(c).strip() if c is not None else "" for c in next(row_iter, ())]
+        out: List[Tuple[int, Dict[str, Any]]] = []
+        for idx, vals in enumerate(row_iter, start=2):
+            row_dict = {headers[i]: ("" if v is None else str(v)) for i, v in enumerate(vals) if i < len(headers) and headers[i]}
+            out.append((idx, row_dict))
+        wb.close()
+        return out, "openpyxl_xlsx"
+
+    if ext == ".json":
+        payload = json.loads(file_bytes.decode("utf-8", errors="replace"))
+        items = payload.get("records", payload) if isinstance(payload, dict) else payload
+        if isinstance(items, list):
+            return [(idx, {str(k): str(v) if v is not None else "" for k, v in item.items()}) for idx, item in enumerate(items, start=1) if isinstance(item, dict)], "json_structured"
+        return [(1, {"text": json.dumps(payload, ensure_ascii=False)})], "json_document"
+
+    if ext in {".pdf", ".png", ".jpg", ".jpeg"}:
+        extracted = extract_text_for_upload(source_file_name, file_bytes) or ""
+        method = "pypdf_ocr" if ext == ".pdf" else "tesseract_ocr"
+        return [(1, {"extracted_text": extracted, "filename": source_file_name})], method
+
+    text = file_bytes.decode("utf-8", errors="replace")
+    reader = csv.DictReader(io.StringIO(text))
+    return [(idx, dict(row)) for idx, row in enumerate(reader, start=2)], "csv_dict_reader"
 
 
 def parse_unified_evidence_csv(
@@ -23,55 +61,56 @@ def parse_unified_evidence_csv(
     evidence_id: str,
     source_file_name: str,
     sha256_hash: str,
+    file_extension: str = ".csv",
 ) -> Dict[str, Any]:
     """
-    Parses and normalizes evidence records according to its modality.
-    Returns:
-        {
-            "total_rows": int,
-            "valid_rows": int,
-            "invalid_rows": int,
-            "records": list[dict],
-            "errors": list[dict]
-        }
+    Parses and normalizes evidence records across CSV, XLSX, JSON, PDF, and image formats.
     """
     try:
-        text = file_bytes.decode("utf-8", errors="replace")
+        indexed_rows, extraction_method = _rows_from_bytes(file_bytes, file_extension, source_file_name)
     except Exception as e:
         return {
             "total_rows": 0,
             "valid_rows": 0,
-            "invalid_rows": 0,
+            "invalid_rows": 1,
+            "extraction_method": "error",
+            "parser_version": PARSER_VERSION,
             "records": [],
-            "errors": [{"source_row_number": 0, "raw_record": {}, "parse_error": f"Encoding error: {e}"}],
+            "errors": [{"source_row_number": 0, "raw_record": {}, "parse_error": f"Decode/read error: {e}"}],
         }
 
-    stream = io.StringIO(text)
-    reader = csv.DictReader(stream)
-    
     records: List[Dict[str, Any]] = []
     errors: List[Dict[str, Any]] = []
 
-    for idx, row in enumerate(reader, start=2):  # Row 1 is header, 1-indexed
-        raw = dict(row)
+    for idx, raw in indexed_rows:
         try:
             normalized = _normalize_row_by_modality(raw, modality, case_id)
+            normalized["source_evidence_id"] = evidence_id
+            normalized["source_row_number"] = idx
+            normalized["extraction_method"] = extraction_method
+            normalized["parser_version"] = PARSER_VERSION
             records.append({
                 "source_row_number": idx,
                 "raw_record": raw,
                 "normalized_record": normalized,
+                "extraction_method": extraction_method,
+                "parser_version": PARSER_VERSION,
             })
         except Exception as e:
             errors.append({
                 "source_row_number": idx,
                 "raw_record": raw,
                 "parse_error": str(e),
+                "extraction_method": extraction_method,
+                "parser_version": PARSER_VERSION,
             })
 
     return {
         "total_rows": len(records) + len(errors),
         "valid_rows": len(records),
         "invalid_rows": len(errors),
+        "extraction_method": extraction_method,
+        "parser_version": PARSER_VERSION,
         "records": records,
         "errors": errors,
     }

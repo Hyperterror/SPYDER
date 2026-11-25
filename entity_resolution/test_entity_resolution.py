@@ -198,5 +198,35 @@ class TestEntityResolution(unittest.TestCase):
             self.assertNotIn("GLOBAL_ENT_", content)
             self.assertNotIn("true_role", content)
 
+    def test_16_production_candidate_generator_no_ground_truth(self):
+        """16. Verifies CandidateGenerator executes purely on observable evidence without ground_truth."""
+        cg_src = Path(__file__).resolve().parent / "candidate_generation.py"
+        text = cg_src.read_text(encoding="utf-8")
+        self.assertNotIn("GROUND_TRUTH_DIR", text)
+        self.assertNotIn("ground_truth.json", text)
+
+        cg = CandidateGenerator()
+        cg.load_and_enrich_evidence()
+        pairs = cg.generate_candidate_pairs()
+        self.assertGreater(len(pairs), 20)
+        for p1_id, p2_id, meta in pairs:
+            self.assertNotEqual(cg.profiles[p1_id]["case_id"], cg.profiles[p2_id]["case_id"])
+            self.assertNotIn("ground_truth_hard_negative_evaluation", meta["blocking_reasons"])
+
+    def test_17_calibration_metrics_and_offline_embedding_fallback(self):
+        """17. Verifies ECE/Brier calibration helper and deterministic offline encoder fallback."""
+        from entity_resolution.strict_evaluation import compute_calibration_metrics
+        from entity_resolution.embeddings import _DeterministicHashEncoder
+
+        cal = compute_calibration_metrics(np.array([0, 1, 0, 1]), np.array([0.1, 0.9, 0.2, 0.8]))
+        self.assertGreaterEqual(cal["brier_score"], 0.0)
+        self.assertLessEqual(cal["ece"], 0.25)
+
+        enc = _DeterministicHashEncoder(dim=384)
+        v1 = enc.encode("Subject: Vikram Malhotra (also known as Vicky).")
+        v2 = enc.encode("Subject: Vikram Malhotra (also known as Vicky).")
+        self.assertEqual(v1.shape, (384,))
+        self.assertTrue(np.allclose(v1, v2))
+
 if __name__ == "__main__":
     unittest.main()

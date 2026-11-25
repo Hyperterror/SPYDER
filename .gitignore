@@ -7,6 +7,10 @@ graphify-out/
 
 # ─── Local file storage (MinIO fallback for dev) ─────────────────────────────
 local_storage/
+backend/local_evidence_store/
+backups/
+output/graph_analysis/snapshots/
+output/graph_analysis/active_snapshot.json
 
 # ─── Planning / scratch docs ─────────────────────────────────────────────────
 implementation_plan.md

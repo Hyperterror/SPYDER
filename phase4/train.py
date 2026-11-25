@@ -7,7 +7,7 @@ evaluating on validation splits, tracking loss history, and saving model checkpo
 import json
 import random
 from pathlib import Path
-from typing import Dict, List, Any, Tuple
+from typing import Dict, List, Any, Tuple, Set, Optional
 import numpy as np
 import torch
 import torch.nn as nn
@@ -55,7 +55,28 @@ class GraphSAGETrainer:
         self.splitter = DataSplitter(self.candidates, random_seed=random_seed)
         self.case_split = self.splitter.create_case_aware_split()
         self.entity_split = self.splitter.create_entity_disjoint_split()
+        self.edge_split = self.splitter.create_edge_disjoint_split()
+        self.temporal_split = self.splitter.create_temporal_split(self.multi_graph)
         self.hard_negatives = self.splitter.extract_hard_negative_evaluation_set()
+
+    def build_masked_training_context(self, excluded_edges: Set[Tuple[str, str]]) -> Dict[str, Any]:
+        """
+        Builds leakage-free training graph, normalized adjacency, and recomputed centrality
+        node features strictly without any held-out evaluation target edges.
+        """
+        from phase4.leakage_audit import LeakageAuditor
+        masked_graph = self.loader.build_masked_graph(excluded_edges)
+        norm_adj_masked = self.loader.build_normalized_adj(excluded_edges=excluded_edges, graph=masked_graph)
+        x_masked, _ = self.extractor.extract_node_features(
+            masked_graph, self.loader.node_to_idx, recompute_centrality=True
+        )
+        audit = LeakageAuditor().audit_target_edge_leakage(norm_adj_masked, self.loader.node_to_idx, excluded_edges)
+        return {
+            "masked_graph": masked_graph,
+            "norm_adj": norm_adj_masked,
+            "x": x_masked,
+            "target_edge_audit": audit,
+        }
 
     def _prepare_tensors(self, pairs: List[Dict[str, Any]]) -> Tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
         """Converts pair dictionaries into index and label tensors."""
@@ -189,3 +210,99 @@ class GraphSAGETrainer:
             json.dump(train_metrics, f, indent=2)
 
         return model, train_metrics
+
+    def train_and_evaluate_masked_split(
+        self,
+        split: Dict[str, Any],
+        decoder_type: str = "mlp",
+    ) -> Dict[str, Any]:
+        """
+        Inductive anti-leakage evaluation on a split with held_out_edges:
+        masks out held_out_edges from graph + adjacency + centralities, trains fresh
+        GraphSAGE strictly on masked train subgraph, encodes Z on masked graph, and returns context.
+        """
+        held_out = split.get("held_out_edges") or set()
+        ctx = self.build_masked_training_context(held_out)
+        set_seed(self.seed)
+        model = GraphSAGEModel(
+            in_dim=ctx["x"].shape[1],
+            hidden_dim=HIDDEN_DIM,
+            embed_dim=EMBED_DIM,
+            decoder_type=decoder_type,
+            dropout=DROPOUT,
+        )
+        optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE, weight_decay=WEIGHT_DECAY)
+        criterion = nn.BCELoss()
+        u_tr, v_tr, y_tr = self._prepare_tensors(split["train_pairs"])
+        for _ in range(1, NUM_EPOCHS + 1):
+            model.train()
+            optimizer.zero_grad()
+            preds = model(ctx["x"], ctx["norm_adj"], u_tr, v_tr)
+            loss = criterion(preds, y_tr)
+            loss.backward()
+            optimizer.step()
+
+        model.eval()
+        with torch.no_grad():
+            ctx["z"] = model.encode(ctx["x"], ctx["norm_adj"])
+        ctx["model"] = model
+        return ctx
+
+
+def run_phase4_training_and_validation(export_predictions: bool = False) -> Dict[str, Any]:
+    from phase4.evaluate import Phase4Evaluator
+    from phase4.leakage_audit import LeakageAuditor
+
+    trainer = GraphSAGETrainer()
+    decoder_comp = trainer.train_decoder_comparison()
+    best_dec = decoder_comp.get("selected_decoder", "mlp")
+    final_model, train_metrics = trainer.train_final_model(decoder_type=best_dec)
+
+    edge_ctx = trainer.train_and_evaluate_masked_split(trainer.edge_split, decoder_type=best_dec)
+    temp_ctx = trainer.train_and_evaluate_masked_split(trainer.temporal_split, decoder_type=best_dec)
+
+    evaluator = Phase4Evaluator(
+        model=final_model,
+        x=trainer.x,
+        norm_adj=trainer.norm_adj,
+        node_to_idx=trainer.loader.node_to_idx,
+        multi_graph=trainer.multi_graph,
+    )
+    eval_summary = evaluator.run_full_evaluation(
+        case_split=trainer.case_split,
+        entity_split=trainer.entity_split,
+        hard_negatives=trainer.hard_negatives,
+        decoder_comparison=decoder_comp,
+        edge_split=trainer.edge_split,
+        temporal_split=trainer.temporal_split,
+        masked_contexts={"edge_disjoint": edge_ctx, "temporal": temp_ctx},
+        target_leakage_audits={
+            "edge_disjoint": edge_ctx["target_edge_audit"],
+            "temporal": temp_ctx["target_edge_audit"],
+        },
+    )
+    audit_report = LeakageAuditor().run_full_audit(trainer.feature_names)
+
+    if export_predictions:
+        from phase4.predict import LinkPredictor
+        predictor = LinkPredictor(
+            model=final_model,
+            x=trainer.x,
+            norm_adj=trainer.norm_adj,
+            node_to_idx=trainer.loader.node_to_idx,
+            idx_to_node=trainer.loader.idx_to_node,
+            multi_graph=trainer.multi_graph,
+        )
+        predictor.export_node_embeddings()
+        predictor.generate_predictions()
+
+    return {
+        "train_metrics": train_metrics,
+        "evaluation": eval_summary,
+        "leakage_audit": audit_report,
+    }
+
+
+if __name__ == "__main__":
+    summary = run_phase4_training_and_validation(export_predictions=False)
+    print(json.dumps({"case_test": summary["evaluation"]["case_test"], "edge_test": summary["evaluation"]["edge_test"]}, indent=2))

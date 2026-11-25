@@ -78,6 +78,10 @@ export default function GraphPage() {
   const [selectedEdge, setSelectedEdge] = useState<EdgeDetail | null>(null)
   const [showCandidateLinks, setShowCandidateLinks] = useState(true)
   const [candidateCount, setCandidateCount] = useState(0)
+  const [snapshotTag, setSnapshotTag] = useState<string>('Live')
+  const [pathFrom, setPathFrom] = useState('')
+  const [pathTo, setPathTo] = useState('')
+  const [pathResult, setPathResult] = useState<string | null>(null)
 
   // ── Filter state ─────────────────────────────────────────────────────────────
   const [entitySearch, setEntitySearch] = useState('')
@@ -92,12 +96,36 @@ export default function GraphPage() {
     baseNodes = confirmedNodesRef.current,
     baseEdges = confirmedEdgesRef.current,
     leads = candidateLeadsRef.current,
+    activeTab = viewTab,
   ) => {
+    const tabAllowedRels: Record<string, string[] | null> = {
+      network: null,
+      financial: ['TRANSFERRED_TO', 'OWNED_ACCOUNT'],
+      communication: ['CALLED', 'MESSAGED', 'USED_PHONE', 'USED_DEVICE'],
+      location: ['CONNECTED_TO_TOWER', 'SIGHTED_AT', 'TRAVELED_TO', 'VISITED'],
+      timeline: null,
+    }
+    const allowed = tabAllowedRels[activeTab] ?? null
+    const filteredBaseEdges = allowed
+      ? baseEdges.filter((e) => allowed.includes(String((e as Record<string, unknown>).relationship_type ?? '')))
+      : baseEdges
+
+    let filteredBaseNodes = baseNodes
+    if (allowed) {
+      const keptIds = new Set<string>()
+      for (const e of filteredBaseEdges) {
+        const raw = e as Record<string, unknown>
+        if (raw.source) keptIds.add(String(raw.source))
+        if (raw.target) keptIds.add(String(raw.target))
+      }
+      filteredBaseNodes = baseNodes.filter((n) => keptIds.has(String(n.id)))
+    }
+
     if (!includeCandidates || leads.length === 0) {
-      nodesRef.current = [...baseNodes]
-      edgesRef.current = [...baseEdges]
+      nodesRef.current = [...filteredBaseNodes]
+      edgesRef.current = [...filteredBaseEdges]
     } else {
-      const existingNodeIds = new Set(baseNodes.map((n) => String(n.id)))
+      const existingNodeIds = new Set(filteredBaseNodes.map((n) => String(n.id)))
       const additionalNodes: GraphNode[] = []
       for (const lead of leads) {
         if (!existingNodeIds.has(lead.source_entity)) {
@@ -127,12 +155,12 @@ export default function GraphPage() {
         candidate_lead: lead,
       } as unknown as GraphEdge))
 
-      nodesRef.current = [...baseNodes, ...additionalNodes]
-      edgesRef.current = [...baseEdges, ...candidateEdges]
+      nodesRef.current = [...filteredBaseNodes, ...additionalNodes]
+      edgesRef.current = [...filteredBaseEdges, ...candidateEdges]
     }
     setGraphStats({ nodes: nodesRef.current.length, edges: edgesRef.current.length })
     setGraphKey((k) => k + 1)
-  }, [])
+  }, [viewTab])
 
   // ── Load graph data — only updates refs, then bumps graphKey to rebuild canvas ─
   const loadGraph = useCallback(async (params?: Record<string, unknown>, caseCodeOverride?: string) => {
@@ -152,6 +180,11 @@ export default function GraphPage() {
         })
         baseNodes = data.nodes ?? []
         baseEdges = data.edges ?? []
+        graphApi.snapshot(caseId)
+          .then(({ data: snap }) => {
+            if (snap?.active_snapshot?.version_tag) setSnapshotTag(snap.active_snapshot.version_tag)
+          })
+          .catch(() => {})
       } catch {
         // Base graph may be empty if evidence not yet imported
       }
@@ -338,7 +371,10 @@ export default function GraphPage() {
               {VIEW_TABS.map((t) => (
                 <button
                   key={t.key}
-                  onClick={() => setViewTab(t.key)}
+                  onClick={() => {
+                    setViewTab(t.key)
+                    rebuildVisibleGraph(showCandidateLinks, confirmedNodesRef.current, confirmedEdgesRef.current, candidateLeadsRef.current, t.key)
+                  }}
                   className={`px-2.5 py-1 rounded-md transition ${
                     viewTab === t.key
                       ? 'text-black bg-brand-cyan font-semibold shadow-sm'
@@ -379,13 +415,54 @@ export default function GraphPage() {
                     onRelationshipTypesChange={setRelTypes}
                     onApply={() => loadGraph()}
                   />
+                  {/* Path Finder */}
+                  <div className="px-3 pb-3 pt-2 border-t border-brand-border/50 space-y-2 text-xs">
+                    <label className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Path Finder
+                    </label>
+                    <input
+                      value={pathFrom}
+                      onChange={(e) => setPathFrom(e.target.value)}
+                      placeholder="Source entity ID"
+                      className="w-full bg-[#070D14] border border-brand-border rounded px-2 py-1 text-[11px] text-slate-200"
+                    />
+                    <input
+                      value={pathTo}
+                      onChange={(e) => setPathTo(e.target.value)}
+                      placeholder="Target entity ID"
+                      className="w-full bg-[#070D14] border border-brand-border rounded px-2 py-1 text-[11px] text-slate-200"
+                    />
+                    <button
+                      onClick={async () => {
+                        if (!pathFrom.trim() || !pathTo.trim()) return
+                        try {
+                          const { data } = await graphApi.findPath(caseId, pathFrom.trim(), pathTo.trim())
+                          setPathResult(
+                            data?.found
+                              ? `Found (${data.hops} hops): ${(data.path || []).join(' → ')}`
+                              : 'No path found within 4 hops'
+                          )
+                        } catch {
+                          setPathResult('Path query unavailable')
+                        }
+                      }}
+                      className="w-full py-1.5 bg-brand-surface hover:bg-brand-panel border border-brand-border text-brand-cyan text-[11px] rounded font-medium"
+                    >
+                      Trace Shortest Path
+                    </button>
+                    {pathResult && (
+                      <div className="p-2 rounded bg-[#070D14] border border-brand-border text-[10px] font-mono text-slate-300 break-words">
+                        {pathResult}
+                      </div>
+                    )}
+                  </div>
                 </div>
                 <div className="p-2.5 border-t border-brand-border/80 bg-brand-bg/80 flex items-center justify-between text-[11px] text-slate-400 font-mono">
                   <span className="flex items-center gap-1.5">
                     <span className="w-2 h-2 rounded-full bg-brand-green animate-pulse" />
-                    Live Synced
+                    Snapshot
                   </span>
-                  <span className="text-slate-500">v1.0</span>
+                  <span className="text-brand-cyan truncate max-w-[110px]" title={snapshotTag}>{snapshotTag}</span>
                 </div>
               </>
             )}
