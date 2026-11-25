@@ -31,15 +31,50 @@ class TestGraphAnalysis(unittest.TestCase):
         cls.multi_graph = cls.builder.build_global_graph()
         cls.projected_graph = cls.builder.build_projected_entity_graph()
 
-    def test_01_all_10_node_types_created(self):
-        """Validates that all 10 required observable node types exist in the knowledge graph."""
+    def test_01_all_11_node_types_created(self):
+        """Validates that all 11 required observable node types exist in the knowledge graph."""
         node_types = {d.get("node_type") for _, d in self.multi_graph.nodes(data=True)}
         expected_types = {
             "PERSON", "VICTIM", "CASE", "PHONE", "DEVICE",
-            "VEHICLE", "BANK_ACCOUNT", "SOCIAL_ACCOUNT", "LOCATION", "EVIDENCE"
+            "VEHICLE", "BANK_ACCOUNT", "SOCIAL_ACCOUNT", "LOCATION", "EVIDENCE",
+            "ORGANIZATION"
         }
         for expected in expected_types:
             self.assertIn(expected, node_types, f"Node type {expected} missing from graph")
+
+    def test_01b_organization_nodes_and_edges(self):
+        """Organizations are first-class entities with provenance-preserving edges."""
+        org_nodes = [n for n, d in self.multi_graph.nodes(data=True) if d.get("node_type") == "ORGANIZATION"]
+        self.assertGreater(len(org_nodes), 0, "No ORGANIZATION nodes were built")
+
+        for n_id in org_nodes:
+            attrs = self.multi_graph.nodes[n_id]
+            self.assertTrue(attrs.get("org_name"))
+            self.assertTrue(attrs.get("org_type"))
+            self.assertNotIn("true_role", attrs)
+
+        org_types = {self.multi_graph.nodes[n].get("org_type") for n in org_nodes}
+        self.assertIn("PLACEMENT_AGENCY", org_types)
+
+        # Every affiliation edge carries its source row as provenance
+        affiliation_edges = [
+            d for _, _, d in self.multi_graph.edges(data=True)
+            if d.get("edge_type") in ("AFFILIATED_WITH", "INVESTIGATED_BY", "OPERATES_IN")
+        ]
+        self.assertGreater(len(affiliation_edges), 0, "No organization edges were built")
+        for edge in affiliation_edges:
+            self.assertTrue(edge.get("provenance_table"))
+            self.assertTrue(edge.get("provenance_record_id"))
+            self.assertIn("provenance_confidence", edge)
+
+    def test_01c_administrative_custody_orgs_excluded_from_graph(self):
+        """Custody organisations stay in the evidence table but not in the network."""
+        org_types = {
+            d.get("org_type") for _, d in self.multi_graph.nodes(data=True)
+            if d.get("node_type") == "ORGANIZATION"
+        }
+        self.assertNotIn("FORENSIC_LABORATORY", org_types)
+        self.assertNotIn("EVIDENCE_STORE", org_types)
 
     def test_02_zero_ground_truth_contamination(self):
         """

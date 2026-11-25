@@ -1,15 +1,15 @@
 {
   "mlp": {
-    "val_roc_auc": 0.9304,
-    "val_pr_auc": 0.2329
+    "val_roc_auc": 0.7749,
+    "val_pr_auc": 0.0636
   },
   "dot": {
-    "val_roc_auc": 0.801,
-    "val_pr_auc": 0.0467
+    "val_roc_auc": 0.8124,
+    "val_pr_auc": 0.0322
   },
   "cosine": {
-    "val_roc_auc": 0.8596,
-    "val_pr_auc": 0.0543
+    "val_roc_auc": 0.8392,
+    "val_pr_auc": 0.0367
   },
   "selected_decoder": "mlp"
 }

@@ -21,12 +21,18 @@ sys.path.insert(0, str(PROJECT_DIR))
 
 from config import DEFAULT_SEED, EVIDENCE_DIR, GROUND_TRUTH_DIR, NETWORK_CLUSTERS
 from generate_dataset import run_pipeline
+from derive_organizations import derive as derive_organizations, write_tables as write_org_tables
 
 EXPECTED_EVIDENCE_FILES = [
     "cases.csv", "persons.csv", "victims.csv", "cdr.csv", "chat_logs.csv",
     "travel_movements.csv", "vehicle_records.csv", "device_logs.csv",
-    "financial_transactions.csv", "social_media.csv", "evidence.csv"
+    "financial_transactions.csv", "social_media.csv", "evidence.csv",
+    "organizations.csv", "org_affiliations.csv"
 ]
+
+# Files written by run_pipeline() itself. The two organization tables are derived
+# from the generated evidence, so they are excluded from generation-only checks.
+GENERATED_EVIDENCE_FILES = EXPECTED_EVIDENCE_FILES[:-2]
 
 EXPECTED_GROUND_TRUTH_FILES = [
     "ground_truth.json", "true_entities.json", "true_relationships.json",
@@ -77,17 +83,41 @@ REQUIRED_SCHEMAS = {
     "evidence.csv": [
         "evidence_id", "case_id", "evidence_type", "source_file",
         "timestamp", "sha256_hash", "extraction_method", "reliability", "chain_of_custody"
+    ],
+    "organizations.csv": [
+        "org_id", "name", "org_type", "sector",
+        "registered_office_city", "registration_no", "case_id"
+    ],
+    "org_affiliations.csv": [
+        "affiliation_id", "org_id", "entity_id", "entity_type", "relation",
+        "since_date", "source_table", "source_record_id", "case_id"
     ]
 }
 
 class TestDatasetGenerator(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        # Generate dataset once using default seed
-        run_pipeline(seed=DEFAULT_SEED, evidence_dir=EVIDENCE_DIR, ground_truth_dir=GROUND_TRUTH_DIR)
+        # Generate into an isolated temporary directory. Regenerating in place would
+        # overwrite the frozen evidence CSVs that every downstream artifact (entity
+        # resolution, knowledge graph, GraphSAGE) is keyed to.
+        cls._tmp_dir = Path(tempfile.mkdtemp(prefix="spyder_dataset_"))
+        temp_evidence = cls._tmp_dir / "evidence_dataset"
+        temp_ground_truth = cls._tmp_dir / "ground_truth"
+
+        run_pipeline(seed=DEFAULT_SEED, evidence_dir=temp_evidence, ground_truth_dir=temp_ground_truth)
+        # Organization tables are derived from the evidence, not generated with it,
+        # so they must be rebuilt after any (re)generation to stay consistent.
+        write_org_tables(*derive_organizations(temp_evidence), evidence_dir=temp_evidence)
+
+        # Point the module-level constants at the generated fixture for the rest of the suite
+        module_globals = globals()
+        module_globals["EVIDENCE_DIR"] = temp_evidence
+        module_globals["GROUND_TRUTH_DIR"] = temp_ground_truth
+
+        cls.addClassCleanup(shutil.rmtree, cls._tmp_dir, True)
 
     def test_expected_files_exist(self):
-        """Verifies that all 11 evidence CSVs and 5 ground truth JSONs exist and are non-empty."""
+        """Verifies that every evidence CSV (including derived organization tables) exists."""
         for fname in EXPECTED_EVIDENCE_FILES:
             fpath = EVIDENCE_DIR / fname
             self.assertTrue(fpath.exists(), f"Evidence file missing: {fname}")
@@ -271,7 +301,7 @@ class TestDatasetGenerator(unittest.TestCase):
             run_pipeline(seed=777, evidence_dir=ev1, ground_truth_dir=gt1)
             run_pipeline(seed=777, evidence_dir=ev2, ground_truth_dir=gt2)
 
-            for fname in EXPECTED_EVIDENCE_FILES:
+            for fname in GENERATED_EVIDENCE_FILES:
                 h1 = hashlib.sha256((ev1 / fname).read_bytes()).hexdigest()
                 h2 = hashlib.sha256((ev2 / fname).read_bytes()).hexdigest()
                 self.assertEqual(h1, h2, f"Evidence file {fname} is not reproducible with fixed seed!")
@@ -394,6 +424,70 @@ class TestDatasetGenerator(unittest.TestCase):
         # 3. Verify that shared IPs exist across independent cases (shared public infrastructure)
         c1_c4_ips = len(ips_by_case["CASE_001"].intersection(ips_by_case["CASE_004"]))
         self.assertGreater(c1_c4_ips, 0, "Shared infrastructure IPs should appear across cases without implying identity")
+
+
+class TestOrganizationDerivation(unittest.TestCase):
+    """Organizations are derived from the frozen evidence, deterministically."""
+
+    @classmethod
+    def setUpClass(cls):
+        # Self-contained fixture: derive from a freshly generated isolated dataset so
+        # this suite never depends on (or mutates) the frozen evidence directory.
+        cls._tmp_dir = Path(tempfile.mkdtemp(prefix="spyder_orgs_"))
+        temp_evidence = cls._tmp_dir / "evidence_dataset"
+        temp_ground_truth = cls._tmp_dir / "ground_truth"
+        run_pipeline(seed=DEFAULT_SEED, evidence_dir=temp_evidence, ground_truth_dir=temp_ground_truth)
+
+        cls.evidence_dir = temp_evidence
+        cls.organizations, cls.affiliations = derive_organizations(temp_evidence)
+        cls.persons = cls._ids("persons.csv", "person_id")
+        cls.cases = cls._ids("cases.csv", "case_id")
+        cls.evidence = cls._ids("evidence.csv", "evidence_id")
+
+        cls.addClassCleanup(shutil.rmtree, cls._tmp_dir, True)
+
+    @classmethod
+    def _ids(cls, filename, column):
+        with open(cls.evidence_dir / filename, mode="r", encoding="utf-8") as f:
+            return {row[column] for row in csv.DictReader(f)}
+
+    def test_01_organizations_present(self):
+        self.assertGreater(len(self.organizations), 0, "No organizations were derived")
+        org_types = {o["org_type"] for o in self.organizations}
+        for expected in (
+            "PLACEMENT_AGENCY",
+            "TRAVEL_AGENCY",
+            "LAW_ENFORCEMENT_AGENCY",
+            "FORENSIC_LABORATORY",
+        ):
+            self.assertIn(expected, org_types, f"Organization type {expected} not derived")
+
+    def test_02_deterministic_and_idempotent(self):
+        again_orgs, again_affs = derive_organizations(self.evidence_dir)
+        self.assertEqual(self.organizations, again_orgs, "Organization derivation is not deterministic")
+        self.assertEqual(self.affiliations, again_affs, "Affiliation derivation is not deterministic")
+
+    def test_03_affiliations_reference_real_entities(self):
+        valid = {"PERSON": self.persons, "CASE": self.cases, "EVIDENCE": self.evidence}
+        org_ids = {o["org_id"] for o in self.organizations}
+        for aff in self.affiliations:
+            self.assertIn(aff["org_id"], org_ids, f"Unknown org {aff['org_id']}")
+            self.assertIn(aff["entity_id"], valid[aff["entity_type"]],
+                          f"Affiliation points at unknown {aff['entity_type']} {aff['entity_id']}")
+            self.assertTrue(aff["source_table"])
+            self.assertTrue(aff["source_record_id"])
+
+    def test_04_no_ground_truth_leakage(self):
+        forbidden = ["GLOBAL_ENT", "GLOBAL_ENTITY", "syndicate", "mastermind"]
+        for org in self.organizations:
+            blob = " ".join(str(v) for v in org.values()).lower()
+            for token in forbidden:
+                self.assertNotIn(token.lower(), blob, f"Ground truth token {token} leaked into an organization")
+
+    def test_05_organization_ids_are_unique(self):
+        org_ids = [o["org_id"] for o in self.organizations]
+        self.assertEqual(len(org_ids), len(set(org_ids)), "Duplicate org_id values derived")
+
 
 if __name__ == "__main__":
     unittest.main()

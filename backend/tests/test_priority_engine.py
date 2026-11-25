@@ -167,7 +167,9 @@ class TestInvestigationPriorityEngine(unittest.TestCase):
                 self.assertIn(rec.relationship, [
                     "USED_VEHICLE", "TRAVELLED_TO", "APPEARS_IN", "HAS_SOCIAL_ACCOUNT",
                     "USED_DEVICE", "OBSERVES_ENTITY", "CALLED", "MESSAGED", "TRANSFERRED_MONEY",
-                    "USED_PHONE", "ASSOCIATED_WITH_EVIDENCE"
+                    "USED_PHONE", "ASSOCIATED_WITH_EVIDENCE",
+                    # Organization layer (derived from occupation, agency, chain of custody)
+                    "AFFILIATED_WITH", "INVESTIGATED_BY", "OPERATES_IN",
                 ])
                 if not rec.timestamp:
                     self.assertEqual(rec.timestamp, "Unavailable")

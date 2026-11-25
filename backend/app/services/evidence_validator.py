@@ -2,9 +2,10 @@
 Phase 7A: Evidence Validation Service.
 Enforces rigorous validation on uploaded files:
 - File size bounds (non-empty, <= 100MB)
-- File extension whitelist (.csv, .xlsx, .json)
+- File extension whitelist (.csv, .xlsx, .json, .pdf, .png, .jpg, .jpeg)
 - Path traversal and character sanitization
 - Binary / executable magic-byte inspection (prevents disguised executables)
+- Extension-aware content signatures (a .pdf must actually be a PDF, etc.)
 - Structured schema inspection and header matching for evidence modalities
 """
 
@@ -15,7 +16,9 @@ import re
 from typing import List, Optional, Set, Tuple
 
 
-ALLOWED_EXTENSIONS = {".csv", ".xlsx", ".json"}
+ALLOWED_EXTENSIONS = {".csv", ".xlsx", ".json", ".pdf", ".png", ".jpg", ".jpeg"}
+# Extensions whose payload is free text / structured rows (no document header expected)
+STRUCTURED_EXTENSIONS = {".csv", ".xlsx", ".json"}
 MAX_FILE_SIZE = 100 * 1024 * 1024  # 100 MB
 MIN_FILE_SIZE = 1  # Disallow empty 0-byte uploads
 
@@ -25,10 +28,21 @@ DISALLOWED_MAGIC_PREFIXES = [
     b"\x7fELF",      # Linux ELF executable
     b"\xfe\xed\xfa", # Mach-O binary
     b"\xce\xfa\xed", # Mach-O binary
-    b"%PDF",         # PDF header masquerading as CSV
     b"#!/bin/",      # Shell script
     b"#!/usr/",      # Shell script
 ]
+
+# Content signature required for each document extension.
+# Tesseract/pdf2image depend on the payload really being the declared type.
+REQUIRED_MAGIC = {
+    ".pdf": (b"%PDF-",),
+    ".png": (b"\x89PNG\r\n\x1a\n",),
+    ".jpg": (b"\xff\xd8\xff",),
+    ".jpeg": (b"\xff\xd8\xff",),
+}
+
+# Document/image signatures that must not arrive under a structured extension
+DOCUMENT_MAGIC = (b"%PDF-", b"\x89PNG\r\n\x1a\n", b"\xff\xd8\xff")
 
 
 class EvidenceValidationError(ValueError):
@@ -82,6 +96,21 @@ def validate_file_security(
     for prefix in DISALLOWED_MAGIC_PREFIXES:
         if file_bytes.startswith(prefix):
             raise EvidenceValidationError("Uploaded file contains binary or executable headers and cannot be accepted.")
+
+    # Extension-aware content signature checks
+    required = REQUIRED_MAGIC.get(ext)
+    if required is not None:
+        if not any(file_bytes.startswith(prefix) for prefix in required):
+            raise EvidenceValidationError(
+                f"File has '{ext}' extension but does not contain a valid {ext.lstrip('.').upper()} signature."
+            )
+    elif ext in STRUCTURED_EXTENSIONS:
+        for prefix in DOCUMENT_MAGIC:
+            if file_bytes.startswith(prefix):
+                raise EvidenceValidationError(
+                    "Document or image header detected under a structured-data extension. "
+                    "Upload the file with its correct extension."
+                )
 
     # ZIP handling: generic ZIPs disallowed for CSV/JSON; valid OpenXML spreadsheets permitted for XLSX
     if file_bytes.startswith(b"PK\x03\x04"):

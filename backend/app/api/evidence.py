@@ -24,13 +24,15 @@ from app.parsers.transaction import parse_transaction_csv
 
 from app.services.evidence_validator import validate_file_security, EvidenceValidationError
 from app.services.evidence_orchestrator import get_orchestrator
+from app.services.ocr import extract_text_for_upload
 from app.models.evidence import EvidenceProcessingJob
 
 router = APIRouter(prefix="/api/v1/cases", tags=["evidence"])
 direct_router = APIRouter(prefix="/api/v1/evidence", tags=["evidence"])
 
-ALLOWED_EXTENSIONS = {".csv", ".xlsx", ".json"}
+ALLOWED_EXTENSIONS = {".csv", ".xlsx", ".json", ".pdf", ".png", ".jpg", ".jpeg"}
 MAX_FILE_SIZE = 100 * 1024 * 1024  # 100 MB
+EXTRACTED_TEXT_PREVIEW_CHARS = 500
 
 
 def _sanitize_filename(filename: str) -> str:
@@ -87,6 +89,10 @@ async def upload_evidence(
     import os
     ext = os.path.splitext(sanitized)[1].lower()
 
+    # Best-effort text recovery for PDF / image evidence. A failure here must not
+    # block the upload: the original bytes are still hashed and preserved.
+    extracted_text = extract_text_for_upload(sanitized, file_bytes)
+
     # Compute hash BEFORE storing
     sha256 = calculate_sha256(file_bytes)
 
@@ -121,6 +127,7 @@ async def upload_evidence(
         object_storage_key=object_key,
         source_label=source_label,
         description=description,
+        extracted_text=extracted_text,
         sha256_hash=sha256,
         integrity_status="UNVERIFIED",
         uploaded_by=current_user.id,
@@ -158,7 +165,12 @@ async def upload_evidence(
     create_audit_event(
         db=db, event_type="EVIDENCE_UPLOADED", case_id=case_id,
         evidence_id=str(evidence_id), actor_user_id=str(current_user.id),
-        metadata={"filename": file.filename, "sha256": sha256, "size_bytes": len(file_bytes)},
+        metadata={
+            "filename": file.filename,
+            "sha256": sha256,
+            "size_bytes": len(file_bytes),
+            "extracted_text_chars": len(extracted_text) if extracted_text else 0,
+        },
     )
 
     return _evidence_to_dict(evidence)
@@ -607,4 +619,6 @@ def _evidence_to_dict(ev: EvidenceItem) -> dict:
         "processing_status": getattr(ev, "processing_status", "UPLOADED"),
         "parsing_error": ev.parsing_error,
         "is_original": ev.is_original,
+        "extracted_text_chars": len(ev.extracted_text or ""),
+        "extracted_text_preview": (ev.extracted_text or "")[:EXTRACTED_TEXT_PREVIEW_CHARS] or None,
     }

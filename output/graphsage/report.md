@@ -12,11 +12,11 @@
 
 ## 1. GraphSAGE Architecture & Decoder Selection
 
-- **Encoder**: 2-Layer GraphSAGE with typed node features ($d_{in} = 32$, hidden $d_h = 64$, embedding $d_z = 32$) with LayerNorm, ReLU, and Dropout ($0.2$).
+- **Encoder**: 2-Layer GraphSAGE with typed node features ($d_{in} = 34$, hidden $d_h = 64$, embedding $d_z = 32$) with LayerNorm, ReLU, and Dropout ($0.2$).
 - **Decoder Comparison (Validation Set)**:
-  - MLP Decoder: ROC-AUC = `0.9304`, PR-AUC = `0.2329`
-  - Dot-Product: ROC-AUC = `0.801`, PR-AUC = `0.0467`
-  - Cosine: ROC-AUC = `0.8596`, PR-AUC = `0.0543`
+  - MLP Decoder: ROC-AUC = `0.7749`, PR-AUC = `0.0636`
+  - Dot-Product: ROC-AUC = `0.8124`, PR-AUC = `0.0322`
+  - Cosine: ROC-AUC = `0.8392`, PR-AUC = `0.0367`
   - **Selected Decoder**: **`MLP`**
 
 ---
@@ -25,13 +25,13 @@
 
 ### A. Case-Aware Holdout (`CASE_007`, `CASE_009` Held Out)
 - **Cases in Test**: `CASE_007; CASE_009`
-- **Entity Overlap Disclosure**: Case-aware split contains 64 overlapping entities across cross-case boundaries.
-- **Sample Counts**: `916` pairs (19 positive, 897 negative)
+- **Entity Overlap Disclosure**: Case-aware split contains 61 overlapping entities across cross-case boundaries.
+- **Sample Counts**: `935` pairs (19 positive, 916 negative)
 
 | Metric | Score |
 | :--- | :--- |
-| **ROC-AUC** | **`0.7979`** |
-| **PR-AUC** | **`0.2108`** |
+| **ROC-AUC** | **`0.8429`** |
+| **PR-AUC** | **`0.1799`** |
 | **Precision** | **`0.0000`** |
 | **Recall** | **`0.0000`** |
 | **F1 Score** | **`0.0000`** |
@@ -40,12 +40,12 @@
 ### B. Strict Entity-Disjoint Holdout ($P_{train} \cap P_{test} = \emptyset$)
 - **Generalization Standard**: Completely unseen person identities in test set.
 - **Entity Overlap**: Exactly **0** entities (Strictly entity-disjoint: exactly zero person entity overlap between train and test.)
-- **Sample Counts**: `155` pairs (1 positive, 154 negative)
+- **Sample Counts**: `142` pairs (1 positive, 141 negative)
 
 | Metric | Score |
 | :--- | :--- |
-| **ROC-AUC** | **`0.7662`** |
-| **PR-AUC** | **`0.0270`** |
+| **ROC-AUC** | **`0.4752`** |
+| **PR-AUC** | **`0.0133`** |
 | **Precision** | **`0.0000`** |
 | **Recall** | **`0.0000`** |
 | **F1 Score** | **`0.0000`** |
@@ -58,11 +58,11 @@ Comparative evaluation on the Case-Aware Test Set:
 
 | Method | ROC-AUC | PR-AUC | Precision | Recall | F1 Score |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **GraphSAGE (Ours)** | **`0.7979`** | **`0.2108`** | **`0.0000`** | **`0.0000`** | **`0.0000`** |
-| Common Neighbors | `0.7800` | `0.0615` | `0.0302` | `1.0000` | `0.0586` |
-| Jaccard Coefficient | `0.8678` | `0.2080` | `0.0340` | `1.0000` | `0.0657` |
-| Adamic-Adar | `0.9871` | `0.7060` | `0.0583` | `1.0000` | `0.1101` |
-| Preferential Attachment | `0.4643` | `0.0195` | `0.0243` | `0.3158` | `0.0451` |
+| **GraphSAGE (Ours)** | **`0.8429`** | **`0.1799`** | **`0.0000`** | **`0.0000`** | **`0.0000`** |
+| Common Neighbors | `0.8422` | `0.0763` | `0.0293` | `1.0000` | `0.0570` |
+| Jaccard Coefficient | `0.9127` | `0.4322` | `0.0335` | `1.0000` | `0.0648` |
+| Adamic-Adar | `0.9949` | `0.8471` | `0.0567` | `1.0000` | `0.1073` |
+| Preferential Attachment | `0.4596` | `0.0195` | `0.0222` | `0.3684` | `0.0418` |
 
 ---
 
@@ -72,10 +72,10 @@ Measures false positive rates when pairs share only ambiguous public infrastruct
 
 | Category | Count | False Positives | False Positive Rate | Mean Score | Max Score |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Shared Public Wi-Fi / IP** | `105` | `0` | **`0.0000`** | `0.0080` | `0.1496` |
-| **Commercial Transit Bus (`VEH_026`)** | `28` | `0` | **`0.0000`** | `0.0107` | `0.1452` |
-| **Generic Transit City (`Delhi NCR`, etc.)** | `1981` | `0` | **`0.0000`** | `0.0057` | `0.1610` |
-| **High-Degree Hub Negatives** | `36` | `0` | **`0.0000`** | `0.0236` | `0.2188` |
+| **Shared Public Wi-Fi / IP** | `105` | `0` | **`0.0000`** | `0.0075` | `0.2243` |
+| **Commercial Transit Bus (`VEH_026`)** | `16` | `0` | **`0.0000`** | `0.0020` | `0.0028` |
+| **Generic Transit City (`Delhi NCR`, etc.)** | `1975` | `0` | **`0.0000`** | `0.0097` | `0.3893` |
+| **High-Degree Hub Negatives** | `33` | `0` | **`0.0000`** | `0.0045` | `0.0151` |
 
 - **Public Infrastructure False Positive Rate**: **`0.0000`**
 - **Hub Negative False Positive Rate**: **`0.0000`**

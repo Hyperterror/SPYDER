@@ -1,0 +1,41 @@
+org_id,name,org_type,sector,registered_office_city,registration_no,case_id
+ORG_EVD_DISTRICT_MALKHANA_EVIDENCE_STORE,District Malkhana Evidence Store,EVIDENCE_STORE,Evidence Custody,,REG-4277-67849,CASE_001
+ORG_FSL_FORENSIC_SCIENCE_LABORATORY,Forensic Science Laboratory,FORENSIC_LABORATORY,Forensic Science,,REG-27E7-02663,CASE_001
+ORG_LDG_AGRA,Agra Guest House,LODGING_ESTABLISHMENT,Hospitality,Agra,REG-B72C-92115,CASE_010
+ORG_LDG_GWALIOR,Gwalior Guest House,LODGING_ESTABLISHMENT,Hospitality,Gwalior,REG-3FF4-09712,CASE_010
+ORG_LDG_JAIPUR,Jaipur Guest House,LODGING_ESTABLISHMENT,Hospitality,Jaipur,REG-CB83-40287,CASE_007
+ORG_LDG_NAGPUR,Nagpur Guest House,LODGING_ESTABLISHMENT,Hospitality,Nagpur,REG-6908-99912,CASE_010
+ORG_LDG_PANIPAT,Panipat Guest House,LODGING_ESTABLISHMENT,Hospitality,Panipat,REG-F058-32046,CASE_005
+ORG_LEA_ANTI_HUMAN_TRAFFICKING_UNIT_AHTU,Anti-Human Trafficking Unit,LAW_ENFORCEMENT_AGENCY,Law Enforcement,,REG-FA5B-60034,CASE_001
+ORG_LEA_METRO_CENTRAL_POLICE_DIVISION,Metro Central Police Division,LAW_ENFORCEMENT_AGENCY,Law Enforcement,,REG-6D5B-53525,CASE_003
+ORG_LEA_SPECIAL_TASK_FORCE_STF,Special Task Force,LAW_ENFORCEMENT_AGENCY,Law Enforcement,,REG-8E30-36252,CASE_002
+ORG_LEA_STATE_CRIME_INVESTIGATION_DEPARTMENT_CID,State Crime Investigation Department,LAW_ENFORCEMENT_AGENCY,Law Enforcement,,REG-4475-48339,CASE_008
+ORG_NGO_BHOPAL,Bhopal Welfare Trust,NONPROFIT_ORGANISATION,Social Welfare,Bhopal,REG-B592-69542,CASE_010
+ORG_NGO_DELHI_NCR,Delhi NCR Welfare Trust,NONPROFIT_ORGANISATION,Social Welfare,Delhi NCR,REG-3B4B-44846,CASE_007
+ORG_NGO_JAIPUR,Jaipur Welfare Trust,NONPROFIT_ORGANISATION,Social Welfare,Jaipur,REG-A7B8-20345,CASE_001
+ORG_NGO_MURSHIDABAD,Murshidabad Welfare Trust,NONPROFIT_ORGANISATION,Social Welfare,Murshidabad,REG-51FD-79269,CASE_003
+ORG_NGO_NAGPUR,Nagpur Welfare Trust,NONPROFIT_ORGANISATION,Social Welfare,Nagpur,REG-5B7A-04436,CASE_004
+ORG_NGO_SILIGURI,Siliguri Welfare Trust,NONPROFIT_ORGANISATION,Social Welfare,Siliguri,REG-B2FE-75165,CASE_003
+ORG_PLC_CHANDIGARH,Chandigarh Placement Services,PLACEMENT_AGENCY,Employment Placement,Chandigarh,REG-6AE6-08469,CASE_002
+ORG_PLC_KANPUR,Kanpur Placement Services,PLACEMENT_AGENCY,Employment Placement,Kanpur,REG-DA8E-10271,CASE_004
+ORG_PLC_KOLKATA,Kolkata Placement Services,PLACEMENT_AGENCY,Employment Placement,Kolkata,REG-1B2A-60488,CASE_001
+ORG_PLC_MURSHIDABAD,Murshidabad Placement Services,PLACEMENT_AGENCY,Employment Placement,Murshidabad,REG-5782-90396,CASE_001
+ORG_TRN_BHOPAL,Bhopal Road Transport Operator,TRANSPORT_OPERATOR,Road Transport,Bhopal,REG-16D3-23554,CASE_006
+ORG_TRN_CHANDIGARH,Chandigarh Road Transport Operator,TRANSPORT_OPERATOR,Road Transport,Chandigarh,REG-186B-31189,CASE_002
+ORG_TRN_DELHI_NCR,Delhi NCR Road Transport Operator,TRANSPORT_OPERATOR,Road Transport,Delhi NCR,REG-B1EC-42340,CASE_001
+ORG_TRN_GURUGRAM,Gurugram Road Transport Operator,TRANSPORT_OPERATOR,Road Transport,Gurugram,REG-6A99-70106,CASE_005
+ORG_TRN_GWALIOR,Gwalior Road Transport Operator,TRANSPORT_OPERATOR,Road Transport,Gwalior,REG-5A35-75169,CASE_006
+ORG_TRN_JAIPUR,Jaipur Road Transport Operator,TRANSPORT_OPERATOR,Road Transport,Jaipur,REG-7B2C-40453,CASE_003
+ORG_TRN_KANPUR,Kanpur Road Transport Operator,TRANSPORT_OPERATOR,Road Transport,Kanpur,REG-1387-60464,CASE_006
+ORG_TRN_PANIPAT,Panipat Road Transport Operator,TRANSPORT_OPERATOR,Road Transport,Panipat,REG-2D0E-03188,CASE_002
+ORG_TRV_BHOPAL,Bhopal Travel & Ticketing Agency,TRAVEL_AGENCY,Travel & Ticketing,Bhopal,REG-C026-13159,CASE_004
+ORG_TRV_CHANDIGARH,Chandigarh Travel & Ticketing Agency,TRAVEL_AGENCY,Travel & Ticketing,Chandigarh,REG-FECA-96315,CASE_005
+ORG_TRV_DELHI_NCR,Delhi NCR Travel & Ticketing Agency,TRAVEL_AGENCY,Travel & Ticketing,Delhi NCR,REG-CF74-40246,CASE_009
+ORG_TRV_GURUGRAM,Gurugram Travel & Ticketing Agency,TRAVEL_AGENCY,Travel & Ticketing,Gurugram,REG-C9C3-41382,CASE_005
+ORG_TRV_GWALIOR,Gwalior Travel & Ticketing Agency,TRAVEL_AGENCY,Travel & Ticketing,Gwalior,REG-61D8-92206,CASE_004
+ORG_TRV_KOLKATA,Kolkata Travel & Ticketing Agency,TRAVEL_AGENCY,Travel & Ticketing,Kolkata,REG-2D8D-24743,CASE_009
+ORG_TRV_MURSHIDABAD,Murshidabad Travel & Ticketing Agency,TRAVEL_AGENCY,Travel & Ticketing,Murshidabad,REG-A7AC-52526,CASE_001
+ORG_TRV_PANIPAT,Panipat Travel & Ticketing Agency,TRAVEL_AGENCY,Travel & Ticketing,Panipat,REG-851A-27312,CASE_002
+ORG_TRV_PATNA,Patna Travel & Ticketing Agency,TRAVEL_AGENCY,Travel & Ticketing,Patna,REG-381B-86794,CASE_008
+ORG_TRV_RANCHI,Ranchi Travel & Ticketing Agency,TRAVEL_AGENCY,Travel & Ticketing,Ranchi,REG-F10D-64409,CASE_002
+ORG_TRV_SILIGURI,Siliguri Travel & Ticketing Agency,TRAVEL_AGENCY,Travel & Ticketing,Siliguri,REG-3BF2-01020,CASE_003

@@ -74,7 +74,14 @@ class TestIntelligenceIntegration(unittest.TestCase):
     def test_01_phase4_files_load_successfully(self):
         """Confirms Phase 4 predictions and candidate links load into InvestigationLead objects."""
         self.assertGreater(len(self.leads), 0, "No leads loaded from Phase 4 artifacts.")
-        self.assertEqual(len(self.leads), 2332, "Mismatch in expected Phase 4 candidate count.")
+        # Compared against the artifact itself rather than a pinned count: the candidate
+        # set is regenerated whenever the knowledge graph changes (e.g. new node types).
+        with open(CANDIDATE_LINKS_PATH, mode="r", encoding="utf-8") as f:
+            artifact_rows = max(sum(1 for _ in f) - 1, 0)  # exclude header
+        self.assertEqual(
+            len(self.leads), artifact_rows,
+            "Lead count diverges from the candidate_links.csv artifact.",
+        )
         lead = self.leads[0]
         self.assertIsInstance(lead, InvestigationLead)
         self.assertTrue(lead.lead_id.startswith("LEAD_"))

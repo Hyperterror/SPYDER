@@ -2,7 +2,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
-from app.core.database import Base, engine
+from app.core.database import Base, engine, ensure_late_columns
 from app.core.neo4j import get_neo4j, close_neo4j
 from app.api import auth, cases, evidence, graph, audit, intelligence
 from app.intelligence.leads import LeadRepository
@@ -14,9 +14,12 @@ async def lifespan(app: FastAPI):
     # Startup: create all PostgreSQL tables (best-effort — skips if DB is down)
     try:
         Base.metadata.create_all(bind=engine)
-        print("[OK] PostgreSQL tables verified")
+        added = ensure_late_columns(engine)
+        for col in added:
+            print(f"[OK] Added missing column {col}")
+        print("[OK] Database tables verified")
     except Exception as e:
-        print(f"[WARN] PostgreSQL not reachable at startup — tables not created: {e}")
+        print(f"[WARN] Database not reachable at startup — tables not created: {e}")
 
     # Startup: Neo4j constraints (best-effort)
     try:

@@ -187,7 +187,7 @@ class TestConsistencyEngine(unittest.TestCase):
     def test_13_evidence_matcher_cdr_match(self):
         """Verifies that CDR evidence is accurately matched to telecom claim."""
         claim = self.extractor.extract_claims(
-            statement_text="I called +911123010000 on February 1, 2025.",
+            statement_text="I called +918528419506 on June 3, 2025.",
             case_id="CASE_001",
             subject_entity_id="CASE_001_PER_01",
         )[0]
@@ -196,6 +196,25 @@ class TestConsistencyEngine(unittest.TestCase):
         self.assertEqual(matched[0].source_table, "cdr.csv")
         self.assertTrue(matched[0].record_id.startswith("CDR_"))
         self.assertEqual(matched[0].case_id, "CASE_001")
+
+    def test_13b_unattributed_subject_is_not_credited_with_case_records(self):
+        """
+        A subject with no observed phone number must NOT be credited with any CDR
+        from the case. Attributing a record the subject is not party to would
+        manufacture corroboration and yield a false SUPPORTED verdict.
+        """
+        claim = self.extractor.extract_claims(
+            statement_text="I called +918528419506 on June 3, 2025.",
+            case_id="CASE_001",
+            subject_entity_id="CASE_001_PER_04",  # holds no observed phone in the dossier
+        )[0]
+        matched, conflicts, conf, caveats = self.matcher.match_evidence_for_claim(claim)
+        self.assertEqual(len(matched), 0, "Unattributed subject was credited with a case CDR")
+        self.assertEqual(len(conflicts), 0)
+        self.assertTrue(
+            any("could not be attributed" in c for c in caveats),
+            f"Missing attribution caveat; got {caveats}",
+        )
 
     def test_14_evidence_matcher_financial_match(self):
         """Verifies that financial transaction records are matched with provenance."""
@@ -228,7 +247,7 @@ class TestConsistencyEngine(unittest.TestCase):
     def test_16_consistency_status_supported(self):
         """Verifies SUPPORTED status on confirmed claim."""
         req = AnalyzeStatementRequest(
-            statement_text="I called +911123010000 on February 1, 2025.",
+            statement_text="I called +918528419506 on June 3, 2025.",
             case_id="CASE_001",
             subject_entity_id="CASE_001_PER_01",
         )
@@ -242,7 +261,7 @@ class TestConsistencyEngine(unittest.TestCase):
     def test_17_consistency_status_contradicted(self):
         """Verifies CONTRADICTED status when high bar is satisfied."""
         req = AnalyzeStatementRequest(
-            statement_text="I never called +911123010000 on February 1, 2025.",
+            statement_text="I never called +918528419506 on June 3, 2025.",
             case_id="CASE_001",
             subject_entity_id="CASE_001_PER_01",
         )
@@ -338,7 +357,7 @@ class TestConsistencyEngine(unittest.TestCase):
     def test_24_provenance_traceability(self):
         """Verifies that every conclusion is fully traceable to underlying source tables."""
         req = AnalyzeStatementRequest(
-            statement_text="I called +911123010000 on February 1, 2025.",
+            statement_text="I called +918528419506 on June 3, 2025.",
             case_id="CASE_001",
             subject_entity_id="CASE_001_PER_01",
         )
@@ -373,7 +392,7 @@ class TestConsistencyEngine(unittest.TestCase):
     def test_26_rbac_case_isolation_and_leakage_audit(self):
         """Verifies that evidence from unauthorized cases is strictly hidden and zero ground truth leaks."""
         req = AnalyzeStatementRequest(
-            statement_text="I called +911123010000 on February 1, 2025.",
+            statement_text="I called +918528419506 on June 3, 2025.",
             case_id="CASE_001",
             subject_entity_id="CASE_001_PER_01",
         )

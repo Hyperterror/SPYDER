@@ -33,7 +33,7 @@ Phase 3 Knowledge Graph (Nodes, Edges, Provenance)
                ▼
        [GraphLoader] ────► Adjacency Tensor (Normalized)
                │
-       [FeatureExtractor] ─► Typed Observable Feature Matrix (10 Node Types, Centrality, Centrality Ratios)
+       [FeatureExtractor] ─► Typed Observable Feature Matrix (11 Node Types, Centrality, Centrality Ratios)
                │
                ▼
        [CandidateGenerator] ─► Positives + Negatives (Types A–G)

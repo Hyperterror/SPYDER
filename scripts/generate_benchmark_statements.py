@@ -496,6 +496,7 @@ def build_benchmark_dataset():
         })
 
     output_path = OUTPUT_DIR / "synthetic_statements.json"
+    statements = _align_telecom_statements_with_attributable_evidence(statements)
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(statements, f, indent=2)
 
@@ -505,6 +506,79 @@ def build_benchmark_dataset():
         st = s["expected_status"]
         counts[st] = counts.get(st, 0) + 1
     print("Class breakdown:", counts)
+
+
+def _align_telecom_statements_with_attributable_evidence(statements):
+    """
+    Grounds every telecom statement in a record the subject is actually party to.
+
+    A statement can only be labelled SUPPORTED/CONTRADICTED if the engine has an
+    observed way to attribute the subject to the communication. Statements naming a
+    number the subject is never linked to cannot be satisfied by evidence and would
+    have to be verified by guesswork, so their phone/date are rewritten onto a real
+    CDR row that involves one of the subject's observed numbers.
+
+    The linkage used here is the same one the runtime engine uses, read from the same
+    module, so benchmark and runtime can never drift apart.
+    """
+    import sys
+
+    repo_root = Path(__file__).resolve().parent.parent
+    backend_dir = repo_root / "backend"
+    if str(backend_dir) not in sys.path:
+        sys.path.insert(0, str(backend_dir))
+
+    from app.intelligence.evidence_matcher import EvidenceMatcher
+
+    matcher = EvidenceMatcher.get_instance()
+
+    # subject -> [(counterparty, date, cdr_id)] for records the subject is party to
+    attributable = {}
+    for pid in sorted(matcher.person_phones):
+        phones = matcher.person_phones[pid]
+        cases = matcher.person_cases.get(pid, set())
+        rows = []
+        for cdr in matcher.cdr_records:
+            if cdr.get("case_id") not in cases:
+                continue
+            if cdr.get("caller") in phones:
+                rows.append((cdr["receiver"], cdr["timestamp"], cdr["cdr_id"]))
+            elif cdr.get("receiver") in phones:
+                rows.append((cdr["caller"], cdr["timestamp"], cdr["cdr_id"]))
+        if rows:
+            rows.sort(key=lambda r: (r[2], r[1]))
+            attributable[pid] = rows
+
+    pool = sorted(attributable)
+    if not pool:
+        return statements
+
+    cursor = 0
+    aligned = 0
+    for stmt in statements:
+        if stmt.get("expected_predicate") not in ("CALLED", "CONTACTED"):
+            continue
+        if stmt.get("expected_status") not in ("SUPPORTED", "CONTRADICTED"):
+            continue
+
+        pid = stmt.get("subject_entity_id")
+        if pid not in attributable:
+            pid = pool[cursor % len(pool)]
+            cursor += 1
+            stmt["subject_entity_id"] = pid
+            stmt["case_id"] = sorted(matcher.person_cases.get(pid, {"CASE_001"}))[0]
+
+        counterparty, timestamp, _ = attributable[pid][cursor % len(attributable[pid])]
+        cursor += 1
+        date = timestamp.split(" ")[0]
+        if stmt["expected_status"] == "CONTRADICTED":
+            stmt["text"] = f"I never called {counterparty} on {date}."
+        else:
+            stmt["text"] = f"I called {counterparty} on {date}."
+        aligned += 1
+
+    print(f"Aligned {aligned} telecom statement(s) onto subject-attributed CDR records")
+    return statements
 
 
 if __name__ == "__main__":

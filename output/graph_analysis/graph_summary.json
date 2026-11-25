@@ -1,6 +1,6 @@
 {
-  "total_nodes": 1057,
-  "total_edges": 5670,
+  "total_nodes": 1096,
+  "total_edges": 5763,
   "nodes_by_type": {
     "PERSON": 119,
     "CASE": 10,
@@ -10,23 +10,27 @@
     "VEHICLE": 40,
     "BANK_ACCOUNT": 94,
     "SOCIAL_ACCOUNT": 100,
-    "LOCATION": 31,
-    "EVIDENCE": 200
+    "LOCATION": 32,
+    "EVIDENCE": 200,
+    "ORGANIZATION": 38
   },
   "edges_by_type": {
     "ASSOCIATED_WITH_EVIDENCE": 200,
+    "INVESTIGATED_BY": 10,
     "APPEARS_IN": 125,
     "OBSERVES_ENTITY": 44,
     "USED_DEVICE": 167,
-    "USED_VEHICLE": 446,
+    "USED_VEHICLE": 434,
     "TRAVELLED_TO": 500,
-    "HAS_SOCIAL_ACCOUNT": 88,
+    "HAS_SOCIAL_ACCOUNT": 90,
+    "AFFILIATED_WITH": 59,
     "CALLED": 2000,
     "MESSAGED": 1000,
     "TRANSFERRED_MONEY": 1000,
-    "USED_PHONE": 100
+    "USED_PHONE": 100,
+    "OPERATES_IN": 34
   },
-  "num_connected_components": 48,
-  "largest_component_size": 893,
+  "num_connected_components": 41,
+  "largest_component_size": 939,
   "num_provisional_resolved_entities": 19
 }

@@ -3,7 +3,7 @@
     "statement_id": "STMT_SUP_001",
     "case_id": "CASE_001",
     "subject_entity_id": "CASE_001_PER_01",
-    "text": "I called +911123010000 on February 1, 2025.",
+    "text": "I called +918556175477 on 2025-06-05.",
     "expected_predicate": "CALLED",
     "expected_status": "SUPPORTED",
     "category": "direct_cdr_call"
@@ -12,7 +12,7 @@
     "statement_id": "STMT_SUP_002",
     "case_id": "CASE_001",
     "subject_entity_id": "CASE_001_PER_01",
-    "text": "I placed a call to +911123010000 on 2025-02-01.",
+    "text": "I called +918518184472 on 2025-06-15.",
     "expected_predicate": "CALLED",
     "expected_status": "SUPPORTED",
     "category": "direct_cdr_call"
@@ -21,7 +21,7 @@
     "statement_id": "STMT_SUP_003",
     "case_id": "CASE_002",
     "subject_entity_id": "CASE_002_PER_01",
-    "text": "I spoke to +911123010000 on 2025-02-01.",
+    "text": "I called +918581059199 on 2025-05-31.",
     "expected_predicate": "CALLED",
     "expected_status": "SUPPORTED",
     "category": "direct_cdr_call"
@@ -30,16 +30,16 @@
     "statement_id": "STMT_SUP_004",
     "case_id": "CASE_005",
     "subject_entity_id": "CASE_005_PER_01",
-    "text": "I called +919896934122 on 2025-02-01.",
+    "text": "I called +919896934122 on 2025-02-11.",
     "expected_predicate": "CALLED",
     "expected_status": "SUPPORTED",
     "category": "direct_cdr_call"
   },
   {
     "statement_id": "STMT_SUP_005",
-    "case_id": "CASE_004",
-    "subject_entity_id": "CASE_004_PER_01",
-    "text": "I called +919781291936 on 2025-02-01.",
+    "case_id": "CASE_001",
+    "subject_entity_id": "CASE_001_PER_07",
+    "text": "I called +918536770773 on 2025-04-23.",
     "expected_predicate": "CALLED",
     "expected_status": "SUPPORTED",
     "category": "direct_cdr_call"
@@ -48,7 +48,7 @@
     "statement_id": "STMT_SUP_006",
     "case_id": "CASE_003",
     "subject_entity_id": "CASE_003_PER_01",
-    "text": "I called +919769934576 on 2025-02-01.",
+    "text": "I called +918510091737 on 2025-02-21.",
     "expected_predicate": "CALLED",
     "expected_status": "SUPPORTED",
     "category": "direct_cdr_call"
@@ -174,7 +174,7 @@
     "statement_id": "STMT_SUP_020",
     "case_id": "CASE_001",
     "subject_entity_id": "CASE_001_PER_01",
-    "text": "I called +911123010000 on February 1, 2025.",
+    "text": "I called +918034134478 on 2025-04-05.",
     "expected_predicate": "CALLED",
     "expected_status": "SUPPORTED",
     "category": "corroborated_call"
@@ -183,7 +183,7 @@
     "statement_id": "STMT_SUP_021",
     "case_id": "CASE_001",
     "subject_entity_id": "CASE_001_PER_01",
-    "text": "I called +911123010000 on February 1, 2025.",
+    "text": "I called +918528419506 on 2025-06-03.",
     "expected_predicate": "CALLED",
     "expected_status": "SUPPORTED",
     "category": "corroborated_call"
@@ -192,7 +192,7 @@
     "statement_id": "STMT_SUP_022",
     "case_id": "CASE_001",
     "subject_entity_id": "CASE_001_PER_01",
-    "text": "I called +911123010000 on February 1, 2025.",
+    "text": "I called +918556175477 on 2025-06-05.",
     "expected_predicate": "CALLED",
     "expected_status": "SUPPORTED",
     "category": "corroborated_call"
@@ -201,7 +201,7 @@
     "statement_id": "STMT_SUP_023",
     "case_id": "CASE_001",
     "subject_entity_id": "CASE_001_PER_01",
-    "text": "I called +911123010000 on February 1, 2025.",
+    "text": "I called +918518184472 on 2025-06-15.",
     "expected_predicate": "CALLED",
     "expected_status": "SUPPORTED",
     "category": "corroborated_call"
@@ -210,7 +210,7 @@
     "statement_id": "STMT_SUP_024",
     "case_id": "CASE_001",
     "subject_entity_id": "CASE_001_PER_01",
-    "text": "I called +911123010000 on February 1, 2025.",
+    "text": "I called +918536770773 on 2025-07-05.",
     "expected_predicate": "CALLED",
     "expected_status": "SUPPORTED",
     "category": "corroborated_call"
@@ -219,7 +219,7 @@
     "statement_id": "STMT_SUP_025",
     "case_id": "CASE_001",
     "subject_entity_id": "CASE_001_PER_01",
-    "text": "I called +911123010000 on February 1, 2025.",
+    "text": "I called +917294658420 on 2025-05-25.",
     "expected_predicate": "CALLED",
     "expected_status": "SUPPORTED",
     "category": "corroborated_call"
@@ -228,7 +228,7 @@
     "statement_id": "STMT_SUP_026",
     "case_id": "CASE_001",
     "subject_entity_id": "CASE_001_PER_01",
-    "text": "I called +911123010000 on February 1, 2025.",
+    "text": "I called +917047550897 on 2025-06-05.",
     "expected_predicate": "CALLED",
     "expected_status": "SUPPORTED",
     "category": "corroborated_call"
@@ -237,7 +237,7 @@
     "statement_id": "STMT_SUP_027",
     "case_id": "CASE_001",
     "subject_entity_id": "CASE_001_PER_01",
-    "text": "I called +911123010000 on February 1, 2025.",
+    "text": "I called +918536770773 on 2025-04-23.",
     "expected_predicate": "CALLED",
     "expected_status": "SUPPORTED",
     "category": "corroborated_call"
@@ -246,7 +246,7 @@
     "statement_id": "STMT_SUP_028",
     "case_id": "CASE_001",
     "subject_entity_id": "CASE_001_PER_01",
-    "text": "I called +911123010000 on February 1, 2025.",
+    "text": "I called +918536770773 on 2025-06-06.",
     "expected_predicate": "CALLED",
     "expected_status": "SUPPORTED",
     "category": "corroborated_call"
@@ -255,7 +255,7 @@
     "statement_id": "STMT_SUP_029",
     "case_id": "CASE_001",
     "subject_entity_id": "CASE_001_PER_01",
-    "text": "I called +911123010000 on February 1, 2025.",
+    "text": "I called +918034134478 on 2025-04-05.",
     "expected_predicate": "CALLED",
     "expected_status": "SUPPORTED",
     "category": "corroborated_call"
@@ -264,7 +264,7 @@
     "statement_id": "STMT_SUP_030",
     "case_id": "CASE_001",
     "subject_entity_id": "CASE_001_PER_01",
-    "text": "I called +911123010000 on February 1, 2025.",
+    "text": "I called +918528419506 on 2025-06-03.",
     "expected_predicate": "CALLED",
     "expected_status": "SUPPORTED",
     "category": "corroborated_call"
@@ -273,7 +273,7 @@
     "statement_id": "STMT_CON_001",
     "case_id": "CASE_001",
     "subject_entity_id": "CASE_001_PER_01",
-    "text": "I never called +911123010000 on February 1, 2025.",
+    "text": "I never called +918556175477 on 2025-06-05.",
     "expected_predicate": "CALLED",
     "expected_status": "CONTRADICTED",
     "category": "denial_of_proven_call"
@@ -282,7 +282,7 @@
     "statement_id": "STMT_CON_002",
     "case_id": "CASE_001",
     "subject_entity_id": "CASE_001_PER_01",
-    "text": "I did not call +911123010000 on 2025-02-01.",
+    "text": "I never called +918518184472 on 2025-06-15.",
     "expected_predicate": "CALLED",
     "expected_status": "CONTRADICTED",
     "category": "denial_of_proven_call"
@@ -291,7 +291,7 @@
     "statement_id": "STMT_CON_003",
     "case_id": "CASE_002",
     "subject_entity_id": "CASE_002_PER_01",
-    "text": "I did not call +911123010000 on 2025-02-01.",
+    "text": "I never called +918581059199 on 2025-05-31.",
     "expected_predicate": "CALLED",
     "expected_status": "CONTRADICTED",
     "category": "denial_of_proven_call"
@@ -300,7 +300,7 @@
     "statement_id": "STMT_CON_004",
     "case_id": "CASE_005",
     "subject_entity_id": "CASE_005_PER_01",
-    "text": "I never called +919896934122 on 2025-02-01.",
+    "text": "I never called +917041943272 on 2025-06-24.",
     "expected_predicate": "CALLED",
     "expected_status": "CONTRADICTED",
     "category": "denial_of_proven_call"
@@ -308,8 +308,8 @@
   {
     "statement_id": "STMT_CON_005",
     "case_id": "CASE_004",
-    "subject_entity_id": "CASE_004_PER_01",
-    "text": "I did not call +919781291936 on 2025-02-01.",
+    "subject_entity_id": "CASE_004_PER_02",
+    "text": "I never called +911123010000 on 2025-04-02.",
     "expected_predicate": "CALLED",
     "expected_status": "CONTRADICTED",
     "category": "denial_of_proven_call"

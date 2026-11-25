@@ -36,7 +36,7 @@ The `graph_analysis` module constructs an evidence-backed, multi-case Knowledge 
 
 ## Knowledge Graph Schema
 
-### 10 Observable Node Types
+### 11 Observable Node Types
 1. `PERSON`: Observational persons (`CASE_xxx_PER_yy`) and provisional resolved entities (`PROV_RES_ENT_xxx`).
 2. `VICTIM`: Observational victim records (`CASE_xxx_VIC_yy`).
 3. `CASE`: Police case dossiers (`CASE_001` .. `CASE_010`).
@@ -47,6 +47,27 @@ The `graph_analysis` module constructs an evidence-backed, multi-case Knowledge 
 8. `SOCIAL_ACCOUNT`: Social media platform profiles.
 9. `LOCATION`: Geographic waypoints, transit terminals, and cellular towers.
 10. `EVIDENCE`: Seized physical and digital evidence records (`EVID_xxx`).
+11. `ORGANIZATION`: Establishments, firms and agencies observed in the evidence (`ORG_xxx`).
+
+#### Organizations are derived, never assumed
+
+`organizations.csv` and `org_affiliations.csv` are produced by
+`synthetic_data_generator/derive_organizations.py` from **observed** columns only:
+
+| Organization type | Derived from |
+| :--- | :--- |
+| `PLACEMENT_AGENCY`, `TRAVEL_AGENCY`, `LODGING_ESTABLISHMENT`, `LABOUR_SUPPLY_FIRM`, `TRANSPORT_OPERATOR`, `NONPROFIT_ORGANISATION` | `persons.occupation` + the city component of `persons.address` |
+| `LAW_ENFORCEMENT_AGENCY` | `cases.agency` |
+| `FORENSIC_LABORATORY`, `EVIDENCE_STORE` | `evidence.chain_of_custody` |
+
+A shared affiliation is an *observed co-affiliation* (e.g. two people listed under the
+same placement agency in one city). It is a structural lead, never a claim about a
+person's role, intent or culpability.
+
+Administrative custody organisations (`FORENSIC_LABORATORY`, `EVIDENCE_STORE`) are kept
+in the evidence tables but **excluded from the graph**: they attach to every evidence
+item, so their clerical fan-out would dominate degree and PageRank and bury genuine
+investigative leads. Their exclusion is asserted by `test_01c`.
 
 ### Observable Edge Types & Provenance
 - `PERSON --APPEARS_IN--> CASE`
@@ -61,6 +82,10 @@ The `graph_analysis` module constructs an evidence-backed, multi-case Knowledge 
 - `BANK_ACCOUNT --TRANSFERRED_MONEY--> BANK_ACCOUNT` (Financial transactions)
 - `CASE --ASSOCIATED_WITH_EVIDENCE--> EVIDENCE`
 - `PERSON --OBSERVES_ENTITY--> PROV_RES_ENT` (Provisional ER cluster link)
+- `PERSON --AFFILIATED_WITH--> ORGANIZATION` (observed occupation + city)
+- `CASE --INVESTIGATED_BY--> ORGANIZATION` (`cases.agency`)
+- `EVIDENCE --PROCESSED_BY--> ORGANIZATION` (chain of custody; evidence table only)
+- `ORGANIZATION --OPERATES_IN--> LOCATION` (registered office city)
 
 Every edge strictly preserves:
 `source_table`, `source_id`, `case_id`, `timestamp`, `evidence_type`, `confidence`, and `notes`.

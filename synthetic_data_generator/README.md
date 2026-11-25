@@ -126,3 +126,31 @@ Stored strictly in `output/ground_truth/`:
 - **Independent Unrelated Cases (3 Cases):**
   - `CASE_004`, `CASE_006`, `CASE_010`
   - Localized independent crimes sharing 0 syndicate links.
+
+---
+
+## 7. Derived Organization Tables
+
+`organizations.csv` and `org_affiliations.csv` are **not** written by `run_pipeline()`.
+They are derived from the generated evidence by a separate, RNG-free step:
+
+```bash
+python derive_organizations.py
+```
+
+| File | Columns |
+| :--- | :--- |
+| `organizations.csv` | `org_id, name, org_type, sector, registered_office_city, registration_no, case_id` |
+| `org_affiliations.csv` | `affiliation_id, org_id, entity_id, entity_type, relation, since_date, source_table, source_record_id, case_id` |
+
+Why a separate step: the committed evidence CSVs are a frozen snapshot produced by an
+earlier revision of the generator. Re-running `run_pipeline()` today still yields
+deterministic output, but it is *not* byte-identical to that snapshot, and every
+downstream artifact (entity resolution, knowledge graph, GraphSAGE) is keyed to it.
+Keeping derivation separate means the organization layer can be rebuilt without ever
+touching the frozen evidence.
+
+Sources are observable columns only: `persons.occupation` + address city,
+`cases.agency`, and `evidence.chain_of_custody`. No latent ground truth is read.
+The derivation is deterministic and byte-identical across runs; the
+`TestOrganizationDerivation` suite asserts this.

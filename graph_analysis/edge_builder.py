@@ -537,4 +537,76 @@ class EdgeBuilder:
                         weight=0.95
                     ))
 
+        # 11. ORGANIZATIONS (org_affiliations.csv)
+        #    PERSON   --AFFILIATED_WITH--> ORGANIZATION
+        #    CASE     --INVESTIGATED_BY--> ORGANIZATION
+        #    EVIDENCE --PROCESSED_BY-->    ORGANIZATION
+        #    ORGANIZATION --OPERATES_IN--> LOCATION
+        # Every affiliation keeps the row that produced it as provenance.
+        affs_path = self.evidence_dir / "org_affiliations.csv"
+        if affs_path.exists():
+            relation_to_edge = {
+                "AFFILIATED_WITH": EdgeType.AFFILIATED_WITH,
+                "INVESTIGATED_BY": EdgeType.INVESTIGATED_BY,
+                "PROCESSED_BY": EdgeType.PROCESSED_BY,
+            }
+            with open(affs_path, mode="r", encoding="utf-8") as f:
+                for row in csv.DictReader(f):
+                    org_id = row.get("org_id")
+                    entity_id = row.get("entity_id")
+                    relation = row.get("relation")
+                    if not org_id or not entity_id or org_id not in self.nodes or entity_id not in self.nodes:
+                        continue
+                    edge_type = relation_to_edge.get(relation)
+                    if edge_type is None:
+                        continue
+
+                    cid = row.get("case_id", "")
+                    since = row.get("since_date") or None
+                    prov = ProvenanceRecord(
+                        source_table=row.get("source_table", "org_affiliations.csv"),
+                        source_id=row.get("source_record_id", row.get("affiliation_id", "")),
+                        case_id=cid,
+                        timestamp=since,
+                        evidence_type="Organization Affiliation Record",
+                        confidence=1.0,
+                        notes=f"Observed affiliation ({relation}) recorded in case dossier",
+                    )
+                    self.edges.append(GraphEdge(
+                        source_id=entity_id,
+                        target_id=org_id,
+                        edge_type=edge_type,
+                        provenance=prov,
+                        timestamp=since,
+                        weight=1.0,
+                    ))
+
+        # 12. ORGANIZATION --OPERATES_IN--> LOCATION (derived from registered office city)
+        orgs_path = self.evidence_dir / "organizations.csv"
+        if orgs_path.exists():
+            with open(orgs_path, mode="r", encoding="utf-8") as f:
+                for row in csv.DictReader(f):
+                    org_id = row.get("org_id")
+                    city = (row.get("registered_office_city") or "").strip()
+                    if not org_id or not city or org_id not in self.nodes:
+                        continue
+                    loc_id = f"LOC_{city.replace(' ', '_').replace('/', '_')}"
+                    if loc_id not in self.nodes:
+                        continue
+                    prov = ProvenanceRecord(
+                        source_table="organizations.csv",
+                        source_id=org_id,
+                        case_id=row.get("case_id", ""),
+                        evidence_type="Registered Office Record",
+                        confidence=1.0,
+                        notes=f"Registered office observed in {city}",
+                    )
+                    self.edges.append(GraphEdge(
+                        source_id=org_id,
+                        target_id=loc_id,
+                        edge_type=EdgeType.OPERATES_IN,
+                        provenance=prov,
+                        weight=1.0,
+                    ))
+
         return self.edges

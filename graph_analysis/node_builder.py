@@ -1,7 +1,11 @@
 """
 Node Builder for Global Case Knowledge Graph.
-Extracts 10 observable node types across all evidence tables and builds provisional
+Extracts 11 observable node types across all evidence tables and builds provisional
 resolved entity clusters with transitivity safeguards and cluster quality metrics.
+
+ORGANIZATION nodes are derived (see ``synthetic_data_generator/derive_organizations.py``)
+from observable occupation, investigating-agency and chain-of-custody records. An
+affiliation is an observed association, not a claim about an entity's role.
 """
 
 import csv
@@ -14,6 +18,12 @@ from graph_analysis.config import (
     ER_CONFLICT_THRESHOLD, MAX_TRANSITIVE_CHAIN_LENGTH, MIN_CLUSTER_COHESION
 )
 from graph_analysis.schema import NodeType, GraphNode, ResolvedClusterMetadata
+
+# Administrative custody organisations (evidence stores, forensic laboratories) are
+# recorded in ``org_affiliations.csv`` for provenance but are deliberately kept out
+# of the network graph: they touch every evidence item and would otherwise dominate
+# degree/PageRank purely by clerical fan-out, drowning out investigative leads.
+ADMINISTRATIVE_ORG_TYPES = {"FORENSIC_LABORATORY", "EVIDENCE_STORE"}
 
 class NodeBuilder:
     def __init__(self, evidence_dir: Path = EVIDENCE_DIR, er_predictions_path: Path = ER_PREDICTIONS_PATH):
@@ -452,5 +462,44 @@ class NodeBuilder:
                             "chain_of_custody": row.get("chain_of_custody")
                         }
                     )
+
+        # 12. ORGANIZATIONS (Derived from occupation, investigating agency and custody records)
+        orgs_path = self.evidence_dir / "organizations.csv"
+        if orgs_path.exists():
+            with open(orgs_path, mode="r", encoding="utf-8") as f:
+                for row in csv.DictReader(f):
+                    oid = row["org_id"]
+                    cid = row.get("case_id")
+                    if (row.get("org_type") or "") in ADMINISTRATIVE_ORG_TYPES:
+                        continue
+                    city = (row.get("registered_office_city") or "").strip()
+                    self.nodes[oid] = GraphNode(
+                        node_id=oid,
+                        node_type=NodeType.ORGANIZATION,
+                        label=row.get("name", oid),
+                        case_ids={cid} if cid else set(),
+                        attributes={
+                            "org_name": row.get("name"),
+                            "org_type": row.get("org_type"),
+                            "sector": row.get("sector"),
+                            "registration_no": row.get("registration_no"),
+                            "office_city": city or None,
+                        }
+                    )
+                    # Ensure the operating city exists as a LOCATION node so the
+                    # ORGANIZATION --OPERATES_IN--> LOCATION edge has a real target.
+                    if city:
+                        loc_id = f"LOC_{city.replace(' ', '_').replace('/', '_')}"
+                        if loc_id in self.nodes:
+                            if cid:
+                                self.nodes[loc_id].case_ids.add(cid)
+                        else:
+                            self.nodes[loc_id] = GraphNode(
+                                node_id=loc_id,
+                                node_type=NodeType.LOCATION,
+                                label=f"Location {city}",
+                                case_ids={cid} if cid else set(),
+                                attributes={"location_name": city}
+                            )
 
         return self.nodes

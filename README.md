@@ -338,3 +338,52 @@ The seed script loads three CSV files from `synthetic_data/`:
 After parsing, the graph contains:
 - **8 Phone nodes**, **8 Device nodes**, **10 Tower nodes**, **7 Account nodes**
 - **55 CALLED edges**, **35 CONNECTED_TO_TOWER edges**, **12 USED_DEVICE edges**, **26 TRANSFERRED_TO edges**
+
+---
+
+## Document Evidence (FIRs, scanned reports)
+
+PDF and image evidence is accepted alongside CSV/XLSX/JSON uploads.
+
+| Extension | Extraction |
+|---|---|
+| `.pdf` | Native text via `pypdf`; if under 50 characters recovered, falls back to Poppler + Tesseract page OCR |
+| `.png`, `.jpg`, `.jpeg` | Tesseract OCR via Pillow |
+
+Text is stored on `evidence_items.extracted_text` and returned by the API as
+`extracted_text_chars` and `extracted_text_preview` (first 500 characters).
+
+Guarantees:
+- **Never blocks an upload.** A missing Tesseract/Poppler binary, a scanned page or a
+  corrupt image is logged and degrades to empty text; the original bytes are still
+  hashed (SHA-256), stored and audited.
+- **Signature-checked.** A `.pdf` must start with `%PDF-`, PNG/JPEG must carry their
+  real signatures, and executables (PE/ELF/Mach-O/scripts) are still rejected even
+  when renamed.
+
+Verify extraction manually:
+
+```powershell
+cd backend
+python -m app.scripts.check_ocr ..\synthetic_data\sample_fir.pdf
+```
+
+System dependencies: `tesseract-ocr` and `poppler-utils` (both installed in
+`backend/Dockerfile`). Without them only native PDF text is extracted.
+
+---
+
+## Analysis Modules (Phases 2–4)
+
+Beyond the Phase 1 application, the repository contains the offline analysis pipeline.
+Each module has its own README with methodology, guardrails and metrics.
+
+| Module | Purpose | Output |
+|---|---|---|
+| `synthetic_data_generator/` | Ground-truth-first synthetic trafficking dataset (10 cases, 100 persons, 11 evidence tables) plus derived organization tables | `synthetic_data_generator/output/evidence_dataset/` |
+| `entity_resolution/` | Cross-case identity resolution from 28 observable features | `output/entity_resolution/` |
+| `graph_analysis/` | 11-node-type knowledge graph, centrality, communities, cross-case leads | `output/graph_analysis/` |
+| `phase4/` | GraphSAGE embeddings and candidate link prediction | `output/graphsage/` |
+| `backend/app/intelligence/` | Serves Phase 4 leads, priorities and statement consistency via `/api/v1/intelligence/*` | — |
+
+All model outputs are **investigative leads**, not determinations of identity or guilt.

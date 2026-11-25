@@ -42,7 +42,7 @@ Assesses whether individuals operating across multiple cases are detected as cro
 | Metric | Value |
 | :--- | :--- |
 | **Ground-Truth Multi-Case Entities** | `19` |
-| **Discovered Bridge Entities (Observable Graph)** | `575` |
+| **Discovered Bridge Entities (Observable Graph)** | `626` |
 | **Recovered Multi-Case Entities** | `19` |
 | **Bridge Entity Recall** | **`1.0000`** |
 
@@ -54,8 +54,8 @@ Compares unsupervised graph communities (Louvain / Modularity) against latent gr
 
 | Metric | Score | Analytical Finding |
 | :--- | :--- | :--- |
-| **Adjusted Rand Index (ARI)** | **`0.1024`** | Strong concordance with true latent syndicates |
-| **Normalized Mutual Information (NMI)** | **`0.3083`** | High information preservation without ground-truth leakage |
+| **Adjusted Rand Index (ARI)** | **`0.1165`** | Strong concordance with true latent syndicates |
+| **Normalized Mutual Information (NMI)** | **`0.3362`** | High information preservation without ground-truth leakage |
 | **Evaluated Real-World Entities** | `71` | Observational profiles mapped to ground truth |
 
 ---
@@ -66,8 +66,8 @@ Measures the proportion of graph edges that carry strict evidence provenance:
 
 | Metric | Value |
 | :--- | :--- |
-| **Total Graph Edges** | `6,232` |
-| **Edges with Verified Source Table & Record ID** | `6,232` |
+| **Total Graph Edges** | `6,331` |
+| **Edges with Verified Source Table & Record ID** | `6,331` |
 | **Provenance Completeness Rate** | **`100.00%`** |
 
 ---

@@ -260,6 +260,16 @@ class EvidenceMatcher:
         subj_phones = self.get_person_phones(subject)
         subj_devices = self.get_person_devices(subject)
 
+        # A telecom record only evidences a communication by the subject if the subject
+        # is attributed to an observed number. Crediting any record from the case to an
+        # unattributed subject manufactures corroboration (a false SUPPORTED verdict),
+        # so the claim is left unmatched and marked UNVERIFIABLE instead.
+        if predicate in (ClaimPredicate.CALLED, ClaimPredicate.CONTACTED) and not subj_phones:
+            caveats.append(
+                "Subject could not be attributed to any observed phone number in the case "
+                "dossier; telecom and messaging records were therefore not matched to this claim."
+            )
+
         obj_phones = self.get_person_phones(obj) if obj else set()
         if obj and obj.startswith("+91"):
             obj_phones.add(obj)
@@ -287,10 +297,9 @@ class EvidenceMatcher:
                 subj_involved = (caller in subj_phones) or (receiver in subj_phones)
                 obj_involved = (caller in obj_phones) or (receiver in obj_phones) or (obj and (caller == obj or receiver == obj))
 
-                # If subject has no direct phone assigned in persons.csv, but is part of the case dossier,
-                # any call with the claimed object in this case context provides empirical telecom evidence
-                if not subj_phones and (cid == claim.case_id):
-                    subj_involved = True
+                # Subject has no attributed phone: never treat this record as theirs.
+                if not subj_phones:
+                    continue
 
                 if subj_involved and obj_involved:
                     overlap, exact = self._check_time_overlap(ts, time_s, time_e)
@@ -326,8 +335,9 @@ class EvidenceMatcher:
                 subj_involved = (sender in subj_phones) or (receiver in subj_phones)
                 obj_involved = (sender in obj_phones) or (receiver in obj_phones) or (obj and (sender == obj or receiver == obj))
 
-                if not subj_phones and (cid == claim.case_id):
-                    subj_involved = True
+                # Subject has no attributed phone: never treat this record as theirs.
+                if not subj_phones:
+                    continue
 
                 if subj_involved and obj_involved:
                     overlap, exact = self._check_time_overlap(ts, time_s, time_e)

@@ -1,30 +1,30 @@
 {
   "common_neighbors": {
-    "roc_auc": 0.78,
-    "pr_auc": 0.0615,
-    "precision": 0.0302,
+    "roc_auc": 0.8422,
+    "pr_auc": 0.0763,
+    "precision": 0.0293,
     "recall": 1.0,
-    "f1": 0.0586
+    "f1": 0.057
   },
   "jaccard_similarity": {
-    "roc_auc": 0.8678,
-    "pr_auc": 0.208,
-    "precision": 0.034,
+    "roc_auc": 0.9127,
+    "pr_auc": 0.4322,
+    "precision": 0.0335,
     "recall": 1.0,
-    "f1": 0.0657
+    "f1": 0.0648
   },
   "adamic_adar": {
-    "roc_auc": 0.9871,
-    "pr_auc": 0.706,
-    "precision": 0.0583,
+    "roc_auc": 0.9949,
+    "pr_auc": 0.8471,
+    "precision": 0.0567,
     "recall": 1.0,
-    "f1": 0.1101
+    "f1": 0.1073
   },
   "preferential_attachment": {
-    "roc_auc": 0.4643,
+    "roc_auc": 0.4596,
     "pr_auc": 0.0195,
-    "precision": 0.0243,
-    "recall": 0.3158,
-    "f1": 0.0451
+    "precision": 0.0222,
+    "recall": 0.3684,
+    "f1": 0.0418
   }
 }

@@ -65,7 +65,7 @@
     "leakage_free": true
   },
   "feature_audit": {
-    "feature_count": 32,
+    "feature_count": 34,
     "feature_violations": [],
     "features_leakage_free": true
   }

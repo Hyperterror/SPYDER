@@ -2,35 +2,35 @@
   "benchmark_summary": {
     "total_statements_evaluated": 100,
     "total_claims_extracted": 100,
-    "total_evidence_matches": 617,
-    "overall_accuracy": 0.78,
-    "macro_precision": 0.8396,
-    "macro_recall": 0.8166,
-    "macro_f1_score": 0.7937,
-    "execution_duration_sec": 0.065,
-    "throughput_statements_per_sec": 1536.2
+    "total_evidence_matches": 606,
+    "overall_accuracy": 0.85,
+    "macro_precision": 0.8732,
+    "macro_recall": 0.875,
+    "macro_f1_score": 0.8567,
+    "execution_duration_sec": 0.058,
+    "throughput_statements_per_sec": 1718.6
   },
   "per_class_metrics": {
     "SUPPORTED": {
       "true_count": 30,
-      "predicted_count": 23,
-      "precision": 0.9565,
-      "recall": 0.7333,
-      "f1_score": 0.8302
+      "predicted_count": 27,
+      "precision": 0.963,
+      "recall": 0.8667,
+      "f1_score": 0.9123
     },
     "CONTRADICTED": {
       "true_count": 30,
-      "predicted_count": 18,
-      "precision": 0.8889,
-      "recall": 0.5333,
-      "f1_score": 0.6667
+      "predicted_count": 21,
+      "precision": 0.9048,
+      "recall": 0.6333,
+      "f1_score": 0.7451
     },
     "UNVERIFIABLE": {
       "true_count": 20,
-      "predicted_count": 39,
-      "precision": 0.5128,
+      "predicted_count": 32,
+      "precision": 0.625,
       "recall": 1.0,
-      "f1_score": 0.678
+      "f1_score": 0.7692
     },
     "EVIDENCE_CONFLICT": {
       "true_count": 20,
@@ -42,15 +42,15 @@
   },
   "confusion_matrix": {
     "SUPPORTED": {
-      "SUPPORTED": 22,
+      "SUPPORTED": 26,
       "CONTRADICTED": 2,
-      "UNVERIFIABLE": 6,
+      "UNVERIFIABLE": 2,
       "EVIDENCE_CONFLICT": 0
     },
     "CONTRADICTED": {
       "SUPPORTED": 1,
-      "CONTRADICTED": 16,
-      "UNVERIFIABLE": 13,
+      "CONTRADICTED": 19,
+      "UNVERIFIABLE": 10,
       "EVIDENCE_CONFLICT": 0
     },
     "UNVERIFIABLE": {

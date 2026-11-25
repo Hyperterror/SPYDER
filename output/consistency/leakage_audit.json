@@ -9,7 +9,7 @@
     "backend\\app\\intelligence\\consistency_engine.py",
     "backend\\app\\api\\intelligence.py"
   ],
-  "total_lines_inspected": 2093,
+  "total_lines_inspected": 2120,
   "forbidden_token_occurrences": {
     "ground_truth.json": false,
     "true_entities.json": false,
@@ -18,6 +18,6 @@
     "true_roles": false,
     "expected_status": false
   },
-  "audit_timestamp": "2026-09-15T19:02:28Z",
+  "audit_timestamp": "2026-11-26T00:02:10Z",
   "status": "PASS - ZERO LEAKAGE"
 }

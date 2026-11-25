@@ -7,7 +7,7 @@ extracts feature vectors, and persists candidate datasets.
 import csv
 import json
 from pathlib import Path
-from typing import Dict, List, Any, Tuple
+from typing import Dict, List, Any, Tuple, Set
 
 from entity_resolution.config import EVIDENCE_DIR, GROUND_TRUTH_DIR, OUTPUT_DIR
 from entity_resolution.candidate_generation import CandidateGenerator
